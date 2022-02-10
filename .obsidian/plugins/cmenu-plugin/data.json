@@ -1,0 +1,90 @@
+{
+  "aestheticStyle": "default",
+  "menuCommands": [
+    {
+      "id": "cmenu-plugin:editor:toggle-bold",
+      "name": "cMenu: Toggle bold",
+      "icon": "bold-glyph"
+    },
+    {
+      "id": "cmenu-plugin:superscript",
+      "name": "cMenu: Toggle superscript",
+      "icon": "superscript-glyph"
+    },
+    {
+      "id": "cmenu-plugin:subscript",
+      "name": "cMenu: Toggle subscript",
+      "icon": "subscript-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-code",
+      "name": "cMenu: Toggle code",
+      "icon": "code-glyph"
+    },
+    {
+      "id": "cmenu-plugin:codeblock",
+      "name": "cMenu: Toggle codeblock",
+      "icon": "codeblock-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-blockquote",
+      "name": "cMenu: Toggle blockquote",
+      "icon": "quote-glyph"
+    },
+    {
+      "id": "workspace:split-vertical",
+      "name": "左右拆分",
+      "icon": "vertical-split"
+    },
+    {
+      "id": "editor:toggle-bullet-list",
+      "name": "无序列表",
+      "icon": "bullet-list-glyph"
+    },
+    {
+      "id": "editor:toggle-numbered-list",
+      "name": "有序列表",
+      "icon": "number-list-glyph"
+    },
+    {
+      "id": "obsidian-title-serial-number-plugin:set-title-serial-number-editor-command",
+      "name": "Title Serial Number Plugin: Set Serial Number For Title",
+      "icon": "feather-hash"
+    },
+    {
+      "id": "obsidian-title-serial-number-plugin:clear-title-serial-number-editor-command",
+      "name": "Title Serial Number Plugin: Clear Serial Number For Title",
+      "icon": "cross"
+    },
+    {
+      "id": "obsidian-copy-block-link:copy-link-to-block",
+      "name": "Copy Block Link: Copy link to current block or heading",
+      "icon": "link"
+    },
+    {
+      "id": "obsidian-copy-block-link:copy-embed-to-block",
+      "name": "Copy Block Link: Copy embed to current block or heading",
+      "icon": "indent-glyph"
+    },
+    {
+      "id": "obsidian-enhancing-mindmap:Create New MindMap",
+      "name": "Enhancing Mindmap: 创建新思维导图",
+      "icon": "graph-glyph"
+    },
+    {
+      "id": "obsidian-file-link:add-file-link",
+      "name": "Better File Link: Add File Link",
+      "icon": "feather-hard-drive"
+    },
+    {
+      "id": "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current",
+      "name": "Excalidraw: 在当前面板中创建已存在的绘图且嵌入到当前笔记中",
+      "icon": "image-glyph"
+    }
+  ],
+  "appendMethod": "body",
+  "shouldShowMenuOnSelect": false,
+  "cMenuVisibility": true,
+  "cMenuBottomValue": 2,
+  "cMenuNumRows": 18
+}

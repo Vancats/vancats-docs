@@ -1,0 +1,115 @@
+{
+  "main": {
+    "id": "6463ab7bba9bac48",
+    "type": "split",
+    "children": [
+      {
+        "id": "72c5698b2002fb54",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "learning/HTTPS.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c830208b40b367e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "a006f0da6c1bd9eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76d13e6456fc3526",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "128d8321e6702d18",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 294
+  },
+  "right": {
+    "id": "8e347e94747a4a72",
+    "type": "split",
+    "children": [
+      {
+        "id": "de2f3c313ec7f9be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e68606870694b330",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "learning/HTTPS.md",
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e5404267c17d84ec",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 168,
+    "collapsed": true
+  },
+  "active": "72c5698b2002fb54",
+  "lastOpenFiles": [
+    "learning/HTTPS.md",
+    "learning/设计模式.md",
+    "learning/LeetCode.md",
+    "learning/RegExp.md",
+    "learning/Learn JS.md",
+    "learning/Learn CSS.md",
+    "learning/JS 题目.md",
+    "Learning/LeetCode.md",
+    "Learning/RegExp.md",
+    "Learning/Learn CSS.md"
+  ]
+}

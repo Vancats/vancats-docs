@@ -1,0 +1,2 @@
+把ob所有对github的请求转到fastgit镜像上下载
+源址：https://github.com/juqkai/obsidian-proxy-github

@@ -1,0 +1,21 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "communityPluginSortOrder": "download",
+  "defaultViewMode": "source",
+  "strictLineBreaks": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "showLineNumber": true,
+  "rightToLeft": false,
+  "spellcheck": true,
+  "autoPairBrackets": true,
+  "vimMode": true,
+  "trashOption": "local",
+  "newFileLocation": "current",
+  "communityThemeSortOrder": "download",
+  "readableLineLength": false,
+  "showFrontmatter": false,
+  "showUnsupportedFiles": true,
+  "promptDelete": false
+}
