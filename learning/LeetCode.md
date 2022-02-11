@@ -171,3 +171,4 @@
 - 22-2-9   [2006. 差的绝对值为 K 的数对数目](https://leetcode-cn.com/problems/count-number-of-pairs-with-absolute-difference-k/)
 - 22-2-10 [1447. 最简分数](https://leetcode-cn.com/problems/simplified-fractions/)
 - 22-2-11 [1984. 学生分数的最小差值](https://leetcode-cn.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/)
+- 22-2-12
