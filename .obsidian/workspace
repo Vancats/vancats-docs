@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/LeetCode.md",
+            "file": "sundry/Plugins.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/LeetCode.md",
+                "file": "sundry/Plugins.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,7 @@
   },
   "active": "72c5698b2002fb54",
   "lastOpenFiles": [
+    "sundry/Plugins.md",
     "learning/LeetCode.md",
     "learning/HTTPS.md",
     "learning/设计模式.md",
@@ -109,7 +110,6 @@
     "learning/Learn CSS.md",
     "learning/JS 题目.md",
     "Learning/LeetCode.md",
-    "Learning/RegExp.md",
-    "Learning/Learn CSS.md"
+    "Learning/RegExp.md"
   ]
 }
