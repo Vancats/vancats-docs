@@ -5,7 +5,7 @@
   2. Bracket Pair Colorizer 2 括号
   3. Color Highlight 高亮
   4. Color Info css颜色选择
-  5. Css Peek css类名跳转
+  5. Vue Peek css类名跳转
   6. Highlight Matching Tag 高亮
   7. Error Lens 报错提示
   8. Atom on Dark Theme

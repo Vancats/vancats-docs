@@ -14,6 +14,14 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "9b5c110dd820829e",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -69,7 +77,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/LeetCode.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -99,8 +106,9 @@
     "width": 168,
     "collapsed": true
   },
-  "active": "72c5698b2002fb54",
+  "active": "9b5c110dd820829e",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "learning/LeetCode.md",
     "learning/HTTPS.md",
     "learning/设计模式.md",
@@ -109,7 +117,6 @@
     "learning/Learn CSS.md",
     "learning/JS 题目.md",
     "Learning/LeetCode.md",
-    "Learning/RegExp.md",
-    "Learning/Learn CSS.md"
+    "Learning/RegExp.md"
   ]
 }
