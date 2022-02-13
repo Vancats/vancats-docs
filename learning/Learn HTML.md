@@ -46,6 +46,18 @@
 - 块：`div ul ol li dl dt dd p h1~6`
 - 空（无闭合标签）：`br hr img input link meta   area col colgroup base command embed keygen param source track wbr`
 
+###### iframe的优缺点
+iframe会创建一个包含另外一个文档的内联框架（行内框架）
+**优点**
+- 加载速度较慢的内容，如广告
+- 使脚本并行下载
+- 实现跨子域通信
+**缺点**
+- 阻塞主页面的onload事件
+- 无法被搜索引擎识别
+- 产生很多页面，不易管理
+
+
 ###### web worker
 
 ###### HTML5 离线储存
