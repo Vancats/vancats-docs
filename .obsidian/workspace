@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn HTML.md",
+            "file": "learning/LeetCode.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn HTML.md",
+                "file": "learning/LeetCode.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,10 +101,10 @@
   },
   "active": "72c5698b2002fb54",
   "lastOpenFiles": [
+    "learning/LeetCode.md",
     "learning/Learn HTML.md",
     "learning/JS 题目.md",
     "learning/HTTPS.md",
-    "learning/LeetCode.md",
     "conflict-files-obsidian-git.md",
     "learning/设计模式.md",
     "learning/RegExp.md",
