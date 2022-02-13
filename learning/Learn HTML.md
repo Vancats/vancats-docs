@@ -18,6 +18,10 @@
 - 执行顺序：async不能保证加载的顺序，defer按顺序加载
 
 ###### meta标签
-- charset：描述文档的编码类型
-	·
+- charset：描述文档的编码类型 `<meta charset="UTF-8">`
+- keyword：页面关键词 `<meta name="keyword" content="关键词搜索">`
+- description：页面描述 `<meta name="discription" content="页面描述内容">`
+- viewport：移动端适配 
+`<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"`
+- 
 
