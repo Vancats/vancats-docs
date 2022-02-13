@@ -24,6 +24,6 @@
 - refresh：重定向和刷新
 `<meta http-equiv="refresh" content="1;url='http://www.baidu.com'"`  页面1s后跳转到百度
 - viewport：移动端适配
-`<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable"`
-- 
+`<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"`
+- robots：搜索引擎索引方式
 
