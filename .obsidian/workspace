@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "sundry/Plugins.md",
+            "file": "learning/Learn HTML.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sundry/Plugins.md",
+                "file": "learning/Learn HTML.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,8 +101,8 @@
   },
   "active": "72c5698b2002fb54",
   "lastOpenFiles": [
-    "sundry/Plugins.md",
     "learning/Learn HTML.md",
+    "sundry/Plugins.md",
     "learning/Learn JS.md",
     "learning/LeetCode.md",
     "learning/Learn HTTP.md",
