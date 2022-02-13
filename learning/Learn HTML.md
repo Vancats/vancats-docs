@@ -43,5 +43,10 @@
 
 ###### 行内，块，空元素
 - 行内：`a b span img input select strong`
-- 块：`div ul ol li dl dt dd`
+- 块：`div ul ol li dl dt dd p h1~6`
+- 空（无闭合标签）：`br hr img input link meta   area col colgroup base command embed keygen param source track wbr`
+
+###### web worker
+
+###### HTML5 离线储存
 ###### HTML5 有哪些更新
