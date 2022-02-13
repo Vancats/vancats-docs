@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "learning/Learn HTML.md",
-            "mode": "source",
+            "mode": "preview",
             "source": false
           }
         }
@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294,
-    "collapsed": true
+    "width": 216.5
   },
   "right": {
     "id": "8e347e94747a4a72",

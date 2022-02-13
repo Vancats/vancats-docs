@@ -9,8 +9,8 @@
 
 ###### DOCTYPE 的作用
 告诉浏览器以什么样的文档类型来解析文档，会影响CSS甚至JS的解析，通过document.compatMode获取
- - CSS1Compat：标准模式，页面以最高标准呈现
- - BackCompat：怪异模式，页面以向后兼容方式显示呃呃
+- CSS1Compat：标准模式，页面以最高标准呈现
+- BackCompat：怪异模式，页面以向后兼容方式显示
 
 ###### defer和async的区别
 没有这俩，浏览器立即执行，阻塞后续文档加载
