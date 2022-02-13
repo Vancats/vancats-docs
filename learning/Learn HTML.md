@@ -25,5 +25,10 @@
 `<meta http-equiv="refresh" content="1;url='http://www.baidu.com'"`  页面1s后跳转到百度
 - viewport：移动端适配
 `<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"`
-- robots：搜索引擎索引方式
-
+- robots：搜索引擎索引方式 `<meta name="robots" content="index,follow">`
+	- all：文件将被检索，页面上的链接可以被查询
+	- none：文件不被检索，页面上的链接不可以被查询
+	- index：文件将被检索
+	- follow：页面上的链接可以被查询
+	- noindex：文件将不被检索
+	- nofollow：页面上的链接不可以被查询
