@@ -35,4 +35,7 @@
 
 
 
-###### 
+###### img 的 srcset属性的作用
+根据屏幕的密度设置不同的图片
+`<img src="image-128.png" srcset="image-128.png 128w, image-256.png 256w, image-512.png 512w" sizes="(max-width: 360px) 340px, 128px" />
+###### HTML5 有哪些更新
