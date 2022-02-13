@@ -14,4 +14,9 @@
 
 ###### defer和async的区别
 没有这俩，浏览器立即执行，阻塞后续文档加载
-- 执行顺序：async不能保证，defer
+- 执行时间：async立即加载并执行，defer立即加载，文档解析完成后，DOMContentLoader触发前执行
+- 执行顺序：async不能保证加载的顺序，defer按顺序加载
+
+###### meta标签
+
+
