@@ -21,6 +21,7 @@
 - charset：描述文档的编码类型 `<meta charset="UTF-8">`
 - keyword：页面关键词 `<meta name="keyword" content="关键词搜索">`
 - description：页面描述 `<meta name="discription" content="页面描述内容">`
+- refresh：重定向和刷新 `<meta http-equiv="refresh" content="0;url="`
 - viewport：移动端适配 
 `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"`
 - 
