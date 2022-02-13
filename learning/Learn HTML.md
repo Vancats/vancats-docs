@@ -58,7 +58,18 @@ iframe会创建一个包含另外一个文档的内联框架（行内框架）
 - 产生很多页面，不易管理
 
 
+
 ###### web worker
 
 ###### HTML5 离线储存
 ###### HTML5 有哪些更新
+
+
+###### title/h1 strong/b i/em区别
+- h1层次明确的标题，title只是表示标题
+- strong加强语气，b只是加粗
+- em为强调的文本，i只是斜体
+###### label的作用
+定义表单与控件的关系，选择标签时焦点转移到相应控件
+`<label for="mobile">Number:</label> <input id="mobile" 
+`<label>Date:<input</label>`
