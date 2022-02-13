@@ -70,8 +70,7 @@
   24. View In Browser
   25. Code Runner
   26. styled-jsx
-  27. W xml
-  28. X mind Viewer
-  29. Image preview
-  30. Markdown All in One
-  31. Markdown Preview Enhanced
+  27. X mind Viewer
+  28. Image preview
+  29. Markdown All in One
+  30. Markdown Preview Enhanced
