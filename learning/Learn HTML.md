@@ -11,7 +11,7 @@
 告诉浏览器以什么样的文档类型来解析文档，会影响CSS甚至JS的解析，通过document.compatMode获取
 - CSS1Compat：标准模式，页面以最高标准呈现
 - BackCompat：怪异模式，页面以向后兼容方式显示
-`<!Doctype ht`
+`<!Doctype html>` 标准模式，使用HTML5解析渲染（HTML5没有严格和混杂之分
 
 ###### defer和async的区别
 没有这俩，浏览器立即执行，阻塞后续文档加载
@@ -82,9 +82,11 @@ iframe会创建一个包含另外一个文档的内联框架（行内框架）
 ###### web worker
 
 ###### HTML5 离线储存
+
 ###### HTML5 有哪些更新
 
-
+###### 渐进增强和优雅降级
+- 渐进增强针对最高级最完善的浏览器构建页面，开发周期的最后阶段
 ###### title/h1 strong/b i/em区别
 - h1层次明确的标题，title只是表示标题
 - strong加强语气，b只是加粗
