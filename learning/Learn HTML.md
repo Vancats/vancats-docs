@@ -57,7 +57,14 @@ iframe会创建一个包含另外一个文档的内联框架（行内框架）
 - 无法被搜索引擎识别
 - 产生很多页面，不易管理
 
-
+###### Canvas 和 SVG
+**SVG**：矢量图，基于XML描述的2D图形的语言，因此每个DOM都可用
+- 不依赖分辨率
+- 支持事件处理器
+- 适合大型渲染区域的应用程序，如谷歌地图
+- 复杂度高减慢渲染速度（任何过度使用DOM的应用都不快
+- 不适合游戏应用
+**Canvas**：画布，通过JS绘制2D图形，位置发生改变重新
 
 ###### web worker
 
@@ -71,5 +78,5 @@ iframe会创建一个包含另外一个文档的内联框架（行内框架）
 - em为强调的文本，i只是斜体
 ###### label的作用
 定义表单与控件的关系，选择标签时焦点转移到相应控件
-`<label for="mobile">Number:</label> <input id="mobile" 
-`<label>Date:<input</label>`
+`<label for="mobile">Number:</label> <input id="mobile type="text">" 
+`<label>Date:<input type="text"></label>`
