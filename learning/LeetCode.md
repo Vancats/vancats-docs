@@ -1,5 +1,5 @@
 ### 1. 链表
-
+**唯一指向性**
 **2-21-206-23-237-148-138-141-24-234-445-147-143**
 
 - 链表的访问
@@ -177,3 +177,4 @@
 	- [540. 有序数组中的单一元素](https://leetcode-cn.com/problems/single-element-in-a-sorted-array/)
 	- [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
 	- [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+	- [202. 快乐数](https://leetcode-cn.com/problems/happy-number/)
