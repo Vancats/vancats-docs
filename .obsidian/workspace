@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "sundry/Plugins.md",
+            "file": "learning/前端算法.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sundry/Plugins.md",
+                "file": "learning/前端算法.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "72c5698b2002fb54",
   "lastOpenFiles": [
+    "learning/前端算法.md",
+    "learning/设计模式.md",
     "sundry/Plugins.md",
     "sundry/Git.md",
     "learning/LeetCode.md",
     "learning/Learn CSS.md",
     "learning/JS 题目.md",
-    "learning/设计模式.md",
     "learning/Learn HTML.md",
     "learning/HTTPS.md",
-    "learning/RegExp.md",
-    "learning/Learn JS.md"
+    "learning/RegExp.md"
   ]
 }
