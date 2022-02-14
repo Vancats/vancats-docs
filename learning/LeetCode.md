@@ -1,24 +1,3 @@
-### 1. 链表
-**唯一指向性**
-**2-21-206-23-237-148-138-141-24-234-445-147-143**
-
-- 链表的访问
-  - [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
-  - [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
-  - [202. 快乐数](https://leetcode-cn.com/problems/happy-number/)
-- 链表的反转
-  - [138. 复制带随机指针的链表](https://leetcode-cn.com/problems/copy-list-with-random-pointer/)
-  - [86. 分隔链表](https://leetcode-cn.com/problems/partition-list/)
-  - [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
-  - [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
-  - [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
-  - [61. 旋转链表](https://leetcode-cn.com/problems/rotate-list/)
-  - [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
-- 链表节点删除
-  - [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
-  - [83. 删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
-  - [82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
-
 ### 2. 队列
 
 - [622. 设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)
@@ -181,5 +160,11 @@
 	- [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 	- [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 	- [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
+	- [138. 复制带随机指针的链表](https://leetcode-cn.com/problems/copy-list-with-random-pointer/)
+	- [86. 分隔链表](https://leetcode-cn.com/problems/partition-list/)
 	- [61. 旋转链表](https://leetcode-cn.com/problems/rotate-list/)
 	- [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
+	- [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
+	- [83. 删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
+	- [82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
+- 22-2-15 
