@@ -93,5 +93,5 @@ iframe会创建一个包含另外一个文档的内联框架（行内框架）
 - em为强调的文本，i只是斜体
 ###### label的作用
 定义表单与控件的关系，选择标签时焦点转移到相应控件
-`<label for="mobile">Number:</label> <input id="mobile type="text">" 
-`<label>Date:<input type="text"></label>`
+`<label for="mobile">Number:</label> <input id="mobile" type="text">`
+`<label>Date: <input type="text"></label>`
