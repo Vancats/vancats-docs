@@ -1,6 +1,3 @@
-- [969. 煎饼排序](https://leetcode-cn.com/problems/pancake-sorting/)
-- [621. 任务调度器](https://leetcode-cn.com/problems/task-scheduler/)
-
 ### 3. 递归与栈
 
 **处理具有完全包含关系的问题**
@@ -167,7 +164,8 @@
 	- [面试题 17.09. 第 k 个数](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/)
 	- [859. 亲密字符串](https://leetcode-cn.com/problems/buddy-strings/)
 	- [860. 柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/)
-
+	- [621. 任务调度器](https://leetcode-cn.com/problems/task-scheduler/)
+	- [969. 煎饼排序](https://leetcode-cn.com/problems/pancake-sorting/)
 
 
 
