@@ -99,6 +99,9 @@ CACHE MANIFEST
     FALLBACK:
     / /offline.html
 ```
+- CACHE：离线存储的资源列表，包含 manifest 文件的页面自动离线存储，不需要列出页面自身
+- NETWORK：在线资源，不被缓存。CACHE存在该资源，则缓存，它的优先级更高
+- FALLBACK：访问第一个资源失败，使用下面的资源来替换，上文表示访问根目录下任何一个资源失败，去访问 offline.html
 3. 离线状态时，操作 window.applicationCache 进行离线存储的操作
 
 ###### HTML5 有哪些更新 drag
