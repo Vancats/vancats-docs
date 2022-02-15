@@ -79,9 +79,11 @@ iframe会创建一个包含另外一个文档的内联框架（行内框架）
 - 描述文档信息：元信息，文档标题，在Web中的位置以及和其他文档的关系
 `base link meta script style title(必需)`
 
-###### web worker
-在正常的HTML页面中，响应js脚本
-###### HTML5 离线储存12
+###### web worker（可扩展）
+在正常的HTML页面中，执行js脚本时不可响应。web worker是运行在后台的js，不影响页面性能，通过postMessage传回结果。
+
+###### HTML5 离线储存
+**原理**
 
 ###### HTML5 有哪些更新 drag
 
