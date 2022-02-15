@@ -85,6 +85,7 @@ iframe会创建一个包含另外一个文档的内联框架（行内框架）
 ###### HTML5 离线储存
 **原理**
 基于一个 .appcache 文件的缓存机制（不是存储技术），通过这个文件的解析清单离线存储资源。当离线时可以正常访问站点或应用，联网后更新缓存文件
+
 **使用方法**
 1. 创建和 html 同名的 manifest，在页面头部加入 manifest 时 `<html lang="en" manifest="index.manifest">`
 2. 在 cache.manifest 文件中编写需要离线存储的资源
@@ -103,6 +104,18 @@ CACHE MANIFEST
 - NETWORK：在线资源，不被缓存。CACHE存在该资源，则缓存，它的优先级更高
 - FALLBACK：访问第一个资源失败，使用下面的资源来替换，上文表示访问根目录下任何一个资源失败，去访问 offline.html
 3. 离线状态时，操作 window.applicationCache 进行离线存储的操作
+
+**如何更新缓存**
+1. 更新 manifest 文件
+2. 通过 js 缓存
+3. 清除浏览器缓存
+
+**注意事项**
+1. 浏览器对缓存数据的容易不同，如每个站点5MB
+2. 如果 manifest 文件获取内部任意文件下载失败，整个更新过程就失败，浏览器继续使用原缓存
+3. 引用 manifest 的 html 必须和 manifest 文件同源，同一个域
+4. FALLBACK 中的资源必须和 manifest 文件同源
+5. 资源缓存后，浏览器直接请求该绝对
 
 ###### HTML5 有哪些更新 drag
 
