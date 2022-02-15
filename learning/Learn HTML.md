@@ -173,8 +173,20 @@ CACHE MANIFEST
 	- dragleave：事件主体是目标元素，在被拖放元素移出目标元素是触发。
 	- drop：事件主体是目标元素，在目标元素完全接受被拖放元素时触发。
 	- dragend：事件主体是被拖放元素，在整个拖放操作结束时触发。
-8. 
+8. Geolocation
+9. SVG/Canvas
 
+**移除的元素有**
+- 纯表现的元素：basefont，big，center，font, s，strike，tt，u;
+- 对可用性产生负面影响的元素：frame，frameset，noframes；
+
+**总结：**
+- 新增语义化标签：nav、header、footer、aside、section、article
+- 音频、视频标签：audio、video
+- 数据存储：localStorage、sessionStorage
+- canvas（画布）、Geolocation（地理定位）、websocket（通信协议）
+- input 标签新增属性：placeholder、autocomplete、autofocus、required
+- history API：go、forward、back、pushstate
 
 ###### 渐进增强和优雅降级
 - 优雅降级针对最高级最完善的浏览器构建页面，开发周期的最后阶段测试过时浏览器。旧版浏览器只提供“简陋且无妨”的浏览，只修复较大错误
