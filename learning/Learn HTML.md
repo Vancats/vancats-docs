@@ -11,7 +11,7 @@
 告诉浏览器以什么样的文档类型来解析文档，会影响CSS甚至JS的解析，通过document.compatMode获取
 - CSS1Compat：标准模式，页面以最高标准呈现
 - BackCompat：怪异模式，页面以向后兼容方式显示
-`<!Doctype html>` 标准模式，使用HTML5解析渲染（HTML5没有严格和混杂之分
+`<!Doctype html>` 标准模式，使用HTML5解析渲染（HTML5没有严格和混杂之分）
 
 ###### defer和async的区别
 没有这俩，浏览器立即执行，阻塞后续文档加载
@@ -80,7 +80,7 @@ iframe会创建一个包含另外一个文档的内联框架（行内框架）
 `base link meta script style title(必需)`
 
 ###### web worker
-
+在正常的HTML页面中，响应js脚本
 ###### HTML5 离线储存12
 
 ###### HTML5 有哪些更新 drag
