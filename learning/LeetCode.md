@@ -1,6 +1,3 @@
-### 2. 队列
-
-- [859. 亲密字符串](https://leetcode-cn.com/problems/buddy-strings/)
 - [860. 柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/)
 - [969. 煎饼排序](https://leetcode-cn.com/problems/pancake-sorting/)
 - [621. 任务调度器](https://leetcode-cn.com/problems/task-scheduler/)
@@ -169,6 +166,7 @@
 	- [1670. 设计前中后队列](https://leetcode-cn.com/problems/design-front-middle-back-queue/)
 	- [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/)
 	- [面试题 17.09. 第 k 个数](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/)
+	- [859. 亲密字符串](https://leetcode-cn.com/problems/buddy-strings/)
 
 
 
