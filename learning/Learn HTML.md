@@ -131,11 +131,35 @@ CACHE MANIFEST
 	- source 浏览器对视频格式支持程度不一样，为了能够兼容不同的浏览器，可以通过 source 来指定视频源
 `<video><source src='a.flv' type='video/flv'></source> <source src='b.mp4' type='video/mp4'></source></video>`
 3. 表单
-4. 进度条，度量器
-	- progress（任务进度）：max / value
-	- meter（显示剩余容量）：high/low 高/低的范围 max/m
-5. DOM查询 querySelector(All)
-6. Web存储 localStorage sessionStorage
+	**表单类型**
+	- email：验证邮箱合法性
+	- url：验证URL
+	- number
+	- search：自带删除
+	- range
+	- color
+	- time
+	- date
+	- datetime
+	- datetime-local
+	- week
+	- mouth
+
+	**表单属性**
+	- placeholder ：提示信息
+	- autofocus ：自动获取焦点
+	- autocomplete=“on” 或者 autocomplete=“off” 使用这个属性需要有两个前提：
+		- 表单必须提交过
+		- 必须有 name 属性。
+	- required：要求输入框不能为空，必须有值才能够提交。
+	- pattern=" " 里面写入想要的正则模式，例如手机号 patte="^(+86)?\d{10}$"
+	- multiple：可以选择多个文件或者多个邮箱
+	- form=" form 表单的 ID"
+5. 进度条，度量器
+	- progress（任务进度）：max/value
+	- meter（显示剩余容量）：high/low 高/低的范围 max/min 最大/小值 value 当前值
+6. DOM查询 querySelector(All)
+7. Web存储 localStorage sessionStorage
 
 
 
