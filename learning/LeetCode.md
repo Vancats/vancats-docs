@@ -1,6 +1,5 @@
 ### 2. 队列
 
-- [622. 设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)
 - [641. 设计循环双端队列](https://leetcode-cn.com/problems/design-circular-deque/)
 - [1670. 设计前中后队列](https://leetcode-cn.com/problems/design-front-middle-back-queue/)
 - [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/)
@@ -169,3 +168,10 @@
 	- [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 	- [83. 删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
 	- [82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
+	- [622. 设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)
+
+
+
+
+
+
