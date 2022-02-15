@@ -155,11 +155,16 @@ CACHE MANIFEST
 	- pattern=" " 里面写入想要的正则模式，例如手机号 patte="^(+86)?\d{10}$"
 	- multiple：可以选择多个文件或者多个邮箱
 	- form=" form 表单的 ID"
-5. 进度条，度量器
+
+	**表单事件：**
+	- oninput 每当 input 里的输入框内容发生变化都会触发此事件
+	- oninvalid 当验证不通过时触发此事件
+
+4. 进度条，度量器
 	- progress（任务进度）：max/value
 	- meter（显示剩余容量）：high/low 高/低的范围 max/min 最大/小值 value 当前值
-6. DOM查询 querySelector(All)
-7. Web存储 localStorage sessionStorage
+5. DOM查询 querySelector(All)
+6. Web存储 localStorage sessionStorage
 
 
 
