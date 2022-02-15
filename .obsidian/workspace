@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/前端算法.md",
+            "file": "learning/LeetCode.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/前端算法.md",
+                "file": "learning/LeetCode.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,8 +101,8 @@
   },
   "active": "72c5698b2002fb54",
   "lastOpenFiles": [
-    "learning/前端算法.md",
     "learning/LeetCode.md",
+    "learning/前端算法.md",
     "learning/Learn HTML.md",
     "learning/Learn CSS.md",
     "learning/JS 题目.md",
