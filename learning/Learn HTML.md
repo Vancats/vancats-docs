@@ -120,9 +120,20 @@ CACHE MANIFEST
 7. manifest 文件改变，资源请求本身也会触发更新
 
 **离线资源管理**
-- 在线时，如果 html 有 manifest 属性，请求 manifest 文件。第一次访问浏览器会根据上文情况离线缓存。已经进行存储，浏览器使用离线资源加载，并对比新旧资源
+- 在线时，如果 html 有 manifest 属性，请求 manifest 文件。第一次访问浏览器会根据上文情况离线缓存。已经进行存储，浏览器使用离线资源加载，并对比新旧 manifest 文件，如果改变重新缓存
+- 离线时，直接使用离线资源缓存
 
 ###### HTML5 有哪些更新 drag
+1. 语义化标签
+2. 媒体标签
+	- audio `<audio src='' controls autoplay loop='true'></audio>`
+	- video `<video src='' poster='imgs/aa.jpg' controls width="x" height="x"></video>` poster 封面（默认第一帧）
+	- source 
+```js
+	
+```
+
+
 
 ###### 渐进增强和优雅降级
 - 优雅降级针对最高级最完善的浏览器构建页面，开发周期的最后阶段测试过时浏览器。旧版浏览器只提供“简陋且无妨”的浏览，只修复较大错误
