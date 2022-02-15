@@ -1,6 +1,5 @@
 ### 2. 队列
 
-- [1670. 设计前中后队列](https://leetcode-cn.com/problems/design-front-middle-back-queue/)
 - [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/)
 - [面试题 17.09. 第 k 个数](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/)
 - [859. 亲密字符串](https://leetcode-cn.com/problems/buddy-strings/)
@@ -169,7 +168,7 @@
 	- [82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
 	- [622. 设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)
 	- [641. 设计循环双端队列](https://leetcode-cn.com/problems/design-circular-deque/)
-
+	- [1670. 设计前中后队列](https://leetcode-cn.com/problems/design-front-middle-back-queue/)
 
 
 
