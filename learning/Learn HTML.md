@@ -128,10 +128,14 @@ CACHE MANIFEST
 2. 媒体标签
 	- audio `<audio src='' controls autoplay loop='true'></audio>`
 	- video `<video src='' poster='imgs/aa.jpg' controls width="x" height="x"></video>` poster 封面（默认第一帧）
-	- source 
-```js
-	
-```
+	- source 浏览器对视频格式支持程度不一样，为了能够兼容不同的浏览器，可以通过 source 来指定视频源
+`<video><source src='a.flv' type='video/flv'></source> <source src='b.mp4' type='video/mp4'></source></video>`
+3. 表单
+4. 进度条，度量器
+	- progress（任务进度）：max / value
+	- meter（显示剩余容量）：high/low 高/低的范围 max/m
+5. DOM查询 querySelector(All)
+6. Web存储 localStorage sessionStorage
 
 
 
