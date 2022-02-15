@@ -86,7 +86,20 @@ iframe会创建一个包含另外一个文档的内联框架（行内框架）
 **原理**
 基于一个 .appcache 文件的缓存机制（不是存储技术），通过这个文件的解析清单离线存储资源。当离线时可以正常访问站点或应用，联网后更新缓存文件
 **使用方法**
-创建和html同名的manifest，在页面头部加入manifest时 `<html`
+1. 创建和 html 同名的 manifest，在页面头部加入 manifest 时 `<html lang="en" manifest="index.manifest">`
+2. 在 cache.manifest 文件中编写需要离线存储的资源
+```
+CACHE MANIFEST
+    #v0.11
+    CACHE:
+    js/app.js
+    css/style.css
+    NETWORK:
+    resourse/logo.png
+    FALLBACK:
+    / /offline.html
+```
+3. 离线状态时，操作 window.applicationCache 进行离线存储的操作
 
 ###### HTML5 有哪些更新 drag
 
