@@ -1,9 +1,6 @@
 ### 3. 递归与栈
-
 **处理具有完全包含关系的问题**
-
 **42-20-85-155-739-173-316-394-150-224-94**
-
 - 栈的基本操作
   - [面试题 03.04. 化栈为队](https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci/)
   - [682. 棒球比赛](https://leetcode-cn.com/problems/baseball-game/)
@@ -21,19 +18,13 @@
   - **[1124. 表现良好的最长时间段](https://leetcode-cn.com/problems/longest-well-performing-interval/)**
 
 ### 4. 树
-
 **104-226-96-617-173-108-297-100-105-95-124-654**
-
 - 节点的度：节点有几个孩子
   - 度为 0 的节点比度为 2 的节点多一个
-
     `a+b+c-1 = 2c+b+0c   ==> a = c-1`
-
 - 平衡二叉树：所有节点的两子树高度差不超过 1
 - 二叉搜索树：中序遍历结果是有序数组
-
 - 满二叉树：只有度为0和2的树
-
 - 完全二叉树：完美二叉树少最下面的几个
   - 若根编号为1，孩子编号都为 2i 和 2i+1
   - **所以可以用连续空间存储（数组）**
@@ -58,7 +49,6 @@
     - 2-3树 ---> 同上
     - 红黑树---> 同上
     - B-树 / B+树 ---> 文件系统、数据库 底层重要数据结构
-
 - 二叉树的基本操作
   - [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
   - **[589. N 叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)**    **递归转迭代**
@@ -75,13 +65,9 @@
   - [剑指 Offer 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
   - [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)（难度有点大）
   - [662. 二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/) （恶心人的东西）
-
 ### 5. 堆
-
 **是优先队列的一种实现方式**
-
 **集合最值**
-
 - 数据结构：定义一种性质，并且维护这种性质
 - 堆的基础应用
   - [剑指 Offer 40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)
@@ -100,13 +86,7 @@
   - [313. 超级丑数](https://leetcode-cn.com/problems/super-ugly-number/)
   - [1753. 移除石子的最大得分](https://leetcode-cn.com/problems/maximum-score-from-removing-stones/)
 
-
-
-
-
-
-
-
+### Daily
 - 22-1-17  [650. 只有两个键的键盘](https://leetcode-cn.com/problems/2-keys-keyboard/)
 - 22-1-18  [539. 最小时间差](https://leetcode-cn.com/problems/minimum-time-difference/)
 - 22-1-18  [593. 有效的正方形](https://leetcode-cn.com/problems/valid-square/)
