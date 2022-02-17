@@ -1,8 +1,8 @@
 **23 148 445 147 143** 链表
 **42-20-85-155-739-173-316-394-150-224-94** 栈
 
-  - [331. 验证二叉树的前序序列化](https://leetcode-cn.com/problems/verify-preorder-serialization-of-a-binary-tree/) 
-  - [227. 基本计算器 II](https://leetcode-cn.com/problems/basic-calculator-ii/)
+ 
+
 
 - 智力发散题
   - **[636. 函数的独占时间](https://leetcode-cn.com/problems/exclusive-time-of-functions/)**
@@ -153,6 +153,7 @@
 	- [1021. 删除最外层的括号](https://leetcode-cn.com/problems/remove-outermost-parentheses/)
 	- [1249. 移除无效的括号](https://leetcode-cn.com/problems/minimum-remove-to-make-valid-parentheses/)
 	- [145. 二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) **递归转迭代**
-
-
+	- [331. 验证二叉树的前序序列化](https://leetcode-cn.com/problems/verify-preorder-serialization-of-a-binary-tree/) 
+	- [227. 基本计算器 II](https://leetcode-cn.com/problems/basic-calculator-ii/)
+	
 - 22-2-18
