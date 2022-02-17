@@ -87,6 +87,7 @@
   - [1753. 移除石子的最大得分](https://leetcode-cn.com/problems/maximum-score-from-removing-stones/)
 
 ### Daily
+###### 22-1
 - 22-1-17  [650. 只有两个键的键盘](https://leetcode-cn.com/problems/2-keys-keyboard/)
 - 22-1-18  [539. 最小时间差](https://leetcode-cn.com/problems/minimum-time-difference/)
 - 22-1-18  [593. 有效的正方形](https://leetcode-cn.com/problems/valid-square/)
@@ -107,6 +108,8 @@
 - 22-1-29  [1669. 合并两个链表](https://leetcode-cn.com/problems/merge-in-between-linked-lists/)
 - 22-2-30  [278. 第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/)
 - 22-1-31  [1342. 将数字变成 0 的操作次数](https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-to-zero/)
+
+###### 22-2
 - 22-2-1    [1763. 最长的美好子字符串](https://leetcode-cn.com/problems/longest-nice-substring/)
 - 22-2-2   [2000. 反转单词前缀](https://leetcode-cn.com/problems/reverse-prefix-of-word/)
 - 22-2-3   [1414. 和为 K 的最少斐波那契数字数目](https://leetcode-cn.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/)
@@ -146,6 +149,5 @@
 	- [860. 柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/)
 	- [621. 任务调度器](https://leetcode-cn.com/problems/task-scheduler/)
 	- [969. 煎饼排序](https://leetcode-cn.com/problems/pancake-sorting/)
-- 22-2-16 
-	- [239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
-
+- 22-2-16 [239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
+- 22-2-17 
