@@ -1,8 +1,6 @@
 ### 3. 递归与栈
-**处理具有完全包含关系的问题**
 **42-20-85-155-739-173-316-394-150-224-94**
 - 栈的基本操作
-  - [面试题 03.04. 化栈为队](https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci/)
   - [682. 棒球比赛](https://leetcode-cn.com/problems/baseball-game/)
   - [844. 比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/)
   - [946. 验证栈序列](https://leetcode-cn.com/problems/validate-stack-sequences/)
@@ -155,6 +153,7 @@
 	- [面试题 03.04. 化栈为队](https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci/)
 	- [237. 删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)
 	- [234. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)
+	- [682. 棒球比赛](https://leetcode-cn.com/problems/baseball-game/)
 
 
 
