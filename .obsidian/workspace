@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/LeetCode.md",
+            "file": "learning/Learn HTML.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294
+    "width": 216.5
   },
   "right": {
     "id": "8e347e94747a4a72",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/LeetCode.md",
+                "file": "learning/Learn HTML.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "72c5698b2002fb54",
   "lastOpenFiles": [
-    "learning/LeetCode.md",
-    "learning/设计模式.md",
-    "learning/前端算法.md",
     "learning/Learn HTML.md",
+    "learning/Learn HTTP.md",
     "learning/Learn CSS.md",
     "learning/JS 题目.md",
+    "learning/设计模式.md",
+    "learning/Learn JS.md",
+    "learning/未命名.md",
     "sundry/Plugins.md",
-    "sundry/Git.md",
-    "learning/HTTPS.md",
-    "learning/RegExp.md"
+    "learning/LeetCode.md",
+    "conflict-files-obsidian-git.md"
   ]
 }
