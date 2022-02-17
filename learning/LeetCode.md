@@ -1,8 +1,6 @@
 **23 148 445 147 143** 链表
 **42-20-85-155-739-173-316-394-150-224-94** 栈
 
-- 栈结构扩展应用
-  - [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
   - [1021. 删除最外层的括号](https://leetcode-cn.com/problems/remove-outermost-parentheses/)
   - [1249. 移除无效的括号](https://leetcode-cn.com/problems/minimum-remove-to-make-valid-parentheses/)
   - **[145. 二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)**    **递归转迭代**
@@ -156,7 +154,7 @@
 	- [844. 比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/)
 	- [946. 验证栈序列](https://leetcode-cn.com/problems/validate-stack-sequences/)
 	- [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
-
+	- [1021. 删除最外层的括号](https://leetcode-cn.com/problems/remove-outermost-parentheses/)
 
 
 
