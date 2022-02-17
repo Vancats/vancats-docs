@@ -155,5 +155,6 @@
 	- [145. 二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) **递归转迭代**
 	- [331. 验证二叉树的前序序列化](https://leetcode-cn.com/problems/verify-preorder-serialization-of-a-binary-tree/) 
 	- [227. 基本计算器 II](https://leetcode-cn.com/problems/basic-calculator-ii/)
+	- [636. 函数的独占时间](https://leetcode-cn.com/problems/exclusive-time-of-functions/)
 	
 - 22-2-18
