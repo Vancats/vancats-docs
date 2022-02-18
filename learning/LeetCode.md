@@ -154,4 +154,6 @@
 	- [636. 函数的独占时间](https://leetcode-cn.com/problems/exclusive-time-of-functions/)
 	- [1124. 表现良好的最长时间段](https://leetcode-cn.com/problems/longest-well-performing-interval/)
 	- [1791. 找出星型图的中心节点](https://leetcode-cn.com/problems/find-center-of-star-graph/)
-	- [506. 相对名次](https://leetcode-cn.com/problems/relative-ranks/)
+- 22-2-19 [506. 相对名次](https://leetcode-cn.com/problems/relative-ranks/)
+- 22-2-20
+
