@@ -2,9 +2,6 @@
 **42-20-85-155-739-173-316-394-150-224-94** 栈
 
 
-- 智力发散题
-  - **[636. 函数的独占时间](https://leetcode-cn.com/problems/exclusive-time-of-functions/)**
-  - **[1124. 表现良好的最长时间段](https://leetcode-cn.com/problems/longest-well-performing-interval/)**
 
 ### 4. 树
 **104-226-96-617-173-108-297-100-105-95-124-654**
@@ -155,3 +152,4 @@
 	- [227. 基本计算器 II](https://leetcode-cn.com/problems/basic-calculator-ii/)
 - 22-2-18
 	- [636. 函数的独占时间](https://leetcode-cn.com/problems/exclusive-time-of-functions/)
+	- [1124. 表现良好的最长时间段](https://leetcode-cn.com/problems/longest-well-performing-interval/)
