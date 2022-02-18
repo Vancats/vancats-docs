@@ -108,4 +108,6 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 1. 字体属性：font-family、font-size、font-weight、font-style
 2. 文本属性：color、text-indent、text-align、line-height、word-spacing(单词间距)、letter-spacing(中文、字母间距)、text-transform
 3. 元素可见性：visibility
-4. 
+4. 列表布局：list-style（list-style-type、list-style-image）
+5. 光标属性：cursor
+
