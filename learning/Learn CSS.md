@@ -92,3 +92,8 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 4. 混入（mixin）
 5. 算术运算符：`.article[role="main"] { ... }`
 6. 继承：`%common {...}   .message { @extend %commpon; }` 只有被继承过的代码才会输出到样式文件
+
+###### CSS继承
+**不可继承**
+1. display
+2. 文本属性：vertical-align，text-decoration，text-shadow，white-space
