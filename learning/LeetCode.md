@@ -1,12 +1,7 @@
 **23 148 445 147 143** 链表
 **42-20-85-155-739-173-316-394-150-224-94** 栈
 
- 
 
-
-- 智力发散题
-  - **[636. 函数的独占时间](https://leetcode-cn.com/problems/exclusive-time-of-functions/)**
-  - **[1124. 表现良好的最长时间段](https://leetcode-cn.com/problems/longest-well-performing-interval/)**
 
 ### 4. 树
 **104-226-96-617-173-108-297-100-105-95-124-654**
@@ -155,6 +150,7 @@
 	- [145. 二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) **递归转迭代**
 	- [331. 验证二叉树的前序序列化](https://leetcode-cn.com/problems/verify-preorder-serialization-of-a-binary-tree/) 
 	- [227. 基本计算器 II](https://leetcode-cn.com/problems/basic-calculator-ii/)
-	- [636. 函数的独占时间](https://leetcode-cn.com/problems/exclusive-time-of-functions/)
-	
 - 22-2-18
+	- [636. 函数的独占时间](https://leetcode-cn.com/problems/exclusive-time-of-functions/)
+	- [1124. 表现良好的最长时间段](https://leetcode-cn.com/problems/longest-well-performing-interval/)
+	-  [1791. 找出星型图的中心节点](https://leetcode-cn.com/problems/find-center-of-star-graph/)
