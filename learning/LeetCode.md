@@ -1,8 +1,6 @@
 **23 148 445 147 143** 链表
 **42-20-85-155-739-173-316-394-150-224-94** 栈
 
- 
-
 
 - 智力发散题
   - **[636. 函数的独占时间](https://leetcode-cn.com/problems/exclusive-time-of-functions/)**
