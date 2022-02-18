@@ -96,10 +96,16 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 ###### CSS继承
 **不可继承**
 1. display
-2. 文本属性：vertical-align、text-decoration、text-shadow、white-space(空白符)、unicode-bidi（文本方向）
+2. 文本属性：vertical-align、text-decoration、text-shadow、white-space(空白符)、unicode-bidi(文本方向)
 3. 背景属性：background、&-color、&-image、&-repeat、&-position、&-attachment
 4. 定位属性：float、clear、position、top、right、bottom、left、min/max-width、min/max-height、overflow、clip、z-index
 5. 生成内容属性：content、*counter-reset、counter-increment*
 6. 轮廓样式属性：outline-style、outline-width、outline-color、outline
 7. 页面样式属性：size、*page-break-before、page-break-after*
-8. 声音样式属性：*pause-before、pause、pause-after、cur-before、cur、cur-a f
+8. 声音样式属性：*pause-before、pause、pause-after、cur-before、cur、cur-after、play-during*
+
+**可继承**
+1. 字体属性：font-family、font-size、font-weight、font-style
+2. 文本属性：color、text-indent、text-align、line-height、word-spacing(单词间距)、letter-spacing(中文、字母间距)、text-transform
+3. 元素可见性：visibility
+4. 
