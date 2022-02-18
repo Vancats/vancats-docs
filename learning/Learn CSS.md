@@ -98,3 +98,4 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 1. display
 2. 文本属性：vertical-align、text-decoration、text-shadow、white-space(空白符)、unicode-bidi（文本方向）
 3. 背景属性：background、&-color、&-image、&-repeat、&-position、&-attachment
+4. 定位属性：float、clear、position、top、right、bottom、left、min-width、min-height、
