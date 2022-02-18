@@ -120,5 +120,5 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 6. z-index 负值，隐藏在其他元素下
 7. clip/clip-path：元素裁剪实现隐藏，占位置，不响应
 
-###### @import link 区别
-1. 
+###### link @import 区别
+1. 前者是XMTML标签，无兼容性问题，后者需要
