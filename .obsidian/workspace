@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/LeetCode.md",
+            "file": "learning/Learn Vue.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/LeetCode.md",
+                "file": "learning/Learn Vue.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,7 @@
   },
   "active": "72c5698b2002fb54",
   "lastOpenFiles": [
+    "learning/Learn Vue.md",
     "learning/LeetCode.md",
     "learning/设计模式.md",
     "learning/前端算法.md",
@@ -109,7 +110,6 @@
     "learning/JS 题目.md",
     "sundry/Plugins.md",
     "sundry/Git.md",
-    "learning/HTTPS.md",
-    "learning/RegExp.md"
+    "learning/HTTPS.md"
   ]
 }
