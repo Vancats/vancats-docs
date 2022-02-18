@@ -115,6 +115,10 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 1. display: none；渲染树中不存在，不占位置，不响应绑定的监听事件
 2. opacity: 0；占位置，不响应
 3. visibility: hidden；占位置，能响应
-4. position: absolute 移出屏幕
-5. z-index 负值，隐藏在其他元素下
-6. transform: scale(0, 0)
+4. transform: scale(0, 0)；占位置，能响应
+5. position: absolute 移出屏幕
+6. z-index 负值，隐藏在其他元素下
+7. clip/clip-path：元素裁剪实现隐藏，占位置，不响应
+
+###### @import link 区别
+1. 
