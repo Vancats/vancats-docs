@@ -123,7 +123,7 @@ CACHE MANIFEST
 - 在线时，如果 html 有 manifest 属性，请求 manifest 文件。第一次访问浏览器会根据上文情况离线缓存。已经进行存储，浏览器使用离线资源加载，并对比新旧 manifest 文件，如果改变重新缓存
 - 离线时，直接使用离线资源缓存
 
-###### HTML5 有哪些更新 drag
+###### HTML5 有哪些更新
 1. 语义化标签
 2. 媒体标签
 	- audio `<audio src='' controls autoplay loop='true'></audio>`

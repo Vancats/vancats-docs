@@ -10,7 +10,7 @@
 3. `overflow` 不是 `visible`
 4. `display` 是 `inline-block、inline-flex、flex、table-caption、table-cell`
 
-###### 子元素`margin-top`覆盖父元素
+###### 子元素margin-top覆盖父元素
 1. 父元素`overflow:hidden`：子元素内容不能超过父元素
 2. 父元素加上边框，设置颜色透明：增大父元素实际大小
 3. 使用父元素`padding-top`代替：需要加上 `box-sizing: border-box;`
@@ -140,3 +140,6 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 	- 减少DOM操作：会在下次重绘前进行统一的DOM操作
 - setTimeout缺点：1. 固定间隔不一定等于帧数刷新时间（16.7）2. 进入宏任务队列，不一定按固定间隔执行
 
+###### li 之间的空白换行符
+1. 全部 li 写在一行：不美观
+2. ul 的 font-size 置 0：需要额外设置其他字符属性，且 safari 依然存在空间
