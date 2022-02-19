@@ -146,4 +146,5 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 3. ul: letter-spacing: -8px：设置了 li 字符间隔，需要重新设置 li: letter-spacing: normal
 4. li: float: left：有些容器不能设置浮动，如左右切换的焦点图
 
+###### CSS3 新特性
 
