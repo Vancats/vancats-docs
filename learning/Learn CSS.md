@@ -135,7 +135,7 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 - 使用：window.requestAnimationFrame(callback) callback在下次重绘前更新动画帧调用
 - 取消：window.cancelAnimationFrame(id)
 - 优势
-	- CPU 节能：
-	- 函数节流：固定 16.7ms 
-	- 减少DOM操作
+	- CPU 节能：在浏览器切屏后停止执行渲染，setInterval 即便在后台也会执行
+	- 函数节流：固定 16.7ms 执行一次
+	- 减少DOM操作：会在下次重绘前进行统一的DOM操作
 - setTimeout缺点：1. 固定间隔不一定等于帧数刷新时间（16.7）2. 进入宏任务队列，不一定按固定间隔执行
