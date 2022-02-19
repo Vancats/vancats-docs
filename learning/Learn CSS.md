@@ -130,3 +130,12 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 - 伪类是对于特定选择器添加类别，外部可见，不在文档中生成 
 `p::before {content: 'content'} p::first-line {background: red} p::first-letter {font-size: 30px}`
 - 伪元素是在元素内容前后添加元素 `p:hover {color: red}`
+
+###### requestAnimationFrame
+- 使用：window.requestAnimationFrame(callback) callback在下次重绘前更新动画帧调用
+- 取消：window.cancelAnimationFrame(id)
+- 优势
+	- CPU 节能：
+	- 函数节流：固定 16.7ms 
+	- 减少DOM操作
+- setTimeout缺点：1. 固定间隔不一定等于帧数刷新时间（16.7）2. 进入宏任务队列，不一定按固定间隔执行

@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "72c5698b2002fb54",
+        "id": "266370db96849c97",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -99,17 +99,16 @@
     "width": 168,
     "collapsed": true
   },
-  "active": "72c5698b2002fb54",
+  "active": "266370db96849c97",
   "lastOpenFiles": [
     "learning/Learn CSS.md",
+    "learning/Learn HTML.md",
     "learning/JS 题目.md",
     "learning/LeetCode.md",
     "learning/Learn JS.md",
     "learning/Learn Vue.md",
     "learning/设计模式.md",
     "learning/前端算法.md",
-    "learning/Learn HTML.md",
-    "learning/Learn HTTP.md",
-    "learning/Learn HTML.md"
+    "learning/Learn HTTP.md"
   ]
 }
