@@ -142,4 +142,8 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 
 ###### li 之间的空白换行符
 1. 全部 li 写在一行：不美观
-2. ul 的 font-size 置 0：需要额外设置其他字符属性，且 safari 依然存在空间
+2. ul: font-size 置 0：需要额外设置其他字符属性，且 safari 依然存在空间
+3. ul: letter-spacing: -8px：设置了 li 字符间隔，需要重新设置 li: letter-spacing: normal
+4. li: float: left：有些容器不能设置浮动，如左右切换的焦点图
+
+
