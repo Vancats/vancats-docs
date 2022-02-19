@@ -127,4 +127,6 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 4. 前者可以操作DOM元素，后者只是单纯的引入样式
 
 ###### 伪类和伪元素的区别
-- wei lei
+- 伪类是对于特定选择器添加类别，外部可见，不在文档中生成 
+`p::before {content: 'content'} p::first-line {background: red} p::first-letter {font-size: 30px}`
+- 伪元素是在元素内容前后添加元素 `p:hover {color: red}`
