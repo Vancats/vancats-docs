@@ -148,12 +148,11 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 
 ###### CSS3 新特性
 1. 选择器
-2. 边框：border-radius、border-shadow、border-image
-3. 阴影和反射 shadow reflect
-4. 文字特效 text-shadow
-5. 文字渲染
-6. 线性渐变
-7. 旋转
+2. 边框：&-radius、&-shadow、&-image
+3. 背景：&-clip、&-origin、&-size、&-break
+4. 文字
+	1. word-wrap：normal 默认；
+	2. text-shadow、text-overflow、text-decoration
 
 ###### 图片格式
 1. BMP：无损，不压缩 很大
