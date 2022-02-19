@@ -181,7 +181,8 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 `docuemnt.body.scrollTop + ele.height < ele.offsetTop < window.innerHeight + document.body.scrollTop(...)`
 
 ###### CSS 工程化
-**预处理器**：代码嵌套、变量、计算函数
+**预处理器**：代码嵌套、变量、计算函数、extends、mixins、循环语法、CSS 模块化
+**PostCss**：
 
 ###### CSS 提高性能方法
 
