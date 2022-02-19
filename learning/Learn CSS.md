@@ -158,8 +158,11 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 	1. word-wrap：normal 默认；break-all：允许单词内换行
 	2. text-shadow：clip 直接修剪多余文本；ellipsis：省略号
 	3. text-overflow、text-decoration
-5. transition
-6. transform
+5. transition: 属性 时间 效果曲线 延迟时间
+6. transform：translete、scale、rotate、skew
+7. animation
+8. 渐变：linear-gradient、radial-gradient
+9. flex，grid
 
 ###### 图片格式
 1. BMP：无损，不压缩 很大
