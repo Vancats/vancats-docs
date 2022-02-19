@@ -183,7 +183,7 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 ###### CSS 工程化
 **预处理器**：代码嵌套、变量、计算函数、extends、mixins、循环语法、CSS 模块化
 **PostCss**：处理 CSS 代码。1. 可以做类似预处理器的事情 2. Autoprefixer 3. 能够帮助我们编译 CSS next
-**Webpack**：css-loader 导出 CSS 模块，进行编译处理 style-loader 创建 style 标签
+**Webpack**：css-loader：导出 CSS 模块，进行编译处理 style-loader：创建 style 标签，写入 CSS 内容
 
 ###### CSS 提高性能方法
 
