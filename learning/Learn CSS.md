@@ -63,25 +63,6 @@
 3. 多设备支持：`import url(base.css) print, screen`
 4. 设备方向：`orientation: landscape横 | portrait竖`
 5. `eg: @media not screen and (orientation: landscape) and (max-width:600px) {...}`
-###### CSS三角形
-宽高置0，设置`border`
-`border-left: 50px solid transparent; border-bottom: 100px solid green`
-
-###### 0.5px的线
-```css
-.main {
-	height: 1px;
-	transform: scaleY(0.5);
-	transform-origin: 50% 100%; // 防止线模糊
-}
-```
-
-###### 小于12px的字（缩放）
-```css
-display: inline-block;  /* 缩放只能用于块或行内块 */
--webkit-transform: scale(0.5); /* 定义缩放大小 */
--webkit-transform-origin: left top; /* 必须指定缩放源点，防止padding/margin缩放的影响 */
-```
 
 ###### Sass常用功能
 1. 变量：`$primary-color: #666; div { color: $primary-color}`
@@ -177,7 +158,37 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 - 优点：减少 HTTP 请求次数，减少图片总字节
 - 缺点：开发麻烦需要借助 PS，后期维护麻烦
 
-###### dan hang
-
+###### 单行、多行文本
+- 单行 `overflow: hidden; text-overflow: ellipsis; white-space: no-wrap`
+- 多行 
+```css
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;  // 设置为弹性伸缩盒子
+-webkit-box-orient: vertical
+```
 
 ###### CSS 提高性能方法
+
+
+
+
+###### CSS三角形
+宽高置0，设置`border`
+`border-left: 50px solid transparent; border-bottom: 100px solid green`
+
+###### 0.5px的线
+```css
+.main {
+	height: 1px;
+	transform: scaleY(0.5);
+	transform-origin: 50% 100%; // 防止线模糊
+}
+```
+
+###### 小于12px的字（缩放）
+```css
+display: inline-block;  /* 缩放只能用于块或行内块 */
+-webkit-transform: scale(0.5); /* 定义缩放大小 */
+-webkit-transform-origin: left top; /* 必须指定缩放源点，防止padding/margin缩放的影响 */
+```
