@@ -175,7 +175,10 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 3. 父元素 position -> static absolute (relative 失效)
 
 ###### 判断元素在显示区域
-1. window.innerHeight 浏览器可视kua
+1. window.innerHeight 浏览器可视高度
+2. document.body.scrollTop || document.documentElement.scrollTop 滚动高度
+3. ele.offsetTop 元素距离顶部的高度
+`docuemnt.body.scrollTop + ele.height < ele.offsetTop < window.innerHeight + document.body.scrollTop(...)`
 
 ###### CSS 提高性能方法
 
