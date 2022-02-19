@@ -186,9 +186,16 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 **Webpack**：css-loader：导出 CSS 模块，进行编译处理 style-loader：创建 style 标签，写入 CSS 内容
 
 ###### CSS 提高性能方法
+**加载性能**
+1. css 压缩
+2. css 单一样式：border: 0 1px 1px 0; ---> border-right: 1px; border-bottom: 1px
+3. 使用 link 代替 @import
 
-
-
+**选择器性能**
+1. 尽量少的使用兄弟选择器，通配符
+2. 关键选择器准确：选择器末尾能决定元素的那些
+3. 使用 id 选择器就别添加标签了
+4. 
 
 ###### CSS三角形
 宽高置0，设置`border`
