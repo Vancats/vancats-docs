@@ -165,7 +165,8 @@
 overflow: hidden;
 text-overflow: ellipsis;
 display: -webkit-box;  // 设置为弹性伸缩盒子
--webkit-box-orient: vertical
+-webkit-box-orient: vertical; // 从上到下排列
+-webkit-line-clamp: 3; // 行数
 ```
 
 ###### CSS 提高性能方法
