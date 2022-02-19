@@ -57,7 +57,7 @@
 1. 媒体类型：`all screen print 打印机 speech 发声设备`
 2. 引入方法：
 	1. `<style media="print">`
-	2. `<link rel="stylesheet" href="base.css" media="screen">` 未设置即为全局
+	2. `<link rel="stylesheet" href="base.css" media="screen" / "(max-width: 800px)">` 未设置即为全局
 	3. `@import url(base.css) print`
 	4. `@media`
 3. 多设备支持：`import url(base.css) print, screen`
@@ -140,7 +140,7 @@
 	2. text-shadow：clip 直接修剪多余文本；ellipsis：省略号
 	3. text-overflow、text-decoration
 5. transition: 属性 时间 效果曲线 延迟时间
-6. transform：translete、scale、rotate、skew
+6. transform：translete、scale、rotate、skew、perspective
 7. animation
 8. 渐变：linear-gradient、radial-gradient
 9. flex，grid
