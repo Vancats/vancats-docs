@@ -149,10 +149,14 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 ###### CSS3 新特性
 1. 选择器
 2. 边框：&-radius、&-shadow、&-image
-3. 背景：&-clip、&-origin、&-size、&-break
+3. 背景
+	1. &-clip：border-box(no-clip) padding-box content-box 背景从 border padding content 开始
+	2. &-origin：border-box padding-box content-box 背景从 border padding content 开始
+	3. &-size、&-break
 4. 文字
-	1. word-wrap：normal 默认；
-	2. text-shadow、text-overflow、text-decoration
+	1. word-wrap：normal 默认；break-all：允许单词内换行
+	2. text-shadow：clip 直接修剪多余文本；ellipsis：省略号
+	3. text-overflow、text-decoration
 
 ###### 图片格式
 1. BMP：无损，不压缩 很大
