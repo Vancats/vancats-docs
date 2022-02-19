@@ -147,13 +147,13 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 4. li: float: left：有些容器不能设置浮动，如左右切换的焦点图
 
 ###### CSS3 新特性
-1. 圆角 border-radius
-2. 阴影和反射 shadow reflect
-3. 文字特效 text-shadow
-4. 文字渲染
-5. 线性渐变
-6. 旋转
-7. 
+1. 选择器
+2. 边框：border-radius、border-shadow、border-image
+3. 阴影和反射 shadow reflect
+4. 文字特效 text-shadow
+5. 文字渲染
+6. 线性渐变
+7. 旋转
 
 ###### 图片格式
 1. BMP：无损，不压缩 很大
