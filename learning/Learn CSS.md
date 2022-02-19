@@ -169,6 +169,14 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 -webkit-line-clamp: 3; // 行数
 ```
 
+###### z-index 失效
+1. 该元素 position -> relative absolute fixed
+2. 元素设置了 float，删除并用 display: inline-block
+3. 父元素 position -> static absolute (relative 失效)
+
+###### 判断元素在显示区域
+1. window.innerHeight 浏览器可视kua
+
 ###### CSS 提高性能方法
 
 
