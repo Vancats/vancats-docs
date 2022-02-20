@@ -348,5 +348,12 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 	border: 1px solid #333;
 }
 ```
-3. viewport
-`<mata name="viewport" content="initialscale"`
+3. viewport：处理了 1px 的情况，但是整个页面都将被缩放
+`<mata name="viewport" content="initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no"`
+
+```js
+const scale = 1 / window.devicePixelRatio
+
+metaEL.setAttribute(
+'content',`width=device-width,user-scalable=no,initial-scale=${scale},maximum-scale=${scale},minimum-scale=${scale}`)
+```

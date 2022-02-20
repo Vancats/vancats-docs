@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn CSS.md",
+            "file": "js/H_C.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn CSS.md",
+                "file": "js/H_C.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,8 @@
   },
   "active": "266370db96849c97",
   "lastOpenFiles": [
+    "js/H_C.md",
+    "js/ES.md",
     "learning/Learn CSS.md",
     "learning/Learn HTML.md",
     "learning/设计模式.md",
@@ -108,8 +110,6 @@
     "learning/JS 题目.md",
     "js/Vue补.md",
     "js/vue3.md",
-    "js/Vue2.md",
-    "js/Vue.md",
-    "js/React.md"
+    "js/Vue2.md"
   ]
 }
