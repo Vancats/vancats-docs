@@ -330,6 +330,23 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 ```js
 <div id="app" data-device={{ window.devicePixelRatio }}></div>
 
-#app[data-device="2"] { border: 0.5px solid grey; }
+#app[data-device="2"] { border: 0.5px solid #333; }
 ```
 2. 伪元素先放大再缩小
+```js
+<div id="app" data-device={{ window.devicePixelRatio }}></div>
+
+#app[data-device="2"] { postion: relative; }
+#app[data-device="2"] {
+	content: '';
+	position: absolute; left: 0; top: 0
+	width: 200%;
+	height: 200%
+	transform: scale(0.5);
+	transform-origin: left top;
+	box-sizing: border-box;
+	border: 1px solid #333;
+}
+```
+3. viewport
+`<mata name="viewport" content="initialscale"`
