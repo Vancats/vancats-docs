@@ -279,7 +279,7 @@ grid-template-columns:200px auto 200px;
 	background: red;
 }
 .right {
-	float: right;
+	float: left;
 	margin-left: -200px;
 
 	position: relative;
