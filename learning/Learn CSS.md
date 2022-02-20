@@ -142,7 +142,7 @@
 5. transition: 属性 时间 效果曲线 延迟时间
 6. transform：translete、scale、rotate、skew、perspective
 7. animation
-8. 渐变：linear-gradient、radial-gradient
+8. 渐变：linear-gradient、radial-gradient，新增RGBA、HSLA模式
 9. flex，grid
 
 ###### 图片格式

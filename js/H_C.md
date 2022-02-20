@@ -1,26 +1,4 @@
 ## CSS
-
-### Flex
-
-​	**容器上**
-
-- flex-direction：row、column---reverse
-- flex-wrap：nowrap、wrap、wrap-reverse
-- flex-flow：前两者的简写
-- justify-content：flex-start-end、space-between-around、center
-- align-items：flex-start-end、center、baseline(文字基线)、stretch(撑满容器)
-- align-content（多轴线）：flex-start-end、space-between-around、stretch、center
-
-​	**项目上**
-
-- order：项目的排列顺序，越小越靠前
-- flex-grow：放大，默认0
-- flex- shrink：缩小，默认1，空间不足缩小
-- flex-basis：定义了在分配多余空间之前，项目占据的主轴空间，默认 auto
-- flex：1 === flex：1 1 任意数字 + 任意长度单位
-
-- align-self：允许单个项目有不一样的对齐方式
-
 ### 水平垂直居中
 
 - text-align + line-height
@@ -235,36 +213,6 @@
 - rem：相对于根元素--多用于自适应网站或者 H5
 - vh / vw：相对于视口 `100 vw = window.innerWidth`
 
-### CSS Sprite
-
-> 将多个小图片拼接到一个图片中，通过 background-position 和元素尺寸调
-
-**优点**
-
-- 减少 HTTP 请求数
-- 更换风格方便，只需修改样式
-
-**缺点**
-
-- 图片合并麻烦
-- 维护比较困难
-
-### CSS3 新特性
-
-- 颜色：新增RGBA、HSLA模式
-- 文字阴影(text-shadow)
-- 边框：border-radius，box-shadow
-- 盒子模型：box-sizing
-- 背景：background-size设置背景图片的尺寸，background-origin设置背景图片的原点，background-clip设置背景图片的裁剪区域，以“，”分隔可设置多背景，用于自适应布局
-- 渐变：linear-gradient、radial-gradient
-- 过渡：transition可实现动画
-- 自定义动画
-- 在CSS3中唯一引入的伪元素是::selection
-- 多媒体查询、多栏布局
-- border-image
-- 2D转换：transform:translate(x,y)rotate(x,y)skew(x,y)scale(x,y)
-- 3D转换
-
 ### 选择器
 
 > 链接样式保持：link,visited,hover,active
@@ -311,33 +259,3 @@
     - `:is()`：匹配指定选择器列表里的元素；
     - `:not()`：用来匹配不符合一组选择器的元素；
 - 伪元素`::before  ::after`
-
-## HTML
-
-### ！DOCTYPE
-
-- BackCompat：怪异模式，浏览器自己的模式
-- Css1Compat：标准模式，W3C标准
-
-### meta 标签
-
-- name：名称/值对中的名称。author、description、keywords、generator、revised、others。 把 content 属性关联到一个名称。
-- http-equiv：没有name时，会采用这个属性的值。content-type、expires、refresh、set-cookie。把content属性关联到http头部
-- content：名称/值对中的值，可以是任何有效的字符串。 始终要和 name 属性或http-equiv属性一起使用
-- scheme：用于指定要用来翻译属性值的方案
-
-### 浏览器内核
-
-- Webket：Chrome、Safari
-- Presto：Opera
-- Gecko：FireFox
-- Trident：IE、360
-
-### HTML5 新特性
-
-+ Canvas
-+ video、audio
-+ Webstorage
-+ webworker、websocket、Geolocation
-+ 表单控件：calendar、data、time
-+ 新的语义化标签
