@@ -42,6 +42,7 @@
 	2. `父margin/子padding + border-box`
 	3. `left: 50%` + `margin-left || transform: translateX`
 	4. `flex`
+水平垂直居中`display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
 
 ###### 垂直居中（premise：父元素是盒子容器）
 1. 子元素是行内元素
@@ -176,6 +177,8 @@
 - 缺点：开发麻烦需要借助 PS，后期维护麻烦
 
 ###### 单行、多行文本
+- 字符超出部分换行： `overflow-wrap: break-word`
+- 字符超出部分连字符：`hyphens:auto`
 - 单行 `overflow: hidden; text-overflow: ellipsis; white-space: no-wrap`
 - 多行 
 ```css

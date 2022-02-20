@@ -1,14 +1,5 @@
 ## CSS
 ### 水平垂直居中
-
-- text-align + line-height
-- absolute + 负 margin
-- absolute + margin:auto
-- absolute + calc
-- absolute + transform
-- flex
-- `display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
-
 ### 常见布局
 
 ​	**两栏**
@@ -35,32 +26,7 @@
   grid-template-columns:200px auto 200px;
   ```
 
-### 文本超出省略
-
-- 字符超出部分换行： `overflow-wrap: break-word`
-
-- 字符超出部分连字符：`hyphens:auto`
-
-- 单行文本超出省略
-
-  ```javascript
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  ```
-
-- 多行文本超出省略
-
-  ```javascript
-  overflow:hidden;
-  text-overflow:ellipsis;
-  display:-webkit-box;
-  -webkit-line-clamp:2;
-  -webkit-box-orient:vertical;
-  ```
-
 ### BFC
-
 - 创建
   - 根元素：html
   - 非溢出的可见元素：overflow 不为 visible
@@ -76,11 +42,6 @@
   - 自适应两栏布局：左侧 float，右侧 BFC
   - 防止 margin 合并：使元素不再同一 BFC 中
   - 清除内部浮动
-
-### 清除浮动
-
-- 父元素 BFC：overflow 设置为 hidden、auto
-- 空 div，伪元素，浮动元素后面的元素 加上clear:both
 
 ### 移动端 1px 解决方案
 
@@ -142,7 +103,6 @@
 ​	**padding-top：100%**
 
 ### @ 规则
-
 - @import：告诉 css 引擎引入一个外部样式表
   - 从属关系：link 是 html 标签，还能导入图片等，还可以定义 RSS、rel 连接属性，后者只导入 css
   - 加载顺序：link 导入样式同时加载，后者等页面加载完加载
@@ -157,28 +117,7 @@
 - @document：文档样式表满足给定条件则生效
 - @charset：使用的字符编码
 
-### 优先级
-
-- 10000：！important
-- 01000：内联样式
-- 00100：ID 选择器
-- 00010：类选择器、伪类选择器、属性选择器
-- 00001：元素选择器、伪元素选择器
-- 00000：通配选择器、后代选择器、兄弟选择器
-
-### 继承性
-
-- 字体相关：`font-family`、`font-style`、`font-size`、`font-weight`
-- 文本相关：`text-align`、`text-indent`、`text-decoration`、`text-shadow`、`letter-spacing`、`word-spacing`、`white-space`、`line-height`、`color`
-- 列表相关：`list-style`、`list-style-image`、`list-style-type`、`list-style-position`
-- 其他属性：`visibility`、`cursor`
-- 控制继承行为
-  - `inherit`：继承父元素
-  - `initial`：应用属性默认值
-  - `unset`：属性默认继承，取`inherit`，否则`initial`
-
 ### 值与单位
-
 - 相关概念
   - 设备像素（Device pixels）：屏幕分辨率
   - 设备像素比（DPR）
@@ -188,16 +127,13 @@
     - 像素密度 = 屏幕对角线像素尺寸 / 物理尺寸
   - 设备独立像素（DIP）--- 安卓
     - dip = px * 160 / dpi
-
 - px
 - em：相对于父元素
 - rem：相对于根元素--多用于自适应网站或者 H5
 - vh / vw：相对于视口 `100 vw = window.innerWidth`
 
 ### 选择器
-
 > 链接样式保持：link,visited,hover,active
-
 - 属性选择器
   - `[attr]`：指定属性的元素；
   - `[attr=val]`：属性等于指定值的元素；
