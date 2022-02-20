@@ -246,10 +246,19 @@ z-index: auto 生成盒在当前层叠上下文中层级为 0，不建立新的�
 1. 抽离可复用的属性，统一使用
 2. 样式和内容分离，css 定义在外部
 
-###### 画三角形
-宽高置0，设置 border
+###### 画图形
+**三角形**
 `border-left: 50px solid transparent; border-bottom: 100px solid green`
-`border-top: 100px solid transparent; border-top-color: red`
+
+**扇形**
+`border-top: 100px solid transparent; border-top-color: red; border-radius: 100px`
+
+**宽高自适应的正方形**
+··
+
+1. `width: 10%; height: 10vw`
+2. `width: 20%; padding-top: 20%; height: 0;`
+3. `width: 30%`
 ###### 0.5px的线
 ```css
 .main {

@@ -62,8 +62,6 @@
   }
   ```
 - HTML5 的 style scoped 解决部分，缺陷很多
-### 父元素内创建正方形
-**padding-top：100%**
 ### @ 规则
 - @import：告诉 css 引擎引入一个外部样式表
   - 从属关系：link 是 html 标签，还能导入图片等，还可以定义 RSS、rel 连接属性，后者只导入 css
