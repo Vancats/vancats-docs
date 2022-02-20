@@ -244,7 +244,25 @@ display: grid;
 grid-template-columns:200px auto 200px;
 ```
 4. 圣杯：浮动与负边距
+```html
+<div class="outer">
+	<div class="center"></div>
+	<div class="left"></div>
+	<div class="right"></div>
+</div>
 
+.outer {
+	height: 100px;
+	padding-left: 100px;
+	padding-right: 200px;
+}
+.center {
+	float: left;
+	width: 100%;
+	height: 100px;
+	background
+}
+```
 5. 双飞翼：
 
 
