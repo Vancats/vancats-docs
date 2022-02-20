@@ -197,6 +197,16 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 3. ele.offsetTop 元素距离顶部的高度
 `docuemnt.body.scrollTop + ele.height < ele.offsetTop < window.innerHeight + document.body.scrollTop(...)`
 
+###### 层叠上下文
+1. z-index > 0
+2. z-index = 0
+3. 行内盒
+4. 浮动盒
+5. 块级盒
+6. z-index < 0
+7. 背景和边框
+z-index 是 auto
+
 ###### CSS 工程化
 **预处理器**：代码嵌套、变量、计算函数、extends、mixins、循环语法、CSS 模块化
 **PostCss**：处理 CSS 代码。1. 可以做类似预处理器的事情 2. Autoprefixer 3. 能够帮助我们编译 CSS next
