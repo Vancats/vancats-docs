@@ -290,7 +290,38 @@ grid-template-columns:200px auto 200px;
 	background: grey;
 }
 ```
-5. 双飞翼：
+5. 双飞翼
+```html
+<div class="outer">
+	<div class="center">
+		<div class="inner"></div>
+	</div>
+	<div class="left"></div>
+	<div class="right"></div>
+</div>
+
+.outer {
+	height: 100px;
+}
+
+.center {
+	float: left;
+	width: 100%;
+	height: 100px;
+	background: green;
+}
+.inner {
+	margin-left: 100px;
+	margin-right: 200px;
+	height: 100px;
+}
+.left {
+	float: left;
+	margin-left: -100%;
+
+	
+}
+```
 
 
 ###### CSS 工程化
