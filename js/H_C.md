@@ -37,31 +37,6 @@
          content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
    ```
 
-### @ 规则
-- @import：告诉 css 引擎引入一个外部样式表
-  - 从属关系：link 是 html 标签，还能导入图片等，还可以定义 RSS、rel 连接属性，后者只导入 css
-  - 加载顺序：link 导入样式同时加载，后者等页面加载完加载
-  - 兼容性：link 无问题，后者不兼容 ie5 以下
-  - 权重：link 权重高于后者
-  - DOM 可控性：可以通过 js 操作 DOM 动态引入样式表改变样式，后者不行
-- @media：`@media (min-height: 680px), screen and (orientation: portrait) {}`
-- @keyframes：描述 css 动画的关键帧
-- @supports：查询特定的 css 是否生效，可以结合 not、and、or
-- @namespace：告诉 css 引擎必须考虑 XML 命名空间
-- @font-face：描述将下载的外部字体
-- @document：文档样式表满足给定条件则生效
-- @charset：使用的字符编码
-
-### 值与单位
-- 相关概念
-  - 设备像素（Device pixels）：屏幕分辨率
-  - 设备像素比（DPR）
-    - 一个 css 像素等于几个物理像素
-    - 通过 `window.devicePixelRatio`获取
-  - 像素密度（DPI / PPI）
-    - 像素密度 = 屏幕对角线像素尺寸 / 物理尺寸
-  - 设备独立像素（DIP）--- 安卓
-    - dip = px * 160 / dpi
 ### 选择器
 > 链接样式保持：link,visited,hover,active
 - 属性选择器

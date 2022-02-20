@@ -228,12 +228,6 @@ loaders: [
 ```
 - HTML5 的 style scoped 解决部分，缺陷很多
 
-  - 设备像素（Device pixels）：屏幕分辨率
-  - 设备像素比（DPR）
-    - 一个 css 像素等于几个物理像素
-    - 通过 `window.devicePixelRatio`获取
-  - 像素密度（DPI / PPI）
-    - 像素密度 = 屏幕对角线像素尺寸 / 物理尺寸
 ###### CSS 工程化
 **预处理器**：代码嵌套、变量、计算函数、extends、mixins、循环语法、CSS 模块化
 **PostCss**：处理 CSS 代码。1. 可以做类似预处理器的事情 2. Autoprefixer 3. 能够帮助我们编译 CSS next
@@ -306,7 +300,7 @@ loaders: [
 }
 ```
 
-###### 0.5px的线
+**0.5px的线**
 ```js
 // transform + scale：使用 scale 需要设置好 transform
 .main {
@@ -319,8 +313,10 @@ loaders: [
 <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5"/>
 ```
 
-###### 小于12px的字（缩放）
+###### 小于12px的字
 ```css
+-webkit-text-size-adjust:
+
 display: inline-block;  /* 缩放只能用于块或行内块 */
 -webkit-transform: scale(0.5); /* 定义缩放大小 */
 -webkit-transform-origin: left top; /* 必须指定缩放源点，防止padding/margin缩放的影响 */
