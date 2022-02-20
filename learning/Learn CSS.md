@@ -232,12 +232,21 @@ loaders: [
 1. 左边元素浮动或 absolute，右边元素 margin-left: 左边元素宽度，宽度 auto
 2. 左边元素浮动，右边 BFC overflow: hidden
 3. 左边元素固定，右边元素 absolute，left 为 左边宽度，其他三个为 0
-4. flex3 
+4. flex
 5. grid
 
 ###### 三栏布局
-1. 左右浮动或 absolute，中间 margin-left/right 相应宽度，如果是浮动，则zhon
+1. 左右浮动或 absolute，中间 margin-left/right 相应宽度，如果是浮动，则中间元素必须在最后面
 2. flex
+3. grid
+```css
+display: grid;
+grid-template-columns:200px auto 200px;
+```
+4. 圣杯：浮动与负边距
+
+5. 双飞翼：
+
 
 ###### CSS 工程化
 **预处理器**：代码嵌套、变量、计算函数、extends、mixins、循环语法、CSS 模块化

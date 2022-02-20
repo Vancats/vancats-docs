@@ -1,14 +1,3 @@
-### 常见布局
-​	**三栏**
-- 圣杯布局
-- 双飞翼布局
-- flex
-- float + overflow（左右 float）
-- grid
-  ```javascript
-  display:grid;
-  grid-template-columns:200px auto 200px;
-  ```
 
 ### 选择器
 链接样式：link, visited, hover, active
