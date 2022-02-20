@@ -205,7 +205,7 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 5. 块级盒
 6. z-index < 0
 7. 背景和边框
-z-index 是 auto
+z-index: auto 生成盒在当前层叠上下文中层级为 0，不建立新的层叠上下文，根元素除外
 
 ###### CSS 工程化
 **预处理器**：代码嵌套、变量、计算函数、extends、mixins、循环语法、CSS 模块化
