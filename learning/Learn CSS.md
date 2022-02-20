@@ -325,4 +325,4 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 ```
 
 ###### 1px 问题
-在一些 Retina 屏幕
+在一些 Retina 屏幕上，1px 显示出大于 1px 的效果 `window.devicePixelRatio = 设备物理像素 / CSS 像素`
