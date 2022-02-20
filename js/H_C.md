@@ -15,7 +15,7 @@
   grid-template-columns:200px auto 200px;
   ```
 
-### 移动端 0.5px 解决方案
+### 移动端 1px 解决方案
 1. border:0.5px solid E5E5E5 仅限IOS端
 2. border-image
 3. box-shadow
@@ -37,23 +37,6 @@
          content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
    ```
 
-### 命名冲突
-- 命名约定
-- CSS in JS
-- CSS Modules
-- webpack--css-loader 和 postcss--postcss-modules
-
-  ```javascript
-  module: {
-    loaders: [
-      {
-        test: /\.css$/,
-        loader: "style-loader!css-loader?modules&localIdentName=[path][name]---[local]---[hash:base64:5]"
-      },
-    ]
-  }
-  ```
-- HTML5 的 style scoped 解决部分，缺陷很多
 ### @ 规则
 - @import：告诉 css 引擎引入一个外部样式表
   - 从属关系：link 是 html 标签，还能导入图片等，还可以定义 RSS、rel 连接属性，后者只导入 css
