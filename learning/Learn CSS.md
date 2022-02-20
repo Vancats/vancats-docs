@@ -315,7 +315,7 @@ loaders: [
 
 ###### 小于12px的字
 ```css
--webkit-text-size-adjust:
+-webkit-text-size-adjust: none; // Chrome 27 以上不支持
 
 display: inline-block;  /* 缩放只能用于块或行内块 */
 -webkit-transform: scale(0.5); /* 定义缩放大小 */
