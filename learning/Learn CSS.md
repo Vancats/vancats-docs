@@ -254,11 +254,35 @@ z-index: auto 生成盒在当前层叠上下文中层级为 0，不建立新的�
 `border-top: 100px solid transparent; border-top-color: red; border-radius: 100px`
 
 **宽高自适应的正方形**
-··
+```css
+// 1. vw
+.square {
+	width: 10%;
+	height: 10vw;
+	background: red;
+}
 
-1. `width: 10%; height: 10vw`
-2. `width: 20%; padding-top: 20%; height: 0;`
-3. `width: 30%`
+// 2. padding-top
+.square {
+	width: 20%;
+	padding-top: 20%;
+	height: 0;
+	background: red;
+}
+
+// 3. 子元素的 margin-top
+.square {
+	width: 20%;
+	overflow: hidden;
+	background: red;
+}
+.square::after {
+	content: '';
+	display: block;
+	margin-top: 100%;
+}
+```
+
 ###### 0.5px的线
 ```css
 .main {
