@@ -7,7 +7,7 @@
 1. 设置`overflow:hidden`：子元素内容不能超父元素范围
 2. 父元素结尾添加空子元素并设置`clear:both`：影响选择器和查找元素
 3. 父元素浮动：产生新的浮动影响 ---> 父元素平级元素设置`clear:both`
-4. 末尾伪元素设置`clear:both`，个别浏览器再加上`display:table`，保险起见，再加`height: 0`，IE6-7 不支持:after，添加 zoom:1 触发 hasLayout
+4. 末尾伪元素设置`clear:both`，clear 只对块元素生效，个别浏览器再加上`display:table`，保险起见，再加`height: 0`，IE6-7 不支持:after，添加 zoom:1 触发 hasLayout
 ```css
 .clearfix:after{
     content: "";
@@ -20,7 +20,7 @@
 }
 ```
 
-###### 产生 BFC
+**产生 BFC**
 1. `float` 不是 `none`
 2. `position` 不是 `static` 或 `relative`
 3. `overflow` 不是 `visible`
