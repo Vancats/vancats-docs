@@ -1,12 +1,24 @@
 ###### CSS 高度坍塌
+**浮动**
+定义：非 IE 下，元素未设宽且自元素浮动导致内容溢出影响布局
+工作原理：浮动元素脱离文档流，碰到包含它的边框或者其他浮动元素边框停留
+
+**方案**
 1. 设置`overflow:hidden`：子元素内容不能超父元素范围
 2. 父元素结尾添加空子元素并设置`clear:both`：影响选择器和查找元素
 3. 父元素浮动：产生新的浮动影响 ---> 父元素平级元素设置`clear:both`
-4. 末尾伪元素设置`clear:both`，个别浏览器再加上`display:table`，保险起见，再加`height: 0;`
-
-###### 浮动
-**定义**：非 IE 下，元素未设宽且自元素浮动导致内容溢出影响布局
-**工作原理**：浮动元素脱离文档流，碰到包含它的边框或者其他浮动元素边框停留
+4. 末尾伪元素设置`clear:both`，个别浏览器再加上`display:table`，保险起见，再加`height: 0`，IE6-7 不支持:after，添加 zoom:1 触发 hasLayout
+```css
+.clearfix:after{
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+}
+.clearfix{
+	*zoom: 1;
+}
+```
 
 ###### 产生 BFC
 1. `float` 不是 `none`
