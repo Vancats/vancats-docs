@@ -24,7 +24,7 @@
 1. `float` 不是 `none`
 2. `position` 不是 `static` 或 `relative`
 3. `overflow` 不是 `visible`
-4. `display` 是 `inline-block、inline-flex、flex、table-caption、table-cell`
+4. `display` 是 `inline-block、inline-flex、flex、table-caption、table-cell、grid`
 
 **margin 重叠**
 1. 父元素`overflow:hidden`：子元素内容不能超过父元素
@@ -42,7 +42,7 @@
 	2. `父margin/子padding + border-box`
 	3. `left: 50%` + `margin-left || transform: translateX`
 	4. `flex`
-水平垂直居中`display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
+**水平垂直居中**：`display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
 
 ###### 垂直居中（premise：父元素是盒子容器）
 1. 子元素是行内元素
@@ -55,6 +55,7 @@
 	1. `父margin/子padding + border-box`
 	2. `top: 50%` + `margin-top || transform: translateY`
 	3. `flex`
+**水平垂直居中**：`display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
 
 ###### 响应式布局
 1. `meta`标签

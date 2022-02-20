@@ -1,47 +1,19 @@
-## CSS
-### 水平垂直居中
 ### 常见布局
-
 ​	**两栏**
-
 - float + overflow（BFC 原理）
 - float + margin
 - flex
 - grid
-
 ​	**三栏**
-
 - 圣杯布局
-
 - 双飞翼布局
-
 - flex
-
 - float + overflow（左右 float）
-
 - grid
-
   ```javascript
   display:grid;
   grid-template-columns:200px auto 200px;
   ```
-
-### BFC
-- 创建
-  - 根元素：html
-  - 非溢出的可见元素：overflow 不为 visible
-  - 浮动：float 不为 none
-  - 定位：position 为 absolute 或 fixed
-  - 定义成块级的非块级元素：display：inline-block/flex/inline-flex/grid/table-cell
-- 渲染规则
-  - 内部盒子垂直放置
-  - 同一个 BFC 相邻盒子的 margin 会重叠
-  - BFC 区域不与 float 盒子重叠
-  - 计算高度时，浮动元素也参与计算
-- 应用场景
-  - 自适应两栏布局：左侧 float，右侧 BFC
-  - 防止 margin 合并：使元素不再同一 BFC 中
-  - 清除内部浮动
 
 ### 移动端 1px 解决方案
 
@@ -74,14 +46,10 @@
    ```
 
 ### 命名冲突
-
 - 命名约定
-
 - CSS in JS
-
 - CSS Modules
-
-  - webpack--css-loader 和 postcss--postcss-modules
+- webpack--css-loader 和 postcss--postcss-modules
 
   ```javascript
   module: {
@@ -93,15 +61,9 @@
     ]
   }
   ```
-
-  
-
 - HTML5 的 style scoped 解决部分，缺陷很多
-
 ### 父元素内创建正方形
-
-​	**padding-top：100%**
-
+**padding-top：100%**
 ### @ 规则
 - @import：告诉 css 引擎引入一个外部样式表
   - 从属关系：link 是 html 标签，还能导入图片等，还可以定义 RSS、rel 连接属性，后者只导入 css
