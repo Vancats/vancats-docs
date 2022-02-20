@@ -102,14 +102,14 @@
   "active": "266370db96849c97",
   "lastOpenFiles": [
     "learning/Learn CSS.md",
-    "js/H_C.md",
-    "js/ES.md",
     "learning/Learn HTML.md",
-    "js/模块系统.md",
-    "js/手撕.md",
-    "js/模板引擎.md",
-    "js/OM.md",
-    "js/another.md",
-    "learning/LeetCode.md"
+    "learning/设计模式.md",
+    "learning/前端算法.md",
+    "learning/JS 题目.md",
+    "js/Vue补.md",
+    "js/vue3.md",
+    "js/Vue2.md",
+    "js/Vue.md",
+    "js/React.md"
   ]
 }

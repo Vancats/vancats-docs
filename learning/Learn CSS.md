@@ -320,4 +320,8 @@ loaders: [
 display: inline-block;  /* 缩放只能用于块或行内块 */
 -webkit-transform: scale(0.5); /* 定义缩放大小 */
 -webkit-transform-origin: left top; /* 必须指定缩放源点，防止padding/margin缩放的影响 */
+
+内容固定可以转换成图片
 ```
+
+###### 1px 问题
