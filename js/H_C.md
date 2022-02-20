@@ -15,31 +15,23 @@
   grid-template-columns:200px auto 200px;
   ```
 
-### 移动端 1px 解决方案
-
+### 移动端 0.5px 解决方案
 1. border:0.5px solid E5E5E5 仅限IOS端
-
 2. border-image
-
 3. box-shadow
-
 4. 使用伪元素：绝对定位，长宽两倍，再进行 scale(0.5) 缩放
-
-   ```css
-   ::after {
-       content: '';
-       position:absolute;
-       top: 0; left: 0;
-       width: 200%; height: 200%;
-       border: 1px solid #000;
-       transform: scale(0.5);
-   }
-   ```
-
+```css
+::after {
+   content: '';
+   position:absolute;
+   top: 0; left: 0;
+   width: 200%; height: 200%;
+   border: 1px solid #000;
+   transform: scale(0.5);
+}
+```
 5. 设置 viewport 的 scale 值，使用 DOM 修改 content 属性
-
    - 可用该方法画 0.5px 的线（也可以用 transform:scale(0.5,0.5)
-
    ```javascript
    <meta name="viewport" id="WebViewport" 
          content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">

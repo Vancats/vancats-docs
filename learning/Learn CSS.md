@@ -284,12 +284,16 @@ z-index: auto 生成盒在当前层叠上下文中层级为 0，不建立新的�
 ```
 
 ###### 0.5px的线
-```css
+```js
+// transform + scale：使用 scale 需要设置好 transform-origin
 .main {
 	height: 1px;
 	transform: scaleY(0.5);
 	transform-origin: 50% 100%; // 防止线模糊
 }
+
+// viewport: 所有内容都会缩放
+<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5"/>
 ```
 
 ###### 小于12px的字（缩放）
