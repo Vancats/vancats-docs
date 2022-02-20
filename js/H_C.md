@@ -62,11 +62,6 @@
     - 像素密度 = 屏幕对角线像素尺寸 / 物理尺寸
   - 设备独立像素（DIP）--- 安卓
     - dip = px * 160 / dpi
-- px
-- em：相对于父元素
-- rem：相对于根元素--多用于自适应网站或者 H5
-- vh / vw：相对于视口 `100 vw = window.innerWidth`
-
 ### 选择器
 > 链接样式保持：link,visited,hover,active
 - 属性选择器

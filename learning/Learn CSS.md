@@ -211,23 +211,29 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 7. 背景和边框
 z-index: auto 生成盒在当前层叠上下文中层级为 0，不建立新的层叠上下文，根元素除外
 
-### 命名冲突
-- 命名约定
+###### 命名冲突
+- 团队命名约定
 - CSS in JS
 - CSS Modules
 - webpack--css-loader 和 postcss--postcss-modules
-
-  ```javascript
-  module: {
-    loaders: [
-      {
-        test: /\.css$/,
-        loader: "style-loader!css-loader?modules&localIdentName=[path][name]---[local]---[hash:base64:5]"
-      },
-    ]
-  }
-  ```
+```javascript
+module: {
+loaders: [
+  {
+	test: /\.css$/,
+	loader: "style-loader!css-loader?modules&localIdentName=[path][name]---[local]---[hash:base64:5]"
+  },
+]
+}
+```
 - HTML5 的 style scoped 解决部分，缺陷很多
+
+  - 设备像素（Device pixels）：屏幕分辨率
+  - 设备像素比（DPR）
+    - 一个 css 像素等于几个物理像素
+    - 通过 `window.devicePixelRatio`获取
+  - 像素密度（DPI / PPI）
+    - 像素密度 = 屏幕对角线像素尺寸 / 物理尺寸
 ###### CSS 工程化
 **预处理器**：代码嵌套、变量、计算函数、extends、mixins、循环语法、CSS 模块化
 **PostCss**：处理 CSS 代码。1. 可以做类似预处理器的事情 2. Autoprefixer 3. 能够帮助我们编译 CSS next
@@ -302,7 +308,7 @@ z-index: auto 生成盒在当前层叠上下文中层级为 0，不建立新的�
 
 ###### 0.5px的线
 ```js
-// transform + scale：使用 scale 需要设置好 transform-origin
+// transform + scale：使用 scale 需要设置好 transform
 .main {
 	height: 1px;
 	transform: scaleY(0.5);
