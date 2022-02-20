@@ -228,6 +228,11 @@ loaders: [
 ```
 - HTML5 的 style scoped 解决部分，缺陷很多
 
+###### 两栏布局
+1. 左边元素浮动，右边元素 margin-left: 左边元素宽度，宽度 auto
+2. 左边元素浮动，右边 BFC overflow: hidden
+3. flexq
+
 ###### CSS 工程化
 **预处理器**：代码嵌套、变量、计算函数、extends、mixins、循环语法、CSS 模块化
 **PostCss**：处理 CSS 代码。1. 可以做类似预处理器的事情 2. Autoprefixer 3. 能够帮助我们编译 CSS next
@@ -357,3 +362,6 @@ const scale = 1 / window.devicePixelRatio
 metaEL.setAttribute(
 'content',`width=device-width,user-scalable=no,initial-scale=${scale},maximum-scale=${scale},minimum-scale=${scale}`)
 ```
+
+4. border-image
+5. border-shadow
