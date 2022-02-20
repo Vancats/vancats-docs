@@ -290,7 +290,8 @@ grid-template-columns:200px auto 200px;
 	background: grey;
 }
 ```
-5. 双飞翼
+
+5. 双飞翼：利用
 ```html
 <div class="outer">
 	<div class="center">
@@ -319,7 +320,17 @@ grid-template-columns:200px auto 200px;
 	float: left;
 	margin-left: -100%;
 
-	
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+.right {
+	float: left;
+	margin-left: -200px;
+
+	width: 200px;
+	height: 100px;
+	background: grey;
 }
 ```
 
