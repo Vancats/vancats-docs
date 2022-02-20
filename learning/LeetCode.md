@@ -155,5 +155,5 @@
 	- [1124. 表现良好的最长时间段](https://leetcode-cn.com/problems/longest-well-performing-interval/)
 	- [1791. 找出星型图的中心节点](https://leetcode-cn.com/problems/find-center-of-star-graph/)
 - 22-2-19 [506. 相对名次](https://leetcode-cn.com/problems/relative-ranks/)
-- 22-2-20
+- 22-2-20 [717. 1比特与2比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/)
 
