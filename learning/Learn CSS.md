@@ -26,12 +26,13 @@
 3. `overflow` 不是 `visible`
 4. `display` 是 `inline-block、inline-flex、flex、table-caption、table-cell`
 
-###### 子元素margin-top覆盖父元素
+**margin 重叠**
 1. 父元素`overflow:hidden`：子元素内容不能超过父元素
 2. 父元素加上边框，设置颜色透明：增大父元素实际大小
 3. 使用父元素`padding-top`代替：需要加上 `box-sizing: border-box;`
 4. 父元素的第一个元素前添加`<table></table>`，形成 BFC，阻断 `margin`：干扰查找元素
 5. 前置伪元素添加 `::before{ content: ''; display: table; }`
+6. 子元素变成
 
 ###### 水平居中（premise：父级块级并且宽度已设置）
 1. 子元素是行内元素：父元素`text-align`
