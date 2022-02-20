@@ -243,7 +243,8 @@ loaders: [
 display: grid;
 grid-template-columns:200px auto 200px;
 ```
-4. 圣杯：浮动与负边距
+
+4. 圣杯：浮动与负边距，中间一列最前浮动，将其他两列挤到第二行
 ```html
 <div class="outer">
 	<div class="center"></div>
@@ -260,7 +261,33 @@ grid-template-columns:200px auto 200px;
 	float: left;
 	width: 100%;
 	height: 100px;
-	background
+	background: green;
+}
+
+.left {
+	// 浮动
+	float: left;
+	// 向上移动
+	margin-left: -100%;
+
+	// 移动，向左移动
+	position: relative;
+	left: -100px;
+
+	width: 100px;
+	height: 100%;
+	background: red;
+}
+.right {
+	float: right;
+	margin-left: -200px;
+
+	position: relative;
+	left: 200px;
+
+	width: 200px;
+	height: 100%;
+	background: grey;
 }
 ```
 5. 双飞翼：
