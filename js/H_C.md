@@ -137,25 +137,6 @@
 
 - HTML5 的 style scoped 解决部分，缺陷很多
 
-### Sass 的优点
-
-- 嵌套
-
-- 变量
-
-- 数学函数
-
-- 混合宏：统一编写大段重复的样式
-
-  ```javascript
-  @mixin border-radius{
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-  }
-  // 调用
-  button {    @include border-radius;}
-  ```
-
 ### 父元素内创建正方形
 
 ​	**padding-top：100%**
