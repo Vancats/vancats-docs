@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn CSS.md",
+            "file": "js/手撕.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn CSS.md",
+                "file": "js/手撕.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "266370db96849c97",
   "lastOpenFiles": [
+    "js/手撕.md",
+    "js/ES.md",
+    "js/another.md",
+    "js/H_C.md",
+    "js/OM.md",
     "learning/Learn CSS.md",
     "learning/Learn HTML.md",
     "learning/LeetCode.md",
     "learning/未命名.md",
-    "learning/JS 题目.md",
-    "learning/Learn JS.md",
-    "learning/Learn Vue.md",
-    "learning/设计模式.md",
-    "learning/前端算法.md",
-    "learning/Learn HTTP.md"
+    "learning/JS 题目.md"
   ]
 }
