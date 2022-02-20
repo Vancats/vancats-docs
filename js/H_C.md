@@ -1,9 +1,4 @@
 ### 常见布局
-​	**两栏**
-- float + overflow（BFC 原理）
-- float + margin
-- flex
-- grid
 ​	**三栏**
 - 圣杯布局
 - 双飞翼布局
