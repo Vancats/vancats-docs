@@ -249,7 +249,7 @@ z-index: auto 生成盒在当前层叠上下文中层级为 0，不建立新的�
 ###### 画三角形
 宽高置0，设置 border
 `border-left: 50px solid transparent; border-bottom: 100px solid green`
-
+`border-top: 100px solid transparent; border-top-color: red`
 ###### 0.5px的线
 ```css
 .main {
