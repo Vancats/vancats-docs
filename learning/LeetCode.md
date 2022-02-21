@@ -156,5 +156,7 @@
 	- [1791. 找出星型图的中心节点](https://leetcode-cn.com/problems/find-center-of-star-graph/)
 - 22-2-19 [506. 相对名次](https://leetcode-cn.com/problems/relative-ranks/)
 - 22-2-20 [717. 1比特与2比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/)
-- 22-2-21 [838. 推多米诺](https://leetcode-cn.com/problems/push-dominoes/)
+- 22-2-21 
+	- [838. 推多米诺](https://leetcode-cn.com/problems/push-dominoes/)
+	- [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
 
