@@ -135,7 +135,6 @@ function Person(name, age) {
 	person.getAge = function(val) {}
 }
 ```
-
 	
 ###### JS 继承方式
 1. 原型链继承：将父类的实例变成子类的原型 --- 创建子类时无法向父类传参
@@ -246,9 +245,6 @@ class Student extends Person () {
 	}
 }
 ```
-
-
-
 
 ###### 深拷贝*
 1. `JSON.parse(JSON.stringify(obj1))`：无法深拷贝 undefined 以及内嵌函数
