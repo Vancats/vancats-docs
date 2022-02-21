@@ -13,7 +13,7 @@ this.$route.patchMatch = admin
 { path: '/params/:foo?' }
 { path: '/params/*' }
 { path: '/params/:foo+' }
-{ path: '/optional-params/:id(\\d+)' }
-{ pat}
+{ path: '/params/:id(\\d+)' }
+{ path: '/params/(foo/)?bar'}
 ```
 4. 
