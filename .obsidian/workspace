@@ -104,12 +104,14 @@
     "learning/Learn Vue.md",
     "learning/Learn JS.md",
     "learning/Learn CSS.md",
+    "learning/LeetCode.md",
+    "learning/JS 题目.md",
+    "learning/RegExp.md",
+    "learning/前端算法.md",
+    "learning/设计模式.md",
+    "learning/Learn HTML.md",
     "js/ES.md",
     "js/another.md",
-    "js/OM.md",
-    "js/H_C.md",
-    "learning/Learn HTML.md",
-    "learning/设计模式.md",
-    "learning/前端算法.md"
+    "js/OM.md"
   ]
 }
