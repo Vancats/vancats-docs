@@ -9,4 +9,11 @@ this.$router.push('user-admin')
 this.$route.patchMatch = admin
 ```
 3. 高级匹配模式
+```js
+{ path: '/params/:foo?' }
+{ path: '/params/*' }
+{ path: '/params/:foo+' }
+{ path: '/optional-params/:id(\\d+)' }
+{ pat}
+```
 4. 
