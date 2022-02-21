@@ -16,4 +16,19 @@ this.$route.patchMatch = admin
 { path: '/params/:id(\\d+)' }
 { path: '/params/(foo/)?bar'}
 ```
-4. 
+4. 路由视图
+```js
+<router-view class="view one"></router-view>  
+<router-view class="view two" name="a"></router-view>  
+<router-view class="view three" name="b"></router-view>
+
+{  
+	path: '/',  
+	components: {  
+		default: Foo,  
+		a: Bar,  
+		b: Baz  
+	}  
+}
+```
+5. 重定向的路由，导航守卫
