@@ -51,10 +51,11 @@ export default {
 ```
 7. push 和 replace 的第二个第三个参数
 ```js
+eg1
 // 组件1
 this.$router.push({ name: 'number' }, () => {  
 	console.log('组件1：onComplete回调')
-}, () => {  
+}, () => {
 	console.log('组件1：onAbort回调')
 })
 
@@ -70,5 +71,21 @@ created() {
 	console.log('组件2：created')
 }
 
-// beforeRouteEnter -> on
+// beforeRouteEnter -> onComplete -> beforeCreate -> created
+
+
+eg2 不带参数的自我跳转，触发 onAbort
+this.$router.push({ name: 'number'}, () => {  
+	console.log('组件2：onComplete回调')
+}, () => {  
+	console.log('组件2,自我跳转：onAbort回调')
+})
+
+
+eg3 带参数的自我跳转，两个函数都不触发
+this.$router.push({ name: 'number', params: { foo: this.number}}, () => {  
+	console.log('组件2：onComplete回调')
+}, () => {  
+	console.log('组件2,自我跳转：onAbort回调')
+})
 ```
