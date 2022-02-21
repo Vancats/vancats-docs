@@ -408,7 +408,7 @@ func(5)
 console.log(a) // 1
 
 
-3g5]
+eg5
 var a = 1
 function func (a, b = function anonymous1 () { a = 2 }) {
 	var a = 3 // [G]:a = 1 [Local]:a = 5, b = fun1 [Block]:a = 3
