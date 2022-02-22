@@ -246,15 +246,6 @@ class Student extends Person () {
 }
 ```
 
-###### 深拷贝*
-1. `JSON.parse(JSON.stringify(obj1))`：无法深拷贝 undefined 以及内嵌函数
-2. 自定义
-```js
-```
-
-
-
-
 ###### 判断类型
 1. typeof：可以判断 function，无法判断 object 类型，如 Date，Array，null
 2. 原型链方式
