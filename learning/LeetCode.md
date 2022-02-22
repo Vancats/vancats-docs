@@ -159,4 +159,5 @@
 - 22-2-21 
 	- [838. 推多米诺](https://leetcode-cn.com/problems/push-dominoes/)
 	- [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
-
+- 22-2-22
+	- [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
