@@ -162,3 +162,4 @@
 - 22-2-22
 	- [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
 	- [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)
+	- [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)
