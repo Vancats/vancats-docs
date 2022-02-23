@@ -268,7 +268,10 @@ class Student extends Person () {
 
 
 #### 数据类型
-
+###### 判断类型
+（1）typeof：可以判断函数
+2. 原型链：
+3. 
 
 
 
