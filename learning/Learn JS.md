@@ -276,7 +276,8 @@ class Student extends Person () {
 	3. `Array.prototype.isPrototypeOf([])`
 3. 构造函数方式
 	1. `[].constructor === Array`
-	2. `[].`
+	2. `[] instanceof Array`
+4. `Object.prototype.toString.call([]) === ''`
 
 
 
