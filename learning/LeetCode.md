@@ -34,8 +34,6 @@
 
 
 - 二叉树的基本操作
-	- [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
-	- **[589. N 叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)**    **递归转迭代**
 	- [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
 	- [剑指 Offer 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)
 	- [107. 二叉树的层序遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
@@ -163,3 +161,5 @@
 	- [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)
 - 22-2-23
 	- [917. 仅仅反转字母](https://leetcode-cn.com/problems/reverse-only-letters/)
+	- [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
+	- [589. N 叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)
