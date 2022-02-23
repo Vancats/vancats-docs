@@ -33,7 +33,6 @@
 	- B-树 / B+树 ---> 文件系统、数据库 底层重要数据结构
 
 
-- [剑指 Offer 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
 - [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)（难度有点大）
 - [662. 二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/) （恶心人的东西）
 ### 5. 堆
@@ -161,3 +160,4 @@
 	- [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 	- [222. 完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/)
 	- [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
+	- [剑指 Offer 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
