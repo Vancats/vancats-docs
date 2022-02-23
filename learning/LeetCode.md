@@ -1,10 +1,9 @@
 **23 148 445 147 143** 链表
 **42-20-85-155-739-173-316-394-150-224-94** 栈
-
+**104-226-96-617-173-108-297-100-105-95-124-654** 树
 
 
 ### 4. 树
-**104-226-96-617-173-108-297-100-105-95-124-654**
 - 节点的度：节点有几个孩子
 	- 度为 0 的节点比度为 2 的节点多一个
     `a+b+c-1 = 2c+b+0c   ==> a = c-1`
@@ -26,31 +25,33 @@
 		- 堆
 		- 优先队列
 		- 维护集合最值
-  - 多叉树 / 森林
-		- 字典树--->字符串及其相关转化问题
-		- AC 自动机--同上
-		- 并查集--->连通性问题
-  - 二叉排序树
-		- AVL 树---> 语言标准库中重要的数据检索容器底层实现
-		- 2-3树 ---> 同上
-		- 红黑树---> 同上
-		- B-树 / B+树 ---> 文件系统、数据库 底层重要数据结构
+- 多叉树 / 森林
+	- 字典树--->字符串及其相关转化问题
+	- AC 自动机--同上
+	- 并查集--->连通性问题
+- 二叉排序树
+	- AVL 树---> 语言标准库中重要的数据检索容器底层实现
+	- 2-3树 ---> 同上
+	- 红黑树---> 同上
+	- B-树 / B+树 ---> 文件系统、数据库 底层重要数据结构
+
+
 - 二叉树的基本操作
 	- [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
 	- **[589. N 叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)**    **递归转迭代**
-  - [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
-  - [剑指 Offer 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)
-  - [107. 二叉树的层序遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
-  - [103. 二叉树的锯齿形层序遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
+	- [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+	- [剑指 Offer 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)
+	- [107. 二叉树的层序遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
+	- [103. 二叉树的锯齿形层序遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
 - 二叉树的进阶操作
-  - [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
-  - [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
-  - [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
-  - [222. 完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/)
-  - [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
-  - [剑指 Offer 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
-  - [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)（难度有点大）
-  - [662. 二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/) （恶心人的东西）
+	- [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
+	- [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
+	- [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+	- [222. 完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/)
+	- [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
+	- [剑指 Offer 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
+	- [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)（难度有点大）
+	- [662. 二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/) （恶心人的东西）
 ### 5. 堆
 **是优先队列的一种实现方式**
 **集合最值**
