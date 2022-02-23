@@ -34,8 +34,6 @@
 
 
 - 二叉树的进阶操作
-	- [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
-	- [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
 	- [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 	- [222. 完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/)
 	- [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
@@ -163,3 +161,4 @@
 	- [107. 二叉树的层序遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
 	- [103. 二叉树的锯齿形层序遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
 	- [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
+	- [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
