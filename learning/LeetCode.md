@@ -33,7 +33,6 @@
 	- B-树 / B+树 ---> 文件系统、数据库 底层重要数据结构
 
 
-- 二叉树的基本操作
 - 二叉树的进阶操作
 	- [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
 	- [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
