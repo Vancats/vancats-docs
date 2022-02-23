@@ -269,8 +269,10 @@ class Student extends Person () {
 
 #### 数据类型
 ###### 判断类型
-（1）typeof：可以判断函数
+1. typeof：可以判断函数
 2. 原型链：
+	1. `[1,2].__proto__ === Array.prototype`
+	2. `Object.getPrototype([1,2]} === Array.prototype`
 3. 
 
 
