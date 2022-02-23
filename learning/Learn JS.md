@@ -273,7 +273,8 @@ class Student extends Person () {
 2. 原型链：
 	1. `[1,2].__proto__ === Array.prototype`
 	2. `Object.getPrototype([1,2]} === Array.prototype`
-3. 
+	3. `Array.prototype.isPrototypeOf([1,2])`
+3. 构造函数方式，
 
 
 
