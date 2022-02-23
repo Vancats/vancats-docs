@@ -159,5 +159,5 @@
 	- [222. 完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/)
 	- [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
 	- [剑指 Offer 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
-	- [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)（难度有点大）
-	- [662. 二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/) （恶心人的东西）
+	- [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)
+	- [662. 二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/)
