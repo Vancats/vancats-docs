@@ -5,8 +5,7 @@
 
 ### 4. 树
 - 节点的度：节点有几个孩子
-	- 度为 0 的节点比度为 2 的节点多一个
-    `a+b+c-1 = 2c+b+0c   ==> a = c-1`
+	- 度为 0 的节点比度为 2 的节点多一个 `a+b+c-1 = 2c+b+0c   ==> a = c - 1`
 - 平衡二叉树：所有节点的两子树高度差不超过 1
 - 二叉搜索树：中序遍历结果是有序数组
 - 满二叉树：只有度为0和2的树
@@ -17,14 +16,12 @@
 - 树结构的深入理解
 	- 节点：集合 => 子节点：性质不同的子集；所有子集相加等于全集
 	- 边：关系
-- 递归关键点：赋予递归函数明确的意义
 - 多叉树 ----> 二叉树：左孩子右兄弟 ---> 当根节点有右节点，表示森林
 
 - 二叉树
-	- 完全二叉树
+	- 完全二叉树（维护集合最值）
 		- 堆
 		- 优先队列
-		- 维护集合最值
 - 多叉树 / 森林
 	- 字典树--->字符串及其相关转化问题
 	- AC 自动机--同上
@@ -43,7 +40,7 @@
 	- [剑指 Offer 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)
 	- [107. 二叉树的层序遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
 	- [103. 二叉树的锯齿形层序遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
-- 二叉树的进阶操作
+- 二叉树的进阶操作x
 	- [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
 	- [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
 	- [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
