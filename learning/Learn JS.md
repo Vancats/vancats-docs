@@ -246,19 +246,6 @@ class Student extends Person () {
 }
 ```
 
-###### 判断类型
-1. typeof：可以判断 function，无法判断 object 类型，如 Date，Array，null
-2. 原型链方式
-	1. `[1, 2].__proto__ === Array.prototype`
-	2. `Object.getPrototypeOf([1, 2]) === Array.prototype`
-	3. `Array.prototype.isPrototypeOf([1, 2])`
-3. 构造函数方式：父级原型对象的 constructor
-	1. `([1, 2]).constructor === Array`
-	2. `[1, 2] instanceof Array`
-**如果原型链被更改，则2，3点无法判断** `[1, 2].__proto__ = Object.protoype`
-4. `Object.prototype.toString.call([1, 2]) === [object Array]` 最准确的方法
-5. `Array.isArray([1, 2])`
-
 ###### 链接
 [[JS 题目]]
 
@@ -268,7 +255,7 @@ class Student extends Person () {
 
 
 #### 数据类型
-###### 判断类型
+###### 类型判断
 1. typeof：可以判断函数
 2. 原型链
 	1. `[].__proto__ === Array.prototype`
@@ -277,7 +264,9 @@ class Student extends Person () {
 3. 构造函数方式
 	1. `[].constructor === Array`
 	2. `[] instanceof Array`
-4. `Object.prototype.toString.call([]) === ''`
+**原型链的更换会引起上面两点判断的出错** `[].__proto__ = Object.prototype`
+4. `Object.prototype.toString.call([]) === '[object Array]'`
+5. `Array.isArray([])`
 
 
 
