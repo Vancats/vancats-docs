@@ -161,3 +161,4 @@
 	- [剑指 Offer 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
 	- [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)
 	- [662. 二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/)
+- 22-2-24 [1706. 球会落何处](https://leetcode-cn.com/problems/where-will-the-ball-fall/)
