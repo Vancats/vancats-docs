@@ -166,6 +166,8 @@
 	- [66. 加一](https://leetcode-cn.com/problems/plus-one/)
 	- [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
 	- [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+	- [118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)
+	- [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
 
 
 
