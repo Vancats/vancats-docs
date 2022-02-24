@@ -271,5 +271,15 @@ class Student extends Person () {
 
 ###### 
 1. typeof null
+```js
+在 JS 的第一个版本中，所有值存储在一个 32 位单元中，每个单元包含一个类型标签（1～3bit）以及真实数据，类型标签存储在低位中
+000: object
+  1: int 31 位有符号整数
+010: double 双精度浮点数
+  
+```
+2. 0.1 + 0.2 !== 0.3
+3. typeof NaN
+4. isNaN Number.isNaN
 
 
