@@ -174,4 +174,4 @@
 	- [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
 	- [169. 多数元素](https://leetcode-cn.com/problems/majority-element/)
 	- [415. 字符串相加](https://leetcode-cn.com/problems/add-strings/)
-
+	- [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)
