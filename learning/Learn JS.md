@@ -282,7 +282,6 @@ null: 32 位全是 0
 undefined: (-2)30 超出整数范围的数字
 ```
 2. 0.1 + 0.2 !== 0.3
-3. typeof NaN
-4. isNaN：任何不能zhuan huanNumber.isNaN
+3. isNaN：任何不能转换为数值的值都会返回true；Number.isNaN：先判断是否为数字再判断是否为NaN
 
 
