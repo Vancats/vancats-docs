@@ -268,7 +268,7 @@ class Student extends Person () {
 **原型链的更换会引起上面两点判断的出错** `[].__proto__ = Object.prototype`
 4. `Object.prototype.toString.call([]) === '[object Array]'`
 5. `Array.isArray([])`
-6. 手写 **instanceof**
+6. 手写 ==instanceof**
 ```js
 function myInstanceOf (left, right) {
 	let proto = Object.getPrototypeOf(left)
@@ -281,7 +281,10 @@ function myInstanceOf (left, right) {
 }
 ```
 
-###### 
+###### == 强制类型转换
+
+
+###### 其他情况
 1. typeof null
 ```js
 在 JS 的第一个版本中，所有值存储在一个 32 位单元中，每个单元包含一个类型标签（1～3bit）以及真实数据，类型标签存储在低位中
