@@ -1,8 +1,6 @@
 **23 148 445 147 143** 链表
 **42-20-85-155-739-173-316-394-150-224-94** 栈
 **104-226-96-617-173-108-297-100-105-95-124-654** 树
-
-
 ### 4. 树
 - 节点的度：节点有几个孩子
 	- 度为 0 的节点比度为 2 的节点多一个 `a+b+c-1 = 2c+b+0c   ==> a = c - 1`
@@ -184,5 +182,6 @@
 	- [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)
 	- [338. 比特位计数](https://leetcode-cn.com/problems/counting-bits/)
 	- [108. 将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)
+- 22-2-25
 	- [463. 岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/)
 
