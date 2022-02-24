@@ -268,7 +268,7 @@ class Student extends Person () {
 **原型链的更换会引起上面两点判断的出错** `[].__proto__ = Object.prototype`
 4. `Object.prototype.toString.call([]) === '[object Array]'`
 5. `Array.isArray([])`
-6. 手写 ==instanceof**
+6. 手写 ==instanceof==
 ```js
 function myInstanceOf (left, right) {
 	let proto = Object.getPrototypeOf(left)
@@ -282,7 +282,15 @@ function myInstanceOf (left, right) {
 ```
 
 ###### == 强制类型转换
+```js
+'1' == true
+		🔽 boolean -> number
+'1' ==  1
+		🔽 string  -> number
+ 1  ==  1
 
+如果有一边是不是基本类型，转基本类型
+```
 
 ###### 其他情况
 1. typeof null
