@@ -1,8 +1,6 @@
 **23 148 445 147 143** 链表
 **42-20-85-155-739-173-316-394-150-224-94** 栈
 **104-226-96-617-173-108-297-100-105-95-124-654** 树
-
-
 ### 4. 树
 - 节点的度：节点有几个孩子
 	- 度为 0 的节点比度为 2 的节点多一个 `a+b+c-1 = 2c+b+0c   ==> a = c - 1`
@@ -161,3 +159,29 @@
 	- [剑指 Offer 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
 	- [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)
 	- [662. 二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/)
+- 22-2-24
+	- [1706. 球会落何处](https://leetcode-cn.com/problems/where-will-the-ball-fall/)
+	- [66. 加一](https://leetcode-cn.com/problems/plus-one/)
+	- [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
+	- [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+	- [118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)
+	- [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
+	- [面试题 02.03. 删除中间节点](https://leetcode-cn.com/problems/delete-middle-node-lcci/)
+	- [剑指 Offer 22. 链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
+	- [面试题 02.02. 返回倒数第 k 个节点](https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci/)
+	- [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
+	- [169. 多数元素](https://leetcode-cn.com/problems/majority-element/)
+	- [415. 字符串相加](https://leetcode-cn.com/problems/add-strings/)
+	- [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)
+	- [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/)
+	- [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
+	- [561. 数组拆分 I](https://leetcode-cn.com/problems/array-partition-i/)
+	- [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
+	- [617. 合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)
+	- [771. 宝石与石头](https://leetcode-cn.com/problems/jewels-and-stones/)
+	- [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)
+	- [338. 比特位计数](https://leetcode-cn.com/problems/counting-bits/)
+	- [108. 将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)
+- 22-2-25
+	- [463. 岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/)
+
