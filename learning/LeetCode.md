@@ -165,6 +165,7 @@
 	- [1706. 球会落何处](https://leetcode-cn.com/problems/where-will-the-ball-fall/)
 	- [66. 加一](https://leetcode-cn.com/problems/plus-one/)
 	- [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
+	- [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
 
 
 
