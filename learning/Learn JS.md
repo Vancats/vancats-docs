@@ -315,9 +315,11 @@ Object(Array) -> ToPrimitive 操作：首先通过内部操作 DefaultValue 检�
 
 ==隐式转换==
 JS 中的每个值都带有 ToPrimitive 方法，主要功能为将值转换为基本类型
-```js
-当需要转换成 怒分别调用 valueOf 和 toString 方法，如果为原始值，则返回，不然进行下一
-```
+> 当需要转换成 number 时（大多数）
+	调用 valueOf 方法，如果为原始值，则返回，不然下一步
+	调用 toString 方法，同上
+	抛出 TypeError
+   当需要转换成 string 时，第一二步调换位置，先 toString（只有 Date 对象是这样的）
 
 ###### 其他情况
 1. typeof null
