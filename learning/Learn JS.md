@@ -268,6 +268,10 @@ class Student extends Person () {
 **原型链的更换会引起上面两点判断的出错** `[].__proto__ = Object.prototype`
 4. `Object.prototype.toString.call([]) === '[object Array]'`
 5. `Array.isArray([])`
+6. 手写 instanceof
+```js
+function myInstanceOf()
+```
 
 ###### 
 1. typeof null
