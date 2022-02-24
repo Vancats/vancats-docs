@@ -276,10 +276,13 @@ class Student extends Person () {
 000: object
   1: int 31 位有符号整数
 010: double 双精度浮点数
-  
+100: string
+110: boolean
+null: 32 位全是 0
+undefined: (-2)30 超出整数范围的数字
 ```
 2. 0.1 + 0.2 !== 0.3
 3. typeof NaN
-4. isNaN Number.isNaN
+4. isNaN：任何不能zhuan huanNumber.isNaN
 
 
