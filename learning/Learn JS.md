@@ -296,7 +296,7 @@ function myInstanceOf (left, right) {
 null        -> 'null'
 undefined   -> 'undefined'
 Symbol('a') -> 'Symbol(a)'
-Object.     -> 调用 toString 方法
+Object      -> 调用 toString 方法
 ```
 
 **to Number**
@@ -308,12 +308,16 @@ Object(Array) -> ToPrimitive 操作：首先通过内部操作 DefaultValue 检�
 ```
 
 **to Boolean**
-`undefined、null、false、(+-)0、NaN、""``
+>`undefined、null、false、(+-)0、NaN、""`
 
 **包装类型**
-`Object('abc').valueOf() === 'abc'`
+>`Object('abc').valueOf() === 'abc'`
 
-隐shi zi
+==隐式转换==
+JS 中的每个值都带有 ToPrimitive 方法，主要功能为将值转换为基本类型
+```js
+当需要转换成 怒分别调用 valueOf 和 toString 方法，如果为原始值，则返回，不然进行下一
+```
 
 ###### 其他情况
 1. typeof null
