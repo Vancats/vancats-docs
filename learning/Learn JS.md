@@ -313,6 +313,8 @@ Object(Array) -> ToPrimitive 操作：首先通过内部操作 DefaultValue 检�
 **包装类型**
 `Object('abc').valueOf() === 'abc'`
 
+隐shi zi
+
 ###### 其他情况
 1. typeof null
 ```js
