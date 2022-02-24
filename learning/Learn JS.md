@@ -283,14 +283,21 @@ function myInstanceOf (left, right) {
 
 ###### == 强制类型转换
 ```js
-'1' == true
-		🔽 boolean -> number
-'1' ==  1
-		🔽 string  -> number
- 1  ==  1
-
+'1' == true   ➡️   '1'  ==  1   ➡️   1  ==  1
+		boolean->number   string->number
 如果有一边是不是基本类型，转基本类型
 ```
+
+###### to String
+```js
+null        -> 'null'
+undefined   -> 'undefined'
+Symbol('a') -> ''
+```
+
+###### to Number
+
+###### to Boolean
 
 ###### 其他情况
 1. typeof null
