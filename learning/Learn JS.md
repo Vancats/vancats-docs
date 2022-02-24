@@ -281,7 +281,8 @@ function myInstanceOf (left, right) {
 }
 ```
 
-###### == 强制类型转换
+###### 类型转换
+**== 强制类型转换**
 ```js
 '1' == true   ➡️   '1'  ==  1   ➡️   1  ==  1
 
@@ -290,7 +291,7 @@ function myInstanceOf (left, right) {
 如果有一边是不是基本类型，转基本类型
 ```
 
-###### to String
+**to String**
 ```js
 null        -> 'null'
 undefined   -> 'undefined'
@@ -298,15 +299,19 @@ Symbol('a') -> 'Symbol(a)'
 Object.     -> 调用 toString 方法
 ```
 
-###### to Number
+**to Number**
 ```js
 null          -> 0
 undefined     -> NaN
 Symbol('a')   -> 报错
 Object(Array) -> ToPrimitive 操作：首先通过内部操作 DefaultValue 检查是否有 valueOf，如果有并且返回的是基本值，则强制类型转换，不然就使用 toString 强制类型转换。⚠️ 只有两个方法返回的都不是基本值时，会报错！其他最多是 NaN
 ```
-###### to Boolean
+
+**to Boolean**
 `undefined、null、false、(+-)0、NaN、""``
+
+**包装类型**
+`Object('abc').valueOf() === 'abc'`
 
 ###### 其他情况
 1. typeof null
