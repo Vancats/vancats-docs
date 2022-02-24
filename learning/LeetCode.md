@@ -181,4 +181,5 @@
 	- [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
 	- [617. 合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)
 	- [771. 宝石与石头](https://leetcode-cn.com/problems/jewels-and-stones/)
+	- [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)
 
