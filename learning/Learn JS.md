@@ -300,10 +300,10 @@ Object.     -> 调用 toString 方法
 
 ###### to Number
 ```js
-null        -> 0
-undefined   -> NaN
-
-Symbol('a') -> 报错
+null          -> 0
+undefined     -> NaN
+Symbol('a')   -> 报错
+Object(Array) -> ToPrimitive 操作：首先通过内部操作 DefaultValue 检查是否有 valueOf，如果有并且
 ```
 ###### to Boolean
 
