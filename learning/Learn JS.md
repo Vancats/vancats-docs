@@ -284,7 +284,9 @@ function myInstanceOf (left, right) {
 ###### == 强制类型转换
 ```js
 '1' == true   ➡️   '1'  ==  1   ➡️   1  ==  1
+
 		boolean->number   string->number
+
 如果有一边是不是基本类型，转基本类型
 ```
 
@@ -292,11 +294,17 @@ function myInstanceOf (left, right) {
 ```js
 null        -> 'null'
 undefined   -> 'undefined'
-Symbol('a') -> ''
+Symbol('a') -> 'Symbol(a)'
+Object.     -> 调用 toString 方法
 ```
 
 ###### to Number
+```js
+null        -> 0
+undefined   -> NaN
 
+Symbol('a') -> 报错
+```
 ###### to Boolean
 
 ###### 其他情况
