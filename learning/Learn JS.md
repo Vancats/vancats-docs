@@ -269,5 +269,7 @@ class Student extends Person () {
 4. `Object.prototype.toString.call([]) === '[object Array]'`
 5. `Array.isArray([])`
 
+###### 
+1. typeof null
 
 
