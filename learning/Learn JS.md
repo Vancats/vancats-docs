@@ -355,4 +355,7 @@ undefined: (-2)30 超出整数范围的数字
 
 ###### 箭头函数
 1. 没有自己的 this，直接继承作用域上一层上下文，并且不会改变
-2. 
+2. 没有 prototype
+3. new 调用，第二点需要 prototype，第三点需要更改 this
+3. 没有 arguments
+3. 
