@@ -12,7 +12,6 @@
 字符串下标 对象 for in
 
 ###### 箭头函数缺点
-1. undefined、构造函数不能用
 2. 对象方法不能用
 3. 原型对象不能用
 4. DOM 事件处理函数不能用
@@ -358,6 +357,6 @@ undefined: (-2)30 超出整数范围的数字
 2. 没有 prototype
 3. 不能作为构造函数，new 一个函数中第二点需要 prototype，第三点需要更改 this
 4. 不能用 call，apply，bind 改变 this 指向（箭头函数底层使用 bind）
-5. 没有自己的 arguments，箭头函数内部访问 arguments 实际上返回的是外层函数的 arguments
+5. 没有自己的 arguments，用 ...rest 代替，箭头函数内部访问 arguments 实际上返回的是外层函数的 arguments
 6. 不能用作 generator 函数，不能使用 yield 关键字
-7. 如果函数
+7. 函数体只有一句话，并且不要返回值，使用 void `let fn = () => void fun()`
