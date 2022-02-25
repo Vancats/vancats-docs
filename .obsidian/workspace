@@ -7,8 +7,12 @@
         "id": "266370db96849c97",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "sundry/Webpack.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "sundry/Webpack.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -96,15 +101,15 @@
   },
   "active": "266370db96849c97",
   "lastOpenFiles": [
+    "sundry/Webpack.md",
+    "sundry/Plugins.md",
+    "sundry/Git.md",
+    "sundry/Config.md",
+    "sundry/网络.md",
+    "sundry/动漫.md",
     "sundry/数据结构与算法.md",
     "learning/LeetCode.md",
     "learning/Learn Vue.md",
-    "sundry/动漫.md",
-    "source/React.jpg",
-    "learning/Learn JS.md",
-    "learning/未命名.md",
-    "learning/JS 题目.md",
-    "learning/Learn CSS.md",
-    "learning/Learn HTTP.md"
+    "source/React.jpg"
   ]
 }
