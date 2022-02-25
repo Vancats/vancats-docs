@@ -15,9 +15,6 @@
 2. 对象方法不能用
 3. 原型对象不能用
 4. DOM 事件处理函数不能用
-5. 无法使用 bind，apply，call
-6. 不支持 arguments，使用 ...rest
-7. 箭头函数没有 prototype
 
 ###### 面向对象
 1. 封装
