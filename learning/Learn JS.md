@@ -358,4 +358,6 @@ undefined: (-2)30 超出整数范围的数字
 2. 没有 prototype
 3. 不能作为构造函数，new 一个函数中第二点需要 prototype，第三点需要更改 this
 4. 不能用 call，apply，bind 改变 this 指向（箭头函数底层使用 bind）
-5. 没有自己的 arguments
+5. 没有自己的 arguments，箭头函数内部访问 arguments 实际上返回的是外层函数的 arguments
+6. 不能用作 generator 函数，不能使用 yield 关键字
+7. 如果函数
