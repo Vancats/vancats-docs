@@ -361,3 +361,5 @@ undefined: (-2)30 超出整数范围的数字
 #### JS 基础
 ###### new 一个构造函数
 1. 创建一个新的对象
+2. 将新对象的 `__proto__` 指向构造函数的 prototype
+3. 构造函数中的 this zhi xiang
