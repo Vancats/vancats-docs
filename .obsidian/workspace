@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "sundry/Webpack.md",
+            "file": "learning/Learn JS.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sundry/Webpack.md",
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,7 @@
   },
   "active": "266370db96849c97",
   "lastOpenFiles": [
+    "learning/Learn JS.md",
     "sundry/Webpack.md",
     "sundry/Plugins.md",
     "sundry/Git.md",
@@ -109,7 +110,6 @@
     "sundry/动漫.md",
     "sundry/数据结构与算法.md",
     "learning/LeetCode.md",
-    "learning/Learn Vue.md",
-    "source/React.jpg"
+    "learning/Learn Vue.md"
   ]
 }

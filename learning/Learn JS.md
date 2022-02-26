@@ -343,12 +343,25 @@ undefined: (-2)30 超出整数范围的数字
 3. 构造函数中的 this 指向该新对象，通过强制赋值，为新对象添加属性和方法
 4. 返回该新对象的地址
 5. 如果构造函数 return 了一个引用类型对象，直接返回该对象，前面的操作无效
+6. 手写==new==
+```js
+function myNew () {
+	let newObj = null
+	let constructor = Array.prototype.slice.call(arguments)
+	if (arguments !== 'function') {
+		new TypeError('type error')
+		return
+	}
+	newObj = Object.create(constructor.prototype)
+	
+}
+```
 
 ###### 箭头函数
 1. 没有自己的 this，直接继承作用域上一层上下文，并且不会改变
 2. 没有 prototype
 3. 不能作为构造函数，new 一个函数中第二点需要 prototype，第三点需要更改 this
-4. 不能用 call，apply，bind 改变 this 指向（箭头函数底层使用 bind）
+4. 不能用 call，apply，bind 改变 this 指向（箭头函数底层使用 apply）
 5. 没有自己的 arguments，用 ...rest 代替，箭头函数内部访问 arguments 实际上返回的是外层函数的 arguments
 6. 不能用作 generator 函数，不能使用 yield 关键字
 7. 函数体只有一句话，并且不要返回值，使用 void `let fn = () => void fun()`
