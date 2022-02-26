@@ -353,7 +353,11 @@ function myNew () {
 		return
 	}
 	newObj = Object.create(constructor.prototype)
-	
+	let result = constructor.apply(newObj, arguments)
+	if (result && (typeof result === 'object' || typeof result === 'function')) {
+		return result
+	}
+	return newObj
 }
 ```
 
