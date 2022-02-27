@@ -388,3 +388,4 @@ WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入
 1. JSON.parse：JSON -> JS 如果不合规范，报错
 2. JSON.stringify：JS -> JSON 如果不合规范，会对值特殊处理
 
+###### unicode 与编码方式
