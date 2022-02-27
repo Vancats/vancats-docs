@@ -381,4 +381,6 @@ function myNew () {
 
 WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入垃圾回收机制，一旦不需要会自动消失
 
-###### ~~JSON
+###### ~~JSON~~
+1. JSON.stringify：JS -> JSON 如果不合规范，hui
+2. JSON.parse：
