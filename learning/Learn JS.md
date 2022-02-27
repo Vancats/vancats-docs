@@ -371,10 +371,13 @@ function myNew () {
 7. 函数体只有一句话，并且不要返回值，使用 void `let fn = () => void fun()`
 8. 对象的方法，原型对象的方法和DOM事件函数不能用
 
-###### 111
-1. 新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
-2. map 的键可以是任意内容，object 的键必须是 string 或者 symbol
-3. map 的键的顺序严格按照插入顺序，object 无序
-4. map 默认有 size 属性，object 只能遍历得到数量
-5. map 是 iterator 的，可以直接迭代，object 使用 Object.keys
-6. map 在频繁增删键zhi dui
+###### Map
+1. 意外的键：新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
+2. 键值：map 的键可以是任意内容，object 的键必须是 string 或者 symbol
+3. 键的顺序：map 的键的顺序严格按照插入顺序，object 无序
+4. Size：map 默认有 size 属性，object 只能遍历得到数量
+5. 迭代：map 是 iterator 的，可以直接迭代，object 使用 Object.keys
+6. 性能：map 在频繁增删键值对是性能好，object 无优化
+
+1. WeakMap 
+
