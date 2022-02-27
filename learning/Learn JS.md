@@ -373,4 +373,8 @@ function myNew () {
 
 ###### 111
 1. 新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
-2. map 的键可以是任意内容，object 的键必须是 string hu
+2. map 的键可以是任意内容，object 的键必须是 string 或者 symbol
+3. map 的键的顺序严格按照插入顺序，object 无序
+4. map 默认有 size 属性，object 只能遍历得到数量
+5. map 是 iterator 的，可以直接迭代，object 使用 Object.keys
+6. map 在频繁增删键zhi dui
