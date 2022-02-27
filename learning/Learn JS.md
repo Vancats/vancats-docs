@@ -379,5 +379,6 @@ function myNew () {
 5. 迭代：map 是 iterator 的，可以直接迭代，object 使用 Object.keys
 6. 性能：map 在频繁增删键值对是性能好，object 无优化
 
-1. WeakMap 
+WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入垃圾回收机制，一旦不需要会自动消失
 
+###### ~~JSON
