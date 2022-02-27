@@ -371,6 +371,9 @@ function myNew () {
 7. 函数体只有一句话，并且不要返回值，使用 void `let fn = () => void fun()`
 8. 对象的方法，原型对象的方法和DOM事件函数不能用
 
+###### 数组的原生方法
+
+
 ###### Map
 1. 意外的键：新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
 2. 键值：map 的键可以是任意内容，object 的键必须是 string 或者 symbol
