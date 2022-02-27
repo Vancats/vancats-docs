@@ -370,3 +370,7 @@ function myNew () {
 6. 不能用作 generator 函数，不能使用 yield 关键字
 7. 函数体只有一句话，并且不要返回值，使用 void `let fn = () => void fun()`
 8. 对象的方法，原型对象的方法和DOM事件函数不能用
+
+###### 111
+1. 新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
+2. map 的键可以是任意内容，object 的键必须是 string hu
