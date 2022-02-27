@@ -388,10 +388,10 @@ WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入
 1. JSON.parse：JSON -> JS 如果不合规范，报错
 2. JSON.stringify：JS -> JSON 如果不合规范，会对值特殊处理
 
-###### unicode 与编码方式
+###### Unicode 与编码方式
 **Unicode**：为每种语言的每个字符设定了统一并且唯一的二进制编码，实现方式（编码方式）有 UTF-8/16/32
 
-UTF-8
+**UTF-8**
 1. 对于单子节字符，首位为0，其余 7 位为这个字符的 unicode 编码，因此英文字母的 ASCII 和 Unicode 一样
 2. 对于 n 字节字符，第一个字节的前 n 位都是 1，第 n + 1 位是 0，其他字节前两位都是 10
 
@@ -401,4 +401,6 @@ UTF-8
 | 0x80—0x7FF （128-2047）         | 110xxxxx 10xxxxxx                   |
 | 0x800—0xFFFF  （2048-65535）    | 1110xxxx 10xxxxxx 10xxxxxx          |
 | 0x10000—0x10FFFF  （65536以上） | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx |
+
+根据 Unicode 编码进行 UTF-8 编码
 
