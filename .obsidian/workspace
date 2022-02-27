@@ -90,14 +90,21 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "be920952a60b9709",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 168,
-    "collapsed": true
+    "width": 168
   },
   "active": "266370db96849c97",
   "lastOpenFiles": [
