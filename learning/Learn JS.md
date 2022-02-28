@@ -405,6 +405,11 @@ obj[Symbol.iterator] = function*() {
 
 ###### 对象的原生方法
 
+
+###### ES6 和 CommonJS
+1. 前者的 import 异步加载；后者的 require 同步加载，只适用于本地读取文件的服务端
+2. 前者输出的值的引用，而后者输出的是值的浅拷贝内容
+
 ###### AJAX 
 ```js
 const url = '/api/user'
