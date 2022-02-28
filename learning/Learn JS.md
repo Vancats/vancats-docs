@@ -511,7 +511,7 @@ WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入
 ###### ~~JSON~~
 1. JSON.parse：JSON -> JS 如果不合规范，报错
 2. JSON.stringify
-```html
+```js
 JSON.stringify(value[, replacer[, space]])
 
 replacer
@@ -523,10 +523,11 @@ space: 指定缩进的空白符
 如果是字符串，字符串被当作空格，取前十个
 
 特性：
-1、 忽略值
-	null、undefined、Symbol 出现在非数组对象中直接忽略
-	null
-
+1. null、undefined、Symbol 出现在非数组对象中直接忽略，在数组中返回 null，被 replacer 单独转换时返回 undefined
+2. 基础值包装对象自动转换成原始值 new Number(1) -> 1
+3. 任何以 Symbol 为键值的都会被忽略
+4. NaN、Infinity、null 都转换成 null
+5. 如果
 ```
 
 ###### Unicode 与编码方式
