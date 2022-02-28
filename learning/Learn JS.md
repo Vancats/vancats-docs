@@ -407,9 +407,17 @@ obj[Symbol.iterator] = function*() {
 
 ###### AJAX 
 ```js
-const url
+const url = '/api/user'
 let xhr = new XMLHTTPRequest()
-xhr.open('get', )
+xhr.open('get', url, true) // 默认 true 异步
+
+xhr.onreadystatechange = function() {
+	if (readystate === '4') {
+
+	}
+}
+
+xhr.onreadystatechange
 
 ```
 
