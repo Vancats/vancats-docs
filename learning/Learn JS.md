@@ -510,7 +510,13 @@ WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入
 
 ###### ~~JSON~~
 1. JSON.parse：JSON -> JS 如果不合规范，报错
-2. JSON.stringify：JS -> JSON 如果不合规范，会对值特殊处理
+2. JSON.stringify
+```js
+JSON.stringify(value[, replacer[, space]])
+// replacer
+//   function:
+
+```
 
 ###### Unicode 与编码方式
 **Unicode**：为每种语言的每个字符设定了统一并且唯一的二进制编码，实现方式（编码方式）有 UTF-8/16/32
