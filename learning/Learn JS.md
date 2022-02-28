@@ -409,6 +409,8 @@ obj[Symbol.iterator] = function*() {
 ###### ES6 和 CommonJS
 1. 前者的 import 异步加载；后者的 require 同步加载，只适用于本地读取文件的服务端
 2. 前者输出的值的引用，而后者输出的是值的浅拷贝内容
+3. 前者是编译时输出接口，因此可以静态分析，tree shaking 和 scope hoisting
+4. 前者在 import 遇到循环模块时，只会
 
 ###### AJAX 
 ```js
