@@ -458,6 +458,10 @@ function getJSON() {
 	return promise
 }
 ```
+**Fetch**
+基于 Promise 设计，使用原生 js，而不是 ajax 的进一步的封装，没有使用 XMLHttpRequest
+优点：语法简洁，基于 Promise，支持 async/await
+缺点：只对网络请求报错，对 400，500
 
 ###### Map
 1. 意外的键：新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
