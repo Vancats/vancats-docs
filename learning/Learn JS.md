@@ -406,11 +406,16 @@ at concat copyWithin entries every fill filter find findIndex findLastIndex flat
 includes indexOf join keys lastIndexOf map pop push reduce reduceRight reverse shift slice some sort splice
 toLocaleString toString unshift values
 
-Array isArray
+Array：from isArray of
 ```
 
 ###### 对象的原生方法
+```js
+hasOwnProperty isPrototypeOf propertyEnumerable toLocaleString toString valueOf
 
+String：assign create defineProperties defineProperty entries freeze fromEntries getOwnPropertyDescriptor
+getOwnPropertyDescriptors getOwnProperty
+```
 
 ###### ES6 和 CommonJS
 1. 前者的 import 异步加载，后者的 require 同步加载，只适用于本地读取文件的服务端
