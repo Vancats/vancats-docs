@@ -527,7 +527,10 @@ space: 指定缩进的空白符
 2. 基础值包装对象自动转换成原始值 new Number(1) -> 1
 3. 任何以 Symbol 为键值的都会被忽略
 4. NaN、Infinity、null 都转换成 null
-5. 如果
+5. 如果值有 toJSON 方法，直接返回 return 值
+6. Date 自动调用了 toJSON，返回时间字符串
+7. 
+8. 包含循环引用或 BigInt，抛出错误
 ```
 
 ###### Unicode 与编码方式
