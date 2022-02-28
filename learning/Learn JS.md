@@ -371,6 +371,13 @@ function myNew () {
 7. 函数体只有一句话，并且不要返回值，使用 void `let fn = () => void fun()`
 8. 对象的方法，原型对象的方法和DOM事件函数不能用
 
+###### for...of
+```js
+let obj = { a: 1, b: 2 }
+
+obj[Symbol.iterator] = function
+```
+
 ###### 数组的原生方法
 
 
