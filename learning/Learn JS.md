@@ -430,12 +430,30 @@ xhr.setRequestHeader('Accept', 'application/json')
 
 xhr.send(null)
 
-
+// 
 function getJSON() {
-	return new Promise((resolve, reject) => {
+	let promise = new Promise(function (resolve, reject) {
 		let xhr = new XMLHttpRequest()
-		xhr.open('get', url, trye)
+		xhr.open('get', url)
+		xhr.onreadystatechange = function() {
+			if (this.readystate !== '4') return
+			if (this.status === 200) {
+				resolve(this.response)
+			} else {
+				reject(new Error(this.statusText))
+			}
+		}
+
+		xhr.onerror = function() {
+			reject(new Error(this.statusText))
+		}
+
+		xhr.responseType = 'json'
+		xhr.setRequestHeader('Accept', 'application/json')
+
+		xhr.send(null)
 	})
+	return promise
 }
 ```
 
