@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn JS.md",
+            "file": "learning/Learn CSS.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn JS.md",
+                "file": "learning/Learn CSS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,7 @@
   },
   "active": "266370db96849c97",
   "lastOpenFiles": [
+    "learning/Learn CSS.md",
     "learning/Learn JS.md",
     "js/Vue.md",
     "js/React.md",
@@ -109,7 +110,6 @@
     "js/another.md",
     "js/手撕.md",
     "js/模块系统.md",
-    "js/模板引擎.md",
-    "sundry/Webpack.md"
+    "js/模板引擎.md"
   ]
 }
