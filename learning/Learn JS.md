@@ -511,13 +511,21 @@ WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入
 ###### ~~JSON~~
 1. JSON.parse：JSON -> JS 如果不合规范，报错
 2. JSON.stringify
-```js
+```html
 JSON.stringify(value[, replacer[, space]])
+
 replacer
-	function: 每个属性都会经过该函数的处理
-	array: 只有包含在这个数组中的才会被序列化
+function: 每个属性都会经过该函数的处理
+array: 只有包含在这个数组中的才会被序列化
+
 space: 指定缩进的空白符
-	数字是几就是有多少空格，上限为 10，小于 1 没有空格
+数字是几就是有多少空格，上限为 10，小于 1 没有空格
+如果是字符串，字符串被当作空格，取前十个
+
+特性：
+1、 忽略值
+	null、undefined、Symbol 出现在非数组对象中直接忽略
+	null
 
 ```
 
