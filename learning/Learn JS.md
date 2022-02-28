@@ -407,10 +407,12 @@ obj[Symbol.iterator] = function*() {
 
 
 ###### ES6 和 CommonJS
-1. 前者的 import 异步加载；后者的 require 同步加载，只适用于本地读取文件的服务端
+1. 前者的 import 异步加载，后者的 require 同步加载，只适用于本地读取文件的服务端
 2. 前者输出的值的引用，而后者输出的是值的浅拷贝内容
 3. 前者是编译时输出接口，因此可以静态分析，tree shaking 和 scope hoisting
-4. 前者在 import 遇到循环模块时，只会
+4. 前者遇到循环模块时，因为其变量值不缓存，可以取到最终的值，后者只会输出已经执行的部分，后续的变化不影响前面的值
+5. 前者 this 指向 undefined，后者 this 指向本模块
+6. 前者支持引入后者（必须整体引入，不能引入单独一个变量）；后者引入前者，要求后者使用 .mjs 后缀，或者在 package.json 中加入 { "type": "module" }，而且 mjs 文件必须和 import 对应，不能使用 require
 
 ###### AJAX 
 ```js
