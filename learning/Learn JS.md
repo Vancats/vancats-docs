@@ -413,6 +413,7 @@ xhr.open('get', url, true) // 默认 true 异步
 
 // 设置状态监听函数
 xhr.onreadystatechange = function() {
+	// 0: 已代理，未发 open; 1: open 2: send 3: 下载中 4: 完成
 	if (this.readystate !== '4') return
 	if (this.status === 200) {
 		handle(this.response)
@@ -428,9 +429,10 @@ xhr.onerror = function() {
 xhr.responseType = 'json'
 xhr.setRequestHeader('Accept', 'application/json')
 
+// 也可以带 data
 xhr.send(null)
 
-// 
+// 使用 Promise 封装 AJAX
 function getJSON() {
 	let promise = new Promise(function (resolve, reject) {
 		let xhr = new XMLHttpRequest()
