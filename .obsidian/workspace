@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "source/前端开发.md",
-            "mode": "source",
+            "file": "learning/Learn JS.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/前端开发.md",
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "266370db96849c97",
   "lastOpenFiles": [
-    "source/前端开发.md",
-    "learning/LeetCode.md",
-    "learning/RegExp.md",
-    "learning/Learn Vue.md",
-    "learning/Learn HTML.md",
-    "learning/Learn CSS.md",
-    "learning/JS 题目.md",
-    "learning/Learn HTTP.md",
     "learning/Learn JS.md",
-    "learning/未命名.md"
+    "js/Vue.md",
+    "js/React.md",
+    "js/OM.md",
+    "js/ES.md",
+    "js/another.md",
+    "js/手撕.md",
+    "js/模块系统.md",
+    "js/模板引擎.md",
+    "sundry/Webpack.md"
   ]
 }
