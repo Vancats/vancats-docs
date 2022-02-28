@@ -408,17 +408,35 @@ obj[Symbol.iterator] = function*() {
 ###### AJAX 
 ```js
 const url = '/api/user'
-let xhr = new XMLHTTPRequest()
+let xhr = new XMLHttpRequest()
 xhr.open('get', url, true) // 默认 true 异步
 
+// 设置状态监听函数
 xhr.onreadystatechange = function() {
-	if (readystate === '4') {
-
+	if (this.readystate !== '4') return
+	if (this.status === 200) {
+		handle(this.response)
+	} else {
+		console.error(this.statusText)
 	}
 }
 
-xhr.onreadystatechange
+xhr.onerror = function() {
+	console.error(this.statusText)
+}
 
+xhr.responseType = 'json'
+xhr.setRequestHeader('Accept', 'application/json')
+
+xhr.send(null)
+
+
+function getJSON() {
+	return new Promise((resolve, reject) => {
+		let xhr = new XMLHttpRequest()
+		xhr.open('get', url, trye)
+	})
+}
 ```
 
 ###### Map
