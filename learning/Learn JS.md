@@ -470,10 +470,12 @@ function getJSON() {
 
 **Axios**
 基于 Promise 封装
-1. 浏览器端发起 XMLHttpRequest 请求
-2. node 端发起 http 请求
-3. 支持 Promise API
-4. 监听请求和返回
+1. 浏览器端发起 XMLHttpRequest 请求，node 端发起 http 请求
+2. 支持 Promise API
+3. 监听请求和返回，对请求和返回进行转化
+4. 可以取消请求
+5. 自动转换 json，fetch 需要 res.json()
+6. 客户端支持抵御 XSRF 攻击
 
 ###### Map
 1. 意外的键：新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
