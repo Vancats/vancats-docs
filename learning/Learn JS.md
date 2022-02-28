@@ -458,10 +458,22 @@ function getJSON() {
 	return promise
 }
 ```
+
 **Fetch**
 基于 Promise 设计，使用原生 js，而不是 ajax 的进一步的封装，没有使用 XMLHttpRequest
 优点：语法简洁，基于 Promise，支持 async/await
-缺点：只对网络请求报错，对 400，500
+缺点：
+1. 只对网络请求报错，对 400，500 都当作成功请求
+2. fetch 默认不发 cookie，需要配置项 fetch( url, { credentials: 'include' })
+3. fetch 不支持 abort，不支持超时控制，使用 setTimeout 与 Promise.reject 实现的超时控制不能阻止请求过程继续在后台运行
+4. fetch 没有办法原生监测的请求的进度
+
+**Axios**
+基于 Promise 封装
+1. 浏览器端发起 XMLHttpRequest 请求
+2. node 端发起 http 请求
+3. 支持 Promise API
+4. 监听请求和返回
 
 ###### Map
 1. 意外的键：新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
