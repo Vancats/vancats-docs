@@ -371,10 +371,12 @@ function myNew () {
 7. 函数体只有一句话，并且不要返回值，使用 void `let fn = () => void fun()`
 8. 对象的方法，原型对象的方法和DOM事件函数不能用
 
-###### for...of
+###### for...of & iterator
 ```js
 let obj = { a: 1, b: 2 }
 
+// 实现 iterator 的方法
+// eg1
 obj[Symbol.iterator] = function() {
 	let keys = Object.keys(this)
 	let count = 0
@@ -386,6 +388,14 @@ obj[Symbol.iterator] = function() {
 				return { value: undefined, done: true }
 			}
 		}
+	}
+}
+
+// eg2
+obj[Symbol.iterator] = function*() {
+	let keys = Object.keys(this)
+	for(let k of keys) {
+		yield obj[k]
 	}
 }
 ```
