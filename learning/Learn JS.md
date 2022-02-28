@@ -513,8 +513,11 @@ WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入
 2. JSON.stringify
 ```js
 JSON.stringify(value[, replacer[, space]])
-// replacer
-//   function:
+replacer
+	function: 每个属性都会经过该函数的处理
+	array: 只有包含在这个数组中的才会被序列化
+space: 指定缩进的空白符
+	数字是几就是有多少空格，上限为 10，小于 1 没有空格
 
 ```
 
