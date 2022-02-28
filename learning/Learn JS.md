@@ -405,6 +405,13 @@ obj[Symbol.iterator] = function*() {
 
 ###### 对象的原生方法
 
+###### AJAX 
+```js
+const url
+let xhr = new XMLHTTPRequest()
+xhr.open('get', )
+
+```
 
 ###### Map
 1. 意外的键：新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
