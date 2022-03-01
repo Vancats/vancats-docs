@@ -508,7 +508,7 @@ function getJSON() {
 
 WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入垃圾回收机制，一旦不需要会自动消失
 
-###### ~~JSON~~
+###### JSON
 1. JSON.parse：JSON -> JS 如果不合规范，报错
 2. JSON.stringify
 ```js
@@ -529,7 +529,7 @@ space: 指定缩进的空白符
 4. NaN、Infinity、null 都转换成 null
 5. 如果值有 toJSON 方法，直接返回 return 值
 6. Date 自动调用了 toJSON，返回时间字符串
-7. 
+7. 其他类型的对象，如 Map、WeakMap、Set、WeakSet，仅序列化可枚举属性
 8. 包含循环引用或 BigInt，抛出错误
 ```
 
