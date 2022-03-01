@@ -31,8 +31,6 @@
 	- B-树 / B+树 ---> 文件系统、数据库 底层重要数据结构
 
 
-  - [215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
-
   - [355. 设计推特](https://leetcode-cn.com/problems/design-twitter/)
   - [692. 前K个高频单词](https://leetcode-cn.com/problems/top-k-frequent-words/)
   - [面试题 17.20. 连续中值](https://leetcode-cn.com/problems/continuous-median-lcci/)
