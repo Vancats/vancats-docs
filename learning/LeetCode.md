@@ -31,23 +31,9 @@
 	- B-树 / B+树 ---> 文件系统、数据库 底层重要数据结构
 
 
-### 5. 堆
-**是优先队列的一种实现方式**
-**集合最值**
-- 数据结构：定义一种性质，并且维护这种性质
-- 堆的基础应用
-  - [剑指 Offer 40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)
-  - [1046. 最后一块石头的重量](https://leetcode-cn.com/problems/last-stone-weight/)
-  - [703. 数据流中的第 K 大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)
-  - [373. 查找和最小的K对数字](https://leetcode-cn.com/problems/find-k-pairs-with-smallest-sums/)
-  - [215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
-- 堆的进阶应用
   - [355. 设计推特](https://leetcode-cn.com/problems/design-twitter/)
-  - [692. 前K个高频单词](https://leetcode-cn.com/problems/top-k-frequent-words/)
-  - [面试题 17.20. 连续中值](https://leetcode-cn.com/problems/continuous-median-lcci/)
-  - [295. 数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)
   - [1801. 积压订单中的订单总数](https://leetcode-cn.com/problems/number-of-orders-in-the-backlog/)
-- 智力发散
+
   - [264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)
   - [313. 超级丑数](https://leetcode-cn.com/problems/super-ugly-number/)
   - [1753. 移除石子的最大得分](https://leetcode-cn.com/problems/maximum-score-from-removing-stones/)
