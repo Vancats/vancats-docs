@@ -32,10 +32,6 @@
 
 
 ### 5. 堆
-- 堆的基础应用
-  - [剑指 Offer 40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)
-  - [1046. 最后一块石头的重量](https://leetcode-cn.com/problems/last-stone-weight/)
-  - [703. 数据流中的第 K 大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)
   - [373. 查找和最小的K对数字](https://leetcode-cn.com/problems/find-k-pairs-with-smallest-sums/)
   - [215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
 - 堆的进阶应用
