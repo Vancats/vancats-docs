@@ -32,9 +32,6 @@
 
 
 ### 5. 堆
-**是优先队列的一种实现方式**
-**集合最值**
-- 数据结构：定义一种性质，并且维护这种性质
 - 堆的基础应用
   - [剑指 Offer 40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)
   - [1046. 最后一块石头的重量](https://leetcode-cn.com/problems/last-stone-weight/)
