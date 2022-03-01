@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/LeetCode.md",
+            "file": "learning/Learn JS.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/LeetCode.md",
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -90,9 +90,17 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "be920952a60b9709",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -101,15 +109,15 @@
   },
   "active": "266370db96849c97",
   "lastOpenFiles": [
+    "learning/Learn JS.md",
+    "learning/Learn Interview.md",
+    "learning/Learn CSS.md",
+    "learning/Learn HTTP.md",
     "learning/LeetCode.md",
-    "js/another.md",
-    "js/ES.md",
+    "learning/Learn HTML.md",
+    "learning/Learn Vue.md",
     "sundry/Webpack.md",
     "sundry/Plugins.md",
-    "sundry/Git.md",
-    "sundry/Config.md",
-    "sundry/网络.md",
-    "sundry/动漫.md",
-    "learning/Learn JS.md"
+    "sundry/Git.md"
   ]
 }

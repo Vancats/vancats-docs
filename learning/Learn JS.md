@@ -400,7 +400,7 @@ obj[Symbol.iterator] = function*() {
 }
 ```
 
-###### ~~数组的原生方法~~
+###### 数组的原生方法
 ```js
 at concat copyWithin entries every fill filter find findIndex findLastIndex flat flatMap forEach
 includes indexOf join keys lastIndexOf map pop push reduce reduceRight reverse shift slice some sort splice
@@ -409,7 +409,7 @@ toLocaleString toString unshift values
 Array：from isArray of
 ```
 
-###### ~~对象的原生方法~~
+###### 对象的原生方法
 ```js
 hasOwnProperty isPrototypeOf propertyEnumerable toLocaleString toString valueOf
 
