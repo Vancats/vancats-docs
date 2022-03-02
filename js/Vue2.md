@@ -1,3 +1,7 @@
+---
+date created: 2022-03-03 00:35
+---
+
 ### 初始化过程
 
 ```javascript
@@ -98,7 +102,7 @@ $mount -> mountComponent -> watcher -> updateComponent
 >
 > timerFunc()
 >
-> - 往微任务队列中放入 flushCallbacks   
+> - 往微任务队列中放入 flushCallbacks
 >
 > - Promise > MutationObserver > setImmediate > setTimeout
 >
@@ -124,8 +128,6 @@ $mount -> mountComponent -> watcher -> updateComponent
 >
 > updateChildren()
 
-
-
 > nextTick的理解？
 >
 > nextTick：
@@ -137,8 +139,6 @@ $mount -> mountComponent -> watcher -> updateComponent
 > ​    如何工作：源码描述，数据变化，watcher入队，异步冲刷队列，最后真正watcher.run
 >
 > ​    结合实践：
-
-
 
 ### 组件化机制
 
@@ -179,30 +179,18 @@ $mount -> mountComponent -> watcher -> updateComponent
     Ctol 是之前挂载到Vue.$options的components下的组件构造函数
     createElement 转换自定义组件 Ctol 为 vnode
     vnode = createComponent(Ctol,...args)
-    
+
     installComponentHooks(data)
     hooksToMerge
     ```
-
-    
 
   - 某个时刻:挂载 $mount => mountComponent =>  render() => vdom
 
   - patch()
 
-
-
-
-
 initGlobalAPI
 
 initAssetRegisters
-
-
-
-
-
-
 
 this.option._base 是 Vue 实例
 
@@ -216,15 +204,9 @@ mergeOptions 时把所有组件都合并到选项中
 
 `this.options[type + 's'][id] = definition 将所有组件挂到 Vue 到 options 到 components 选项中`
 
-
-
 组件与正常标签的区别?
 
-
-
 组件定义 => 组件实例 => 挂载
-
-
 
 $mount
 
@@ -232,7 +214,7 @@ render()
 
 createElement()
 
-createComponent => vnode 
+createComponent => vnode
 
 ...
 
@@ -252,15 +234,12 @@ initComponent() 处理之后已经组件化以及完成
 
 invokeCreateHooks() 创建钩子负责处理组件属性,事件等
 
-
-
-
-
 断点
 
 1. create-element --> typeof tag === 'String'
 
-2. create-element --> isDef(*Ctor* = resolveAsset(context.$options, 'components', tag))
+2. create-element --> isDef(_Ctor_ = resolveAsset(context.$options, 'components', tag))
 
 3. create-element --> installComponentHooks  data 数据
+
 4. patch ---> createElm(vnode) 里面有 children 为 vue-component-1-comp --- 进

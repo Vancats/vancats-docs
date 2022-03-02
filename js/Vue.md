@@ -1,3 +1,7 @@
+---
+date created: 2022-03-03 00:35
+---
+
 # Vue
 
 ### 1. 对 Vue 的理解
@@ -11,21 +15,21 @@
 
 - v-model
 
-  + 语法糖：`v-bind:value="inputValue" + v-on：input="inputValue = $event.target.value"`
-  + 自定义组件：`:value="inputValue + @input="inputValue = argument[0]" + this.$emit('input', value)`
-  + .number：自动将输入值转换为数值
-  + .lazy：在 input 加上将转换为 change 时更新
-  + .trim
+  - 语法糖：`v-bind:value="inputValue" + v-on：input="inputValue = $event.target.value"`
+  - 自定义组件：`:value="inputValue + @input="inputValue = argument[0]" + this.$emit('input', value)`
+  - .number：自动将输入值转换为数值
+  - .lazy：在 input 加上将转换为 change 时更新
+  - .trim
 - v-html：容易受到 xss 攻击、替换标签内的元素
 - v-once：渲染后不更改
 - v-text：纯文本输出，不会闪烁
 - v-cloak：编译结束前可以使用样式，解决闪烁问题
 - 事件修饰符
 
-  - stop--阻止冒泡   
+  - stop--阻止冒泡
   - prevent--阻止浏览器默认行为--a标签
   - capture--捕获事件
-  - self 只触发本身的事件  
+  - self 只触发本身的事件
   - once 事件只执行一次
   - trim、lazy、number
 - computed：也是一个 watcher，具备缓存，数据变化重新计算。一个数据依赖于其他数据
@@ -90,7 +94,7 @@
 
 ### 数据响应式原理
 
->  vue2 的数据响应式根据是采用数据劫持结合发布者-订阅者模式的方式，对不同数据类型处理，对象采用 Object.defineProperty() 进行数据劫持，数组则扩展了它的 7 个变更方法，当数据被访问或变化时，我们就感知并且响应
+> vue2 的数据响应式根据是采用数据劫持结合发布者-订阅者模式的方式，对不同数据类型处理，对象采用 Object.defineProperty() 进行数据劫持，数组则扩展了它的 7 个变更方法，当数据被访问或变化时，我们就感知并且响应
 
 1. 需要 observe 的数据对象进行递归遍历，包括子属性对象的属性，都加上 setter 和 getter 这样的话，给这个对象的某个值赋值，就会触发 setter，那么就能监听到了数据变化
 2. compile 解析模板指令，将模板中的变量替换成数据，然后初始化渲染页面视图。并将每个指令对应的节点绑定更新函数，添加监听数据的订阅者，一旦数据有变动，收到通知，更新视图
@@ -103,19 +107,22 @@
 ### computed 实现
 
 1. 当组件初始化的时候， computed 和 data 会分别建⽴各⾃的响应系统， Observer 遍历 data
+
 中每个属性设置 get/set 数据拦截
 2. 初始化 computed 会调⽤ initComputed 函数
-   1. 注册⼀个 watcher 实例，并在内实例化⼀个 Dep 消息订阅器⽤作后续收集依赖（⽐如渲染函数的 watcher 或者其他观察该计算属性变化的 watcher ）
-   2. 调⽤计算属性时会触发其 Object.defineProperty 的 get 访问器函数
-   3. 调⽤ watcher.depend() ⽅法向⾃身的消息订阅器 dep 的 subs 中添加其他属性的
-       watcher
-   4. 调⽤ watcher 的 evaluate ⽅法（进⽽调⽤ watcher 的 get ⽅法）让⾃身成为其他
-       watcher 的消息订阅器的订阅者，⾸先将 watcher 赋给 Dep.target ，然后执⾏ getter
-       求值函数，当访问求值函数⾥⾯的属性（⽐如来⾃ data 、 props 或其他 computed ）时，
-       会同样触发它们的 get 访问器函数从⽽将该计算属性的 watcher 添加到求值函数中属性的
-       watcher 的消息订阅器 dep 中，当这些操作完成，最后关闭 Dep.target 赋为 null 并
-       返回求值函数结果。
-3. 当某个属性发⽣变化，触发 set 拦截函数，然后调⽤⾃身消息订阅器 dep 的 notify ⽅法，遍
+
+1. 注册⼀个 watcher 实例，并在内实例化⼀个 Dep 消息订阅器⽤作后续收集依赖（⽐如渲染函数的 watcher 或者其他观察该计算属性变化的 watcher ）
+2. 调⽤计算属性时会触发其 Object.defineProperty 的 get 访问器函数
+3. 调⽤ watcher.depend() ⽅法向⾃身的消息订阅器 dep 的 subs 中添加其他属性的
+   watcher
+4. 调⽤ watcher 的 evaluate ⽅法（进⽽调⽤ watcher 的 get ⽅法）让⾃身成为其他
+   watcher 的消息订阅器的订阅者，⾸先将 watcher 赋给 Dep.target ，然后执⾏ getter
+   求值函数，当访问求值函数⾥⾯的属性（⽐如来⾃ data 、 props 或其他 computed ）时，
+   会同样触发它们的 get 访问器函数从⽽将该计算属性的 watcher 添加到求值函数中属性的
+   watcher 的消息订阅器 dep 中，当这些操作完成，最后关闭 Dep.target 赋为 null 并
+   返回求值函数结果。
+5. 当某个属性发⽣变化，触发 set 拦截函数，然后调⽤⾃身消息订阅器 dep 的 notify ⽅法，遍
+
 历当前 dep 中保存着所有订阅者 wathcer 的 subs 数组，并逐个调⽤ watcher 的 update ⽅
 法，完成响应更新
 
@@ -130,9 +137,9 @@
 **过程**
 
 1. 数据变动后，`setter`函数中的`dep.notify()`通知`watcher`更新
-3. `queueWatcher`将`watcher`去重，放入队列
-4. 使用 nextTick 方法添加`flushSchedulerQueue)`回调，它被加入 callbacks 数组
-5. 异步启动 timerFunc，依次 Promise、MutationObserve、setImmediate，最后不行，使用 setTimeout(fn, 0)
+2. `queueWatcher`将`watcher`去重，放入队列
+3. 使用 nextTick 方法添加`flushSchedulerQueue)`回调，它被加入 callbacks 数组
+4. 异步启动 timerFunc，依次 Promise、MutationObserve、setImmediate，最后不行，使用 setTimeout(fn, 0)
 5. timeFunc 用 Promise.then 向队列添加 flushCallbacks, 它遍历 callbacks，执行所有回调
 6. 回调中有 flushSchedulerQueue，它执行所有 watcher 的 run 方法，使组件更新
 
@@ -156,7 +163,7 @@
   var coml = Vue.extend({
       template:'<h3>这是使用Vue.extend 创建的组件</h3>'
   })
-  
+
   Vue.component('myComl', coml)
   <my-coml><my-coml/>
   ```
@@ -183,7 +190,7 @@
   		 </h1> 
   	</div>
   </template>
-  
+
   Vue.component('mycom3', {
       template:'#tmp1'
   })
@@ -195,7 +202,7 @@
   <template id='temp2'>
    	<h1>这是私有login组件</h1>
   </template>
-  
+
   component:{
       login:{
           template:'temp2'
@@ -207,7 +214,7 @@
 
 - 父子间通信：props 传递属性，v-on传递方法，$emit 触发事件
 
-- $emit  / $on
+- $ emit  /  $on
 
   ```javascript
   Vue.prototype.$bus = new Vue()
@@ -221,7 +228,7 @@
 
   - 通过 v-bind="$attrs" v-on="$listeners" 传入内部组件
 
-- $root $parent / $children 与 ref：直接访问实例
+- $ root  $parent / $children 与 ref：直接访问实例
 
 - Vuex
 
@@ -250,7 +257,7 @@
   父<div slot="footer">vue</div>
   子<slot name="header"></slot>
   ```
-  
+
 - 作用域插槽
 
   ```javascript
@@ -261,7 +268,9 @@
 **vue.mixin 混入**
 
 - 分发 Vue 组件的可复用功能
+
 - 组件和混入对象同名，数据对象都以组件的为先
+
 - 混入对象的钩子在组件自身钩子之前调用
 
 - 全局：`Vue.mixin(component)` 局部 ：`mixins: [component]`
@@ -292,20 +301,20 @@ const Comp = {
 
 1. **路由模式**
 
-   + hash 模式（默认）
+   - hash 模式（默认）
 
-     + hash 值只是客户端的一种状态，发送请求时 hash 部分不会发出
+     - hash 值只是客户端的一种状态，发送请求时 hash 部分不会发出
 
-     + hash 值的改变加一个记录到访问历史，可以通过回退前进控制切换
+     - hash 值的改变加一个记录到访问历史，可以通过回退前进控制切换
 
-     + 使用 hashchange 可以监听 hash 变化
+     - 使用 hashchange 可以监听 hash 变化
 
        `<a href="#search"></a>   location.hash="#search"`
 
-   + history 模式：router 中加上`mode:'history'`
+   - history 模式：router 中加上`mode:'history'`
 
-     + 使用 popstate 监听 url 变化
-     + 刷新时，会返回 404，需要重定向
+     - 使用 popstate 监听 url 变化
+     - 刷新时，会返回 404，需要重定向
 
      ```javascript
      window.histort.pushState(null, null, path) // 标题传 null
@@ -343,7 +352,7 @@ const Comp = {
        <router-link to="..."></>
    </div>
    <router-view></router-view>
-   
+
    // router-link 使用 active-class
    1. <router-link ... active-class="active"></>
    2. export default new Router({ linkActiveClass: 'active' })
@@ -427,11 +436,11 @@ const Comp = {
     ```javascript
     1. vue 异步组件技术
     {path:'./home', name: 'Home',component: reslove => require(['@/components/Login'], resolve)}
-    
+
     2. import // 注释代表会合并打包成一个 js 文件
     const Foo = ()=>import(/*webpackChunkName:'group-foo'*/ './foo.vue')
     const Bar = ()=>import(/*webpackChunkName:'group-foo'*/ './Bar.vue')
-    
+
     3. require.ensure() // demo 相同就打包成一个 js
     {path:'./home', name: 'Home',component: 
     	reslove => require.ensure([],()=> resolve(require('@/components/Login')), 'demo')}
@@ -486,7 +495,7 @@ const Comp = {
             }, 2000)
         }
     }
-    
+
     this.$store.dispatch('aEdit', {age: 15})
     ```
 
@@ -577,8 +586,6 @@ vue-loader 是解析`.vue`文件的一个加载器，将`template/js/style`转�
   })
   ```
 
-  
-
 ### axios
 
 - 从浏览器中创建 XMLHttpRequest
@@ -592,9 +599,5 @@ vue-loader 是解析`.vue`文件的一个加载器，将`template/js/style`转�
 - params一般适用于get请求，data一般适用于post put 请求。
 
 ### 封装 Vue
-
-
-
-
 
 the-super-tiny-compiler 200 行代码实现小型 vue

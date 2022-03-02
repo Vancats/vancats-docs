@@ -1,3 +1,7 @@
+---
+date created: 2022-03-03 00:35
+---
+
 ## Event
 
 ### 事件监听器
@@ -72,20 +76,25 @@ removeEventListener('click', fn)
 ### DOM 关系
 
 - childNodes 子节点
+
 - parentNode 父亲节点 parentElement
+
 - offsetNode 定位父级---元素根据定位的父级：absolute
 
-- children 子元素 
+- children 子元素
 
 - firstChild 第一个子节点  lastChild
+
 - firstElementChild 第一个元素节点 lastElementChild
+
 - nextSibling 下一个兄弟节点 previousSibling 上一个
+
 - nextElementSibling 下一个兄弟元素 previousElementSibling
 
 ### 查找内容
 
 - nodeList
-  - childNodes 
+  - childNodes
   - querySelector(All)
 - HTMLCollection
   - children
@@ -115,7 +124,7 @@ removeEventListener('click', fn)
 
   ```javascript
   <div data-kkb="hello"></>
-  
+
   box.dataset.kkb // hello
   ```
 
@@ -176,7 +185,7 @@ removeEventListener('click', fn)
 
 ```
 
-## BOM 
+## BOM
 
 ### window
 
@@ -234,6 +243,3 @@ removeEventListener('click', fn)
 - href：完整地址
 - hash：# 后内容
 - search：？ 后内容
-
-
-

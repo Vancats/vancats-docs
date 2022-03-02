@@ -1,3 +1,7 @@
+---
+date created: 2022-03-03 00:36
+---
+
 ## Webpack--模块打包器
 
 > 打包原理：把项目当成一个整体，通过一个给定主文件，从主文件开始找到项目的所有依赖，使用 loaders 类处理，最后打包成一个或多个浏览器可识别的 js 文件
@@ -28,7 +32,7 @@ npx webpack
 
 ### 3. 通过配置文件打包
 
-- 修改 webpack.config.js 
+- 修改 webpack.config.js
 
 ```javascript
 // webpack.config.js
@@ -88,7 +92,7 @@ module.exports = {
           }
       }
   }
-  
+
   // package.json
   "scripts": {
       "build": "webpack", // npm run build
@@ -226,7 +230,7 @@ module.exports = {
 
 - 优化配置
 
-  >  提取出babel，放在根目录下的 .babelrc 文件下，webpack 自动调用
+  > 提取出babel，放在根目录下的 .babelrc 文件下，webpack 自动调用
 
 ### 7. Plugins（扩展功能）
 
@@ -236,7 +240,7 @@ module.exports = {
 
   ```javascript
   const webpack = require('webpack')
-  
+
   module.exports = {
       plugins: [
           new webpack.BannerPlugin('版权所有，翻版必究')
@@ -253,7 +257,7 @@ module.exports = {
   cnpm i html-webpack-plugin -D
   // 引入
   const HtmlWebpackPlugin = require('html-webpack-plugin')
-  
+
   module.exports = {
       plugins: [
           new HtmlWebpackPlugin({
@@ -286,7 +290,7 @@ module.exports = {
   ```javascript
   npm i mini-css-extract-plugin
   const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-  
+
   	module: {
       	rules: [
           	{
@@ -309,9 +313,7 @@ module.exports = {
           })
       ]
   ```
-  
-  
-  
+
 - 热更新：修改代码后自动刷新预览效果
 
   ```javascript
@@ -326,7 +328,7 @@ module.exports = {
           new webpack.HotModuleReplacementPlugin() // 好像不用配置
       ]
   }
-  
+
   // index.js
   // 当模块发生变化，根据规则进行对应更新
   if (module.hot) { // 如果开始 HMR
@@ -340,14 +342,14 @@ module.exports = {
 
   - 新建 `webpack.common---dev---prod.js`公共配置，开发环境配置，生产环境（项目上线时的环境）配置
 
-  + 安装合并模块插件 `cnpm i webpack-merge -D`
+  - 安装合并模块插件 `cnpm i webpack-merge -D`
 
   ```javascript
   // webpack.common.js
   const path = require('path')
   const webpack = require('webpack')
   const HtmlWebpackPlugin = require('html-webpack-plugin')
-  
+
   module.exports = {
       entry: 
       output: {},
@@ -369,7 +371,7 @@ module.exports = {
   // webpack.dev.js
   const merge = require('webpack-merge')
   const common = require('./webpack.common.js')
-  
+
   module.exports = merge(common, {
       devServer: {
           ...
@@ -380,14 +382,14 @@ module.exports = {
   const merge = require('webpack-merge')
   const common = require('./webpack.common.js')
   const CleanWebpackPlugin = require('clean-webpack-plugin')
-  
+
   module.exports = merge(common, {
       devtool: 'source-map',
       plugins: [
           new CleanWebpackPlugin(['dist'])
       ]
   })
-  
+
   // package.json
   "scripts": {
       "build": "webpack --config webpack.prod.js",
@@ -473,7 +475,7 @@ module.exports = {
   // webpack.prod.js 引入
   const PurifyCssWebpack = require('purifycss-webpack')
   const glod = require('glob')
-  
+
   plugins: [
       new PurifyCssWebpack({
           paths: glob.sync(path.join(__dirname, 'src/*.html')) // 同步扫描所有 html 文件所引用的 css
@@ -539,7 +541,7 @@ module.exports = {
       axios: 'axios',
   	a: './a.js'
   }
-  
+
   optimization: {
       runtimeChunk: "single"
   }
@@ -554,7 +556,7 @@ module.exports = {
           chunks: 'all' // 两者皆有
       }
   }
-  
+
   // 默认配置
   optimization: {
     splitChunks: {
@@ -609,3 +611,4 @@ module.exports = {
   optimization: {
       usedExports: true
   }
+  ```

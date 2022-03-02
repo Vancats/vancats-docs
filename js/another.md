@@ -1,3 +1,7 @@
+---
+date created: 2022-03-03 00:35
+---
+
 ### 多次阅读
 
 > history / hash
@@ -13,6 +17,7 @@
 > patch：patchVnode(oldVnode, vnode) / createElm / createComponent
 
 ### 异步组件
+
 ```javascript
 Vue.component('Foo', () => {
   component: delay(4000, () => ('Foo.js')),
@@ -39,6 +44,7 @@ const ErrorComponent = {
 ```
 
 ### Vue Plugins
+
 1. 添加全局函数
 2. 添加全局资源 - 组件,指令
 3. 混入组件选项

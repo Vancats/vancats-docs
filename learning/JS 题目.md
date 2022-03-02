@@ -1,3 +1,7 @@
+---
+date created: 2022-03-03 00:34
+date updated: 2022-03-03 00:34
+---
 
 ```js
  var a = 2
@@ -127,7 +131,9 @@ new Foo.getName()         // 2
 new Foo().getName()       // 3
 new new Foo().getName()   // 3
 ```
+
 **实现bind**
+
 ```js
 Function.prototype.bind(obj) {
 	var fun = this
@@ -141,6 +147,7 @@ Function.prototype.bind(obj) {
 ```
 
 **深拷贝**
+
 ```js
 function deepClone(target, map = new Map()) {
 	if(typeof target === 'object') {
@@ -159,7 +166,9 @@ function deepClone(target, map = new Map()) {
 	return cloneTarget
 }
 ```
+
 ###### Promise
+
 ```js
 const PENDING = 'pending'
 const FULFILLED = 'fulfilled'
@@ -355,7 +364,6 @@ Promise.race = function(promises) {
 	})
 }
 ```
-
 
 ```js
 eg1

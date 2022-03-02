@@ -1,3 +1,7 @@
+---
+date created: 2022-03-03 00:35
+---
+
 ### 数组方法
 
 - 改变原数组的方法：pop、push、reverse、shift、sort、splice、unshift，以及两个ES6新增的方法copyWithin 和 fill；
@@ -7,7 +11,6 @@
 ### 字符串方法
 
 - indexOf、lastIndexOf、search、charAt、charCodeAt、charFromCode、replace、trim、split、slice、substring、substr、toUpperCase、concat
-
 
 ### 数组去重
 
@@ -94,8 +97,6 @@ ES6的继承机制完全不同，实质上是先创建父类的实例对象this�
 
 ps：super关键字指代父类的实例，即父类的this对象。在子类构造函数中，调用super后，才可使用this关键字，否则报错。
 
-
-
 ### ES6 class 特性
 
 所有方法不可枚举
@@ -106,15 +107,9 @@ ps：super关键字指代父类的实例，即父类的this对象。在子类构
 
 声明提升但是不赋值，有暂时性死区
 
-
-
 ### 复杂函数-->字符串
 
 - 调用 valueOf，如果仍是复杂数据类型，调用 toString
-
-
-
-
 
 ### 普通函数和构造函数
 
@@ -128,32 +123,22 @@ ps：super关键字指代父类的实例，即父类的this对象。在子类构
 
 5.构造函数的函数名和类名相同
 
-
-
 ### 正则
 
 - 去除所有字符串空格：`str.replace(/\s*/g, "")`
 - 去除两头空格：`str.replace(/^\s*|\s*$/g,"")`
 
-
-
 ### 对象方法
 
 - 定义与获取属性
   - defineProperty（三个参数）defineProperties（两个）
-  - 
+  -
 - 遍历：keys，values，entries（可枚举）
 - Object.fromEntries()从可迭代的[key, value]对中返回一个新对象。（这是的反向 Object.entries）。
-
-
-
-
 
 Object.assign()将所有可枚举的自身属性的值从一个或多个源对象复制到目标对象。
 
 Object.create()用指定的原型对象和属性创建一个新对象。
-
-
 
 Object.getPrototypeOf()返回prototype指定对象的。
 
@@ -167,15 +152,11 @@ Object.getOwnPropertyNames()返回一个数组，其中包含给定对象自己�
 
 Object.getOwnPropertySymbols()返回直接在给定对象上找到的所有符号属性的数组。
 
-
-
 isPrototypeOf
 
 hasOwnProperty是否......
 
 Object.is()比较两个值是否相同。求所有NaN值（不同于“抽象相等比较”和“严格相等比较”）。
-
-
 
 Object.isFrozen()确定对象是否冻结。
 

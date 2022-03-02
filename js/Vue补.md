@@ -1,3 +1,7 @@
+---
+date created: 2022-03-03 00:35
+---
+
 - props
 
   ```javascript
@@ -13,13 +17,13 @@
       }
   }
   ```
-  
+
 - v-model
 
   ```javascript
   props: ['value'],
   this.$emit('input', false);
-  
+
   // 事件名默认 input，使用 event 修改发出的事件名
   props: ['visible'],
   model: {
@@ -27,24 +31,26 @@
       event: 'close'
   },
   this.$emit('close', false);
-  
+
+  ```
+
 - sync:
-  
-    ```javascript
-    <Foo :visible.sync="isShow" :title.sync="titleValue" />
-    
-    props: ['visible', 'title'],
-    this.$emit('update:visible', false);
-    this.$emit('update:title', 'hello world');
-    ```
-    
+
+  ```javascript
+  <Foo :visible.sync="isShow" :title.sync="titleValue" />
+
+  props: ['visible', 'title'],
+  this.$emit('update:visible', false);
+  this.$emit('update:title', 'hello world');
+  ```
+
 - slot
 
   ```javascript
   v-slot --> #
   <template #two>想要插入的内容</>
       -->  <slot name="two"></slot>
-  
+
   <Foo v-slot="data">{{data.count}}</>
       -->  <slot :count="countValue"></>
   ```
@@ -61,7 +67,7 @@
       inserted(el) {
           el.focus()
       }
-  
+
       update
       componentUpdated
       unbind
@@ -82,7 +88,7 @@
   ```javascript
   // jest
   npm i jest @types/jest -D
-  
+
   describe('add', () => {
       // 写作 test / it
       it('1+1=2', () => {
@@ -96,18 +102,18 @@
           expect(r).not.toBe(2);
       })
   })
-  
+
   // vue-test-unit
   vue add @vue/unit-jest
   // input
   // 1. props 2. click-event  3.slot
   // output
   // 1. event  2. render-view 3. function call -- axios
-  
+
   // 1. 引入
   import {mount} from '@vue/test-utils';
   import TodoItem from '...';
-  
+
   describe('TodoItem.vue', () => {
       it('input props && output render view', () => {
           const wrapper = mount(TodoItem, {
@@ -119,14 +125,14 @@
           })
           expect(wrapper.text()).toContain('吃饭');
       })
-  
+
       it('input click && output event', () => {
           const wrapper = mount(TodoItem);
           wrapper.get('#removeBtn').trigger('click');
           // remove 是绑定的事件名称
           expect(wrapper.emitted('remove')[0]).toEqual([1])
       })
-  
+
       it('slot', () => {
           const wrapper = mount(TodoItem, {
               propsData: {},
@@ -171,6 +177,7 @@
   	this.$children[0].setName('111'); // 一个数组，存放着所有子组件，顺序从上到下
   	this.$parent.setTitile('child');  // 获取父组件实例
   ```
+
   **多层级组件通信以及非关系**
 
   ```javascript
@@ -201,18 +208,18 @@
     $listeners:
     // 包含了父作用域中的 (不含 .native 修饰器的) v-on 事件监听器
     // 它可以通过 v-on="$listeners" 传入内部组件
-  
+
     // 下游组件获取上游组件--->收集所有的子组件--->组件库中常用
     addChild(child) {
         this.echildren.push(child);
     }
-  
-  
+
+
     // 3. EventBud
     // 定义bus--->bus.js
     import Vue from 'vue';
     export const bus = new Vue();
-  
+
     // 引入bus
     import {bus} from '..';
     bus.$on('lqf', this.callback);
@@ -224,10 +231,10 @@
   ```javascript
   import Vuex from "vuex";
   import Vue from "vue";
-  
+
   // 安装插件
   Vue.use(Vuex);
-  
+
   // new store
   const store = new Vuex.Store({
     state: {
@@ -239,7 +246,7 @@
       changeAge(state, payload) {
         console.log(state);
         console.log(payload);
-  
+
         setTimeout(() => {
           state.age = payload.age;
         }, 2000);
@@ -253,7 +260,7 @@
         //   state.username = username;
       },
     },
-  
+
     actions: {
       // 异步 都给我放到这里
       changeAge({ commit }, payload) {
@@ -266,7 +273,7 @@
         }, 2000);
       },
     },
-  
+
     getters: {
       // 全局的计算属性
       tenYearsOld(state) {
@@ -275,5 +282,5 @@
     },
   });
   export default store;
-  
+
   ```

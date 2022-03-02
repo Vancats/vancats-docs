@@ -1,3 +1,7 @@
+---
+date created: 2022-03-03 00:35
+---
+
 ## React 基础
 
 ### 特点
@@ -18,12 +22,14 @@
 ### 生命周期
 
 - 组件挂载
-  + constructor
-    * 使用 React.createClass 创建组件
-    * 会有 getDefaultProps、getInitialState（ES6 语法没有）
-  + static getDerivedStateFromProps
-    * 父组件重新渲染触发，是静态方法，没有 this，不能使用 setState，return 的对象相当于 setState 的参数
+  - constructor
+    - 使用 React.createClass 创建组件
+    - 会有 getDefaultProps、getInitialState（ES6 语法没有）
+  - static getDerivedStateFromProps
+    - 父组件重新渲染触发，是静态方法，没有 this，不能使用 setState，return 的对象相当于 setState 的参数
+
     - 常用于强制性的根据 props 设置 state
+
   - conponentWillMount：17 版本删除
   - render
   - componentDidMount---ajax请求生成 DOm
@@ -35,26 +41,26 @@
   - getSnapshotBeforeUpdate：在最近一次渲染输出（提交到 DOM 节点）之前调用，返回值为下第三个参数
   - componentDidUpdate：preProps，preState，snapshot
 - 组件销毁
-  
+
   - componentWillUnmount：清除定时器，解绑事件，取消网络请求
 - 错误处理
   - static getDerivedStateFromError
     - 子组件抛出错误后调用，错误作为参数，返回一个值更新state
   - componentDidCatch
 - 强制刷新组件
-  
+
   - forceUpdate：跳过 shouldComponentUpdate
 
 ### props vs state
 
-|                          | props | state |
-| ------------------------ | ----- | ----- |
-| 从父组件获得初始值       | ✔     | ✔     |
-| 被父组件改变             | ✔     | ✖     |
+|               | props | state |
+| ------------- | ----- | ----- |
+| 从父组件获得初始值     | ✔     | ✔     |
+| 被父组件改变        | ✔     | ✖     |
 | 内部(当前)组件设置默认值 | ✔     | ✔     |
-| 改变内部组件             | ✖     | ✔     |
-| 为子组件设置初始值       | ✔     | ✔     |
-| 改变子组件               | ✔     | ✖     |
+| 改变内部组件        | ✖     | ✔     |
+| 为子组件设置初始值     | ✔     | ✔     |
+| 改变子组件         | ✔     | ✖     |
 
 ### this.setState
 
@@ -92,7 +98,7 @@
   - Reconciliation Phase：Diff Fiber Tree，找出更新，就是一个计算阶段，结果可以缓存（打断）
   - Commit Phase：提交所有更新并渲染，不能打断（防止页面抖动）
 
-### render 
+### render
 
 返回一个 React 元素，是原生 DOM 组件的表示
 
@@ -104,6 +110,7 @@
 > 1. ReactDOM.render ->React.createElement -> 虚拟 DOM 树
 >
 > 2. 处理组件 props 是否为事件 -> 得到事件类型与回调函数
+>
 > 3. document 上注册对应的事件类型 -> 存储事件回调到 listenerBank 中
 
 ## 组件
@@ -216,9 +223,9 @@
     ```
 
 - Reducer：接受 Action 和 State，返回新的 State，纯函数
-  
+
 - `createStore(reducer)`在 dispatch 方法会触发 Reducer 的自动执行
-  
+
 - 工作流程
   - 用户发出 Action
   - Store 自动调用 Reducer，返回新的 State
@@ -247,14 +254,14 @@ import { BrowserRouter,HashRouter,Route,Redirect,Switch,Link,NavLink,withRouter 
   <Route path="/home/:name/:age" component={Home} />
   ```
 
-  + 以 ？ 开头传参：`props.location.search = ?name=张三&age=18`
+  - 以 ？ 开头传参：`props.location.search = ?name=张三&age=18`
 
   ```javascript
   <NavLink to="/home?name=张三&age=18" className="link">跳转</>
   <Route path="/home" component={Home} />
   ```
 
-  + 对象形式编写 to,通过 state 传参：`props.location.state`---对象形式
+  - 对象形式编写 to,通过 state 传参：`props.location.state`---对象形式
 
   ```javascript
   <NavLink to={{pathname: "/home",state: {name:'张三',age:18}}} className="link">跳转</>
@@ -263,7 +270,7 @@ import { BrowserRouter,HashRouter,Route,Redirect,Switch,Link,NavLink,withRouter 
 
 - 函数式路由---props.history.push('')
 
-  + push、replace(不保存上个页面的记录)、goForward、goBack、go
+  - push、replace(不保存上个页面的记录)、goForward、goBack、go
 
 - 普通组件使用路由
 
@@ -279,11 +286,12 @@ import { BrowserRouter,HashRouter,Route,Redirect,Switch,Link,NavLink,withRouter 
 
 - useEffect
 
-  + 使用 useEffect 调度的 effect 不会阻塞浏览器更新屏幕，异步执行
-  + 返回一个函数的方法清除副作用
-  
-  + 第二个参数：判断是否需要更新，未变化即跳过
-  
+  - 使用 useEffect 调度的 effect 不会阻塞浏览器更新屏幕，异步执行
+
+  - 返回一个函数的方法清除副作用
+
+  - 第二个参数：判断是否需要更新，未变化即跳过
+
   ```javascript
   useEffect(() => {
       fuction handleStatusChange(status) {
@@ -303,7 +311,7 @@ import { BrowserRouter,HashRouter,Route,Redirect,Switch,Link,NavLink,withRouter 
 - 添加 key
 - 多组件优化：`React.component -> React.PureComponentUpdate / React.memo`
 - 做分片打包：引入 React.Lazy 和 React.Suspense
-- 使用 React.Fragment 或空标签：避免添加额外的 DOM 
+- 使用 React.Fragment 或空标签：避免添加额外的 DOM
 
 ### 函数组件性能优化
 
@@ -366,4 +374,3 @@ ref
 Immutable
 
 antd 按需加载
-

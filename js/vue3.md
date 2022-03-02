@@ -1,3 +1,7 @@
+---
+date created: 2022-03-03 00:35
+---
+
 vue.with compiler
 
 umd global
@@ -5,8 +9,6 @@ umd global
 包含编译器,运行时编译
 
 编译发生的时刻是挂载时
-
-
 
 vue.runtime.js
 
@@ -18,11 +20,6 @@ vue.runtime.js
 
 好处:包体积小,执行时候速度快
 
-
-
 ast:与vnode相似的中间产物
 
-
-
 template =>(粗糙) ast => transform(深加工) => ast => generate(代码生成) => render
-
