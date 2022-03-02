@@ -589,5 +589,14 @@ p.__proto__ === p.constructor.prototype // false
 p.__proto__ === Person.prototype // { getname(){} }
 p.constructor // Object 如果没有改写的话是 Person
 p.constructor.prototype // Object.prototype
-```
 
+
+p.__proto__ // Person.prototype
+Person.prototype.__proto__ // Object.prototype
+p.__proto__.__proto__ // Object.prototype
+p.__proto__.constructor.prototype.__proto__ // Object.prototype
+Person.prototype.constructor.prototype.__proto__ // Object.prototype
+p1.__proto__.constructor // Person
+Person.prototype.constructor // Person
+```
+![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
