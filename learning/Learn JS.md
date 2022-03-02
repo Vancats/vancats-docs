@@ -577,21 +577,17 @@ escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面�
 
 **原型链**：当访问对象属性的时候，如果本身没有，就会顺着原型往上找，直到 `Object.prototype` 为止
 
-构造函数的方法如果放在函数中，每次调用都会重新创建方法，需要放到 `prototype` 上
+**原型方法**：构造函数的方法如果放在函数中，每次调用都会重新创建方法，需要放到 `prototype` 上
 
 **原型重写**
 ```js
-function Person (name) {
-	this.name = name
-}
-Person.prototype = {
-	getName() {}
-}
+function Person(name){ this.name = name }
+Person.prototype = { getName(){} }
 var p = new Person('hello')
 p.__proto__ === Person.prototype // true
 p.__proto__ === p.constructor.prototype // false
 p.__proto__ === Person.prototype // { getname(){} }
-p.constructor // Object 如果没有改写的话 
+p.constructor // Object 如果没有改写的话是 Person
 p.constructor.prototype // Object.prototype
 ```
 
