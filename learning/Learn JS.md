@@ -1,4 +1,4 @@
-#### 之前
+### 之前
 ###### 名称含义
 - 函数作用域(Actived Object) js引擎在调用函数时创建一个作用域对象,保存函数的局部变量,函数调用完就释放
 - JS 中一切皆关联数组
@@ -233,7 +233,7 @@ class Student extends Person () {
 
 
 
-#### 数据类型
+### 数据类型
 ###### 类型判断
 1. typeof：可以判断函数
 2. 原型链
@@ -336,7 +336,7 @@ undefined: (-2)30 超出整数范围的数字
 2. 0.1 + 0.2 !== 0.3：Number.EPSILON
 3. isNaN：任何不能转换为数值的值都会返回true；Number.isNaN：先判断是否为数字再判断是否为NaN
 
-#### JS 基础
+### JS 基础
 ###### new 一个构造函数
 1. 创建一个新的对象
 2. 将新对象的 `__proto__` 指向构造函数的 prototype
@@ -583,7 +583,7 @@ encodeURI：对整个 URI 进行转义，但是一些对于 URI 有特殊意义�
 encodeURIComponent：对 URI 的组成部分转义，包括特殊字符
 escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面加 %u，而 encodeURI 转成 UTF-8 后前面加 %
 
-#### 原型与闭包
+### 原型与闭包
 1. 对原型链的理解
 > JS 中对象是通过构造函数构建，每个构造函数都拥有一个 `prototype`
 
