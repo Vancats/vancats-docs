@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn JS.md",
+            "file": "js/Vue补.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn JS.md",
+                "file": "js/Vue补.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -90,34 +90,25 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "be920952a60b9709",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 168,
-    "collapsed": true
+    "width": 174
   },
   "active": "444bfcef44fac819",
   "lastOpenFiles": [
-    "learning/Learn JS.md",
-    "learning/Learn Vue.md",
-    "learning/Learn RegExp.md",
-    "learning/Learn React.md",
-    "learning/Learn Interview.md",
-    "learning/Learn HTTP.md",
-    "learning/Learn HTML.md",
-    "learning/Learn CSS.md",
-    "learning/JS 题目.md",
-    "learning/设计模式.md"
+    "js/Vue补.md",
+    "js/vue3.md",
+    "js/Vue2.md",
+    "js/Vue.md",
+    "js/React.md",
+    "js/OM.md",
+    "js/another.md",
+    "js/手撕.md",
+    "js/模板引擎.md",
+    "learning/前端算法.md"
   ]
 }

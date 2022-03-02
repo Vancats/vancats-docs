@@ -1,12 +1,13 @@
 ---
 date created: 2022-03-03 00:34
+date updated: 2022-03-03 00:52
 ---
 
 ###### VueRouter
 
 1. 响应路由参数变化
-   1. `watch: { '$route' (to, from) {} }`
-   2. `beforeRouteUpdate (to, from, next) {}`
+		1. `watch: { '$route' (to, from) {} }`
+		2. `beforeRouteUpdate (to, from, next) {}`
 2. 路由匹配：当含有通配符时，存在 patchMatch
 
 ```js

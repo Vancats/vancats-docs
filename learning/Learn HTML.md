@@ -1,5 +1,6 @@
 ---
 date created: 2022-03-03 00:34
+date updated: 2022-03-03 00:52
 ---
 
 ###### src 和 href
@@ -43,12 +44,12 @@ date created: 2022-03-03 00:34
 `<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"`
 
 - robots：搜索引擎索引方式 `<meta name="robots" content="index,follow">`
-  - all：文件将被检索，页面上的链接可以被查询
-  - none：文件不被检索，页面上的链接不可以被查询
-  - index：文件将被检索
-  - follow：页面上的链接可以被查询
-  - noindex：文件将不被检索
-  - nofollow：页面上的链接不可以被查询
+	- all：文件将被检索，页面上的链接可以被查询
+	- none：文件不被检索，页面上的链接不可以被查询
+	- index：文件将被检索
+	- follow：页面上的链接可以被查询
+	- noindex：文件将不被检索
+	- nofollow：页面上的链接不可以被查询
 
 ###### img 的 srcset属性的作用
 
@@ -162,13 +163,14 @@ CACHE MANIFEST
 
 1. 语义化标签
 2. 媒体标签
-   - audio `<audio src='' controls autoplay loop='true'></audio>`
-   - video `<video src='' poster='imgs/aa.jpg' controls width="x" height="x"></video>` poster 封面（默认第一帧）
-   - source 浏览器对视频格式支持程度不一样，为了能够兼容不同的浏览器，可以通过 source 来指定视频源
+		- audio `<audio src='' controls autoplay loop='true'></audio>`
+		- video `<video src='' poster='imgs/aa.jpg' controls width="x" height="x"></video>` poster 封面（默认第一帧）
+		- source 浏览器对视频格式支持程度不一样，为了能够兼容不同的浏览器，可以通过 source 来指定视频源
 
 `<video><source src='a.flv' type='video/flv'></source> <source src='b.mp4' type='video/mp4'></source></video>`
 3. 表单
 **表单类型**
+
 - email：验证邮箱合法性
 - url：验证URL
 - number
@@ -200,18 +202,18 @@ CACHE MANIFEST
 ```
 
 4. 进度条，度量器
-   - progress（任务进度）：max/value
-   - meter（显示剩余容量）：high/low 高/低的范围 max/min 最大/小值 value 当前值
+		- progress（任务进度）：max/value
+		- meter（显示剩余容量）：high/low 高/低的范围 max/min 最大/小值 value 当前值
 5. DOM查询 querySelector(All)
 6. Web存储 localStorage sessionStorage
 7. drag 拖放
-   - dragstart：事件主体是被拖放元素，在开始拖放被拖放元素时触发。
-   - darg：事件主体是被拖放元素，在正在拖放被拖放元素时触发。
-   - dragenter：事件主体是目标元素，在被拖放元素进入某元素时触发。
-   - dragover：事件主体是目标元素，在被拖放在某元素内移动时触发。
-   - dragleave：事件主体是目标元素，在被拖放元素移出目标元素是触发。
-   - drop：事件主体是目标元素，在目标元素完全接受被拖放元素时触发。
-   - dragend：事件主体是被拖放元素，在整个拖放操作结束时触发。
+		- dragstart：事件主体是被拖放元素，在开始拖放被拖放元素时触发。
+		- darg：事件主体是被拖放元素，在正在拖放被拖放元素时触发。
+		- dragenter：事件主体是目标元素，在被拖放元素进入某元素时触发。
+		- dragover：事件主体是目标元素，在被拖放在某元素内移动时触发。
+		- dragleave：事件主体是目标元素，在被拖放元素移出目标元素是触发。
+		- drop：事件主体是目标元素，在目标元素完全接受被拖放元素时触发。
+		- dragend：事件主体是被拖放元素，在整个拖放操作结束时触发。
 8. Geolocation
 9. SVG/Canvas
 

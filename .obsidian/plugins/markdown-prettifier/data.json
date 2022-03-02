@@ -6,6 +6,6 @@
   "newHeaderTemplate": "\ndate created: \"{{date:YYYY-MM-DD HH:mm}}\" \n",
   "updateHeader": true,
   "updateHeaderTemplate": "\ndate updated: \"{{date:YYYY-MM-DD HH:mm}}\" \n",
-  "listItemIndent": "one",
+  "listItemIndent": "tab",
   "newlinesAroundHeadings": true
 }

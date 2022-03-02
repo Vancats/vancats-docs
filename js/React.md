@@ -1,5 +1,6 @@
 ---
 date created: 2022-03-03 00:35
+date updated: 2022-03-03 00:52
 ---
 
 ## React 基础
@@ -22,34 +23,37 @@ date created: 2022-03-03 00:35
 ### 生命周期
 
 - 组件挂载
-  - constructor
-    - 使用 React.createClass 创建组件
-    - 会有 getDefaultProps、getInitialState（ES6 语法没有）
-  - static getDerivedStateFromProps
-    - 父组件重新渲染触发，是静态方法，没有 this，不能使用 setState，return 的对象相当于 setState 的参数
+	- constructor
+		- 使用 React.createClass 创建组件
+		- 会有 getDefaultProps、getInitialState（ES6 语法没有）
 
-    - 常用于强制性的根据 props 设置 state
+	- static getDerivedStateFromProps
+		- 父组件重新渲染触发，是静态方法，没有 this，不能使用 setState，return 的对象相当于 setState 的参数
 
-  - conponentWillMount：17 版本删除
-  - render
-  - componentDidMount---ajax请求生成 DOm
+		- 常用于强制性的根据 props 设置 state
+
+	- conponentWillMount：17 版本删除
+
+	- render
+
+	- componentDidMount---ajax请求生成 DOm
 - 组件更新
-  - static getDerivedStateFromProps
-  - componentWillReceiveProps：17版本废除
-  - shouldComponentUpdate：参数：nextProps、nextState；性能优化
-  - render
-  - getSnapshotBeforeUpdate：在最近一次渲染输出（提交到 DOM 节点）之前调用，返回值为下第三个参数
-  - componentDidUpdate：preProps，preState，snapshot
+	- static getDerivedStateFromProps
+	- componentWillReceiveProps：17版本废除
+	- shouldComponentUpdate：参数：nextProps、nextState；性能优化
+	- render
+	- getSnapshotBeforeUpdate：在最近一次渲染输出（提交到 DOM 节点）之前调用，返回值为下第三个参数
+	- componentDidUpdate：preProps，preState，snapshot
 - 组件销毁
 
-  - componentWillUnmount：清除定时器，解绑事件，取消网络请求
+	- componentWillUnmount：清除定时器，解绑事件，取消网络请求
 - 错误处理
-  - static getDerivedStateFromError
-    - 子组件抛出错误后调用，错误作为参数，返回一个值更新state
-  - componentDidCatch
+	- static getDerivedStateFromError
+		- 子组件抛出错误后调用，错误作为参数，返回一个值更新state
+	- componentDidCatch
 - 强制刷新组件
 
-  - forceUpdate：跳过 shouldComponentUpdate
+	- forceUpdate：跳过 shouldComponentUpdate
 
 ### props vs state
 
@@ -72,11 +76,11 @@ date created: 2022-03-03 00:35
 
 - 可以传入状态计算函数
 
-  ```javascript
-  this.setState((prevState, props) => ({
-      count: prevState.count + 1
-  }))
-  ```
+	```javascript
+	this.setState((prevState, props) => ({
+	    count: prevState.count + 1
+	}))
+	```
 
 ### 调用 setState 发生了什么
 
@@ -92,11 +96,11 @@ date created: 2022-03-03 00:35
 - 通过对象 记录组件上需要或者已经完成的更新，一个组件可以对应多个 Fiber
 - 第一次渲染会创建一模一样的 Fiber 节点树
 - 一个 React Element 可以对应不止一个 Fiber
-  - 在 update 时，从原本的 Fiber( current ) clone 出一个新的 Fiber( alternate )
-  - 两个 Fiber diff 出的变化记录在 alternate 上，更新结束它会取代 current 成为新 current
+	- 在 update 时，从原本的 Fiber( current ) clone 出一个新的 Fiber( alternate )
+	- 两个 Fiber diff 出的变化记录在 alternate 上，更新结束它会取代 current 成为新 current
 - 更新任务
-  - Reconciliation Phase：Diff Fiber Tree，找出更新，就是一个计算阶段，结果可以缓存（打断）
-  - Commit Phase：提交所有更新并渲染，不能打断（防止页面抖动）
+	- Reconciliation Phase：Diff Fiber Tree，找出更新，就是一个计算阶段，结果可以缓存（打断）
+	- Commit Phase：提交所有更新并渲染，不能打断（防止页面抖动）
 
 ### render
 
@@ -119,40 +123,40 @@ date created: 2022-03-03 00:35
 
 - 函数式组件：
 
-  - 不能访问 this 对象
-  - 不能访问生命周期方法
+	- 不能访问 this 对象
+	- 不能访问生命周期方法
 
-  ```javascript
-  function myComponent(props) {
-      return `Hello${props.name}`
-  }
-  ```
+	```javascript
+	function myComponent(props) {
+	    return `Hello${props.name}`
+	}
+	```
 
 - React.createClass（ES5）
 
-  ```javascript
-  var myCreate = React.createClass({
-      defaultProps:function(){},
-      getInitialState:function(){},
-      render:function(){}
-  })
-  ```
+	```javascript
+	var myCreate = React.createClass({
+	    defaultProps:function(){},
+	    getInitialState:function(){},
+	    render:function(){}
+	})
+	```
 
 - ES6 Class
 
-  ```javascript
-  class HelloComponent extends React.Component {
-      constructor(props) {
-          super(props)
-         	this.state = {
-         		state_exam: props.exam
-      	}
-      	this.handleChange = this.handleChange.bind(this)     
-      }
-      handleChange() {this.setState({state_exam: 'hello'})}
-      render(){ return ()}
-  }
-  ```
+	```javascript
+	class HelloComponent extends React.Component {
+	    constructor(props) {
+	        super(props)
+	       	this.state = {
+	       		state_exam: props.exam
+	    	}
+	    	this.handleChange = this.handleChange.bind(this)     
+	    }
+	    handleChange() {this.setState({state_exam: 'hello'})}
+	    render(){ return ()}
+	}
+	```
 
 ### 组件通讯
 
@@ -162,74 +166,74 @@ date created: 2022-03-03 00:35
 
 - 跨级组件间通讯
 
-  ```javascript
-  static childContextTypes = { propA:PropTypes.string }
-  getChildContext(){ rerurn { propA: 'propA' } }
-  // 访问父组件 context 对象
-  static contextTypes = { propA: PropTypes.string }
-  <p>{ this.context.propA }</p>
-  ```
+	```javascript
+	static childContextTypes = { propA:PropTypes.string }
+	getChildContext(){ rerurn { propA: 'propA' } }
+	// 访问父组件 context 对象
+	static contextTypes = { propA: PropTypes.string }
+	<p>{ this.context.propA }</p>
+	```
 
 - 非嵌套组件间通讯
 
-  - 引入 Events 包中的 emitter
-  - addListener 监听、removeListener 销毁、emit 发布
+	- 引入 Events 包中的 emitter
+	- addListener 监听、removeListener 销毁、emit 发布
 
 ### 事件绑定方法
 
 - 构造函数
 
-  ```javascript
-  constructor(props) { super(props) this.onClickList = this.onClickList.bind(this) }
-  onClickList(){}
-  render(){ return <div onClick={this.onClickList}}/>
-  ```
+	```javascript
+	constructor(props) { super(props) this.onClickList = this.onClickList.bind(this) }
+	onClickList(){}
+	render(){ return <div onClick={this.onClickList}}/>
+	```
 
 - render 内部使用 bind
 
-  ```javascript
-  render(){ return <div onClick={this.onClickList.bind(this)}}/>
-  ```
+	```javascript
+	render(){ return <div onClick={this.onClickList.bind(this)}}/>
+	```
 
 - 箭头函数
 
-  ```javascript
-  onClick = () => {}
-  render(){ return <div onClick={this.onClickList}}/>
-  ```
+	```javascript
+	onClick = () => {}
+	render(){ return <div onClick={this.onClickList}}/>
+	```
 
 - render 内部使用箭头函数
 
-  ```javascript
-  render(){ return <div onClick={() => this.onClickList()}}/>
-  ```
+	```javascript
+	render(){ return <div onClick={() => this.onClickList()}}/>
+	```
 
 ## Redux
 
 - Store
-  - 生成：`import {createStore} from 'redux'  const store = createStore(fn)`
-  - View 发出 Action：`store.dispatch(actions)`
-  - 监听 state：`store.subscribe(listener)`
-    - 调用该函数返回的函数，就可以解除监听
+	- 生成：`import {createStore} from 'redux'  const store = createStore(fn)`
+	- View 发出 Action：`store.dispatch(actions)`
+	- 监听 state：`store.subscribe(listener)`
+		- 调用该函数返回的函数，就可以解除监听
 
 - State：`store.getState()`
 
 - Actions
 
-  - Action Creator 可以发送多条
+	- Action Creator 可以发送多条
 
-    ```javascript
-    function addTodo(text) { return { type: ADD_TODO, text } }
-    ```
+		```javascript
+		function addTodo(text) { return { type: ADD_TODO, text } }
+		```
 
 - Reducer：接受 Action 和 State，返回新的 State，纯函数
 
 - `createStore(reducer)`在 dispatch 方法会触发 Reducer 的自动执行
 
 - 工作流程
-  - 用户发出 Action
-  - Store 自动调用 Reducer，返回新的 State
-  - listener 通过 store.getState 得到当前状态，触发重新渲染 View
+	- 用户发出 Action
+	- Store 自动调用 Reducer，返回新的 State
+	- listener 通过 store.getState 得到当前状态，触发重新渲染 View
 
 ## React-router
 
@@ -247,62 +251,62 @@ import { BrowserRouter,HashRouter,Route,Redirect,Switch,Link,NavLink,withRouter 
 
 - 路由传参
 
-  - 动态路由：参数通过`props.match.params`---对象形式
+	- 动态路由：参数通过`props.match.params`---对象形式
 
-  ```javascript
-  <NavLink to="/home/张三/18" className="link">跳转Home页面</>
-  <Route path="/home/:name/:age" component={Home} />
-  ```
+	```javascript
+	<NavLink to="/home/张三/18" className="link">跳转Home页面</>
+	<Route path="/home/:name/:age" component={Home} />
+	```
 
-  - 以 ？ 开头传参：`props.location.search = ?name=张三&age=18`
+	- 以 ？ 开头传参：`props.location.search = ?name=张三&age=18`
 
-  ```javascript
-  <NavLink to="/home?name=张三&age=18" className="link">跳转</>
-  <Route path="/home" component={Home} />
-  ```
+	```javascript
+	<NavLink to="/home?name=张三&age=18" className="link">跳转</>
+	<Route path="/home" component={Home} />
+	```
 
-  - 对象形式编写 to,通过 state 传参：`props.location.state`---对象形式
+	- 对象形式编写 to,通过 state 传参：`props.location.state`---对象形式
 
-  ```javascript
-  <NavLink to={{pathname: "/home",state: {name:'张三',age:18}}} className="link">跳转</>
-  <Route path="/home" component={Home} />
-  ```
+	```javascript
+	<NavLink to={{pathname: "/home",state: {name:'张三',age:18}}} className="link">跳转</>
+	<Route path="/home" component={Home} />
+	```
 
 - 函数式路由---props.history.push('')
 
-  - push、replace(不保存上个页面的记录)、goForward、goBack、go
+	- push、replace(不保存上个页面的记录)、goForward、goBack、go
 
 - 普通组件使用路由
 
-  ```javascript
-  export default withRouter(App) // 进行包装处理
-  ```
+	```javascript
+	export default withRouter(App) // 进行包装处理
+	```
 
 ## React-hook
 
 - useState
 
-  `const [count, setCount] = useState(0)`
+	`const [count, setCount] = useState(0)`
 
 - useEffect
 
-  - 使用 useEffect 调度的 effect 不会阻塞浏览器更新屏幕，异步执行
+	- 使用 useEffect 调度的 effect 不会阻塞浏览器更新屏幕，异步执行
 
-  - 返回一个函数的方法清除副作用
+	- 返回一个函数的方法清除副作用
 
-  - 第二个参数：判断是否需要更新，未变化即跳过
+	- 第二个参数：判断是否需要更新，未变化即跳过
 
-  ```javascript
-  useEffect(() => {
-      fuction handleStatusChange(status) {
-          setIsOnline(status.isOnline)
-      }
-      ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange)
-      return () => {
-          ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange)
-      }
-  }, [props.friend.id])
-  ```
+	```javascript
+	useEffect(() => {
+	    fuction handleStatusChange(status) {
+	        setIsOnline(status.isOnline)
+	    }
+	    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange)
+	    return () => {
+	        ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange)
+	    }
+	}, [props.friend.id])
+	```
 
 ## 性能优化
 
@@ -323,45 +327,45 @@ import { BrowserRouter,HashRouter,Route,Redirect,Switch,Link,NavLink,withRouter 
 
 - 导入
 
-  ```javascript
-  const LazyPDFDocument = React.Lazy(() => import("./PDPreview"))
-  ```
+	```javascript
+	const LazyPDFDocument = React.Lazy(() => import("./PDPreview"))
+	```
 
 - 使用
 
-  ```javascript
-  this.state.showPDFPreview && (
-  	<Suspense fallback={<div>Loading...</div>}
-  		<LazyPDFDocument title={greeting} />
-  	</Suspense>
-  ) // showPDFPreview 为 true 时加载，解析中显示 fallback
-  ```
+	```javascript
+	this.state.showPDFPreview && (
+		<Suspense fallback={<div>Loading...</div>}
+			<LazyPDFDocument title={greeting} />
+		</Suspense>
+	) // showPDFPreview 为 true 时加载，解析中显示 fallback
+	```
 
 ## Vue 和 React 的区别
 
 - 数据是不是可变
-  - React 状态和逻辑通过参数传入，单向数据流
-  - Vue 响应式，基于数据可变
+	- React 状态和逻辑通过参数传入，单向数据流
+	- Vue 响应式，基于数据可变
 - 处理方式
-  - React 通过 js 来操作一切，jsx，jss，styled-component
-  - Vue 用各自的处理方式
+	- React 通过 js 来操作一切，jsx，jss，styled-component
+	- Vue 用各自的处理方式
 - 写法
-  - React 使用类式的组件写法，api 很少
-  - Vue 使用声明式的写法，传入各种 options，api 和参数很多--vue3.0改进
+	- React 使用类式的组件写法，api 很少
+	- Vue 使用声明式的写法，传入各种 options，api 和参数很多--vue3.0改进
 - 功能
-  - React 很多都是社区做的
-  - Vue 很多都是内置
+	- React 很多都是社区做的
+	- Vue 很多都是内置
 - diff 算法
-  - 更新 DOM 时
-    - Vue diff 时，调用 patch 打补丁函数，一边比较一边给真实 DOM 打补丁
-    - React 使用 diff 队列保存需要更新的 DOM，得到 patch 树，再统一操作批量更新
-  - 对比节点：类型相同，className 不同
-    - Vue 认为是不同类型，删除重新创建
-    - React 是认为同类型节点，进行修改
-  - 列表比对
-    - Vue 的列表对比，采用从两端到中间，旧集合和新集合两端各有一指针，匹配上就按照新集合去调整旧集合，向中间移动
-    - React 从左到右依次对比，利用元素的 index 和标识 lastIndex 比较，满足 index < lastIndex 就移动元素，删除和添加则各自按照规则调整
-    - 当最后一个节点移动到最前：React 会依次向后移动，Vue 会把最后一个节点放在最前面
+	- 更新 DOM 时
+		- Vue diff 时，调用 patch 打补丁函数，一边比较一边给真实 DOM 打补丁
+		- React 使用 diff 队列保存需要更新的 DOM，得到 patch 树，再统一操作批量更新
+	- 对比节点：类型相同，className 不同
+		- Vue 认为是不同类型，删除重新创建
+		- React 是认为同类型节点，进行修改
+	- 列表比对
+		- Vue 的列表对比，采用从两端到中间，旧集合和新集合两端各有一指针，匹配上就按照新集合去调整旧集合，向中间移动
+		- React 从左到右依次对比，利用元素的 index 和标识 lastIndex 比较，满足 index < lastIndex 就移动元素，删除和添加则各自按照规则调整
+		- 当最后一个节点移动到最前：React 会依次向后移动，Vue 会把最后一个节点放在最前面
 
 ## 待解决
 

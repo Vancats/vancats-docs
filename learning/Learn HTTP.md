@@ -1,5 +1,6 @@
 ---
 date created: 2022-03-03 00:34
+date updated: 2022-03-03 00:52
 ---
 
 HTML5
@@ -40,13 +41,13 @@ TCP/IP参考模型
 ###### TCP
 
 - 端口
-  - 共有 2^16 0~65535
-  - 前 8000 个需要申报
+	- 共有 2^16 0~65535
+	- 前 8000 个需要申报
 - 单域名最多允许同时建立 6 条连接
-  - keep-alive
-  - 精灵图：减少 HTTP 请求，本质是减少建立多个 TCP 的性能损耗
-  - 多域名：将资源放入不同的域名下，可以突破浏览器的单域名并发连接限制
-  - HTTP2：单个 TCP 连接的多路复用
+	- keep-alive
+	- 精灵图：减少 HTTP 请求，本质是减少建立多个 TCP 的性能损耗
+	- 多域名：将资源放入不同的域名下，可以突破浏览器的单域名并发连接限制
+	- HTTP2：单个 TCP 连接的多路复用
 
 ###### HTTP
 
@@ -54,15 +55,15 @@ Request
 Response
 
 - 跨域
-  - JSONP
+	- JSONP
 - 缓存
-  - 强缓存
-    - expires
-    - cache-control
-  - 协商缓存
-    - last-modified & if-last-modified-since
-    - etag & if-node-match
+	- 强缓存
+		- expires
+		- cache-control
+	- 协商缓存
+		- last-modified & if-last-modified-since
+		- etag & if-node-match
 - HTTP2
-  - 多路复用
-  - 首部压缩
-  - 服务端推送
+	- 多路复用
+	- 首部压缩
+	- 服务端推送

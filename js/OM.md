@@ -1,5 +1,6 @@
 ---
 date created: 2022-03-03 00:35
+date updated: 2022-03-03 00:52
 ---
 
 ## Event
@@ -16,52 +17,52 @@ removeEventListener('click', fn)
 ### 事件对象
 
 - Event 事件
-  - e.target 事件触发的目标源元素，会变
+	- e.target 事件触发的目标源元素，会变
 
-  - e.currentTarget 事件绑定的元素
+	- e.currentTarget 事件绑定的元素
 
-  - 事件委托（事件代理）
+	- 事件委托（事件代理）
 
-    ```javascript
-    ul.addEventListener('click', function(e) {
-        if (e.target.tagName == 'LI') {
-            e.target.style.background = 'yellow'
-        }
-    })
-    ```
+		```javascript
+		ul.addEventListener('click', function(e) {
+		    if (e.target.tagName == 'LI') {
+		        e.target.style.background = 'yellow'
+		    }
+		})
+		```
 
-  - mouseenter、mouseleave 不会在鼠标移动父子级切换过程中触发
+	- mouseenter、mouseleave 不会在鼠标移动父子级切换过程中触发
 
-    - mouseover、mouseout 会触发 mousemove 鼠标移动
+		- mouseover、mouseout 会触发 mousemove 鼠标移动
 
-  - e.stopPropagation()、e.cancelBubble=true 取消事件冒泡
+	- e.stopPropagation()、e.cancelBubble=true 取消事件冒泡
 
-  - e.clientX、e.clientY 鼠标相对显示区域位置
+	- e.clientX、e.clientY 鼠标相对显示区域位置
 
-    - e.pageX、e.pageY 鼠标相对页面位置
+		- e.pageX、e.pageY 鼠标相对页面位置
 
 - contextmenu 鼠标右键事件
 
 - 键盘事件
 
-  - keydown、keyup
-  - e.keyCode 键码 e.key 键值
-  - e.ctrlKey、e.altKey、e.shiftKey 是否按下
+	- keydown、keyup
+	- e.keyCode 键码 e.key 键值
+	- e.ctrlKey、e.altKey、e.shiftKey 是否按下
 
 - 拖拽思路详解
 
-  - mousedown、mousemove、mouseup
+	- mousedown、mousemove、mouseup
 
 - 鼠标滚动事件
 
-  - mousewheel、DOMMouseScroll
-  - e.whlleDelta 和 e.detail 滚轮方向获取
+	- mousewheel、DOMMouseScroll
+	- e.whlleDelta 和 e.detail 滚轮方向获取
 
 - 其他常用事件
 
-  - dblclick
-  - blur、focus、change、input、submit、reset
-  - 表单其他方法：blur()、focus()、select()
+	- dblclick
+	- blur、focus、change、input、submit、reset
+	- 表单其他方法：blur()、focus()、select()
 
 ## DOM
 
@@ -94,15 +95,15 @@ removeEventListener('click', fn)
 ### 查找内容
 
 - nodeList
-  - childNodes
-  - querySelector(All)
+	- childNodes
+	- querySelector(All)
 - HTMLCollection
-  - children
-  - getElementsByTagName
-  - getElementsByClassName
+	- children
+	- getElementsByTagName
+	- getElementsByClassName
 - 区别
-  - nodeList 有 forEach 方法，但是 HTMLCollection没有
-  - HTMLCollection 动态更新，querySelectorAll 没有
+	- nodeList 有 forEach 方法，但是 HTMLCollection没有
+	- HTMLCollection 动态更新，querySelectorAll 没有
 
 ### DOM 属性操作
 
@@ -122,11 +123,11 @@ removeEventListener('click', fn)
 
 - 自定义属性（data-）
 
-  ```javascript
-  <div data-kkb="hello"></>
+	```javascript
+	<div data-kkb="hello"></>
 
-  box.dataset.kkb // hello
-  ```
+	box.dataset.kkb // hello
+	```
 
 ### 节点操作
 
@@ -134,29 +135,29 @@ removeEventListener('click', fn)
 
 - 添加节点
 
-  - parent.appendChild(node)
-  - parent.insertBefore(newNode, oldNode)
+	- parent.appendChild(node)
+	- parent.insertBefore(newNode, oldNode)
 
 - 替换节点：parent.replaceChild(newNode, oldNode) 返回值是被替换的节点
 
 - 删除节点
 
-  - node.remove()
-  - parent.removeChild(node) 返回值为删掉的节点
+	- node.remove()
+	- parent.removeChild(node) 返回值为删掉的节点
 
 - 克隆节点：node.cloneNode(deep)---deep 为 true 即为深拷贝，但是不拷贝事件
 
 - 文档碎片（优化性能）：createDocumentFragment
 
-  ```javascript
-  let fragment = document.createDocumentFragment()
-  for(let i = 0; i < 1000; i++) {
-      let div = document.createElement("div")
-      div.innerHTML = i
-      fragment.appendChild(div) // box.appendChild(div) 性能较差
-  }
-  box.appendChild(fragment)
-  ```
+	```javascript
+	let fragment = document.createDocumentFragment()
+	for(let i = 0; i < 1000; i++) {
+	    let div = document.createElement("div")
+	    div.innerHTML = i
+	    fragment.appendChild(div) // box.appendChild(div) 性能较差
+	}
+	box.appendChild(fragment)
+	```
 
 ### 尺寸相关
 
@@ -195,10 +196,10 @@ removeEventListener('click', fn)
 
 - open：打开新窗口
 
-  - url
-  - target：_blank，__self
-  - specs 新窗口规格
-  - replace
+	- url
+	- target：_blank，__self
+	- specs 新窗口规格
+	- replace
 
 - close
 
@@ -212,29 +213,29 @@ removeEventListener('click', fn)
 
 - onresize：监听窗口大小发生改变
 
-  ```javascript
-  window.onload = function() {
-      let banner = document.querySelector("#banner")
-      let resizeBanner = () => {
-          let l = (window.innerWidth -banner.offsetWidth)/2
-          let t = (window.innerHeight -banner.offsetHeight)/2
-         	let scrollL = document.body.scrollLeft || ducument.documentElement.scrollLeft
-          let scrollT = document.body.scrollTop || ducument.documentElement.scrollTop
-          // window.srcrollY--X--To(x,y)
-          banner.style.left = l + scrollY + "px"
-          banner.style.top = t + scrollT + "px"
-      }
-      resizeBanner()
-      window.onresize = function() {
-          banner.style.transition = "1s"
-          resizeBanner()
-      }
-      window.onscroll = function() {
-          banner.style.transition = "1s"
-          reziseBanner()
-      }
-  }
-  ```
+	```javascript
+	window.onload = function() {
+	    let banner = document.querySelector("#banner")
+	    let resizeBanner = () => {
+	        let l = (window.innerWidth -banner.offsetWidth)/2
+	        let t = (window.innerHeight -banner.offsetHeight)/2
+	       	let scrollL = document.body.scrollLeft || ducument.documentElement.scrollLeft
+	        let scrollT = document.body.scrollTop || ducument.documentElement.scrollTop
+	        // window.srcrollY--X--To(x,y)
+	        banner.style.left = l + scrollY + "px"
+	        banner.style.top = t + scrollT + "px"
+	    }
+	    resizeBanner()
+	    window.onresize = function() {
+	        banner.style.transition = "1s"
+	        resizeBanner()
+	    }
+	    window.onscroll = function() {
+	        banner.style.transition = "1s"
+	        reziseBanner()
+	    }
+	}
+	```
 
 ### location
 

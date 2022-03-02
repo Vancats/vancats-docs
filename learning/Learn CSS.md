@@ -1,5 +1,6 @@
 ---
 date created: 2022-03-03 00:34
+date updated: 2022-03-03 00:52
 ---
 
 ###### CSS 高度坍塌
@@ -48,52 +49,52 @@ date created: 2022-03-03 00:34
 1. 子元素是行内元素：父元素`text-align`
 2. 子元素块级未设宽：默认撑满父级宽度
 3. 子元素块级并设宽：
-   1. 子元素`margin: 0 auto`
-   2. `父margin/子padding + border-box`
-   3. `left: 50%` + `margin-left || transform: translateX`
-   4. `flex`
+		1. 子元素`margin: 0 auto`
+		2. `父margin/子padding + border-box`
+		3. `left: 50%` + `margin-left || transform: translateX`
+		4. `flex`
 
 **水平垂直居中**：`display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
 
 ###### 垂直居中（premise：父元素是盒子容器）
 
 1. 子元素是行内元素
-   1. 单行：`line-height`
-   2. 多行：`display: inline/inline-block/table-cell; vertical-align: middle`
+		1. 单行：`line-height`
+		2. 多行：`display: inline/inline-block/table-cell; vertical-align: middle`
 2. 子元素块级未设宽
-   1. `display: inline/inline-block/table-cell; vertical-align: middle`
-   2. `flex`
+		1. `display: inline/inline-block/table-cell; vertical-align: middle`
+		2. `flex`
 3. 子元素块级并设宽
-   1. `父margin/子padding + border-box`
-   2. `top: 50%` + `margin-top || transform: translateY`
-   3. `flex`
+		1. `父margin/子padding + border-box`
+		2. `top: 50%` + `margin-top || transform: translateY`
+		3. `flex`
 
 **水平垂直居中**：`display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
 
 ###### 响应式布局
 
 1. `meta`标签
-   1. `viewport`：显示可以显示内容的大小
-   2. `width`：视口宽，`device-width`，物理设备宽
-   3. `user-scalable`：是否允许用户缩放
-   4. `initial-scale`：初始化缩放大小
-   5. `maximum-scale`：最大缩放
-   6. `minimum-scale`：最小缩放
+		1. `viewport`：显示可以显示内容的大小
+		2. `width`：视口宽，`device-width`，物理设备宽
+		3. `user-scalable`：是否允许用户缩放
+		4. `initial-scale`：初始化缩放大小
+		5. `maximum-scale`：最大缩放
+		6. `minimum-scale`：最小缩放
 2. 布局方式
-   1. `flex`：中间有内容会有缩放最小值；左右侧的宽度会变小
-   2. 父相子绝：代码复杂，宽度小于600时，右侧覆盖左侧，需要用media平分屏幕解决
-   3. `float`
-   4. `rem`：浏览器字体有最小值
-   5. `grid`：
+		1. `flex`：中间有内容会有缩放最小值；左右侧的宽度会变小
+		2. 父相子绝：代码复杂，宽度小于600时，右侧覆盖左侧，需要用media平分屏幕解决
+		3. `float`
+		4. `rem`：浏览器字体有最小值
+		5. `grid`：
 
 ###### 媒体查询
 
 1. 媒体类型：`all screen print 打印机 speech 发声设备`
 2. 引入方法：
-   1. `<style media="print">`
-   2. `<link rel="stylesheet" href="base.css" media="screen" / "(max-width: 800px)">` 未设置即为全局
-   3. `@import url(base.css) print`
-   4. `@media`
+		1. `<style media="print">`
+		2. `<link rel="stylesheet" href="base.css" media="screen" / "(max-width: 800px)">` 未设置即为全局
+		3. `@import url(base.css) print`
+		4. `@media`
 3. 多设备支持：`import url(base.css) print, screen`
 4. 设备方向：`orientation: landscape横 | portrait竖`
 5. `eg: @media not screen and (orientation: landscape) and (max-width:600px) {...}`
@@ -103,8 +104,8 @@ date created: 2022-03-03 00:34
 1. 变量：`$primary-color: #666; div { color: $primary-color}`
 2. 引入：`import 'base.scss'`
 3. 嵌套：
-   1. 父级选择器`$`
-   2. 嵌套属性：`.demo{ font: { family: fantasy; size: 16px; } }`=== `.demo { font-family: fantasy; font-size: 16px }`
+		1. 父级选择器`$`
+		2. 嵌套属性：`.demo{ font: { family: fantasy; size: 16px; } }`=== `.demo { font-family: fantasy; font-size: 16px }`
 4. 混入（mixin）
 5. 算术运算符：`.article[role="main"] { ... }`
 6. 继承：`%common {...}   .message { @extend %commpon; }` 只有被继承过的代码才会输出到样式文件
@@ -160,9 +161,9 @@ date created: 2022-03-03 00:34
 - 使用：window.requestAnimationFrame(callback) callback在下次重绘前更新动画帧调用
 - 取消：window.cancelAnimationFrame(id)
 - 优势
-  - CPU 节能：在浏览器切屏后停止执行渲染，setInterval 即便在后台也会执行
-  - 函数节流：固定 16.7ms 执行一次
-  - 减少DOM操作：会在下次重绘前进行统一的DOM操作
+	- CPU 节能：在浏览器切屏后停止执行渲染，setInterval 即便在后台也会执行
+	- 函数节流：固定 16.7ms 执行一次
+	- 减少DOM操作：会在下次重绘前进行统一的DOM操作
 - setTimeout缺点：1. 固定间隔不一定等于帧数刷新时间（16.7）2. 进入宏任务队列，不一定按固定间隔执行
 
 ###### li 之间的空白换行符
@@ -177,14 +178,14 @@ date created: 2022-03-03 00:34
 1. 选择器
 2. 边框：&-radius、&-shadow、&-image
 3. 背景
-   1. &-clip：border-box(no-clip) padding-box content-box 背景从 border padding content 开始
-   2. &-origin：border-box padding-box(默认) content-box 以 ... 的左上角对齐
-   3. &-size：content(缩小图片) --- cover(扩展元素) --- 100px 100px  --- 100% 50%
-   4. &-break：控制背景如何在不同的盒子中显示
+		1. &-clip：border-box(no-clip) padding-box content-box 背景从 border padding content 开始
+		2. &-origin：border-box padding-box(默认) content-box 以 ... 的左上角对齐
+		3. &-size：content(缩小图片) --- cover(扩展元素) --- 100px 100px  --- 100% 50%
+		4. &-break：控制背景如何在不同的盒子中显示
 4. 文字
-   1. word-wrap：normal 默认；break-all：允许单词内换行
-   2. text-shadow：clip 直接修剪多余文本；ellipsis：省略号
-   3. text-overflow、text-decoration
+		1. word-wrap：normal 默认；break-all：允许单词内换行
+		2. text-shadow：clip 直接修剪多余文本；ellipsis：省略号
+		3. text-overflow、text-decoration
 5. transition: 属性 时间 效果曲线 延迟时间
 6. transform：translete、scale、rotate、skew、perspective
 7. animation
@@ -383,46 +384,46 @@ grid-template-columns:200px auto 200px;
 链接样式：link, visited, hover, active
 
 - 属性选择器
-  - `[attr]`：指定属性的元素；
-  - `[attr=val]`：属性等于指定值的元素；
-  - `[attr*=val]`：属性包含指定值的元素；
-  - `[attr^=val]` ：属性以指定值开头的元素；
-  - `[attr$=val]`：属性以指定值结尾的元素；
+	- `[attr]`：指定属性的元素；
+	- `[attr=val]`：属性等于指定值的元素；
+	- `[attr*=val]`：属性包含指定值的元素；
+	- `[attr^=val]` ：属性以指定值开头的元素；
+	- `[attr$=val]`：属性以指定值结尾的元素；
 - 组合选择器
-  - 相邻兄弟：A + B
-  - 普通兄弟：A ~ B
-  - 子选择器：A > B
-  - 后代选择器：A  B
+	- 相邻兄弟：A + B
+	- 普通兄弟：A ~ B
+	- 子选择器：A > B
+	- 后代选择器：A  B
 - 伪类（全加一个：）
-  - 行为伪类
-    - `:active`：鼠标激活的元素；
-    - `:hover`： 鼠标悬浮的元素；
-    - `::selection`：鼠标选中的元素；
-  - 状态伪类
-    - `:target`：当前锚点的元素；`:link`：未访问的链接元素；
-    - `:visited`：已访问的链接元素；`:focus`：输入聚焦的表单元素；
-    - `:required`：输入必填的表单元素；`:valid`：输入合法的表单元素；
-    - `:invalid`：输入非法的表单元素；`:in-range`：输入范围以内的表单元素；
-    - `:out-of-range`：输入范围以外的表单元素；`:checked`：选项选中的表单元素；
-    - `:optional`：选项可选的表单元素；`:enabled`：事件启用的表单元素；
-    - `:disabled`：事件禁用的表单元素；`:read-only`：只读的表单元素；
-    - `:read-write`：可读可写的表单元素；`:blank`：输入为空的表单元素；
-    - `:current()`：浏览中的元素；`:past()`：已浏览的元素；
-    - `:future()`：未浏览的元素；
-  - 结构伪类
-    - `:root`：文档的根元素；`:empty`：无子元素的元素；
-    - `:first-letter`：元素的首字母；`:first-line`：元素的首行；
-    - `:nth-child(n)`：元素中指定顺序索引的元素；`:nth-last-child(n)`：元素中指定逆序索引的元素；；
-    - `:first-child`：元素中为首的元素；`:last-child` ：元素中为尾的元素；
-    - `:only-child`：父元素仅有该元素的元素；`:nth-of-type(n)`：标签中指定顺序索引的标签；
-    - `:nth-last-of-type(n)`：标签中指定逆序索引的标签；`:first-of-type` ：标签中为首的标签；
-    - `:last-of-type`：标签中为尾标签；`:only-of-type`：父元素仅有该标签的标签；
-  - 条件伪类
-    - `:lang()`：基于元素语言来匹配页面元素；
-    - `:dir()`：匹配特定文字书写方向的元素；
-    - `:has()`：匹配包含指定元素的元素；
-    - `:is()`：匹配指定选择器列表里的元素；
-    - `:not()`：用来匹配不符合一组选择器的元素；
+	- 行为伪类
+		- `:active`：鼠标激活的元素；
+		- `:hover`： 鼠标悬浮的元素；
+		- `::selection`：鼠标选中的元素；
+	- 状态伪类
+		- `:target`：当前锚点的元素；`:link`：未访问的链接元素；
+		- `:visited`：已访问的链接元素；`:focus`：输入聚焦的表单元素；
+		- `:required`：输入必填的表单元素；`:valid`：输入合法的表单元素；
+		- `:invalid`：输入非法的表单元素；`:in-range`：输入范围以内的表单元素；
+		- `:out-of-range`：输入范围以外的表单元素；`:checked`：选项选中的表单元素；
+		- `:optional`：选项可选的表单元素；`:enabled`：事件启用的表单元素；
+		- `:disabled`：事件禁用的表单元素；`:read-only`：只读的表单元素；
+		- `:read-write`：可读可写的表单元素；`:blank`：输入为空的表单元素；
+		- `:current()`：浏览中的元素；`:past()`：已浏览的元素；
+		- `:future()`：未浏览的元素；
+	- 结构伪类
+		- `:root`：文档的根元素；`:empty`：无子元素的元素；
+		- `:first-letter`：元素的首字母；`:first-line`：元素的首行；
+		- `:nth-child(n)`：元素中指定顺序索引的元素；`:nth-last-child(n)`：元素中指定逆序索引的元素；；
+		- `:first-child`：元素中为首的元素；`:last-child` ：元素中为尾的元素；
+		- `:only-child`：父元素仅有该元素的元素；`:nth-of-type(n)`：标签中指定顺序索引的标签；
+		- `:nth-last-of-type(n)`：标签中指定逆序索引的标签；`:first-of-type` ：标签中为首的标签；
+		- `:last-of-type`：标签中为尾标签；`:only-of-type`：父元素仅有该标签的标签；
+	- 条件伪类
+		- `:lang()`：基于元素语言来匹配页面元素；
+		- `:dir()`：匹配特定文字书写方向的元素；
+		- `:has()`：匹配包含指定元素的元素；
+		- `:is()`：匹配指定选择器列表里的元素；
+		- `:not()`：用来匹配不符合一组选择器的元素；
 - 伪元素`::before  ::after`
 
 ###### CSS 工程化
