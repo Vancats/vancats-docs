@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-03 00:34
+date updated: 2022-03-03 00:47
 ---
 
 ### 之前
@@ -8,8 +8,8 @@ date updated: 2022-03-03 00:34
 ###### 面向对象
 
 1. 封装
-   1. 只创建一个对象：{}
-   2. 创建多个重复对象，使用构造函数
+		1. 只创建一个对象：{}
+		2. 创建多个重复对象，使用构造函数
 2. 继承：所有子对象共用的属性和方法，会放在构造函数的原型对象中
 3. 多态：重写父对象继承来的成员
 
@@ -21,9 +21,9 @@ date updated: 2022-03-03 00:34
 4. DOM 事件处理函数  this -> DOM 对象  这里不可更改为箭头函数，否则 this 指向 window
 5. Vue 中的 this 指向当前实例对象
 6. 箭头函数中的 this 指向当前函数外最近作用域的 this
-   1. 所有匿名函数都可以使用箭头函数简化
-   2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
-   3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
+		1. 所有匿名函数都可以使用箭头函数简化
+		2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
+		3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
 7. bind 永久更改 this 指向，call，apply 临时更改 this 指向
 
 ###### JS 创建对象的方法
@@ -261,12 +261,12 @@ class Student extends Person () {
 
 1. typeof：可以判断函数
 2. 原型链
-   1. `[].__proto__ === Array.prototype`
-   2. `Object.getPrototype([]} === Array.prototype`
-   3. `Array.prototype.isPrototypeOf([])`
+		1. `[].__proto__ === Array.prototype`
+		2. `Object.getPrototype([]} === Array.prototype`
+		3. `Array.prototype.isPrototypeOf([])`
 3. 构造函数方式
-   1. `[].constructor === Array`
-   2. `[] instanceof Array`
+		1. `[].constructor === Array`
+		2. `[] instanceof Array`
 
 **原型链的更换会引起上面两点判断的出错** `[].__proto__ = Object.prototype`
 4. `Object.prototype.toString.call([]) === '[object Array]'`
@@ -663,7 +663,7 @@ p.__proto__ === Person.prototype // { getname(){} }
 p.constructor // Object 如果没有改写的话是 Person
 p.constructor.prototype // Object.prototype
 
-
+// 正常情况下
 p.__proto__ // Person.prototype
 Person.prototype.__proto__ // Object.prototype
 p.__proto__.__proto__ // Object.prototype
