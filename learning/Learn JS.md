@@ -579,3 +579,15 @@ escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面�
 
 构造函数的方法如果放在函数中，每次调用都会重新创建方法，需要放到 `prototype` 上
 
+**原型重写**
+```js
+function Person (name) {
+	this.name = name
+}
+Person.prototype = function getName() {}
+var p = new Person('hello')
+p.__proto__ === Person.prototype // true
+p.__proto__ === p.constructor.prototype // false
+p.__proto__ // {}
+```
+
