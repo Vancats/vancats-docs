@@ -10,3 +10,7 @@ Fiber（链表）
 
 RequestIdleCallback(function (deadline) { deadline.timeRemaining() // 获取浏览器的空闲时间 })
 - 浏览器提供的 API，利用浏览器空闲时间处理任务，当前任务可被中止，优先执行更高级的任务
+
+
+React 生命周期
+React sss
