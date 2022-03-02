@@ -588,6 +588,7 @@ escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面�
 > 原型：JS 中对象是通过构造函数构建，每个构造函数都拥有一个 `prototype`，属性值是一个对象，该对象包含了可以由这个构造函数的所有实例共享的属性和方法。构造函数创建的对象中，会有一个指针（`__proto__`）直接指向该 `prototype`，这个指针被称为原型。ES5中新建了一个 `Object.getPrototypeOf()` 来获取这个属性
 >  
 > 原型链：当访问对象属性的时候，如果本身没有，就会顺着原型往上找，直到 `Object.prototype` 为止
+
 ![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
 
 	2.
