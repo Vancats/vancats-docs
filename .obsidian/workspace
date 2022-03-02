@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "444bfcef44fac819",
+        "id": "bd65b5179b0b672d",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "learning/Learn JS.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -99,7 +94,7 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "444bfcef44fac819",
+  "active": "bd65b5179b0b672d",
   "lastOpenFiles": [
     "learning/Learn JS.md",
     "sundry/Webpack.md",
