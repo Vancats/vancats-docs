@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn CSS.md",
-            "mode": "preview",
+            "file": "learning/Learn JS.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn CSS.md",
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -109,13 +109,13 @@
   },
   "active": "266370db96849c97",
   "lastOpenFiles": [
-    "learning/Learn CSS.md",
     "learning/Learn JS.md",
-    "learning/Learn React.md",
+    "learning/Learn HTML.md",
     "learning/Learn Interview.md",
     "learning/Learn HTTP.md",
+    "learning/Learn CSS.md",
+    "learning/Learn React.md",
     "learning/LeetCode.md",
-    "learning/Learn HTML.md",
     "learning/Learn Vue.md",
     "sundry/Webpack.md",
     "sundry/Plugins.md"
