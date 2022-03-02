@@ -406,14 +406,14 @@ at concat copyWithin entries every fill filter find findIndex findLastIndex flat
 includes indexOf join keys lastIndexOf map pop push reduce reduceRight reverse shift slice some sort splice
 toLocaleString toString unshift values
 
-Array：from isArray of
+Array: from isArray of
 ```
 
 ###### 对象的原生方法
 ```js
 hasOwnProperty isPrototypeOf propertyEnumerable toLocaleString toString valueOf
 
-String：assign create defineProperties defineProperty entries freeze fromEntries getOwnPropertyDescriptor
+String: assign create defineProperties defineProperty entries freeze fromEntries getOwnPropertyDescriptor
 getOwnPropertyDescriptors getOwnPropertyName getOwnPropertySymbols getOwnPropertyOf hasOwn is isExtensible
 isFrozen isSealed keys preventExtensions seal setPropertyOf values
 ```
@@ -421,7 +421,11 @@ isFrozen isSealed keys preventExtensions seal setPropertyOf values
 ###### 字符串的原生方法
 ```js
 anchor at big blink bold charAt charCodeAt codePointAt concat endsWith fixed fontcolor fontsize includes indexOf
-italics lastIndexOf
+italics lastIndexOf link localeCompare match matchAll normalize padEnd padStart repeat replace replaceAll search
+slice small split startsWith strike sub substr substring sup toLocaleLowerCase toLocaleUpperCase toLowerCase
+toString toUpperCase trim trimEnd trimLeft trimRight trimStart valueOf
+
+String: fromCharCode fromCodePoint raw
 ```
 
 ###### ES6 和 CommonJS
