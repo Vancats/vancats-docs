@@ -583,5 +583,5 @@ escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面�
 
 构造函数的方法如果放在函数中，每次调用都会重新创建方法，需要放到 `prototype` 上
 
-![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png =100*100)
+<img src="https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png"  width="200" align="left" />
 
