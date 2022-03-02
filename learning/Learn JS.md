@@ -1,29 +1,37 @@
+---
+date created: 2022-03-03 00:28
+date updated: 2022-03-03 00:31
+---
+
 ### 之前
+
 ###### 面向对象
+
 1. 封装
-	1. 只创建一个对象：{}
-	2. 创建多个重复对象，使用构造函数
+   1. 只创建一个对象：{}
+   2. 创建多个重复对象，使用构造函数
 2. 继承：所有子对象共用的属性和方法，会放在构造函数的原型对象中
 3. 多态：重写父对象继承来的成员
 
-######  判断 this
+###### 判断 this
+
 1. obj.fun  this -> obj
 2. new 构造函数 this -> 新创建的对象
 3. 普通函数，匿名函数，回调函数 this -> window
 4. DOM 事件处理函数  this -> DOM 对象  这里不可更改为箭头函数，否则 this 指向 window
 5. Vue 中的 this 指向当前实例对象
 6. 箭头函数中的 this 指向当前函数外最近作用域的 this
-	1. 所有匿名函数都可以使用箭头函数简化
-	2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
-	3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
+   1. 所有匿名函数都可以使用箭头函数简化
+   2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
+   3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
 7. bind 永久更改 this 指向，call，apply 临时更改 this 指向
 
-
-
 ###### JS 创建对象的方法
+
 1. 字面量
 2. new Object
 3. 工厂函数：无法根据原型对象判断对象的类型
+
 ```js
 function createPerson(name, age) {
 	var o = new Person()
@@ -33,7 +41,9 @@ function createPerson(name, age) {
 }
 var person = createPerson('Lqf', 18)
 ```
+
 4. 构造函数：如果内含方法，浪费内存
+
 ```js
 function Person(name, age) {
 	this.name = name
@@ -42,7 +52,9 @@ function Person(name, age) {
 }
 var person = new Person('Lqf', 18)
 ```
+
 5. 原型对象方式：步骤繁琐
+
 ```js
 function Person(){}
 Person.prototype.nama = 'name'
@@ -51,7 +63,9 @@ Person.prototype.intr = function() {}
 var person = new Person()
 person.name = 'Lqf' // 将会在子对象中创建一个name覆盖父对象的值
 ```
+
 6. 混合模式：不符合面向对象封装思想
+
 ```js
 function Person(name, age) {
 	this.name = name
@@ -60,7 +74,9 @@ function Person(name, age) {
 Person.prototype.intr = function() {}
 var person = new Person('Lqf', 18)
 ```
+
 7. 动态混合：语义不符
+
 ```js
 function Person(name, age) {
 	this.name = name
@@ -71,7 +87,9 @@ function Person(name, age) {
 }
 var person = new Person('Lqf', 18)
 ```
+
 8. 寄生构造函数：可读性差
+
 ```js
 function Person(name, age) {
 	this.name = name
@@ -89,7 +107,9 @@ function Student(name, age, className) {
 var student = new Student('Lqf', 18, '四班')
 
 ```
+
 9. ES6 Class：集中保存一种类型所有子对象的属性和方法的程序结构，本质上和混合模式类似
+
 ```js
 class Person {
 	constructor(name, age) {
@@ -99,7 +119,9 @@ class Person {
 	intr() {}
 }
 ```
+
 10. 稳妥构造函数：容易内存泄漏
+
 ```js
 function Person(name, age) {
 	var person = {}
@@ -108,9 +130,11 @@ function Person(name, age) {
 	person.getAge = function(val) {}
 }
 ```
-	
+
 ###### JS 继承方式
+
 1. 原型链继承：将父类的实例变成子类的原型 --- 创建子类时无法向父类传参
+
 ```js
 function Person(name) {
 	this.name = name
@@ -123,7 +147,9 @@ Student.prototype = new Person()
 Student.prototype.name = 'student'
 var student = new Student()
 ```
+
 2. 构造函数继承
+
 ```js
 function Person(name) {
 	this.name = name
@@ -137,7 +163,9 @@ function Student(name, age) {
 }
 var student = new Student()
 ```
+
 3. 实例继承
+
 ```js
 function Person(name) {
 	this.name = name
@@ -152,7 +180,9 @@ function Student(name, age) {
 }
 var student = new Student()
 ```
+
 4. 拷贝继承：无法获取父类不可 for in 的方法
+
 ```js
 function Person(name) {
 	this.name = name
@@ -169,7 +199,9 @@ function Student(name, age) {
 }
 var student = new Student()
 ```
+
 5. 组合继承
+
 ```js
 function Person(name) {
 	this.name = name
@@ -185,7 +217,9 @@ Student.prototype = new Animal()
 Student.prototype.constructor = Student
 var student = new Student()
 ```
+
 6. 寄生组合继承
+
 ```js
 function Person(name) {
 	this.name = name
@@ -205,7 +239,9 @@ function Student(name,age) {
 })()
 var student = new Student()
 ```
+
 7. ES6 Class extends
+
 ```js
 class Person() {
 	constructor() {
@@ -219,22 +255,24 @@ class Student extends Person () {
 }
 ```
 
-
-
 ### 数据类型
+
 ###### 类型判断
+
 1. typeof：可以判断函数
 2. 原型链
-	1. `[].__proto__ === Array.prototype`
-	2. `Object.getPrototype([]} === Array.prototype`
-	3. `Array.prototype.isPrototypeOf([])`
+   1. `[].__proto__ === Array.prototype`
+   2. `Object.getPrototype([]} === Array.prototype`
+   3. `Array.prototype.isPrototypeOf([])`
 3. 构造函数方式
-	1. `[].constructor === Array`
-	2. `[] instanceof Array`
+   1. `[].constructor === Array`
+   2. `[] instanceof Array`
+
 **原型链的更换会引起上面两点判断的出错** `[].__proto__ = Object.prototype`
 4. `Object.prototype.toString.call([]) === '[object Array]'`
 5. `Array.isArray([])`
 6. 手写 ==instanceof==
+
 ```js
 function myInstanceOf (left, right) {
 	let proto = Object.getPrototypeOf(left)
@@ -248,7 +286,9 @@ function myInstanceOf (left, right) {
 ```
 
 ###### 类型转换
+
 **== 强制类型转换**
+
 ```js
 '1' == true   ➡️   '1'  ==  1   ➡️   1  ==  1
 
@@ -258,6 +298,7 @@ function myInstanceOf (left, right) {
 ```
 
 **to String**
+
 ```js
 null        -> 'null'
 undefined   -> 'undefined'
@@ -266,6 +307,7 @@ Object      -> 调用 toString 方法
 ```
 
 **to Number**
+
 ```js
 null          -> 0
 undefined     -> NaN
@@ -274,13 +316,16 @@ Object(Array) -> ToPrimitive 操作：首先通过内部操作 DefaultValue 检�
 ```
 
 **to Boolean**
->`undefined、null、false、(+-)0、NaN、""`
+
+> `undefined、null、false、(+-)0、NaN、""`
 
 **包装类型**
->`Object('abc').valueOf() === 'abc'`
+
+> `Object('abc').valueOf() === 'abc'`
 
 ==隐式转换==
 JS 中的每个值都带有 ToPrimitive 方法，主要功能为将值转换为基本类型
+
 ```js
 当需要转换成 number 时（大多数）
 	1. 调用 valueOf 方法，如果为原始值，则返回，不然下一步
@@ -310,7 +355,9 @@ a + b // '[object Object][object Object]'
 ```
 
 ###### 其他情况
+
 1. typeof null
+
 ```js
 在 JS 的第一个版本中，所有值存储在一个 32 位单元中，每个单元包含一个类型标签（1～3bit）以及真实数据，类型标签存储在低位中
 000: object
@@ -321,17 +368,21 @@ a + b // '[object Object][object Object]'
 null: 32 位全是 0
 undefined: (-2)30 超出整数范围的数字
 ```
+
 2. 0.1 + 0.2 !== 0.3：Number.EPSILON
 3. isNaN：任何不能转换为数值的值都会返回true；Number.isNaN：先判断是否为数字再判断是否为NaN
 
 ### JS 基础
+
 ###### new 一个构造函数
+
 1. 创建一个新的对象
 2. 将新对象的 `__proto__` 指向构造函数的 prototype
 3. 构造函数中的 this 指向该新对象，通过强制赋值，为新对象添加属性和方法
 4. 返回该新对象的地址
 5. 如果构造函数 return 了一个引用类型对象，直接返回该对象，前面的操作无效
 6. 手写==new==
+
 ```js
 function myNew () {
 	let newObj = null
@@ -350,6 +401,7 @@ function myNew () {
 ```
 
 ###### 箭头函数
+
 1. 没有自己的 this，直接继承作用域上一层上下文，并且不会改变
 2. 没有 prototype
 3. 不能作为构造函数，new 一个函数中第二点需要 prototype，第三点需要更改 this
@@ -360,6 +412,7 @@ function myNew () {
 8. 对象的方法，原型对象的方法和DOM事件函数不能用
 
 ###### for...of & iterator
+
 ```js
 let obj = { a: 1, b: 2 }
 
@@ -389,6 +442,7 @@ obj[Symbol.iterator] = function*() {
 ```
 
 ###### 数组的原生方法
+
 ```js
 at concat copyWithin entries every fill filter find findIndex findLastIndex flat flatMap forEach
 includes indexOf join keys lastIndexOf map pop push reduce reduceRight reverse shift slice some sort splice
@@ -398,6 +452,7 @@ Array: from isArray of
 ```
 
 ###### 对象的原生方法
+
 ```js
 hasOwnProperty isPrototypeOf propertyEnumerable toLocaleString toString valueOf
 
@@ -407,6 +462,7 @@ isFrozen isSealed keys preventExtensions seal setPropertyOf values
 ```
 
 ###### 字符串的原生方法
+
 ```js
 anchor at big blink bold charAt charCodeAt codePointAt concat endsWith fixed fontcolor fontsize includes indexOf
 italics lastIndexOf link localeCompare match matchAll normalize padEnd padStart repeat replace replaceAll search
@@ -417,6 +473,7 @@ String: fromCharCode fromCodePoint raw
 ```
 
 ###### ES6 和 CommonJS
+
 1. 前者的 import 异步加载，后者的 require 同步加载，只适用于本地读取文件的服务端
 2. 前者输出的值的引用，而后者输出的是值的浅拷贝内容
 3. 前者是编译时输出接口，因此可以静态分析，tree shaking 和 scope hoisting
@@ -424,7 +481,8 @@ String: fromCharCode fromCodePoint raw
 5. 前者 this 指向 undefined，后者 this 指向本模块
 6. 前者支持引入后者（必须整体引入，不能引入单独一个变量）；后者引入前者，要求后者使用 .mjs 后缀，或者在 package.json 中加入 { "type": "module" }，而且 mjs 文件必须和 import 对应，不能使用 require
 
-###### AJAX 
+###### AJAX
+
 ```js
 const url = '/api/user'
 let xhr = new XMLHttpRequest()
@@ -482,6 +540,7 @@ function getJSON() {
 基于 Promise 设计，使用原生 js，而不是 ajax 的进一步的封装，没有使用 XMLHttpRequest
 优点：语法简洁，基于 Promise，支持 async/await
 缺点：
+
 1. 只对网络请求报错，对 400，500 都当作成功请求
 2. fetch 默认不发 cookie，需要配置项 fetch( url, { credentials: 'include' })
 3. fetch 不支持 abort，不支持超时控制，使用 setTimeout 与 Promise.reject 实现的超时控制不能阻止请求过程继续在后台运行
@@ -489,6 +548,7 @@ function getJSON() {
 
 **Axios**
 基于 Promise 封装
+
 1. 浏览器端发起 XMLHttpRequest 请求，node 端发起 http 请求
 2. 支持 Promise API
 3. 监听请求和返回，对请求和返回进行转化
@@ -497,6 +557,7 @@ function getJSON() {
 6. 客户端支持抵御 XSRF 攻击
 
 ###### Map
+
 1. 意外的键：新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
 2. 键值：map 的键可以是任意内容，object 的键必须是 string 或者 symbol
 3. 键的顺序：map 的键的顺序严格按照插入顺序，object 无序
@@ -507,8 +568,10 @@ function getJSON() {
 WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入垃圾回收机制，一旦不需要会自动消失
 
 ###### JSON
+
 1. JSON.parse：JSON -> JS 如果不合规范，报错
 2. JSON.stringify
+
 ```js
 JSON.stringify(value[, replacer[, space]])
 
@@ -532,37 +595,44 @@ space: 指定缩进的空白符
 ```
 
 ###### Unicode 与编码方式
+
 **Unicode**：为每种语言的每个字符设定了统一并且唯一的二进制编码，实现方式（编码方式）有 UTF-8/16/32
 
 **UTF-8**
+
 1. 对于单子节字符，首位为0，其余 7 位为这个字符的 unicode 编码，因此英文字母的 ASCII 和 Unicode 一样
 2. 对于 n 字节字符，第一个字节的前 n 位都是 1，第 n + 1 位是 0，其他字节前两位都是 10
 
-| 编码范围（编号对应的十进制数）  | 二进制格式                          |
-|:------------------------------- | ----------------------------------- |
-| 0x00—0x7F （0-127）             | 0xxxxxxx                            |
-| 0x80—0x7FF （128-2047）         | 110xxxxx 10xxxxxx                   |
-| 0x800—0xFFFF  （2048-65535）    | 1110xxxx 10xxxxxx 10xxxxxx          |
+| 编码范围（编号对应的十进制数）             | 二进制格式                               |
+| :-------------------------- | ----------------------------------- |
+| 0x00—0x7F （0-127）           | 0xxxxxxx                            |
+| 0x80—0x7FF （128-2047）       | 110xxxxx 10xxxxxx                   |
+| 0x800—0xFFFF  （2048-65535）  | 1110xxxx 10xxxxxx 10xxxxxx          |
 | 0x10000—0x10FFFF  （65536以上） | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx |
 
 编码规则
+
 1. 找到 Unicode 所在编码范围，进而找到相应的二进制格式
 2. 将 Unicode 编码转换成二进制（去掉最高位的 0）
 3. 将二进制数从右到左一次填入二进制格式的 x 中，如果有 x 没填，设置为 0
+
 eg
 “马”字的 Unicode 编码是 0x9A6C，整数编号是 39532
+
 1. 该字在第三个范围内，二进制格式是 1110xxxx 10xxxxxx 10xxxxxx
 2. 39532 的二进制编码是 1001 1010 0110 1100
 3. 因此是 11101001 10101001 10101100
 
 **UTF-16**
 以 "**𡠀**" 字为例，它的 Unicode 码点为 0x21800，该码点超出了基本平面的范围，因此需要用四个字节来表示，步骤如下：
--   首先计算超出部分的结果：0x21800 - 0x10000
--   将上面的计算结果转为 20 位的二进制数，不足20位就在前面补0，结果为：0001000110 0000000000
--   将得到的两个 10 位二进制数分别对应到两个区间中
--   U+D800 对应的二进制数为 1101100000000000，将 0001000110 填充在它的后 10  个二进制位，得到 1101100001000110，转成 16 进制数为 0xD846。同理，低位为 0xDC00，所以这个字的 UTF-16 编码为 0xD846 0xDC00
+
+- 首先计算超出部分的结果：0x21800 - 0x10000
+- 将上面的计算结果转为 20 位的二进制数，不足20位就在前面补0，结果为：0001000110 0000000000
+- 将得到的两个 10 位二进制数分别对应到两个区间中
+- U+D800 对应的二进制数为 1101100000000000，将 0001000110 填充在它的后 10  个二进制位，得到 1101100001000110，转成 16 进制数为 0xD846。同理，低位为 0xDC00，所以这个字的 UTF-16 编码为 0xD846 0xDC00
 
 **总结**
+
 - UTF-16 使用变长码元序列的编码方式，相较于定长码元序列的 UTF-32 算法更复杂，甚至比同样是变长码元序列的 UTF-8 也更为复杂，因为其引入了独特的**代理对**这样的代理机制；
 - UTF-8 需要判断每个字节中的开头标志信息，所以如果某个字节在传送过程中出错了，就会导致后面的字节也会解析出错；而 UTF-16 不会判断开头标志，即使错也只会错一个字符，所以容错能力教强；
 - 如果字符内容全部英文或英文与其他文字混合，但英文占绝大部分，那么用`UTF-8`就比 UTF-16 节省了很多空间；而如果字符内容全部是中文这样类似的字符或者混合字符中中文占绝大多数，那么 UTF-16 就占优势了，可以节省很多空间；
@@ -572,7 +642,9 @@ encodeURIComponent：对 URI 的组成部分转义，包括特殊字符
 escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面加 %u，而 encodeURI 转成 UTF-8 后前面加 %
 
 ### 原型与闭包
+
 ###### 对原型链的理解
+
 **原型**：JS 中对象是通过构造函数构建，每个构造函数都拥有一个 `prototype`，属性值是一个对象，该对象包含了可以由这个构造函数的所有实例共享的属性和方法。构造函数创建的对象中，会有一个指针（`__proto__`）直接指向该 `prototype`，这个指针被称为原型。ES5中新建了一个 `Object.getPrototypeOf()` 来获取这个属性。另外还会有一个 `constructor` 属性指向构造函数。
 
 **原型链**：当访问对象属性的时候，如果本身没有，就会顺着原型往上找，直到 `Object.prototype` 为止
@@ -580,6 +652,7 @@ escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面�
 **原型方法**：构造函数的方法如果放在函数中，每次调用都会重新创建方法，需要放到 `prototype` 上
 
 **原型重写**
+
 ```js
 function Person(name){ this.name = name }
 Person.prototype = { getName(){} }
@@ -599,4 +672,5 @@ Person.prototype.constructor.prototype.__proto__ // Object.prototype
 p1.__proto__.constructor // Person
 Person.prototype.constructor // Person
 ```
+
 ![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
