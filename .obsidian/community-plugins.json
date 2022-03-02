@@ -3,5 +3,9 @@
   "obsidian-image-auto-upload-plugin",
   "cmenu-plugin",
   "obsidian-git",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "oz-image-plugin",
+  "obsidian-outliner",
+  "cm-editor-syntax-highlight-obsidian",
+  "markdown-prettifier"
 ]
