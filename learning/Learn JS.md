@@ -572,3 +572,6 @@ eg
 encodeURI：对整个 URI 进行转义，但是一些对于 URI 有特殊意义的字符不转义
 encodeURIComponent：对 URI 的组成部分转义，包括特殊字符
 escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面加 %u，而 encodeURI 转成 UTF-8 后前面加 %
+
+#### 原型与闭包
+1. 对原型链的理解
