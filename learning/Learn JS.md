@@ -584,10 +584,14 @@ escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面�
 function Person (name) {
 	this.name = name
 }
-Person.prototype = function getName() {}
+Person.prototype = {
+	getName() {}
+}
 var p = new Person('hello')
 p.__proto__ === Person.prototype // true
 p.__proto__ === p.constructor.prototype // false
-p.__proto__ // {}
+p.__proto__ === Person.prototype // { getname(){} }
+p.constructor // Object 如果没有改写的话 
+p.constructor.prototype // Object.prototype
 ```
 
