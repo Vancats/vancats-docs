@@ -1,5 +1,6 @@
 ---
 date created: 2022-03-03 00:35
+date updated: 2022-03-03 00:54
 ---
 
 ### .browserslistrc
@@ -40,10 +41,10 @@ date created: 2022-03-03 00:35
 > - "ecmaVersion": 6, // 支持 ES6，但是不代表支持新的 ES6 全局变量等
 > - "sourceType": "module", // 指定来源的类型，"script"(默认) 或 "module"(ECMAScript 模块)
 > - "ecmaFeatures" // 使用额外的语言特性
->   - "jsx": true, // 启用JSX
->   - "globalReturn": true, // 允许全局使用 return
->   - "impliedStrict": true, // 启用全局 strict mode
->   - "experimentalObjectRestSpread": true, // 启用全局性的 object rest
+> 	- "jsx": true, // 启用JSX
+> 	- "globalReturn": true, // 允许全局使用 return
+> 	- "impliedStrict": true, // 启用全局 strict mode
+> 	- "experimentalObjectRestSpread": true, // 启用全局性的 object rest
 >
 > `"env"` 指定想要启动的环境
 >

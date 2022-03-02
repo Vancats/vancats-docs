@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "js/Vue补.md",
+            "file": "learning/Learn JS.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "js/Vue补.md",
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -96,19 +96,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 174
+    "width": 174,
+    "collapsed": true
   },
   "active": "444bfcef44fac819",
   "lastOpenFiles": [
+    "learning/Learn JS.md",
+    "sundry/Webpack.md",
+    "sundry/Plugins.md",
+    "sundry/LeetCode.md",
+    "sundry/Git.md",
+    "sundry/Config.md",
+    "sundry/网络.md",
+    "sundry/动漫.md",
     "js/Vue补.md",
-    "js/vue3.md",
-    "js/Vue2.md",
-    "js/Vue.md",
-    "js/React.md",
-    "js/OM.md",
-    "js/another.md",
-    "js/手撕.md",
-    "js/模板引擎.md",
-    "learning/前端算法.md"
+    "js/vue3.md"
   ]
 }

@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-03 00:52
+date updated: 2022-03-03 00:55
 ---
 
 ### 之前
@@ -674,3 +674,5 @@ Person.prototype.constructor // Person
 ```
 
 ![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
+
+###### 作用域链 / 闭包
