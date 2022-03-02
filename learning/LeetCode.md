@@ -33,5 +33,3 @@
 
   - [355. 设计推特](https://leetcode-cn.com/problems/design-twitter/)
   - [1801. 积压订单中的订单总数](https://leetcode-cn.com/problems/number-of-orders-in-the-backlog/)
-
-  - [1753. 移除石子的最大得分](https://leetcode-cn.com/problems/maximum-score-from-removing-stones/)
