@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-04 00:03
+date updated: 2022-03-04 00:05
 ---
 
 ###### JS 继承方式
@@ -129,7 +129,7 @@ class Student extends Person () {
 
 ### 数据类型
 
-###### 类型判断
+#### 类型判断
 
 1. typeof：可以判断函数
 2. 原型链
@@ -157,7 +157,7 @@ function myInstanceOf (left, right) {
 }
 ```
 
-###### 类型转换
+#### 类型转换
 
 **== 强制类型转换**
 
@@ -226,7 +226,7 @@ var b = { name: 'Rose' }
 a + b // '[object Object][object Object]'
 ```
 
-###### 其他情况
+#### 其他情况
 
 1. typeof null
 
@@ -246,7 +246,7 @@ undefined: (-2)30 超出整数范围的数字
 
 ### JS 基础
 
-###### new 一个构造函数
+#### new 一个构造函数
 
 1. 创建一个新的对象
 2. 将新对象的 `__proto__` 指向构造函数的 prototype
@@ -272,7 +272,7 @@ function myNew () {
 }
 ```
 
-###### 箭头函数
+#### 箭头函数
 
 1. 没有自己的 this，直接继承作用域上一层上下文，并且不会改变
 2. 没有 prototype
@@ -283,7 +283,7 @@ function myNew () {
 7. 函数体只有一句话，并且不要返回值，使用 void `let fn = () => void fun()`
 8. 对象的方法，原型对象的方法和DOM事件函数不能用
 
-###### 判断 this
+#### 判断 this
 
 1. obj.fun  this -> obj
 2. new 构造函数 this -> 新创建的对象
@@ -296,7 +296,7 @@ function myNew () {
 		3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
 7. bind 永久更改 this 指向，call，apply 临时更改 this 指向
 
-###### for...of & iterator
+#### for...of & iterator
 
 ```js
 let obj = { a: 1, b: 2 }
@@ -326,7 +326,7 @@ obj[Symbol.iterator] = function*() {
 }
 ```
 
-###### 数组的原生方法
+#### 数组的原生方法
 
 ```js
 at concat copyWithin entries every fill filter find findIndex findLastIndex flat flatMap forEach
@@ -336,7 +336,7 @@ toLocaleString toString unshift values
 Array: from isArray of
 ```
 
-###### 对象的原生方法
+#### 对象的原生方法
 
 ```js
 hasOwnProperty isPrototypeOf propertyEnumerable toLocaleString toString valueOf
@@ -346,7 +346,7 @@ getOwnPropertyDescriptors getOwnPropertyName getOwnPropertySymbols getOwnPropert
 isFrozen isSealed keys preventExtensions seal setPropertyOf values
 ```
 
-###### 字符串的原生方法
+#### 字符串的原生方法
 
 ```js
 anchor at big blink bold charAt charCodeAt codePointAt concat endsWith fixed fontcolor fontsize includes indexOf
@@ -357,7 +357,7 @@ toString toUpperCase trim trimEnd trimLeft trimRight trimStart valueOf
 String: fromCharCode fromCodePoint raw
 ```
 
-###### ES6 和 CommonJS
+#### ES6 和 CommonJS
 
 1. 前者的 import 异步加载，后者的 require 同步加载，只适用于本地读取文件的服务端
 2. 前者输出的值的引用，而后者输出的是值的浅拷贝内容
@@ -366,7 +366,7 @@ String: fromCharCode fromCodePoint raw
 5. 前者 this 指向 undefined，后者 this 指向本模块
 6. 前者支持引入后者（必须整体引入，不能引入单独一个变量）；后者引入前者，要求后者使用 .mjs 后缀，或者在 package.json 中加入 { "type": "module" }，而且 mjs 文件必须和 import 对应，不能使用 require
 
-###### AJAX
+#### AJAX
 
 ```js
 const url = '/api/user'
@@ -441,7 +441,7 @@ function getJSON() {
 5. 自动转换 json，fetch 需要 res.json()
 6. 客户端支持抵御 XSRF 攻击
 
-###### Map
+#### Map
 
 1. 意外的键：新建的 map 不包含任何键，object 中有原型，新键可能和原型的冲突
 2. 键值：map 的键可以是任意内容，object 的键必须是 string 或者 symbol
@@ -452,7 +452,7 @@ function getJSON() {
 
 WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入垃圾回收机制，一旦不需要会自动消失
 
-###### JSON
+#### JSON
 
 1. JSON.parse：JSON -> JS 如果不合规范，报错
 2. JSON.stringify
@@ -479,7 +479,7 @@ space: 指定缩进的空白符
 8. 包含循环引用或 BigInt，抛出错误
 ```
 
-###### Unicode 与编码方式
+#### Unicode 与编码方式
 
 **Unicode**：为每种语言的每个字符设定了统一并且唯一的二进制编码，实现方式（编码方式）有 UTF-8/16/32
 
@@ -528,7 +528,7 @@ escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面�
 
 ### 原型与闭包
 
-###### 对原型链的理解
+#### 对原型链的理解
 
 **原型**：JS 中对象是通过构造函数构建，每个构造函数都拥有一个 `prototype`，属性值是一个对象，该对象包含了可以由这个构造函数的所有实例共享的属性和方法。构造函数创建的对象中，会有一个指针（`__proto__`）直接指向该 `prototype`，这个指针被称为原型。ES5中新建了一个 `Object.getPrototypeOf()` 来获取这个属性。另外还会有一个 `constructor` 属性指向构造函数。
 
@@ -564,7 +564,7 @@ Person.prototype.constructor // Person
 
 ![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
 
-###### 执行上下文
+#### 执行上下文
 
 - 全局执行上下文，函数执行上下文，eval 执行上下文；有执行上下文栈（调用栈）
 - 函数上下文除了变量定义、函数声明，还有 this，arguments
@@ -581,7 +581,7 @@ Person.prototype.constructor // Person
 
 2. 执行阶段：完成对变量的分配，最后执行代码
 
-###### 垃圾回收机制
+#### 垃圾回收机制
 
 JS 具有自动回收机制，找到不再使用的变量释放内存
 
@@ -610,7 +610,7 @@ JS 具有自动回收机制，找到不再使用的变量释放内存
 
 ### 面向对象
 
-###### 创建对象的方法
+#### 创建对象的方法
 
 1. 字面量
 2. new Object
@@ -715,11 +715,19 @@ function Person(name) {
 var person = new Person('Lqf')
 ```
 
-##### 继承的方法
+#### 继承的方法
 
 1. 原型链继承
 
 ```js
+function Person(name) {
+	this.name = name
+	this.intr = function(){}
+}
+Person.prototype.eat = function(){}
+
+function Student(){}
+Student
 ```
 
 2. 构造函数继承
@@ -750,5 +758,4 @@ var person = new Person('Lqf')
 7. ES6 Class extends
 
 ```js
-
 ```
