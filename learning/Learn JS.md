@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-03 00:55
+date updated: 2022-03-03 22:17
 ---
 
 ### 之前
@@ -676,3 +676,5 @@ Person.prototype.constructor // Person
 ![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
 
 ###### 作用域链 / 闭包
+
+**闭包**：有权访问另一个函数作用域中变量的函数。
