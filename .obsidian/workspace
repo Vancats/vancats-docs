@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/JS 题目.md",
+            "file": "learning/Learn JS.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/JS 题目.md",
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,8 +101,8 @@
   },
   "active": "bd65b5179b0b672d",
   "lastOpenFiles": [
-    "learning/JS 题目.md",
     "learning/Learn JS.md",
+    "learning/JS 题目.md",
     "learning/Learn React.md",
     "learning/Learn Vue3.md",
     "learning/Learn Vue.md",

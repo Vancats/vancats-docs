@@ -1,131 +1,7 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-04 00:23
+date updated: 2022-03-04 00:48
 ---
-
-#### JS 继承方式
-
-1. 原型链继承：将父类的实例变成子类的原型 --- 创建子类时无法向父类传参
-
-```js
-function Person(name) {
-	this.name = name
-	this.intr = function() {}
-}
-Person.prototype.eat = funtion(food) {}
-
-function Student() {}
-Student.prototype = new Person()
-Student.prototype.name = 'student'
-var student = new Student()
-```
-
-2. 构造函数继承
-
-```js
-function Person(name) {
-	this.name = name
-	this.intr = function() {}
-}
-Person.prototype.eat = funtion(food) {}
-
-function Student(name, age) {
-	Person.call(this, name)
-	this.age = age
-}
-var student = new Student()
-```
-
-3. 实例继承
-
-```js
-function Person(name) {
-	this.name = name
-	this.intr = function() {}
-}
-Person.prototype.eat = funtion(food) {}
-
-function Student(name, age) {
-	var person = new Person(name)
-	person.age = age
-	return person
-}
-var student = new Student()
-```
-
-4. 拷贝继承：无法获取父类不可 for in 的方法
-
-```js
-function Person(name) {
-	this.name = name
-	this.intr = function() {}
-}
-Person.prototype.eat = funtion(food) {}
-
-function Student(name, age) {
-	var person = new Person(name)
-	for(var p in person) {
-		Student.prototype[p] = person[p]
-	}
-	this.age = age
-}
-var student = new Student()
-```
-
-5. 组合继承
-
-```js
-function Person(name) {
-	this.name = name
-	this.intr = function() {}
-}
-Person.prototype.eat = funtion(food) {}
-
-function Student(name, age) {
-	Person.call(this, name)
-	this.age = age
-}
-Student.prototype = new Animal()
-Student.prototype.constructor = Student
-var student = new Student()
-```
-
-6. 寄生组合继承
-
-```js
-function Person(name) {
-	this.name = name
-	this.intr = function() {}
-}
-Person.prototype.eat = funtion(food) {}
-
-function Student(name,age) {
-	Person.call(this, name)
-	this.age = age
-}
- 
-(function(){ // 创建一个没有实例方法的类
-	var Super = function(){};  
-	Super.prototype = Person.prototype; // 将实例作为子类的原型 Cat.prototype = new Super();
-	Student.prototype = new Super()
-})()
-var student = new Student()
-```
-
-7. ES6 Class extends
-
-```js
-class Person() {
-	constructor() {
-	}
-}
-
-class Student extends Person () {
-	constructor() {
-		super()
-	}
-}
-```
 
 ### 数据类型
 
@@ -789,9 +665,9 @@ function Student(name, age) {
 	Person.call(this, name)
 	this.age = age
 }
-(function () {
+(function () { // 创建一个没有实例方法的类
 	var Super = function(){}
-	Super.prototype = Person.prototype
+	Super.prototype = Person.prototype  // 将实例作为子类的原型 Cat.prototype = new Super();
 	Student.prototype = new Super
 })()
 var student = new Student()

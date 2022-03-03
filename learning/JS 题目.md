@@ -364,7 +364,7 @@ Promise.race = function(promises) {
 	})
 }
 ```
-
+#### qq
 ```js
 eg1
 // 在块内执行函数，即为将当前的内容映射到全局
