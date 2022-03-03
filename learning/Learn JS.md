@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-04 00:05
+date updated: 2022-03-04 00:16
 ---
 
 ###### JS 继承方式
@@ -717,7 +717,7 @@ var person = new Person('Lqf')
 
 #### 继承的方法
 
-1. 原型链继承：父类实例变成子类的原型（无法向父类传参）
+0. 父类方法
 
 ```js
 function Person(name) {
@@ -725,7 +725,11 @@ function Person(name) {
 	this.intr = function(){}
 }
 Person.prototype.eat = function(){}
+```
 
+1. 原型链继承：父类实例变成子类的原型（无法向父类传参）
+
+```js
 function Student(){}
 Student.prototype = new Person()
 Student.prototype.name = 'Lqf'
@@ -735,27 +739,35 @@ var student = new Student()
 2. 构造函数继承
 
 ```js
-function Person(name) {
-	this.name = name
-	this.intr = function(){}
-}
-Person.prototype.eat = function(){}
-
 function Student(name, age) {
 	Person.call(this, name)
 	this.age = age
 }
-var 
+var student = new Student('Lqf', 18)
 ```
 
 3. 实例继承
 
 ```js
+function Student(name, age) {
+	var person = new Person(name)
+	person.age = age
+	return person
+}
+var student = new Student('Lqf', 18)
 ```
 
-4. 拷贝继承
+4. 拷贝继承：无法获取父类不可 for in 的方法
 
 ```js
+function Student(name, age) {
+	var person = new Person(name)
+	for(var p in person) {
+		Student.prototype[p] = person[p]
+	}
+	this.age = age
+}
+var student = new Student
 ```
 
 5. 组合继承
