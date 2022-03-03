@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-03 23:46
+date updated: 2022-03-03 23:59
 ---
 
 ### 之前
@@ -761,6 +761,7 @@ var person = new Person('Lqf')
 ```
 
 7. 动态混合：语义不符
+
 ```js
 function Person(name) {
 	this.name = name
@@ -773,11 +774,27 @@ var person = new Person('Lqf')
 ```
 
 8. 寄生构造函数：可读性差
-```js
 
+```js
+function Person(name) {
+	this.name = name
+	// 初次调用才会生成，不会产生浪费
+	if (Person.prototype.intr === undefined) {
+		Person.prototype.intr = function(){}
+	}
+}
+
+function Student(name, age) {
+	var person = new Person(name)
+	person.age = age
+	return person
+}
+
+var student = new Student('Lqf', 18)
 ```
 
 9. ES6 Class：本质上和混合模式类似
+
 ```js
 class Person {
 	constructor(name) {
@@ -786,14 +803,19 @@ class Person {
 	intr() {}
 }
 ```
+
 10. 稳妥构造函数：容易内存泄漏
+
 ```js
 function Person(name) {
 	var person = {}
 	person.getName = function() { return name }
 	person.setName = function(val) { name = val }
-	
+	return person
+
+	// 这种方式不用加 new 调用
+	this.getName = function() { return name }
+	this.setName = function(val) { name = val }
 }
 var person = new Person('Lqf')
 ```
-
