@@ -717,7 +717,7 @@ var person = new Person('Lqf')
 
 #### 继承的方法
 
-1. 原型链继承
+1. 原型链继承：父类实例变成子类的原型（无法向父类传参）
 
 ```js
 function Person(name) {
@@ -727,12 +727,25 @@ function Person(name) {
 Person.prototype.eat = function(){}
 
 function Student(){}
-Student
+Student.prototype = new Person()
+Student.prototype.name = 'Lqf'
+var student = new Student()
 ```
 
 2. 构造函数继承
 
 ```js
+function Person(name) {
+	this.name = name
+	this.intr = function(){}
+}
+Person.prototype.eat = function(){}
+
+function Student(name, age) {
+	Person.call(this, name)
+	this.age = age
+}
+var 
 ```
 
 3. 实例继承
