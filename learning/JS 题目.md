@@ -146,7 +146,7 @@ Function.prototype.bind(obj) {
 }
 ```
 
-**深拷贝**
+#### 深拷贝
 
 ```js
 function deepClone(target, map = new Map()) {
@@ -167,7 +167,7 @@ function deepClone(target, map = new Map()) {
 }
 ```
 
-###### Promise
+#### Promise
 
 ```js
 const PENDING = 'pending'

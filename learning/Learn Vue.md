@@ -3,7 +3,7 @@ date created: 2022-03-03 00:34
 date updated: 2022-03-03 00:52
 ---
 
-###### VueRouter
+#### VueRouter
 
 1. 响应路由参数变化
 		1. `watch: { '$route' (to, from) {} }`

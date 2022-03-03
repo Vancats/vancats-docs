@@ -44,7 +44,7 @@ date updated: 2022-03-03 00:52
 5. 前置伪元素添加 `::before{ content: ''; display: table; }`
 6. 子元素：`display: inline-block`
 
-###### 水平居中（premise：父级块级并且宽度已设置）
+#### 水平居中（premise：父级块级并且宽度已设置）
 
 1. 子元素是行内元素：父元素`text-align`
 2. 子元素块级未设宽：默认撑满父级宽度
@@ -56,7 +56,7 @@ date updated: 2022-03-03 00:52
 
 **水平垂直居中**：`display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
 
-###### 垂直居中（premise：父元素是盒子容器）
+#### 垂直居中（premise：父元素是盒子容器）
 
 1. 子元素是行内元素
 		1. 单行：`line-height`
@@ -71,7 +71,7 @@ date updated: 2022-03-03 00:52
 
 **水平垂直居中**：`display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
 
-###### 响应式布局
+#### 响应式布局
 
 1. `meta`标签
 		1. `viewport`：显示可以显示内容的大小
@@ -87,7 +87,7 @@ date updated: 2022-03-03 00:52
 		4. `rem`：浏览器字体有最小值
 		5. `grid`：
 
-###### 媒体查询
+#### 媒体查询
 
 1. 媒体类型：`all screen print 打印机 speech 发声设备`
 2. 引入方法：
@@ -99,7 +99,7 @@ date updated: 2022-03-03 00:52
 4. 设备方向：`orientation: landscape横 | portrait竖`
 5. `eg: @media not screen and (orientation: landscape) and (max-width:600px) {...}`
 
-###### Sass常用功能
+#### Sass常用功能
 
 1. 变量：`$primary-color: #666; div { color: $primary-color}`
 2. 引入：`import 'base.scss'`
@@ -110,7 +110,7 @@ date updated: 2022-03-03 00:52
 5. 算术运算符：`.article[role="main"] { ... }`
 6. 继承：`%common {...}   .message { @extend %commpon; }` 只有被继承过的代码才会输出到样式文件
 
-###### CSS继承
+#### CSS继承
 
 **不可继承**
 
@@ -131,7 +131,7 @@ date updated: 2022-03-03 00:52
 4. 列表布局：list-style（list-style-type、list-style-image）
 5. 光标属性：cursor
 
-###### 隐藏元素的方法
+#### 隐藏元素的方法
 
 1. display: none；渲染树中不存在，不占位置，不响应绑定的监听事件
 2. opacity: 0；占位置，不响应
@@ -141,14 +141,14 @@ date updated: 2022-03-03 00:52
 6. z-index 负值，隐藏在其他元素下
 7. clip/clip-path：元素裁剪实现隐藏，占位置，不响应
 
-###### link @import 区别
+#### link @import 区别
 
 1. 前者除了加载CSS还能定义RSS等其他，后者只加载CSS
 2. 前者是XMTML标签，无兼容性问题，后者是 CSS2.1 提出，浏览器兼容
 3. 前者同时加载，后者需要页面完全载入后再加载
 4. 前者可以操作DOM元素，后者只是单纯的引入样式
 
-###### 伪类和伪元素的区别
+#### 伪类和伪元素的区别
 
 - 伪类是对于特定选择器添加类别，外部可见，不在文档中生成
 
@@ -156,7 +156,7 @@ date updated: 2022-03-03 00:52
 
 - 伪元素是在元素内容前后添加元素 `p:hover {color: red}`
 
-###### requestAnimationFrame
+#### requestAnimationFrame
 
 - 使用：window.requestAnimationFrame(callback) callback在下次重绘前更新动画帧调用
 - 取消：window.cancelAnimationFrame(id)
@@ -166,14 +166,14 @@ date updated: 2022-03-03 00:52
 	- 减少DOM操作：会在下次重绘前进行统一的DOM操作
 - setTimeout缺点：1. 固定间隔不一定等于帧数刷新时间（16.7）2. 进入宏任务队列，不一定按固定间隔执行
 
-###### li 之间的空白换行符
+#### li 之间的空白换行符
 
 1. 全部 li 写在一行：不美观
 2. ul: font-size 置 0：需要额外设置其他字符属性，且 safari 依然存在空间
 3. ul: letter-spacing: -8px：设置了 li 字符间隔，需要重新设置 li: letter-spacing: normal
 4. li: float: left：有些容器不能设置浮动，如左右切换的焦点图
 
-###### CSS3 新特性
+#### CSS3 新特性
 
 1. 选择器
 2. 边框：&-radius、&-shadow、&-image
@@ -192,7 +192,7 @@ date updated: 2022-03-03 00:52
 8. 渐变：linear-gradient、radial-gradient，新增RGBA、HSLA模式
 9. flex，grid
 
-###### 图片格式
+#### 图片格式
 
 1. BMP：无损，不压缩 很大
 2. JPEG：有损，直接色的点阵图，适合存储照片，不储存 logo，线框图。图片模糊，文件比 GIF 大
@@ -202,12 +202,12 @@ date updated: 2022-03-03 00:52
 6. SVG：无损矢量图，放大不失真，适合绘制 Logo，Icon
 7. WebP：同时支持有损和无损，直接色；无损压缩下，比 GIF 小 26%了；有损压缩，比 JPEG  小 25%-34%；要支持图片透明度，只需 22% 额外空间
 
-###### CSS Sprites
+#### CSS Sprites
 
 - 优点：减少 HTTP 请求次数，减少图片总字节
 - 缺点：开发麻烦需要借助 PS，后期维护麻烦
 
-###### 单行、多行文本
+#### 单行、多行文本
 
 - 字符超出部分换行： `overflow-wrap: break-word`
 - 字符超出部分连字符：`hyphens:auto`
@@ -222,13 +222,13 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 -webkit-line-clamp: 3; // 行数
 ```
 
-###### z-index 失效
+#### z-index 失效
 
 1. 该元素 position -> relative absolute fixed
 2. 元素设置了 float，删除并用 display: inline-block
 3. 父元素 position -> static absolute (relative 失效)
 
-###### 判断元素在显示区域
+#### 判断元素在显示区域
 
 1. window.innerHeight 浏览器可视高度
 2. document.body.scrollTop || document.documentElement.scrollTop 滚动高度
@@ -236,7 +236,7 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 
 `docuemnt.body.scrollTop + ele.height < ele.offsetTop < window.innerHeight + document.body.scrollTop(...)`
 
-###### 层叠上下文
+#### 层叠上下文
 
 1. z-index > 0
 2. z-index = 0
@@ -248,7 +248,7 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 
 z-index: auto 生成盒在当前层叠上下文中层级为 0，不建立新的层叠上下文，根元素除外
 
-###### 命名冲突
+#### 命名冲突
 
 - 团队命名约定
 - CSS in JS
@@ -268,7 +268,7 @@ loaders: [
 
 - HTML5 的 style scoped 解决部分，缺陷很多
 
-###### 两栏布局
+#### 两栏布局
 
 1. 左边元素浮动或 absolute，右边元素 margin-left: 左边元素宽度，宽度 auto
 2. 左边元素浮动，右边 BFC overflow: hidden
@@ -276,7 +276,7 @@ loaders: [
 4. flex
 5. grid
 
-###### 三栏布局
+#### 三栏布局
 
 1. 左右浮动或 absolute，中间 margin-left/right 相应宽度，如果是浮动，则中间元素必须在最后面
 2. flex
@@ -379,7 +379,7 @@ grid-template-columns:200px auto 200px;
 }
 ```
 
-###### 选择器
+#### 选择器
 
 链接样式：link, visited, hover, active
 
@@ -426,13 +426,13 @@ grid-template-columns:200px auto 200px;
 		- `:not()`：用来匹配不符合一组选择器的元素；
 - 伪元素`::before  ::after`
 
-###### CSS 工程化
+#### CSS 工程化
 
 **预处理器**：代码嵌套、变量、计算函数、extends、mixins、循环语法、CSS 模块化
 **PostCss**：处理 CSS 代码。1. 可以做类似预处理器的事情 2. Autoprefixer 3. 能够帮助我们编译 CSS next
 **Webpack**：css-loader：导出 CSS 模块，进行编译处理 style-loader：创建 style 标签，写入 CSS 内容
 
-###### CSS 提高性能方法
+#### CSS 提高性能方法
 
 **加载性能**
 
@@ -467,7 +467,7 @@ grid-template-columns:200px auto 200px;
 1. 抽离可复用的属性，统一使用
 2. 样式和内容分离，css 定义在外部
 
-###### 画图形
+#### 画图形
 
 **三角形**
 `border-left: 50px solid transparent; border-bottom: 100px solid green`
@@ -520,7 +520,7 @@ grid-template-columns:200px auto 200px;
 <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5"/>
 ```
 
-###### 小于12px的字
+#### 小于12px的字
 
 ```css
 -webkit-text-size-adjust: none; // Chrome 27 以上不支持
@@ -532,7 +532,7 @@ display: inline-block;  /* 缩放只能用于块或行内块 */
 内容固定可以转换成图片
 ```
 
-###### 1px 问题
+#### 1px 问题
 
 在一些 Retina 屏幕上，1px 显示出大于 1px 的效果 `window.devicePixelRatio = 设备物理像素 / CSS 像素`
 
