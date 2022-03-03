@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-03 23:28
+date updated: 2022-03-03 23:31
 ---
 
 ### 之前
@@ -397,7 +397,7 @@ function myNew () {
 1. 没有自己的 this，直接继承作用域上一层上下文，并且不会改变
 2. 没有 prototype
 3. 不能作为构造函数，new 一个函数中第二点需要 prototype，第三点需要更改 this
-4. 不能用 call，apply，bind 改变 this 指向（箭头函数底层使用 apply）
+4. 不能用 call，apply，bind 改变 this 指向（箭头函数底层使用 bind）
 5. 没有自己的 arguments，用 ...rest 代替，箭头函数内部访问 arguments 实际上返回的是外层函数的 arguments
 6. 不能用作 generator 函数，不能使用 yield 关键字
 7. 函数体只有一句话，并且不要返回值，使用 void `let fn = () => void fun()`
@@ -641,11 +641,11 @@ escape：和 encodeURI 一样，但是Unicode 大于 0xff 字符，直接前面�
 
 **原型链**：当访问对象属性的时候，如果本身没有，就会顺着原型往上找，直到 `Object.prototype` 为止
 
+**作用域链作用**：保证对执行环境有权访问的所有变量和函数的有序访问
+
 **原型方法**：构造函数的方法如果放在函数中，每次调用都会重新创建方法，需要放到 `prototype` 上
 
 **闭包**：有权访问另一个函数作用域中变量的函数。用途：1. 从外部访问内部变量 2. 保留对象的引用防止回收
-
-**作用域链作用**：保证对执行环境有权访问的所有变量和函数的有序访问
 
 **原型重写**
 
@@ -670,8 +670,6 @@ Person.prototype.constructor // Person
 ```
 
 ![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
-
-
 
 ###### 执行上下文
 
@@ -716,3 +714,5 @@ JS 具有自动回收机制，找到不再使用的变量释放内存
 - 计时器或回调函数
 - 脱离DOM的引用：引用一个DOM，但是DOM被删除，引用不消失
 - 闭包
+
+### 面向对象
