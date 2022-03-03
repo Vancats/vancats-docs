@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-04 00:16
+date updated: 2022-03-04 00:23
 ---
 
 ###### JS 继承方式
@@ -767,20 +767,46 @@ function Student(name, age) {
 	}
 	this.age = age
 }
-var student = new Student
+var student = new Student()
 ```
 
 5. 组合继承
 
 ```js
+function Student(name, age) {
+	Person.call(this, name)
+	this.age = age
+}
+Student.prototype = new Animal()
+Student.prototype.constructor = Student
+var student = new Student()
 ```
 
 6. 寄生组合继承
 
 ```js
+function Student(name, age) {
+	Person.call(this, name)
+	this.age = age
+}
+(function () {
+	var Super = function(){}
+	Super.prototype = Person.prototype
+	Student.prototype = new Super
+})()
+var student = new Student()
 ```
 
 7. ES6 Class extends
 
 ```js
+class Person() {
+	constructor(){}
+}
+
+class Student extends Person() {
+	constructor() {
+		super()
+	}
+}
 ```
