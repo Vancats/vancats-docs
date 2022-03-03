@@ -1,114 +1,7 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-03 23:59
+date updated: 2022-03-04 00:03
 ---
-
-### 之前
-
-###### JS 创建对象的方法
-
-1. 字面量
-2. new Object
-3. 工厂函数：无法根据原型对象判断对象的类型
-
-```js
-function createPerson(name, age) {
-	var o = new Person()
-	o.name = 'Lqf'
-	o.age = 18
-	return o
-}
-var person = createPerson('Lqf', 18)
-```
-
-4. 构造函数：如果内含方法，浪费内存
-
-```js
-function Person(name, age) {
-	this.name = name
-	this.age = age
-	this.intr = function() {}
-}
-var person = new Person('Lqf', 18)
-```
-
-5. 原型对象方式：步骤繁琐
-
-```js
-function Person(){}
-Person.prototype.nama = 'name'
-Person.prototype.age = 'age'
-Person.prototype.intr = function() {}
-var person = new Person()
-person.name = 'Lqf' // 将会在子对象中创建一个name覆盖父对象的值
-```
-
-6. 混合模式：不符合面向对象封装思想
-
-```js
-function Person(name, age) {
-	this.name = name
-	this.age = age
-}
-Person.prototype.intr = function() {}
-var person = new Person('Lqf', 18)
-```
-
-7. 动态混合：语义不符
-
-```js
-function Person(name, age) {
-	this.name = name
-	this.age = age
-	if (Person.prototype.intr === undefined) {
-		Person.prototype.intr = function() {}
-	}
-}
-var person = new Person('Lqf', 18)
-```
-
-8. 寄生构造函数：可读性差
-
-```js
-function Person(name, age) {
-	this.name = name
-	this.age = age
-	if (Person.prototype.intr === undefined) {
-		Person.prototype.intr = function() {}
-	}
-}
-
-function Student(name, age, className) {
-	var person = new Person(name, age)
-	person.className = className
-	return person
-}
-var student = new Student('Lqf', 18, '四班')
-
-```
-
-9. ES6 Class：集中保存一种类型所有子对象的属性和方法的程序结构，本质上和混合模式类似
-
-```js
-class Person {
-	constructor(name, age) {
-		this.name = name
-		this.age = age
-	}
-	intr() {}
-}
-```
-
-10. 稳妥构造函数：容易内存泄漏
-
-```js
-function Person(name, age) {
-	var person = {}
-	person.getName = function(){return name}
-	person.setName = function(val){name = val}
-	person.getAge = function(val) {}
-}
-```
 
 ###### JS 继承方式
 
@@ -717,6 +610,8 @@ JS 具有自动回收机制，找到不再使用的变量释放内存
 
 ### 面向对象
 
+###### 创建对象的方法
+
 1. 字面量
 2. new Object
 3. 工厂函数：不能根据原型对象判断对象类型
@@ -818,4 +713,42 @@ function Person(name) {
 	this.setName = function(val) { name = val }
 }
 var person = new Person('Lqf')
+```
+
+##### 继承的方法
+
+1. 原型链继承
+
+```js
+```
+
+2. 构造函数继承
+
+```js
+```
+
+3. 实例继承
+
+```js
+```
+
+4. 拷贝继承
+
+```js
+```
+
+5. 组合继承
+
+```js
+```
+
+6. 寄生组合继承
+
+```js
+```
+
+7. ES6 Class extends
+
+```js
+
 ```
