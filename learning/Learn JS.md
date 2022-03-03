@@ -769,6 +769,7 @@ function Person(name) {
 		Person.prototype.intr = function(){}
 	}
 }
+var person = new Person('Lqf')
 ```
 
 8. 寄生构造函数：可读性差
@@ -776,4 +777,23 @@ function Person(name) {
 
 ```
 
+9. ES6 Class：本质上和混合模式类似
+```js
+class Person {
+	constructor(name) {
+		this.name = name
+	}
+	intr() {}
+}
+```
+10. 稳妥构造函数：容易内存泄漏
+```js
+function Person(name) {
+	var person = {}
+	person.getName = function() { return name }
+	person.setName = function(val) { name = val }
+	
+}
+var person = new Person('Lqf')
+```
 
