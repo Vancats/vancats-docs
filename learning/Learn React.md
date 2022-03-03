@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 12:28
-date updated: 2022-03-03 16:20
+date updated: 2022-03-03 16:57
 ---
 
 React 16.0 版本之前使用的虚拟DOM的更新采用循环和递归
