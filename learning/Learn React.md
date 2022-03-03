@@ -3,7 +3,7 @@ React 16.0 版本之前使用的虚拟DOM的更新采用循环和递归
 - 导致大量组件实例存在时，执行效率变低
 - 用户交互的动画效果，容易出现卡顿
 
-Fiber（链表）
+**Fiber（链表）**
 - 利用浏览器的空闲时间执行，不会长时间占用主线程
 - 将对比更新DOM的操作碎片化，在 diff 时生成DOM，diff 完成DOM也生成结束
 - 碎片化的任务，可以根据需要被暂停
@@ -11,6 +11,16 @@ Fiber（链表）
 RequestIdleCallback(function (deadline) { deadline.timeRemaining() // 获取浏览器的空闲时间 })
 - 浏览器提供的 API，利用浏览器空闲时间处理任务，当前任务可被中止，优先执行更高级的任务
 
+React 虚拟DOM了解嘛
+React Fiber 了解嘛
+Fiber 的优势是什么
+Fiber 怎么做到比之前的渲染快的
+你了解 React 虚拟DOM渲染机制嘛
 
-React 生命周期
-React
+
+
+**React 生命周期**
+React 生命周期函数以及各个函数应用
+React 16.0 前后生命周期函数的变化
+对于 React 生命周期函数的变化你有什么理解
+React 性能优化（关于虚拟DOM渲染）
