@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 12:28
-date updated: 2022-03-03 12:32
+date updated: 2022-03-03 12:34
 ---
 
 React 16.0 版本之前使用的虚拟DOM的更新采用循环和递归
@@ -39,3 +39,8 @@ React 性能优化（关于虚拟DOM渲染）
 	- 针对元素结构：对于同一层级的节点，通过 id 和 tag 区分
 
 - 16.0 之后
+	- 通过 state 计算出新的 fiber 节点
+	- 通过对比节点的 key 和 tag 确定节点操作（新增，删除，移动，修改）
+	- effectTag 属性标记 fiber 对象
+	- 收集所有标记的 fiber 对象，形成 effetList
+	- commit 阶段一次性的处理所有变化的节点
