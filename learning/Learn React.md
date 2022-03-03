@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 12:28
-date updated: 2022-03-03 16:02
+date updated: 2022-03-03 16:07
 ---
 
 React 16.0 版本之前使用的虚拟DOM的更新采用循环和递归
@@ -51,3 +51,9 @@ React 性能优化（关于虚拟DOM渲染）
 - UI 产生动作信息，将动作传递给分发器
 - 分发器广播给所有 store
 - 订阅的 store 做出反应，传递新的 state 给 UI
+
+**redux**
+
+- 单一数据源，整个应用的 state 存储在一个单一的 store 中
+- state 只读，通过 action 触发修改
+- 使用纯函数进行状态修改，需要开发者书写 reducer 纯函数处理，redecer 通过当前状态shu
