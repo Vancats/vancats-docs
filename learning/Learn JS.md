@@ -1,22 +1,9 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-03 23:31
+date updated: 2022-03-03 23:34
 ---
 
 ### 之前
-
-###### 判断 this
-
-1. obj.fun  this -> obj
-2. new 构造函数 this -> 新创建的对象
-3. 普通函数，匿名函数，回调函数 this -> window
-4. DOM 事件处理函数  this -> DOM 对象  这里不可更改为箭头函数，否则 this 指向 window
-5. Vue 中的 this 指向当前实例对象
-6. 箭头函数中的 this 指向当前函数外最近作用域的 this
-		1. 所有匿名函数都可以使用箭头函数简化
-		2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
-		3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
-7. bind 永久更改 this 指向，call，apply 临时更改 this 指向
 
 ###### JS 创建对象的方法
 
@@ -403,6 +390,19 @@ function myNew () {
 7. 函数体只有一句话，并且不要返回值，使用 void `let fn = () => void fun()`
 8. 对象的方法，原型对象的方法和DOM事件函数不能用
 
+###### 判断 this
+
+1. obj.fun  this -> obj
+2. new 构造函数 this -> 新创建的对象
+3. 普通函数，匿名函数，回调函数 this -> window
+4. DOM 事件处理函数  this -> DOM 对象  这里不可更改为箭头函数，否则 this 指向 window
+5. Vue 中的 this 指向当前实例对象
+6. 箭头函数中的 this 指向当前函数外最近作用域的 this
+		1. 所有匿名函数都可以使用箭头函数简化
+		2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
+		3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
+7. bind 永久更改 this 指向，call，apply 临时更改 this 指向
+
 ###### for...of & iterator
 
 ```js
@@ -716,3 +716,16 @@ JS 具有自动回收机制，找到不再使用的变量释放内存
 - 闭包
 
 ### 面向对象
+1. 字面量
+2. new Object
+3. 工厂函数
+  ```js
+function createPerson(name) {
+	var o = new Person()
+	o.name = name
+	return o
+  }
+var
+```
+4. 构造函数
+5. 原型对象
