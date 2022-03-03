@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-04 00:48
+date updated: 2022-03-04 00:52
 ---
 
 ### 数据类型
@@ -679,7 +679,6 @@ var student = new Student()
 class Person() {
 	constructor(){}
 }
-
 class Student extends Person() {
 	constructor() {
 		super()
