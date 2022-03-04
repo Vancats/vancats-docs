@@ -132,7 +132,7 @@ new Foo().getName()       // 3
 new new Foo().getName()   // 3
 ```
 
-**实现call**
+**实现call、apply、bind**
 
 ```js
 Funticon.prototype.myCall(obj) {
@@ -168,20 +168,6 @@ Function.prototype.myBind(obj) {
 		var args2 = [...arguments].slice()
 		var args = [...args1, ...args2]
 		fun.apply(obj, args)
-	}
-}
-```
-
-**实现bind**
-
-```js
-Function.prototype.bind(obj) {
-	var fun = this
-	var args1 = Array.prototype.slice.call(arguments, 1)
-	return function() {
-		var args2 = Array.prototype.slice.call(arguments)
-		var args = args1.concat(args2)
-		fun.apply(obj, args2)
 	}
 }
 ```
