@@ -136,24 +136,20 @@ new new Foo().getName()   // 3
 
 ```js
 Funticon.prototype.myCall(obj) {
-	if (this !== 'function') {
-		return new TypeError('type error')
-	}
+	if (this !== 'function') return new TypeError('type error')
 	obj = obj || window
-	let args = [...arguments].slice(1)
+	var args = [...arguments].slice(1)
 	obj.fn = this
-	let result = obj.fn(...args)
+	var result = obj.fn(...args)
 	delete obj.fn
 	return result
 }
 
 Function.prototype.myApply(obj) {
-	if (this !== 'function') {
-		return new TypeError('type error')
-	}
+	if (this !== 'function') return new TypeError('type error')
 	obj = obj || window
 	obj.fn = this
-	let result = null
+	var result = null
 	if (arguments[1]) {
 		result = obj.fn(...arguments[1])
 	} else {
@@ -164,7 +160,15 @@ Function.prototype.myApply(obj) {
 }
 
 Function.prototype.myBind(obj) {
-
+	if (this !== 'function') return new TypeError('type error')
+	obj = obj || window
+	var fun = this
+	var args1 = [...arguments].slice(1)
+	return function() {
+		var args2 = [...arguments].slice()
+		var args = [...args1, ...args2]
+		fun.apply(obj, args)
+	}
 }
 ```
 
