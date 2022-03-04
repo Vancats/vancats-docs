@@ -139,10 +139,10 @@ Funticon.prototype.myCall(obj) {
 	if (this !== 'function') {
 		return new TypeError('type error')
 	}
-	const args = [...arguments].slice(1)
 	obj = obj || window
+	const args = [...arguments].slice(1)
 	obj.fn = this
-	const result = obj.fn(...args)
+	let result = obj.fn(...args)
 	delete obj.fn
 	return result
 }
@@ -153,7 +153,12 @@ Function.prototype.myApply(obj) {
 	}
 	obj = obj || window
 	obj.fn = this
-	const result = obj.fn(...arguments[1])
+	let result = null
+	if (arguments[1]) {
+		result = obj.fn(...arguments[1])
+	} else {
+		result = obj.fn()
+	}
 	delete obj.fn
 	return result
 }
