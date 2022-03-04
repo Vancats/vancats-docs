@@ -135,13 +135,27 @@ new new Foo().getName()   // 3
 **实现call**
 
 ```js
-Funticon.prototype.call(obj) {
-	if (obj !== 'function') {
+Funticon.prototype.myCall(obj) {
+	if (this !== 'function') {
 		return new TypeError('type error')
 	}
-	const fn = [...arguments].slice(1)
+	const args = [...arguments].slice(1)
+	obj = obj || window
 	obj.fn = this
-	const result = obj.fn(...arguments)
+	const result = obj.fn(...args)
+	delete obj.fn
+	return result
+}
+
+Function.prototype.myApply(obj) {
+	if (this !== 'function') {
+		return new TypeError('type error')
+	}
+	obj = obj || window
+	obj.fn = this
+	const result = obj.fn(...arguments[1])
+	delete obj.fn
+	return result
 }
 ```
 
