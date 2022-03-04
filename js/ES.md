@@ -8,10 +8,6 @@ date created: 2022-03-03 00:35
 - 不改变原数组：concat、join、slice、toString、toLocaleString、indexOf、lastIndexOf、includes、toSource；
 - 循环遍历：forEach、every、some、filter、map、reduce、reduceRight 以及ES6新增的方法entries、find、findIndex、keys、values。
 
-### 字符串方法
-
-- indexOf、lastIndexOf、search、charAt、charCodeAt、charFromCode、replace、trim、split、slice、substring、substr、toUpperCase、concat
-
 ### 数组去重
 
 1. Set去重: Arrary.from(new Set(arr))；[…new Set(arr)]
@@ -33,18 +29,6 @@ date created: 2022-03-03 00:35
 9. Map去重
 
 10. reduce+includes：arr.reduce((prev,cur) => prev.includes(cur) ? prev : [...prev,cur],[])
-
-### 判断数据类型
-
-object.prototype.toString.call(…)
-
-instanceof
-
-typeof
-
-constructor
-
-（数组）isArray
 
 ### Map（parseInt）
 
@@ -73,20 +57,6 @@ parseInt(string[, radix])    array.map(function callback(currentValue[, index[, 
 - 被遗忘的定时器或者回调
 - 子元素存在引起的内存泄漏
 
-### 垃圾回收技术
-
-1.标记清除（多）
-
-垃圾收集器在运行的时候会给存储在内存中的所有变量都加上标记（可以使用任何标记方式）。然后，它会去掉环境中的变量以及被环境中的变量引用的变量的标记。而在此之后再被加上标记的变量将被视为准备删除的变量，原因是环境中的变量已经无法访问到这些变量了。最后，垃圾收集器完成内存清除工作，销毁那些带标记的值并回收它们所占用的内存空间。
-
-2.引用计数
-
-引用计数（reference counting）的含义是跟踪记录每个值被引用的次数。当声明了一个变量并将一个引用类型值赋给该变量时，则这个值的引用次数就是1。如果同一个值又被赋给另一个变量，则该值的引用次数加1。相反，如果包含对这个值引用的变量又取得了另外一个值，则这个值的引用次数减1。当这个值的引用次数变成0 时，则说明没有办法再访问这个值了，因而就可以将其占用的内存空间回收回来。这样，当垃圾收集器下次再运行时，它就会释放那些引用次数为零的值所占用的内存。
-
-导致问题：会导致循环引用的变量和函数无法回收。
-
-解决：将用完的函数或者变量置为null
-
 ### ES5 和 ES6 继承区别
 
 ES5的继承时通过prototype或构造函数机制来实现。ES5的继承实质上是先创建子类的实例对象，然后再将父类的方法添加到this上（Parent.apply(this)）。
@@ -106,27 +76,6 @@ ps：super关键字指代父类的实例，即父类的this对象。在子类构
 必须用new调用（内部方法不能用new）
 
 声明提升但是不赋值，有暂时性死区
-
-### 复杂函数-->字符串
-
-- 调用 valueOf，如果仍是复杂数据类型，调用 toString
-
-### 普通函数和构造函数
-
-1.调用方式 直接调用和new
-
-2.调用时，构造函数内部会创建新对象
-
-3.构造函数内部的this指向实例，普通指向调用函数的对象
-
-4.构造返回值是对象（实例），普通函数看return
-
-5.构造函数的函数名和类名相同
-
-### 正则
-
-- 去除所有字符串空格：`str.replace(/\s*/g, "")`
-- 去除两头空格：`str.replace(/^\s*|\s*$/g,"")`
 
 ### 对象方法
 
