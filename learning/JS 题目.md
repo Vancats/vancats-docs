@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:34
-date updated: 2022-03-03 00:52
+date updated: 2022-03-04 22:54
 ---
 
 ```js
@@ -130,6 +130,19 @@ getName()                 // 1
 new Foo.getName()         // 2
 new Foo().getName()       // 3
 new new Foo().getName()   // 3
+```
+
+**实现call**
+
+```js
+Funticon.prototype.call(obj) {
+	if (obj !== 'function') {
+		return new TypeError('type error')
+	}
+	const fn = [...arguments].slice(1)
+	obj.fn = this
+	const result = obj.fn(...arguments)
+}
 ```
 
 **实现bind**
@@ -364,7 +377,9 @@ Promise.race = function(promises) {
 	})
 }
 ```
+
 #### qq
+
 ```js
 eg1
 // 在块内执行函数，即为将当前的内容映射到全局
