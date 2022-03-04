@@ -140,7 +140,7 @@ Funticon.prototype.myCall(obj) {
 		return new TypeError('type error')
 	}
 	obj = obj || window
-	const args = [...arguments].slice(1)
+	let args = [...arguments].slice(1)
 	obj.fn = this
 	let result = obj.fn(...args)
 	delete obj.fn
@@ -161,6 +161,10 @@ Function.prototype.myApply(obj) {
 	}
 	delete obj.fn
 	return result
+}
+
+Function.prototype.myBind(obj) {
+
 }
 ```
 
