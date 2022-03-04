@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-03 00:52
+date updated: 2022-03-05 01:20
 ---
 
 ### 多次阅读
@@ -50,3 +50,5 @@ const ErrorComponent = {
 2. 添加全局资源 - 组件,指令
 3. 混入组件选项
 4. 添加 Vue 的实例方法
+
+牛客网第七题 Object.prototype.setPrototype
