@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-04 23:28
+date updated: 2022-03-04 23:35
 ---
 
 ### 数据类型
@@ -687,3 +687,10 @@ class Student extends Person() {
 ```
 
 ### 异步编程
+
+#### 实现方式
+
+- 回调函数：回调地狱，代码耦合度过高
+- generator：
+- Promise：嵌套转链式调用，
+- Async/Await

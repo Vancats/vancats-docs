@@ -2,12 +2,6 @@
 date created: 2022-03-03 00:35
 ---
 
-### 数组方法
-
-- 改变原数组的方法：pop、push、reverse、shift、sort、splice、unshift，以及两个ES6新增的方法copyWithin 和 fill；
-- 不改变原数组：concat、join、slice、toString、toLocaleString、indexOf、lastIndexOf、includes、toSource；
-- 循环遍历：forEach、every、some、filter、map、reduce、reduceRight 以及ES6新增的方法entries、find、findIndex、keys、values。
-
 ### 数组去重
 
 1. Set去重: Arrary.from(new Set(arr))；[…new Set(arr)]
@@ -49,14 +43,6 @@ parseInt(string[, radix])    array.map(function callback(currentValue[, index[, 
 - 调用失败不会返回状态码
 - 安全性不高
 
-### 内存泄漏
-
-- 意外的全局变量
-- 闭包
-- 没有清理的 DOM 元素引用
-- 被遗忘的定时器或者回调
-- 子元素存在引起的内存泄漏
-
 ### ES5 和 ES6 继承区别
 
 ES5的继承时通过prototype或构造函数机制来实现。ES5的继承实质上是先创建子类的实例对象，然后再将父类的方法添加到this上（Parent.apply(this)）。
@@ -77,44 +63,3 @@ ps：super关键字指代父类的实例，即父类的this对象。在子类构
 
 声明提升但是不赋值，有暂时性死区
 
-### 对象方法
-
-- 定义与获取属性
-  - defineProperty（三个参数）defineProperties（两个）
-  -
-- 遍历：keys，values，entries（可枚举）
-- Object.fromEntries()从可迭代的[key, value]对中返回一个新对象。（这是的反向 Object.entries）。
-
-Object.assign()将所有可枚举的自身属性的值从一个或多个源对象复制到目标对象。
-
-Object.create()用指定的原型对象和属性创建一个新对象。
-
-Object.getPrototypeOf()返回prototype指定对象的。
-
-Object.setPrototypeOf()设置对象的原型（其内部[[Prototype]]属性）。
-
-Object.getOwnPropertyDescriptor()返回对象的命名属性的属性描述符。
-
-Object.getOwnPropertyDescriptors()返回一个包含对象自身所有属性描述符的对象。
-
-Object.getOwnPropertyNames()返回一个数组，其中包含给定对象自己的所有可枚举和不可枚举属性的名称。
-
-Object.getOwnPropertySymbols()返回直接在给定对象上找到的所有符号属性的数组。
-
-isPrototypeOf
-
-hasOwnProperty是否......
-
-Object.is()比较两个值是否相同。求所有NaN值（不同于“抽象相等比较”和“严格相等比较”）。
-
-Object.isFrozen()确定对象是否冻结。
-
-Object.isSealed()确定对象是否密封。
-
-Object.freeze()冻结对象。其他代码无法删除或更改其属性。
-
-Object.seal()防止其他代码删除对象的属性。
-
-Object.isExtensible()确定是否允许扩展对象。
-
-Object.preventExtensions()防止对象的任何扩展。
