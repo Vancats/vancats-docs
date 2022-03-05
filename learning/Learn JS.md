@@ -691,6 +691,6 @@ class Student extends Person() {
 #### 实现方式
 
 - 回调函数：回调地狱，代码耦合度过高
-- generator：
+- generator：函数控制权转移问题
 - Promise：嵌套转链式调用，
-- Async/Await
+- Async/Await：generator 和 Promise 的语法糖
