@@ -2,6 +2,16 @@
 date created: 2022-03-03 00:34
 date updated: 2022-03-04 22:50
 ---
+# 项目内容
+
+###### CCMS（质检排班管理系统）
+- 路由权限和按钮权限
+- SVG封装
+- ESLint + Perttier
+- Mock 假数据处理
+- 
+
+
 
 # 面试相关
 
