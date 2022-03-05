@@ -10,6 +10,7 @@ date updated: 2022-03-04 22:50
 - SVG封装
 - ESLint + Perttier
 - Mock 假数据处理
+- lint-staged + husky
 
 ###### ASMP（产品送修系统）
 - 国际化内容
