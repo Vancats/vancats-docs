@@ -697,6 +697,9 @@ class Student extends Person() {
 
 #### Promise
 
-**状态**：pending、resolved、rejected；状态一旦改变无法
+**状态**：pending、resolved、rejected；状态一旦改变就绝对不会再变
 
 **缺点**：一旦新建，无法取消；内部抛出的错误必须由回调函数接口，否则不反应到外部；当 pending 状态时，无法知道是刚开始还是快结束
+
+Promise.all 成功结果的数组和传入的数组顺序完全一致
+Promise.race 可以设置超时不做
