@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-04 23:35
+date updated: 2022-03-05 23:29
 ---
 
 ### 数据类型
@@ -694,3 +694,9 @@ class Student extends Person() {
 - generator：函数控制权转移问题
 - Promise：嵌套转链式调用，
 - Async/Await：generator 和 Promise 的语法糖
+
+#### Promise
+
+**状态**：pending、resolved、rejected；状态一旦改变无法
+
+**缺点**：一旦新建，无法取消；内部抛出的错误必须由回调函数接口，否则不反应到外部；当 pending 状态时，无法知道是刚开始还是快结束
