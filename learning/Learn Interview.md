@@ -1,10 +1,12 @@
 ---
 date created: 2022-03-03 00:34
-date updated: 2022-03-04 22:50
+date updated: 2022-03-06 15:02
 ---
+
 # 项目内容
 
 ###### CCMS（质检排班管理系统）
+
 - 路由权限和按钮权限
 - 导航菜单
 - SVG封装
@@ -13,12 +15,15 @@ date updated: 2022-03-04 22:50
 - lint-staged + husky
 
 ###### ASMP（产品送修系统）
+
 - 国际化内容
 
 ###### ITR（客户问题管理系统）
+
 - 埋点问题解决
 
 ###### mini-vue
+
 - reactive
 - runtime-dom
 - runtime-core
