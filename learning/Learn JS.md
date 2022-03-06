@@ -703,3 +703,10 @@ class Student extends Person() {
 
 Promise.all 成功结果的数组和传入的数组顺序完全一致
 Promise.race 可以设置超时不做
+
+#### Async/Await
+**优势**
+1. 代码同步，解决回调地狱和链式调用带来的额外负担问题
+2. 传递中间值非常简单
+3. 错误处理友好，直接使用 try.catch
+4. 调试友好，Promise 的调试中，不能在箭头函数中设置断点，在一个 then 方法中设置断点，并不能跟进到后续的 then 方法中
