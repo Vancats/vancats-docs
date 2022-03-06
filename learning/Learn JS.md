@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-06 10:45
+date updated: 2022-03-06 11:49
 ---
 
 ### 数据类型
@@ -705,7 +705,9 @@ Promise.all 成功结果的数组和传入的数组顺序完全一致
 Promise.race 可以设置超时不做
 
 #### Async/Await
+
 **优势**
+
 1. 代码同步，解决回调地狱和链式调用带来的额外负担问题
 2. 传递中间值非常简单
 3. 错误处理友好，直接使用 try.catch
@@ -715,5 +717,27 @@ Promise.race 可以设置超时不做
 
 ```js
 // 实现 setInterval
-function inter
+function setInterval(callback, interval) {
+	let timer
+	let now = Date.now
+	let startTime = endTime = now()
+	const loop = () => {
+		time = requestAnimationFrame(loop)
+		endTime = now()
+		if (endTime - startTime >= interval) {
+			startTime = endTime = now()
+			callback()
+		}
+	}
+	timer = requestAnimationFrame(loop)
+	return timer
+}
+
+// test
+let a = 0
+setInterval(timer => {
+  console.log(1)
+  a++
+  if (a === 10) cancelAnimationFrame(timer)
+}, 1000)
 ```
