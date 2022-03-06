@@ -710,3 +710,10 @@ Promise.race 可以设置超时不做
 2. 传递中间值非常简单
 3. 错误处理友好，直接使用 try.catch
 4. 调试友好，调试器只能跟踪同步代码的每一步，在一个 then 方法中设置断点，并不能跟进到后续的 then 方法中，
+
+**requestAnimationFrame**：自带函数节流功能，可以保证在 16.6ms 内只执行一次，并且延时准确
+
+```js
+// 实现 setInterval
+function inter
+```
