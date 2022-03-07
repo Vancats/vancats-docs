@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn Interview.md",
+            "file": "learning/JS 题目.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn Interview.md",
+                "file": "learning/JS 题目.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "bd65b5179b0b672d",
   "lastOpenFiles": [
-    "learning/Learn Interview.md",
-    "learning/Learn 浏览器原理.md",
-    "learning/Learn JS.md",
     "learning/JS 题目.md",
-    "learning/Learn React.md",
-    "learning/Learn Vue3.md",
-    "learning/Learn Vue.md",
-    "learning/Learn Vite.md",
+    "learning/Learn JS.md",
     "learning/Learn RegExp.md",
-    "learning/Learn HTTP.md"
+    "learning/Learn React.md",
+    "learning/Learn CSS.md",
+    "learning/Learn 浏览器原理.md",
+    "learning/设计模式.md",
+    "learning/前端算法.md",
+    "learning/Learn Vite.md",
+    "learning/Learn Interview.md"
   ]
 }
