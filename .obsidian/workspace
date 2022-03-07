@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn React.md",
+            "file": "learning/JS 题目.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn React.md",
+                "file": "learning/JS 题目.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,12 +101,12 @@
   },
   "active": "bd65b5179b0b672d",
   "lastOpenFiles": [
+    "learning/JS 题目.md",
     "learning/Learn React.md",
     "learning/Learn RegExp.md",
     "learning/Learn Vite.md",
     "learning/Learn CSS.md",
     "learning/Learn 浏览器原理.md",
-    "learning/JS 题目.md",
     "learning/设计模式.md",
     "learning/前端算法.md",
     "js/Vue补.md",
