@@ -29,6 +29,18 @@ handleHotUpdate: 自定义 HMR 更新时调用
 
 
 #### Vue3
-- 初始化 `npm init @vitejs/app`
-- JSX `@vitejs/plugin-vue-jsx -D` 直接导入并使用 vueJsx函数即可 
-- Vue2  创建裸模块 + `@vitejs`
+- Vue3 `npm init @vitejs/app`
+- JSX `yarn add @vitejs/plugin-vue-jsx -D` 直接导入并使用 vueJsx函数即可 
+- Vue2
+```js
+1. 创建裸模块
+2. yarn add vite-plugin-vue2 -D
+3. 112
+4. 
+```
+
+  1. 
+  2. 创建裸模块
+  3. `yarn add vite-plugin-vue2 -D`
+  4. ``
+     
