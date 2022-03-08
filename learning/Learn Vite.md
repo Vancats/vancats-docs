@@ -35,7 +35,7 @@ handleHotUpdate: 自定义 HMR 更新时调用
 ```js
 1. 创建裸模块
 2. yarn add vite-plugin-vue2 -D
-3. 112
+3. 
 4. 
 ```
 
