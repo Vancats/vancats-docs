@@ -20,3 +20,10 @@ load: 创建自定义加载函数，可用于返回自定义内容
 transform: 可用于转换已加载的模块内容
 
 handleHotUpdate: 自定义 HMR 更新时调用
+
+
+
+
+#### 优势
+基于 ESBuild，速度非常快
+兼容 rollup 插件，生态完整
