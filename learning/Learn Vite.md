@@ -29,4 +29,5 @@ handleHotUpdate: 自定义 HMR 更新时调用
 
 
 #### Vue3
-`npm init @vitejs/app`
+- 初始化 `npm init @vitejs/app`
+- JSX `@vitejs/plugin-vue-jsx -D` 直接导入并使用该函数即可
