@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-08 20:39
+date updated: 2022-03-09 00:16
 ---
 
 #### Vite 按照以下顺序调用钩子
@@ -27,16 +27,7 @@ handleHotUpdate: 自定义 HMR 更新时调用
 - 基于 ESBuild，速度非常快
 - 兼容 rollup 插件，生态完整
 
-
 #### Vue3
-- Vue3: `npm init vite`
-- JSX : `yarn add @vitejs/plugin-vue-jsx -D` 直接导入并使用 vueJsx函数即可 
-- Vue2
-```js
-1. 创建裸模块
-2. yarn add vite-plugin-vue2 -D
-3. 
-4. 
-```
 
-     
+- Vue3: `npm init vite`
+- JSX : `yarn add @vitejs/plugin-vue-jsx -D` 直接导入并使用 vueJsx函数即可
