@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-03 19:52
+date updated: 2022-03-08 20:39
 ---
 
 #### Vite 按照以下顺序调用钩子
@@ -21,9 +21,12 @@ transform: 可用于转换已加载的模块内容
 
 handleHotUpdate: 自定义 HMR 更新时调用
 
-
-
-
 #### 优势
-基于 ESBuild，速度非常快
-兼容 rollup 插件，生态完整
+
+- ESM，只加载首页需要用到的文件
+- 基于 ESBuild，速度非常快
+- 兼容 rollup 插件，生态完整
+
+
+#### Vue3
+`npm init @vitejs/app`
