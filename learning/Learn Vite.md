@@ -48,3 +48,8 @@ handleHotUpdate: 自定义 HMR 更新时调用
 ```
 
 #### POSTCSS
+```js
+module.exports = {
+	plugins: [require('autoprefixer'), require('@')]
+}
+```
