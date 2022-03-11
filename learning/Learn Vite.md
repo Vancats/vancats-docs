@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-12 00:05
+date updated: 2022-03-12 00:50
 ---
 
 ### 开始
@@ -205,6 +205,26 @@ export function fib(n: i32): i32 {
 	}
 	return a
 }
+```
+
+### ESLint + Prettier
+
+```js
+// .eslintrc.js
+module.exports = {
+	extends: "standard"
+}
+
+
+// .prettierrc
+{
+	"semi": false,
+	"singleQuote": false
+}
+
+
+// package.json
+"lint": "eslint --ext js src/
 ```
 
 ### ENV
