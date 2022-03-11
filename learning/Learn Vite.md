@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-12 00:57
+date updated: 2022-03-12 01:01
 ---
 
 ### 开始
@@ -255,3 +255,5 @@ VITE_TITLE=TEST
 "dev": "vite --mode test" // 切换成 .env.test 文件
 
 ```
+
+### HMR 热更新
