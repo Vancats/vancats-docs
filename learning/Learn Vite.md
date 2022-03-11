@@ -42,9 +42,9 @@ handleHotUpdate: 自定义 HMR 更新时调用
 :root {
 	--main-bg-color: red;
 }
-
 .root {
-	var(--main-bg-color)
+	color: var(--main-bg-color);
 }
 ```
-- 
+
+#### POSTCSS
