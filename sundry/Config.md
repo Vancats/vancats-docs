@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 12:01
+date updated: 2022-03-11 12:02
 ---
 
 ### .browserslistrc
@@ -114,18 +114,20 @@ date updated: 2022-03-11 12:01
 	"module": "es/index.js",
 	// pre / post
 	"script": {},
-	// eslint 检查文件配置，自动读取验证
-	"eslintConfig": { "extends": "react-app" },
-	// 在脚本中可通过 npm_package_config_port 引用
-	"config": { "port": "8080" }
 	// 可以将这些依赖提升到 node_modules 中，避免重复安装，定义在这里的依赖，本地开发时不会引入，可以在 devDependencies 再引入
 	"peerDependencies",
 	// 将依赖打包到 tgz 文件中
 	"bundledDependencies": ["vue", "vue-router"],
 	// 配置可选的依赖
 	"optionDependencies":
+	// eslint 检查文件配置，自动读取验证
+	"eslintConfig": { "extends": "react-app" },
+	// 在脚本中可通过 npm_package_config_port 引用
+	"config": { "port": "8080" }
 	// 项目运行平台
 	"engines": { "node": ">=0.10.3 <0.12"},
+	// 供浏览器使用时，样式文件所在的位置；样式文件打包工具parcelify，通过它知道样式文件的打包位置
+	"style": ["./node_modules/tipso/src/tipso.css"]
 	"browserslist": {
 		"production": [
 			">0.2%",
@@ -137,8 +139,6 @@ date updated: 2022-03-11 12:01
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
-	},
-	// 供浏览器使用时，样式文件所在的位置；样式文件打包工具parcelify，通过它知道样式文件的打包位置
-	"style": ["./node_modules/tipso/src/tipso.css"]
+	}
 }
 ```
