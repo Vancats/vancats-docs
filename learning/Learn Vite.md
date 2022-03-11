@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 21:08
+date updated: 2022-03-11 21:10
 ---
 
 ### 开始
@@ -91,5 +91,8 @@ transform: 可用于转换已加载的模块内容
 
 handleHotUpdate: 自定义 HMR 更新时调用
 
-
 ### Typescript
+
+Vite 只编译，不校验
+
+tsc --noEmit
