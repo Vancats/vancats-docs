@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 21:51
+date updated: 2022-03-11 22:40
 ---
 
 ### 开始
@@ -144,8 +144,22 @@ export { A } // => export { type A }
 ```
 
 ### Assets
+
 #### 图片
+
 - 链接引入
 - import 引入
 
-#### 
+#### 普通文件
+
+```js
+// 1. url
+import test from './test?url'
+// 打印该文件的相对路径 /src/test.ts
+
+// 2. raw
+import test from './test?raw'
+// 直接打印该文件的源文件内容
+
+	// 3. workder
+```
