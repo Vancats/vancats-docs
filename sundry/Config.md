@@ -7,18 +7,17 @@ date updated: 2022-03-03 00:54
 
 **可以配置在 package.json 中** "browserslist": []
 
-> `> 5%` 基于全球使用率统计而选择的浏览器版本 5% in US / alt-AS / in my stats
->
-> `cover 99.5%` 使用率总和为 99.5% 的浏览器版本，前提是浏览器提供使用覆盖率
->
-> `maintained node versions` 所有还被 node 基金会维护的 node 版本
->
-> `node 10 and node 10.4` node 10.x.x 或者 10.4.x 版本
->
-> `current node` 当前被 browserslistrc 使用的版本
->
-> `last 2 versions` 每个浏览器最近的两个版本
->
+ `> 5%` 基于全球使用率统计而选择的浏览器版本 5% in US / alt-AS / in my stats
+
+`cover 99.5%` 使用率总和为 99.5% 的浏览器版本，前提是浏览器提供使用覆盖率
+ `maintained node versions` 所有还被 node 基金会维护的 node 版本
+
+ `node 10 and node 10.4` node 10.x.x 或者 10.4.x 版本
+
+ `current node` 当前被 browserslistrc 使用的版本
+
+ `last 2 versions` 每个浏览器最近的两个版本
+
 > `dead` 通过`last 2 versions`筛选的浏览器版本中，全球使用率低于0.5%并且官方声明不在维护或者事实上已经两年没有再更新的版本。目前符合条件的有 `IE10`,`IE_Mob 10`,`BlackBerry 10`,`BlackBerry 7`,`OperaMobile 12.1`
 >
 > `defaults`：默认配置`> 0.5%, last 2 versions, Firefox ESR, not dead`
