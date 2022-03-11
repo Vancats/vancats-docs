@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-03-11 16:39
+date updated: 2022-03-11 16:45
 ---
 
 ## VSCode Plugins
@@ -11,17 +11,16 @@ date updated: 2022-03-11 16:39
 2. Bracket Pair Colorizer 2 括号
 3. Color Highlight 高亮
 4. Color Info css颜色选择
-5. Vue Peek css类名跳转
-6. Highlight Matching Tag 高亮
-7. Error Lens 报错提示
-8. Atom one Dark Theme
-9. Background 背景
-10. Fix VSCode Checksums 消除background错误提示
-11. Dracula At Night
-12. One Dart Pro
-13. One Mono kai Theme
-14. Pink-Cat-Boo Theme
-15. vscode-icons
+5. Highlight Matching Tag 高亮
+6. Error Lens 报错提示
+7. Atom one Dark Theme
+8. Background 背景
+9. Fix VSCode Checksums 消除background错误提示
+10. Dracula At Night
+11. One Dark Pro
+12. One Mono kai Theme
+13. Pink-Cat-Boo Theme
+14. vscode-icons
 
 ### Easy Work
 
@@ -60,7 +59,7 @@ date updated: 2022-03-11 16:39
 6. TSLint
 7. Prettier
 8. Sass
-9. Jest
+9. Jest Runner
 10. Postcode
 11. Vim
 12. Learn Vim
@@ -68,18 +67,17 @@ date updated: 2022-03-11 16:39
 14. CodeLf 命名检索
 15. File Utils 文件管理
 16. GitLens vscode git管理工具
-17. Local History 本地修改历史记录
-18. EditorConfig for VS Code
-19. AZ AL Dev Tools/AL Code Outline 函数列表展示
-20. waldo's CRS... (AZ 默认加载)
-21. HTML CSS Support
-22. open in browser
-23. Open In Default Browser
-24. View In Browser
-25. Code Runner
-26. styled-jsx
-27. X mind Viewer
-28. Image preview
-29. Markdown All in One
-30. Markdown Preview Enhanced
-31. Chinese
+17. EditorConfig for VS Code
+18. AZ AL Dev Tools/AL Code Outline 函数列表展示
+19. waldo's CRS... (AZ 默认加载)
+20. HTML CSS Support
+21. open in browser
+22. Open In Default Browser
+23. View In Browser
+24. Code Runner
+25. styled-jsx
+26. X mind Viewer
+27. Image preview
+28. Markdown All in One
+29. Markdown Preview Enhanced
+30. Chinese
