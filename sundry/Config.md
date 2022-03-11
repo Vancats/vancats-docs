@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 11:33
+date updated: 2022-03-11 11:51
 ---
 
 ### .browserslistrc
@@ -77,8 +77,11 @@ date updated: 2022-03-11 11:33
 	"name": "my-package",
 	"version": "0.1.0",
 	"author": "leiqifan <leiqifan@163.com>",
+	// 便于 npm search
 	"description": "我的 package 文件",
+	// 便于 npm search
 	"keywords":["node.js","javascript"],
+	// 为 true 时 npm 禁止发布
 	"private": true,
 	"bugs":{"url":"http://path/to/bug","email":"bug@example.com"},
 	"contributors":[{"name":"李四","email":"lisi@example.com"}],
