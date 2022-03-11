@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 22:40
+date updated: 2022-03-11 22:45
 ---
 
 ### 开始
@@ -161,5 +161,20 @@ import test from './test?url'
 import test from './test?raw'
 // 直接打印该文件的源文件内容
 
-	// 3. workder
+// 3. worker webworker 单开一个线程
+// worker.js
+var i = 0
+function timeCount() {
+	i = i + 1
+	postMessage(i)
+	setTimeout(timeCount, 500)
+}
+timeCount()
+
+// main.js
+import Worker from './worker?worker'
+const worker from 'Worker'
+worker.onmessage = function(e) {
+	console.log(e)
+}
 ```
