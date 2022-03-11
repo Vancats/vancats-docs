@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 21:23
+date updated: 2022-03-11 21:25
 ---
 
 ### 开始
@@ -110,21 +110,15 @@ tsc --noEmit
 	    "resolveJsonModule": true,   // 是否可以直接 import JSON
 	    "esModuleInterop": true,     // 方便引入 可以省略括号内容 import (* as )React form 'React'
 	    "isolatedModules": true,
-	    "lib": ["esnext", "DOM"]，   // 支持使用nei
+	    "lib": ["esnext", "DOM"]，   // 支持使用哪些内置的 module
 	},
-	"include": [
-	    "src/**/*.ts",
-	    "src/**/*.d.ts",
-	    "src/**/*.tsx",
-	    "src/**/*.vue",
-	]
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
 
 
 // package.json
-{
-	"scripts": {
-		"build": "vue-tsc --noEmit && tsc --noEmit && vite build"
-	}
+// 需要安装 typescript vue-tsc
+"scripts": {
+	"build": "vue-tsc --noEmit && tsc --noEmit && vite build"
 }
 ```
