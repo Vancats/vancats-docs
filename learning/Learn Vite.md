@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 21:43
+date updated: 2022-03-11 21:45
 ---
 
 ### 开始
@@ -107,9 +107,9 @@ handleHotUpdate: 自定义 HMR 更新时调用
 	    "sourceMap": true,
 	    "resolveJsonModule": true,   // 是否可以直接 import JSON
 	    "esModuleInterop": true,     // 方便引入 可以省略括号内容 import (* as )React form 'React'
-	    "lib": ["esnext", "DOM", 
-		"vite/client"]，             // 支持使用哪些内置的 module
-	    "isolatedModules": true,
+	    "lib": ["esnext", "DOM"]，   // 支持使用哪些内置的 module
+	    "isolatedModules": true,     // 见下方
+	    "types": ["vite/client"],    // import.meta
 	},
 	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
@@ -142,3 +142,5 @@ export const a: A = { name: 'Lqf', age: Num.First }
 export { A } // => export { type A }
 
 ```
+
+### 静态文件
