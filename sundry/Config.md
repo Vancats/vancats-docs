@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 11:04
+date updated: 2022-03-11 11:19
 ---
 
 ### .browserslistrc
@@ -81,7 +81,12 @@ date updated: 2022-03-11 11:04
 	// 项目默认执行文件，require('webpack') 时，默认执行 index.js
 	"main": "",
 	// 
-	"browser"
+	"browser": "",
+	"module": "",
+	// pre / post
+	"script": {},
+	// 在脚本中可通过 npm_package_config_port 引用
+	"config": { "port": "8080" }
 	
 }
 ```
