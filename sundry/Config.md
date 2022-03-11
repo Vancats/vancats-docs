@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 14:15
+date updated: 2022-03-11 14:21
 ---
 
 ### .browserslistrc
@@ -157,4 +157,12 @@ npm init 初始化
 npm init xxx
 	npm init @vitejs/app 实际上是调用了 npx @vitejs/create-app
 	所以需要提供一个 create-xxx 的包
+	npm init xxx 和 npx create-xxx 也是一般CLI工具的常用套路
+
+npm config list/set/get/delete
+
+npm install
+	如果 NODE_DEV 是 production，或者指定了 --production，就不安装 devDependencies
+	--save(-S)
+	--save-dev(-D)
 ```
