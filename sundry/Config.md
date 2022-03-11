@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 11:24
+date updated: 2022-03-11 11:26
 ---
 
 ### .browserslistrc
@@ -89,6 +89,9 @@ date updated: 2022-03-11 11:24
 	"config": { "port": "8080" }
 	// 可以将这些依赖提升到 node_modules 中，避免重复安装，定义在这里的依赖，本地开发时不会引入，可以在 devDependencies 再引入
 	"peerDependencies",
-	"bundledDepenencies": ["vue", "vue-router"]
+	// 将依赖打包到 tgz 文件中
+	"bundledDependencies": ["vue", "vue-router"],
+	// 配置可选的依赖
+	"optionDependencies":
 }
 ```
