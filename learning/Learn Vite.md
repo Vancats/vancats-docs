@@ -144,3 +144,8 @@ export { A } // => export { type A }
 ```
 
 ### Assets
+#### 图片
+- 链接引入
+- import 引入
+
+#### 
