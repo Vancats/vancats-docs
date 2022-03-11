@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-12 00:50
+date updated: 2022-03-12 00:57
 ---
 
 ### 开始
@@ -212,7 +212,10 @@ export function fib(n: i32): i32 {
 ```js
 // .eslintrc.js
 module.exports = {
-	extends: "standard"
+	extends: "standard",
+	globals: {
+		postMessage: true
+	}
 }
 
 
@@ -224,7 +227,14 @@ module.exports = {
 
 
 // package.json
-"lint": "eslint --ext js src/
+"lint": "eslint --ext js src/,
+"build": "npm run lint && ..."
+
+
+// 安装 husky
+yarn add husky -D
+npx husky install
+npx husky add .husky/pre-commit "npm run lint"
 ```
 
 ### ENV
