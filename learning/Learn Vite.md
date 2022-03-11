@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 22:53
+date updated: 2022-03-11 23:51
 ---
 
 ### 开始
@@ -205,4 +205,11 @@ export function fib(n: i32): i32 {
 	}
 	return a
 }
+```
+
+### ENV
+
+```js
+import.meta.env // 打包后也是直接输出这些内容而不是变量
+{ BASE_URL: '/', MODE: 'development', DEV: true, PROD: false, SSR: false }
 ```
