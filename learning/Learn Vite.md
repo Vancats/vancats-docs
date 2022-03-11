@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-09 00:25
+date updated: 2022-03-11 20:50
 ---
 
 #### Vite 按照以下顺序调用钩子
@@ -34,9 +34,10 @@ handleHotUpdate: 自定义 HMR 更新时调用
 - React
 	- react-hot-loader -> FastRefresh 解决了遗留问题，更快，局部更新
 
-
 ### CSS 相关内容
+
 #### 原生 CSS variable
+
 ```css
 /* 命名空间 */
 :root {
@@ -48,8 +49,15 @@ handleHotUpdate: 自定义 HMR 更新时调用
 ```
 
 #### POSTCSS
+
 ```js
 module.exports = {
-	plugins: [require('autoprefixer'), require('@')]
+	plugins: [require('autoprefixer'), require('@postcss-plugins/console')]
+}
+
+index.css
+.root {
+	@console.error hello root123
+	color: red;
 }
 ```
