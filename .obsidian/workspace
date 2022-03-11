@@ -102,6 +102,7 @@
   "active": "bd65b5179b0b672d",
   "lastOpenFiles": [
     "sundry/Config.md",
+    "sundry/().md",
     "js/模板引擎.md",
     "js/ES.md",
     "js/another.md",
@@ -109,7 +110,6 @@
     "js/React.md",
     "learning/前端算法.md",
     "learning/Learn CSS.md",
-    "js/Vue.md",
-    "js/手撕.md"
+    "js/Vue.md"
   ]
 }

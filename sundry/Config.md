@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 12:02
+date updated: 2022-03-11 14:15
 ---
 
 ### .browserslistrc
@@ -142,6 +142,19 @@ date updated: 2022-03-11 12:02
 	}
 }
 ```
+
 ![](http://api.fly63.com/vue_blog/public/Uploads/20190611/5cffb5222d1a8.jpg)
 
 ### npm CLI
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3e9300401a4e43baa028814d0358d7d3~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp)
+
+```js
+npm help
+
+npm init 初始化
+
+npm init xxx
+	npm init @vitejs/app 实际上是调用了 npx @vitejs/create-app
+	所以需要提供一个 create-xxx 的包
+```
