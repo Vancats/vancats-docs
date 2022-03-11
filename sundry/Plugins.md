@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-03-11 16:45
+date updated: 2022-03-11 16:47
 ---
 
 ## VSCode Plugins
@@ -60,24 +60,23 @@ date updated: 2022-03-11 16:45
 7. Prettier
 8. Sass
 9. Jest Runner
-10. Postcode
-11. Vim
-12. Learn Vim
-13. LeetCode
-14. CodeLf 命名检索
-15. File Utils 文件管理
-16. GitLens vscode git管理工具
-17. EditorConfig for VS Code
-18. AZ AL Dev Tools/AL Code Outline 函数列表展示
-19. waldo's CRS... (AZ 默认加载)
-20. HTML CSS Support
-21. open in browser
-22. Open In Default Browser
-23. View In Browser
-24. Code Runner
-25. styled-jsx
-26. X mind Viewer
-27. Image preview
-28. Markdown All in One
-29. Markdown Preview Enhanced
-30. Chinese
+10. Vim
+11. Learn Vim
+12. LeetCode
+13. CodeLf 命名检索
+14. File Utils 文件管理
+15. GitLens vscode git管理工具
+16. EditorConfig for VS Code
+17. AZ AL Dev Tools/AL Code Outline 函数列表展示
+18. waldo's CRS... (AZ 默认加载)
+19. HTML CSS Support
+20. open in browser
+21. Open In Default Browser
+22. View In Browser
+23. Code Runner
+24. styled-jsx
+25. X mind Viewer
+26. Image preview
+27. Markdown All in One
+28. Markdown Preview Enhanced
+29. Chinese
