@@ -161,8 +161,10 @@ npm init xxx
 
 npm config list/set/get/delete
 
-npm install
-	如果 NODE_DEV 是 production，或者指定了 --production，就不安装 devDependencies
-	--save(-S)
-	--save-dev(-D)
+npm install  --save(-S) 	--save-dev(-D)
+	- 如果 NODE_DEV 是 production，或者指定了 --production，就不安装 devDependencies 的包
+	- 如果别人 install 你的包，只会安装 dependencies
+	- 如果项目中引入了依赖，就会进入 webpack 的 Dependency Graph，会被打包，不管是不是在 devDependencies
+
+npm start 默认启用 node server.js
 ```
