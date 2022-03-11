@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 11:26
+date updated: 2022-03-11 11:33
 ---
 
 ### .browserslistrc
@@ -74,15 +74,39 @@ date updated: 2022-03-11 11:26
 
 ```json
 {
+	"name": "my-package",
+	"version": "0.1.0",
+	"author": "leiqifan <leiqifan@163.com>",
+	"description": "我的 package 文件",
+	"keywords":["node.js","javascript"],
+	"private": true,
+	"bugs":{"url":"http://path/to/bug","email":"bug@example.com"},
+	"contributors":[{"name":"李四","email":"lisi@example.com"}],
+	"repository": {
+		"type": "git",
+		"url": "https://path/to/url"
+	},
+	"license":"MIT",
+	"homepage": "http://necolas.github.io/normalize.css",
+	"dependencies": {
+	    "react": "^16.8.6",
+	    "react-dom": "^16.8.6",
+	    "react-router-dom": "^5.0.1",
+	    "react-scripts": "3.0.1"
+	},
+	"devDependencies": {
+	    "browserify": "~13.0.0",
+	    "karma-browserify": "~5.0.1"
+	},
 	// 暴露给用户的文件
 	"files": ["bin", "dist", "client.d.ts"],
 	// 可执行文件，表示包要对外提供的脚本，全局安装 -> 可执行文件添加到 PATH 变量（全局可执行），局部安装 -> node_modules/.bin/
-	"bin": [""]
+	"bin": { "webpack": "./bin/webpack.js" }
 	// 项目默认执行文件，require('webpack') 时，默认执行 index.js
-	"main": "",
+	"main": "lib/webpack.js",
 	// 
 	"browser": "",
-	"module": "",
+	"module": "es/index.js",
 	// pre / post
 	"script": {},
 	// 在脚本中可通过 npm_package_config_port 引用
