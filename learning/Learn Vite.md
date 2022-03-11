@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 21:37
+date updated: 2022-03-11 21:43
 ---
 
 ### 开始
@@ -107,7 +107,8 @@ handleHotUpdate: 自定义 HMR 更新时调用
 	    "sourceMap": true,
 	    "resolveJsonModule": true,   // 是否可以直接 import JSON
 	    "esModuleInterop": true,     // 方便引入 可以省略括号内容 import (* as )React form 'React'
-	    "lib": ["esnext", "DOM"]，   // 支持使用哪些内置的 module
+	    "lib": ["esnext", "DOM", 
+		"vite/client"]，             // 支持使用哪些内置的 module
 	    "isolatedModules": true,
 	},
 	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
@@ -124,6 +125,12 @@ handleHotUpdate: 自定义 HMR 更新时调用
 > 关于 isolatedModules 配置项
 
 ```js
+/* 
+	vite 编译时会清除环境常量枚举，使得无法访问而报错 
+	vite 编译时，interface 会被清除，在 test2 导出时会报错
+	写一个没有 import 也没有 export 的文件会报错
+*/
+
 // test1.ts
 export interface A { name: string, age: number }
 
@@ -131,9 +138,7 @@ export interface A { name: string, age: number }
 import { A } from './test1.ts'
 declare const enum Num { First = 0, Second = 1 }
 
-export const a: A = { name: 'Lqf' }
+export const a: A = { name: 'Lqf', age: Num.First }
 export { A } // => export { type A }
-
-/* vite 编译时，interface 会被清除，在 test2 导出时会报错 */
 
 ```
