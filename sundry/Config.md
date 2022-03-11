@@ -83,6 +83,7 @@ date updated: 2022-03-11 11:51
 	"keywords":["node.js","javascript"],
 	// 为 true 时 npm 禁止发布
 	"private": true,
+	// bug 提交地址
 	"bugs":{"url":"http://path/to/bug","email":"bug@example.com"},
 	"contributors":[{"name":"李四","email":"lisi@example.com"}],
 	"repository": {
@@ -90,6 +91,7 @@ date updated: 2022-03-11 11:51
 		"url": "https://path/to/url"
 	},
 	"license":"MIT",
+	// 项目包的官网
 	"homepage": "http://necolas.github.io/normalize.css",
 	"dependencies": {
 	    "react": "^16.8.6",
