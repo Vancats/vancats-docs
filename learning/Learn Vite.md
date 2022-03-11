@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 21:25
+date updated: 2022-03-11 21:33
 ---
 
 ### 开始
@@ -93,9 +93,7 @@ handleHotUpdate: 自定义 HMR 更新时调用
 
 ### Typescript
 
-Vite 只编译，不校验
-
-tsc --noEmit
+**Vite 只编译，不校验**
 
 ```json
 // tsconfig.json
@@ -109,8 +107,8 @@ tsc --noEmit
 	    "sourceMap": true,
 	    "resolveJsonModule": true,   // 是否可以直接 import JSON
 	    "esModuleInterop": true,     // 方便引入 可以省略括号内容 import (* as )React form 'React'
-	    "isolatedModules": true,
 	    "lib": ["esnext", "DOM"]，   // 支持使用哪些内置的 module
+	    "isolatedModules": true,
 	},
 	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
@@ -121,4 +119,14 @@ tsc --noEmit
 "scripts": {
 	"build": "vue-tsc --noEmit && tsc --noEmit && vite build"
 }
+```
+
+```js
+// test1.ts
+export interface A { name: string }
+
+// test2.ts
+import { A } from './test1.ts'
+export const a: A = { n}
+
 ```
