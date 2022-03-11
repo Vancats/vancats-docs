@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 21:10
+date updated: 2022-03-11 21:17
 ---
 
 ### 开始
@@ -96,3 +96,35 @@ handleHotUpdate: 自定义 HMR 更新时调用
 Vite 只编译，不校验
 
 tsc --noEmit
+
+```json
+// tsconfig.json
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",          // vite 模块加载必须使用 module
+	    "moduleResolution": "node",  // 通过 node 方式来解析模块
+		"strict": true,
+	    "jsx": "preserve",           // 如果不配置
+	    "sourceMap": true,
+	    "resolveJsonModule": true,
+	    "esModuleInterop": true,
+	    "isolatedModules": true,
+	    "lib": ["esnext", "DOM"]
+	},
+	"include": [
+	    "src/**/*.ts",
+	    "src/**/*.d.ts",
+	    "src/**/*.tsx",
+	    "src/**/*.vue",
+	]
+}
+
+
+// package.json
+{
+	"scripts": {
+		"build": "vue-tsc --noEmit && tsc --noEmit && vite build"
+	}
+}
+```
