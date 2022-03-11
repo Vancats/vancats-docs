@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 23:51
+date updated: 2022-03-11 23:56
 ---
 
 ### 开始
@@ -212,4 +212,18 @@ export function fib(n: i32): i32 {
 ```js
 import.meta.env // 打包后也是直接输出这些内容而不是变量
 { BASE_URL: '/', MODE: 'development', DEV: true, PROD: false, SSR: false }
+
+.env
+.env.develpment
+.env.develpment.local
+.env.productuon
+
+需要加上 VITE_ 前缀，如 VITE_TITLE
+
+也可以更改位置和名称
+.env.test
+VITE_TITLE=TEST
+
+"dev": "vite --mode test" // 切换成 .env.test 文件
+
 ```
