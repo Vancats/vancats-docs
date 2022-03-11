@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 11:19
+date updated: 2022-03-11 11:24
 ---
 
 ### .browserslistrc
@@ -87,6 +87,8 @@ date updated: 2022-03-11 11:19
 	"script": {},
 	// 在脚本中可通过 npm_package_config_port 引用
 	"config": { "port": "8080" }
-	
+	// 可以将这些依赖提升到 node_modules 中，避免重复安装，定义在这里的依赖，本地开发时不会引入，可以在 devDependencies 再引入
+	"peerDependencies",
+	"bundledDepenencies": ["vue", "vue-router"]
 }
 ```
