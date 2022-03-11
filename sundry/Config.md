@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 10:58
+date updated: 2022-03-11 11:04
 ---
 
 ### .browserslistrc
@@ -76,7 +76,7 @@ date updated: 2022-03-11 10:58
 {
 	// 暴露给用户的文件
 	"files": ["bin", "dist", "client.d.ts"],
-	// 可执行文件，表示bao
+	// 可执行文件，表示包要对外提供的脚本，全局安装 -> 可执行文件添加到 PATH 变量（全局可执行），局部安装 -> node_modules/.bin/
 	"bin": [""]
 }
 ```
