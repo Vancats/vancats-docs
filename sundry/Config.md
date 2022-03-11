@@ -78,5 +78,10 @@ date updated: 2022-03-11 11:04
 	"files": ["bin", "dist", "client.d.ts"],
 	// 可执行文件，表示包要对外提供的脚本，全局安装 -> 可执行文件添加到 PATH 变量（全局可执行），局部安装 -> node_modules/.bin/
 	"bin": [""]
+	// 项目默认执行文件，require('webpack') 时，默认执行 index.js
+	"main": "",
+	// 
+	"browser"
+	
 }
 ```
