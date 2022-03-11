@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 20:50
+date updated: 2022-03-11 20:58
 ---
 
 #### Vite 按照以下顺序调用钩子
@@ -39,6 +39,9 @@ handleHotUpdate: 自定义 HMR 更新时调用
 #### 原生 CSS variable
 
 ```css
+/* @import alias: { '@styles': '/src/styles' } */
+@import url(@styles/other.css)
+
 /* 命名空间 */
 :root {
 	--main-bg-color: red;
@@ -61,3 +64,7 @@ index.css
 	color: red;
 }
 ```
+
+
+#### CSS Modules
+``````
