@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn 浏览器原理.md",
+            "file": "chore/Plugins.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207
+    "width": 216.5
   },
   "right": {
     "id": "8e347e94747a4a72",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn 浏览器原理.md",
+                "file": "chore/Plugins.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -91,24 +91,25 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 185,
+    "width": 174,
     "collapsed": true
   },
   "active": "28889af48a307767",
   "lastOpenFiles": [
+    "chore/Plugins.md",
+    "chore/Config.md",
+    "learning/Learn Vite.md",
     "learning/Learn 浏览器原理.md",
-    "js/ES.md",
-    "js/OM.md",
-    "js/another.md",
-    "js/手撕.md",
-    "js/模板引擎.md",
-    "learning/Learn Vue3.md",
     "learning/JS 题目.md",
-    "learning/前端算法.md",
-    "learning/Learn JS.md"
+    "learning/未命名.md",
+    "learning/Learn JS.md",
+    "learning/Learn CSS.md",
+    "learning/Learn HTTP.md",
+    "learning/Learn Interview.md"
   ]
 }
