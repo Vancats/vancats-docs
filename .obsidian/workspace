@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "sundry/Config.md",
-            "mode": "source",
+            "file": "learning/Learn 浏览器原理.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sundry/Config.md",
+                "file": "learning/Learn 浏览器原理.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "bd65b5179b0b672d",
   "lastOpenFiles": [
+    "learning/Learn 浏览器原理.md",
+    "learning/JS 题目.md",
+    "learning/前端算法.md",
+    "learning/Learn JS.md",
+    "learning/Learn Vite.md",
+    "learning/Learn Vue.md",
     "sundry/Config.md",
     "sundry/Plugins.md",
     "sundry/网络.md",
-    "sundry/动漫.md",
-    "learning/Learn 浏览器原理.md",
-    "learning/Learn CSS.md",
-    "sundry/Webpack.md",
-    "sundry/LeetCode.md",
-    "sundry/Git.md",
-    "source/原型链.jpg"
+    "sundry/动漫.md"
   ]
 }
