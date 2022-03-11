@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 21:33
+date updated: 2022-03-11 21:37
 ---
 
 ### 开始
@@ -121,12 +121,19 @@ handleHotUpdate: 自定义 HMR 更新时调用
 }
 ```
 
+> 关于 isolatedModules 配置项
+
 ```js
 // test1.ts
-export interface A { name: string }
+export interface A { name: string, age: number }
 
 // test2.ts
 import { A } from './test1.ts'
-export const a: A = { n}
+declare const enum Num { First = 0, Second = 1 }
+
+export const a: A = { name: 'Lqf' }
+export { A } // => export { type A }
+
+/* vite 编译时，interface 会被清除，在 test2 导出时会报错 */
 
 ```
