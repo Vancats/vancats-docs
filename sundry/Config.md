@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 14:31
+date updated: 2022-03-11 14:34
 ---
 
 ### .browserslistrc
@@ -171,5 +171,17 @@ npm start 默认启用 node server.js
 npm version
 	- npm version  major/minor/patch -m "reason for upgrade"
 				  主版本/此版本/补丁版本
-	
+	- "scripts": { "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md" } 自动生成 CHANGELOG.md
+
+npm login/adduser 登录 npm
+
+发布 npm 前必须切回 npm 源 --- npm config set registry http://registry.npmjs.org/
+
+npm publish 发布 npm 包，以 version 为界限，因此每次发布 version 必须改变
+
+npm unpublish 移除已发布的包，可以移除整个的，也可以针对下架某个版本
+
+npm pack 将 package 打包成 tgz 格式
+
+npm link
 ```
