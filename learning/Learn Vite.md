@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 22:45
+date updated: 2022-03-11 22:49
 ---
 
 ### 开始
@@ -177,4 +177,18 @@ const worker from 'Worker'
 worker.onmessage = function(e) {
 	console.log(e)
 }
+```
+
+#### JSON
+
+```js
+import pkg from './package.json' // 可以解构
+pkg.version
+```
+
+#### Web assemble
+
+```js
+import init from './fib.wasm'
+init().then(m => console.log(m.fib(10)))
 ```
