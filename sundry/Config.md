@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 14:21
+date updated: 2022-03-11 14:31
 ---
 
 ### .browserslistrc
@@ -155,9 +155,9 @@ npm help
 npm init 初始化
 
 npm init xxx
-	npm init @vitejs/app 实际上是调用了 npx @vitejs/create-app
-	所以需要提供一个 create-xxx 的包
-	npm init xxx 和 npx create-xxx 也是一般CLI工具的常用套路
+	- npm init @vitejs/app 实际上是调用了 npx @vitejs/create-app
+	- 所以需要提供一个 create-xxx 的包
+	- npm init xxx 和 npx create-xxx 也是一般CLI工具的常用套路
 
 npm config list/set/get/delete
 
@@ -167,4 +167,9 @@ npm install  --save(-S) 	--save-dev(-D)
 	- 如果项目中引入了依赖，就会进入 webpack 的 Dependency Graph，会被打包，不管是不是在 devDependencies
 
 npm start 默认启用 node server.js
+
+npm version
+	- npm version  major/minor/patch -m "reason for upgrade"
+				  主版本/此版本/补丁版本
+	
 ```
