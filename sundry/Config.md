@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 11:51
+date updated: 2022-03-11 12:01
 ---
 
 ### .browserslistrc
@@ -104,7 +104,7 @@ date updated: 2022-03-11 11:51
 	    "karma-browserify": "~5.0.1"
 	},
 	// 暴露给用户的文件
-	"files": ["bin", "dist", "client.d.ts"],
+	"files": ["bin", "dist", "client.d.ts", "buildin/", "declarations/", "hot/", "web_modules/", "schemas/", "SECURITY.md"],
 	// 可执行文件，表示包要对外提供的脚本，全局安装 -> 可执行文件添加到 PATH 变量（全局可执行），局部安装 -> node_modules/.bin/
 	"bin": { "webpack": "./bin/webpack.js" }
 	// 项目默认执行文件，require('webpack') 时，默认执行 index.js
@@ -114,6 +114,8 @@ date updated: 2022-03-11 11:51
 	"module": "es/index.js",
 	// pre / post
 	"script": {},
+	// eslint 检查文件配置，自动读取验证
+	"eslintConfig": { "extends": "react-app" },
 	// 在脚本中可通过 npm_package_config_port 引用
 	"config": { "port": "8080" }
 	// 可以将这些依赖提升到 node_modules 中，避免重复安装，定义在这里的依赖，本地开发时不会引入，可以在 devDependencies 再引入
@@ -122,5 +124,21 @@ date updated: 2022-03-11 11:51
 	"bundledDependencies": ["vue", "vue-router"],
 	// 配置可选的依赖
 	"optionDependencies":
+	// 项目运行平台
+	"engines": { "node": ">=0.10.3 <0.12"},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	// 供浏览器使用时，样式文件所在的位置；样式文件打包工具parcelify，通过它知道样式文件的打包位置
+	"style": ["./node_modules/tipso/src/tipso.css"]
 }
 ```
