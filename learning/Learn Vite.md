@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 22:49
+date updated: 2022-03-11 22:53
 ---
 
 ### 开始
@@ -186,9 +186,23 @@ import pkg from './package.json' // 可以解构
 pkg.version
 ```
 
-#### Web assemble
+#### Web assembly
 
 ```js
 import init from './fib.wasm'
 init().then(m => console.log(m.fib(10)))
+
+// assembly.ts => fib.wasm
+export function fib(n: i32): i32 {
+	var a = 0, b = 1
+	if (n > 0) {
+		while (--n) {
+			let t = a + b
+			a = b
+			b = t
+		}
+		return b
+	}
+	return a
+}
 ```
