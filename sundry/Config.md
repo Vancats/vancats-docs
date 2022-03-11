@@ -143,3 +143,5 @@ date updated: 2022-03-11 12:02
 }
 ```
 ![](http://api.fly63.com/vue_blog/public/Uploads/20190611/5cffb5222d1a8.jpg)
+
+### npm CLI
