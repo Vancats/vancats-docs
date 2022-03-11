@@ -1,13 +1,13 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-11 10:40
+date updated: 2022-03-11 10:58
 ---
 
 ### .browserslistrc
 
 **可以配置在 package.json 中** "browserslist": []
 
-`> 5%` 基于全球使用率统计而选择的浏览器版本 5% in US / alt-AS / in my stats
+> 5% 基于全球使用率统计而选择的浏览器版本 5% in US / alt-AS / in my stats
 
 `cover 99.5%` 使用率总和为 99.5% 的浏览器版本，前提是浏览器提供使用覆盖率
 `maintained node versions` 所有还被 node 基金会维护的 node 版本
@@ -69,3 +69,14 @@ date updated: 2022-03-11 10:40
 
 `require.context(directory{string}, useSubdirectories{boolean}, regExp(RegExp))`
 `require.context('./test', false,/.test.js$/) 遍历 test 文件夹下的所有 .test.js 文件，不遍历子目录`
+
+### package.json
+
+```json
+{
+	// 暴露给用户的文件
+	"files": ["bin", "dist", "client.d.ts"],
+	// 可执行文件，表示bao
+	"bin": [""]
+}
+```
