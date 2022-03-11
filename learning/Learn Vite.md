@@ -33,3 +33,18 @@ handleHotUpdate: 自定义 HMR 更新时调用
 - JSX : `yarn add @vitejs/plugin-vue-jsx -D` 直接导入并使用 vueJsx函数即可
 - React
 	- react-hot-loader -> FastRefresh 解决了遗留问题，更快，局部更新
+
+
+### CSS 相关内容
+#### 原生 CSS variable
+```css
+/* 命名空间 */
+:root {
+	--main-bg-color: red;
+}
+
+.root {
+	var(--main-bg-color)
+}
+```
+- 
