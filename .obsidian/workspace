@@ -91,12 +91,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 174,
+    "width": 185,
     "collapsed": true
   },
   "active": "bd65b5179b0b672d",
