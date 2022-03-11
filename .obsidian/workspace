@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn 浏览器原理.md",
+            "file": "sundry/Plugins.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5
+    "width": 289
   },
   "right": {
     "id": "8e347e94747a4a72",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn 浏览器原理.md",
+                "file": "sundry/Plugins.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,13 +101,13 @@
   },
   "active": "bd65b5179b0b672d",
   "lastOpenFiles": [
+    "sundry/Plugins.md",
+    "sundry/Config.md",
+    "sundry/网络.md",
+    "sundry/动漫.md",
     "learning/Learn 浏览器原理.md",
     "learning/Learn CSS.md",
-    "sundry/动漫.md",
-    "sundry/网络.md",
-    "sundry/Config.md",
     "sundry/Webpack.md",
-    "sundry/Plugins.md",
     "sundry/LeetCode.md",
     "sundry/Git.md",
     "source/原型链.jpg"
