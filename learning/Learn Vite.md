@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 21:17
+date updated: 2022-03-11 21:23
 ---
 
 ### 开始
@@ -105,12 +105,12 @@ tsc --noEmit
 		"module": "esnext",          // vite 模块加载必须使用 module
 	    "moduleResolution": "node",  // 通过 node 方式来解析模块
 		"strict": true,
-	    "jsx": "preserve",           // 如果不配置
+	    "jsx": "preserve",           // 配置成不编译 jsx 语法；如果不配置默认遵循 React 规范，与 Vue 的不符
 	    "sourceMap": true,
-	    "resolveJsonModule": true,
-	    "esModuleInterop": true,
+	    "resolveJsonModule": true,   // 是否可以直接 import JSON
+	    "esModuleInterop": true,     // 方便引入 可以省略括号内容 import (* as )React form 'React'
 	    "isolatedModules": true,
-	    "lib": ["esnext", "DOM"]
+	    "lib": ["esnext", "DOM"]，   // 支持使用nei
 	},
 	"include": [
 	    "src/**/*.ts",
