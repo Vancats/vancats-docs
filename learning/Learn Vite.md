@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-11 20:58
+date updated: 2022-03-11 21:03
 ---
 
 #### Vite 按照以下顺序调用钩子
@@ -58,13 +58,24 @@ module.exports = {
 	plugins: [require('autoprefixer'), require('@postcss-plugins/console')]
 }
 
-index.css
+// index.css
 .root {
 	@console.error hello root123
 	color: red;
 }
 ```
 
-
 #### CSS Modules
-``````
+
+```js
+// app.module.css
+.root {
+	color: 'red';
+}
+
+import app from 'app.module.css'
+
+app.root // 使用
+```
+
+#### CSS pre-processors
