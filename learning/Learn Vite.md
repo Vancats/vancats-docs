@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-12 23:19
+date updated: 2022-03-12 23:58
 ---
 
 ### 开始
@@ -253,7 +253,6 @@ import.meta.env // 打包后也是直接输出这些内容而不是变量
 .env.test
 VITE_TITLE=TEST
 "dev": "vite --mode test" // 切换成 .env.test 文件
-
 ```
 
 ### HMR 热更新
