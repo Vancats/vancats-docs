@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn Vite.md",
+            "file": "learning/Learn Interview.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn Vite.md",
+                "file": "learning/Learn Interview.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -100,6 +100,7 @@
   },
   "active": "bd65b5179b0b672d",
   "lastOpenFiles": [
+    "learning/Learn Interview.md",
     "learning/Learn Vite.md",
     "learning/Learn 浏览器原理.md",
     "js/ES.md",
@@ -108,7 +109,6 @@
     "js/手撕.md",
     "js/模板引擎.md",
     "learning/Learn Vue3.md",
-    "learning/JS 题目.md",
-    "learning/前端算法.md"
+    "learning/JS 题目.md"
   ]
 }
