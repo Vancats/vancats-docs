@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "chore/Webpack.md",
+            "file": "learning/Learn RegExp.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chore/Webpack.md",
+                "file": "learning/Learn RegExp.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -100,6 +100,7 @@
   },
   "active": "bd65b5179b0b672d",
   "lastOpenFiles": [
+    "learning/Learn RegExp.md",
     "chore/Webpack.md",
     "learning/Learn JS.md",
     "learning/JS 题目.md",
@@ -108,7 +109,6 @@
     "learning/Learn CSS.md",
     "learning/Learn 浏览器原理.md",
     "learning/Learn Interview.md",
-    "learning/Learn Vite.md",
-    "js/ES.md"
+    "learning/Learn Vite.md"
   ]
 }
