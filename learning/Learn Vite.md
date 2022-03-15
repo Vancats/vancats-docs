@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 00:22
+date updated: 2022-03-16 00:33
 ---
 
 ### 开始
@@ -310,3 +310,4 @@ if (import.meta.hot) {
 `--format` 后面跟 `cjs/iife/es/umd`；`umd` 格式，需要加上 `--name` 添加全局变量名称
 
 `--watch` 监听文件变化
+`--config(-c)` 确定配置项
