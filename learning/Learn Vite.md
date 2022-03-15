@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-15 23:42
+date updated: 2022-03-15 23:48
 ---
 
 ### 开始
@@ -304,4 +304,4 @@ if (import.meta.hot) {
 
 ### 基本命令
 
-
+`  rollup -i index.js -i a.js --dir dist ` 多入口输出文件夹
