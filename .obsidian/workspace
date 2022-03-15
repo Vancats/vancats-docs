@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "2cb50ab361f405f7",
+        "id": "f536896d3b7d6327",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -99,11 +99,11 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "2cb50ab361f405f7",
+  "active": "f536896d3b7d6327",
   "lastOpenFiles": [
     "learning/Learn Vite.md",
-    "learning/Learn RegExp.md",
     "learning/Learn JS.md",
+    "learning/Learn RegExp.md",
     "learning/Learn Interview.md",
     "learning/Learn HTTP.md",
     "learning/Learn HTML.md",

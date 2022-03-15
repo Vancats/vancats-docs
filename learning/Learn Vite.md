@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-15 22:20
+date updated: 2022-03-15 22:50
 ---
 
 ### 开始
@@ -284,5 +284,9 @@ if (import.meta.hot) {
  }
 ```
 
+### glob
 
-glob
+### 预编译
+
+会生成一个 .vite 文件，里面存放是各个依赖，之后需要加载文件时，可以直接从这里读取
+Common JS --> ESM
