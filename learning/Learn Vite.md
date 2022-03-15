@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 00:48
+date updated: 2022-03-16 00:53
 ---
 
 ### 开始
@@ -300,17 +300,26 @@ if (import.meta.hot) {
 
 ### 基本命令
 
-`rollup -i index.js -i a.js --dir dist` 多入口输出文件夹
-`rollup -i index.js --file dist.hs --formart umd/es/cjs/iife --name Index`
+```js
+--input(-i) + 入口文件，多入口就写多个-i
+	rollup -i index.js
+	
+--file + 单入口的出口文件名称
+	rollup -i index.js --file dist.js
+--dir + 多入口的出口文件夹
+	rollup -i index.js -i a.js --dir dist
 
-`--input(-i)` + 入口文件，多入口就写多个`-i`    
-` rollup -i index.js
- `--file` + 单入口的出口文件名称   `rollup -i index.js --file dist.js`
-`--dir` + 多入口的出口文件夹    `rollup -i index.js -i a.js --dir dist`
+--format(-f) 后面跟 `cjs/iife/es/umd`；如果是 `umd` 格式，需要加上 `--name` 添加全局变量名称
+	rollup -i index.js -i a.js --dir dist -f cjs/lift/es/umd --name 'Index'
 
-`--format(-f)` 后面跟 `cjs/iife/es/umd`；`umd` 格式，需要加上 `--name` 添加全局变量名称   `rollup -i index.js -i a.js --dir dist --for`
-
-`--watch` 监听文件变化
-`--config(-c)` 确定配置项
-`--environment TEST:123` 配置环境变量 TEST，值为 123
-`--plugin json` 使用 `@rollup/plugin-json`
+--watch 监听文件变化
+--config(-c) 确定配置项
+	rollup --config rollup.config.js
+	
+--environment TEST:123 配置环境变量 TEST，值为 123
+	rollup --config rollup.config.js --environment TEST:123
+	
+--plugin json 使用 `@rollup/plugin-json`
+	rollup --config rollup.config.js --plugin json 全局命令
+	./node_modules/.bin/rollup --config rollup.config.js --plugin json 项目命令
+```
