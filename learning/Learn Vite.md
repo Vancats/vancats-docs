@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-12 23:58
+date updated: 2022-03-15 21:44
 ---
 
 ### 开始
@@ -258,3 +258,4 @@ VITE_TITLE=TEST
 ### HMR 热更新
 
 1. HMR HOT
+2. Vue HMR

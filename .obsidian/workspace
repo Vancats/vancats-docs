@@ -7,8 +7,12 @@
         "id": "2cb50ab361f405f7",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "learning/Learn Vite.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "learning/Learn Vite.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
