@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-15 23:12
+date updated: 2022-03-15 23:15
 ---
 
 ### 开始
@@ -288,8 +288,8 @@ if (import.meta.hot) {
 
 ### 预编译
 
-1. 会生成一个 .vite 文件，里面存放是各个依赖，之后需要加载文件时，可以直接从这里读取
-2. 会自动处理 Common JS，缓存一个处理过的文件，再进行导入
-3. 文件打包在一起，方便后续的使用，如 lodash 依赖中有上百文件，如果不进行处理，每次浏览器刷新时都会重新加载
-4. 第三方的依赖会进行缓存，可以看到 cache-control 是开启的，而 main.js、client 等文件则是 no-cache
-5. 可以在 vite.config.js 中加入 optimize
+1. 会生成一个 `.vite` 文件，里面存放是各个依赖，之后需要加载文件时，可以直接从这里读取
+2. 会自动处理 `Common JS`，缓存一个处理过的文件，再进行导入
+3. 文件打包在一起，方便后续的使用，如 `lodash` 依赖中有上百文件，如果不进行处理，每次浏览器刷新时都会重新加载
+4. 第三方的依赖会进行缓存，可以看到 `cache-control` 是开启的，而 `main.js、client` 等文件则是 `no-cache`
+5. 可以在 `vite.config.js` 中加入 `optimizeDeps` 对象属性，里面有 `include，exclude`，如果有第三方依赖加载进了 `cjs`，需要单独引入
