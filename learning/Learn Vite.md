@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 00:33
+date updated: 2022-03-16 00:48
 ---
 
 ### 开始
@@ -303,11 +303,14 @@ if (import.meta.hot) {
 `rollup -i index.js -i a.js --dir dist` 多入口输出文件夹
 `rollup -i index.js --file dist.hs --formart umd/es/cjs/iife --name Index`
 
-`--input(-i)` + 入口文件，多入口就写多个`-i`
-`--file` + 单入口的出口文件名称
-`--dir` + 多入口的出口文件夹
+`--input(-i)` + 入口文件，多入口就写多个`-i`    
+` rollup -i index.js
+ `--file` + 单入口的出口文件名称   `rollup -i index.js --file dist.js`
+`--dir` + 多入口的出口文件夹    `rollup -i index.js -i a.js --dir dist`
 
-`--format` 后面跟 `cjs/iife/es/umd`；`umd` 格式，需要加上 `--name` 添加全局变量名称
+`--format(-f)` 后面跟 `cjs/iife/es/umd`；`umd` 格式，需要加上 `--name` 添加全局变量名称   `rollup -i index.js -i a.js --dir dist --for`
 
 `--watch` 监听文件变化
 `--config(-c)` 确定配置项
+`--environment TEST:123` 配置环境变量 TEST，值为 123
+`--plugin json` 使用 `@rollup/plugin-json`
