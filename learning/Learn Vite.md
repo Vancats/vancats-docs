@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 00:13
+date updated: 2022-03-16 00:18
 ---
 
 ### 开始
@@ -300,15 +300,14 @@ if (import.meta.hot) {
 
 ### 基本命令
 
-```js
-rollup -i index.js -i a.js --dir dist 多入口输出文件夹
-rollup -i index.js --file dist.hs --formart umd/es/cjs/iife
+`rollup -i index.js -i a.js --dir dist` 多入口输出文件夹
+`rollup -i index.js --file dist.hs --formart umd/es/cjs/iife`
 
+`--input(-i)` + 入口文件，多入口就写多个`-i`
+`--file` + 单入口的出口文件名称
+`--dir` + 多入口的出口文件夹
 
---input(-i) 后面跟入口文件，多入口就写多个 -i
---file 单入口的出口文件
---dir  多入口的出口文件夹
-
-
---format 
+`--format` 后面跟 `cjs/iife/es/umd`
+	当是 `umd` 格式，需要jia shang
+```
 ```
