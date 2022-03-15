@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-15 23:15
+date updated: 2022-03-15 23:21
 ---
 
 ### 开始
@@ -258,6 +258,7 @@ VITE_TITLE=TEST
 ### HMR 热更新
 
 ```js
+// 实际使用的是 import.meta.hot.accept
 function render() {
   document.querySelector('#app').innerHTML = `
     <h1>Hello Vite!</h1>
@@ -265,9 +266,7 @@ function render() {
     <div>hell123o</div>
   `
 }
-
 render()
-
 // 生产中不需要这个
 if (import.meta.hot) {
   // 接收模块并调用该函数
@@ -276,8 +275,8 @@ if (import.meta.hot) {
   })
 }
 
-
-会发送 main.js?import&t=1647353326355
+// 当改变了会发送请求 main.js?import&t=1647353326355
+// websorket 中的更新内容：
 {
 	type: "update"
 	updates: [{type: "js-update", timestamp: 1647353326355, path: "/main.js", acceptedPath: "/main.js"}]
@@ -293,3 +292,7 @@ if (import.meta.hot) {
 3. 文件打包在一起，方便后续的使用，如 `lodash` 依赖中有上百文件，如果不进行处理，每次浏览器刷新时都会重新加载
 4. 第三方的依赖会进行缓存，可以看到 `cache-control` 是开启的，而 `main.js、client` 等文件则是 `no-cache`
 5. 可以在 `vite.config.js` 中加入 `optimizeDeps` 对象属性，里面有 `include，exclude`，如果有第三方依赖加载进了 `cjs`，需要单独引入
+
+
+
+## rollup
