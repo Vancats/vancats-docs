@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-15 23:36
+date updated: 2022-03-15 23:41
 ---
 
 ### 开始
@@ -294,5 +294,11 @@ if (import.meta.hot) {
 5. 可以在 `vite.config.js` 中加入 `optimizeDeps` 对象属性，里面有 `include，exclude`，如果有第三方依赖加载进了 `cjs`，需要单独引入
 
 ## rollup
-1. 以 ESM 为
+
+### 入门
+1. 以 ESM 标准为目标的构建工具，不支持 `require/cjs`，需要 `resolveNode` 工具转换
+2. Tree Shaking，只打包使用的代码
+
 `rollup -i index.js --file dist.hs --formart umd/es/cjs/iife`
+
+### 基本命令
