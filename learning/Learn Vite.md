@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-15 21:44
+date updated: 2022-03-15 22:20
 ---
 
 ### 开始
@@ -257,5 +257,29 @@ VITE_TITLE=TEST
 
 ### HMR 热更新
 
-1. HMR HOT
-2. Vue HMR
+```js
+function render() {
+  document.querySelector('#app').innerHTML = `
+    <h1>Hello Vite!</h1>
+    <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation12312123</a>
+    <div>hell123o</div>
+  `
+}
+
+render()
+
+// 生产中不需要这个
+if (import.meta.hot) {
+  // 接收模块并调用该函数
+  import.meta.hot.accept((newModule) => {
+    newModule.render()
+  })
+}
+
+
+会发送 main.js?import&t=1647353326355
+{
+	type: "update"
+	updates: [{type: "js-update", timestamp: 1647353326355, path: "/main.js", acceptedPath: "/main.js"}]
+ }
+```
