@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 23:06
+date updated: 2022-03-17 02:11
 ---
 
 ### 开始
@@ -410,3 +410,15 @@ export default [
   // },
 ]
 ```
+
+### 常用插件
+
+- Commonjs `@rollup/plugin-commonjs`
+- Babel
+- Typescript  `@rollup/plugin-typescript typescript tslib`
+- node resolve `@rollup/plugin-node-resolve`
+- replace
+- eslint
+- image
+- strip
+- wasm
