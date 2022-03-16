@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 22:16
+date updated: 2022-03-16 22:20
 ---
 
 ### 开始
@@ -303,6 +303,15 @@ if (import.meta.hot) {
 "plugins"
 "publicDir": 静态资源服务的文件夹
 "cacheDir": 默认 node_modules/.vite
+"resolve.alias"
+"resolve.dedupe": 在应用程序中有不同依赖的副本，强制 Vite 解析指定副本
+"resolve.conditions": 对于不同的包有不同的导出方式时
+	"exprts": {
+		".": {
+			"import": "./index/esm.js",
+			"require"
+		}
+	}
 ```
 
 ## rollup
