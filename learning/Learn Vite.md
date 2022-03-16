@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 00:53
+date updated: 2022-03-16 22:16
 ---
 
 ### 开始
@@ -294,11 +294,15 @@ if (import.meta.hot) {
 5. 可以在 `vite.config.js` 中加入 `optimizeDeps` 对象属性，里面有 `include，exclude`，如果有第三方依赖加载进了 `cjs`，需要单独引入
 
 ### Vite 配置项
+
 ```js
 "root": 项目根路径
 "base": 请求前缀
 "mode"
 "define": 定义全局常量替换方式
+"plugins"
+"publicDir": 静态资源服务的文件夹
+"cacheDir": 默认 node_modules/.vite
 ```
 
 ## rollup
