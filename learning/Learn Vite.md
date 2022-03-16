@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-17 02:11
+date updated: 2022-03-17 02:16
 ---
 
 ### 开始
@@ -417,8 +417,8 @@ export default [
 - Babel
 - Typescript  `@rollup/plugin-typescript typescript tslib`
 - node resolve `@rollup/plugin-node-resolve`
-- replace
-- eslint
-- image
-- strip
+- replace  `@rollup/plugin-node-resolve`
+- eslint  `@rollup/plugin-eslint eslint`
+- image  `@rollup/plugin-image`
+- strip  `@rollup/plugin-strip`
 - wasm
