@@ -293,6 +293,14 @@ if (import.meta.hot) {
 4. 第三方的依赖会进行缓存，可以看到 `cache-control` 是开启的，而 `main.js、client` 等文件则是 `no-cache`
 5. 可以在 `vite.config.js` 中加入 `optimizeDeps` 对象属性，里面有 `include，exclude`，如果有第三方依赖加载进了 `cjs`，需要单独引入
 
+### Vite 配置项
+```js
+"root": 项目根路径
+"base": 请求前缀
+"mode"
+"define": 定义全局常量替换方式
+```
+
 ## rollup
 
 1. 以 ESM 标准为目标的构建工具，不支持 `require/cjs`，需要 `resolveNode` 工具转换
