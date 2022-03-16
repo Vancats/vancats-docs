@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 22:26
+date updated: 2022-03-16 22:30
 ---
 
 ### 开始
@@ -317,8 +317,14 @@ if (import.meta.hot) {
 "css.modules": 选项将被传递给 postcss-modules
 "css.postcss": 格式同 postcss.config.js
 "css.preprocessorOptions": 与处理器选项
-"json.namedExports": zhi c
-
+"json.namedExports": 支持 .json 按名导入
+"json.stringify": 导入的 json 将被转换为 export default JSON.parse('...')
+"esbuild"
+"assetsInclude": 指定其他的文件类型为静态资源
+"logLevel": 打印日志级别
+"clearScreen": 设置为 false 可以避免清屏而错过信息
+"envDir": 更改 env 文件存放路径
+"envPrefix": 以其开头的环境变量，通过 import.meta.env 暴露在客户端
 ```
 
 ## rollup
