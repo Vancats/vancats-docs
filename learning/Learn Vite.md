@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 22:35
+date updated: 2022-03-16 23:06
 ---
 
 ### 开始
@@ -360,4 +360,53 @@ server 相关...
 --plugin json 使用 `@rollup/plugin-json`
 	rollup --config rollup.config.js --plugin json 全局命令
 	./node_modules/.bin/rollup --config rollup.config.js --plugin json 项目命令
+```
+
+### 配置文件
+
+```json
+// 使用后可导入 json
+import json from '@rollup/plugin-json'
+// 如果没有 resolve，第三方依赖无法一起打包
+import resolve from '@rollup/plugin-node-resolve'
+// React 使用的是 commonjs 的 buddle，需要解析
+import commonjs from '@rollup/plugin-commonjs'
+// 压缩文件
+import { terser } from 'rollup-plugin-terser'
+
+// 默认是esm，如果使用 module.export = {} 需要更改名称为 rollup.config.cjs
+export default [
+  {
+    input: 'index.js',
+    // external 中的依赖不会被一起打包
+    // external: { 'react': 'React' }, // 如果是对象需要自己加上最后的名称
+    external: ['react'],
+    // 注意前后顺序，前面的先加载
+    plugins: [resolve(), commonjs(), json()],
+    // 也可以是数组形式，但是建议使用外面的大数组
+    output: [
+      {
+        file: 'dist/index.es.js',
+        format: 'es',
+        // 这里也可以加载少部分插件，如压缩
+        // plugins: [terser()],
+        banner: '/** Hello World **/'
+      },
+      {
+        file: 'dist/index.umd.js',
+        format: 'umd',
+        name: 'Index'
+      }
+    ]
+  },
+  // {
+  //   input: 'index.js',
+  //   plugins: [resolve(), commonjs(), json()],
+  //   output: {
+  //     file: 'dist/index.umd.js',
+  //     format: 'umd',
+  //     name: 'Index'
+  //   }
+  // },
+]
 ```
