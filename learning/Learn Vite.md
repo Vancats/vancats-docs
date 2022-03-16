@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 22:30
+date updated: 2022-03-16 22:35
 ---
 
 ### 开始
@@ -324,7 +324,11 @@ if (import.meta.hot) {
 "logLevel": 打印日志级别
 "clearScreen": 设置为 false 可以避免清屏而错过信息
 "envDir": 更改 env 文件存放路径
-"envPrefix": 以其开头的环境变量，通过 import.meta.env 暴露在客户端
+"envPrefix": 以其开头的环境变量，通过 import.meta.env 暴露在客户端源码中，不能置为空字符串
+
+server 相关...
+
+构建相关...
 ```
 
 ## rollup
