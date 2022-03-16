@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "chore/Config.md",
+            "file": "learning/Learn Vite.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5
+    "width": 216.5,
+    "collapsed": true
   },
   "right": {
     "id": "8e347e94747a4a72",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chore/Config.md",
+                "file": "learning/Learn Vite.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,8 +102,8 @@
   },
   "active": "f536896d3b7d6327",
   "lastOpenFiles": [
-    "chore/Config.md",
     "learning/Learn Vite.md",
+    "chore/Config.md",
     "chore/LeetCode.md",
     "learning/Learn JS.md",
     "learning/Learn RegExp.md",

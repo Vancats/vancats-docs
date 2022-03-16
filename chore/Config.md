@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-17 01:17
+date updated: 2022-03-17 02:06
 ---
 
 ### .browserslistrc
@@ -640,7 +640,7 @@ npm link
   },
   // vim 配置
   "vim.handleKeys": {
-    "%3CC-a%3E": false,
+    "<C-a>": false,
     "<C-x>": false,
     "<C-c>": false,
     "<C-v>": false,
