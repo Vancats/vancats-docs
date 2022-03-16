@@ -103,6 +103,7 @@
   "active": "f536896d3b7d6327",
   "lastOpenFiles": [
     "learning/Learn Vite.md",
+    "chore/LeetCode.md",
     "learning/Learn JS.md",
     "learning/Learn RegExp.md",
     "learning/Learn Interview.md",
@@ -110,7 +111,6 @@
     "learning/Learn HTML.md",
     "learning/Learn React.md",
     "learning/Learn Vue3.md",
-    "learning/Learn Vue.md",
-    "chore/Plugins.md"
+    "learning/Learn Vue.md"
   ]
 }
