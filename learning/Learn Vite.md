@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-16 22:20
+date updated: 2022-03-16 22:26
 ---
 
 ### 开始
@@ -309,9 +309,16 @@ if (import.meta.hot) {
 	"exprts": {
 		".": {
 			"import": "./index/esm.js",
-			"require"
+			"require": "./index.cjs.js"
 		}
 	}
+"resolve.mainFields": 指定关键字读取文件 -- main ｜ module
+"resolve.extensions": ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'] 从左向右读取文件
+"css.modules": 选项将被传递给 postcss-modules
+"css.postcss": 格式同 postcss.config.js
+"css.preprocessorOptions": 与处理器选项
+"json.namedExports": zhi c
+
 ```
 
 ## rollup
