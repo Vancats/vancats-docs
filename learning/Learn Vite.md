@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 17:03
-date updated: 2022-03-17 02:16
+date updated: 2022-03-17 02:21
 ---
 
 ### 开始
@@ -417,8 +417,10 @@ export default [
 - Babel
 - Typescript  `@rollup/plugin-typescript typescript tslib`
 - node resolve `@rollup/plugin-node-resolve`
-- replace  `@rollup/plugin-node-resolve`
+- replace  `@rollup/plugin-replace`
 - eslint  `@rollup/plugin-eslint eslint`
 - image  `@rollup/plugin-image`
-- strip  `@rollup/plugin-strip`
+- strip  `@rollup/plugin-strip` 删除 console.log 的代码
 - wasm
+
+## esbuild
