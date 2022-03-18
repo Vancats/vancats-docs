@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn Vite.md",
+            "file": "learning/Learn 浏览器原理.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn Vite.md",
+                "file": "learning/Learn 浏览器原理.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -100,6 +100,8 @@
   },
   "active": "f536896d3b7d6327",
   "lastOpenFiles": [
+    "learning/Learn 浏览器原理.md",
+    "learning/Learn HTML.md",
     "learning/Learn Vite.md",
     "chore/Config.md",
     "chore/LeetCode.md",
@@ -107,8 +109,6 @@
     "learning/Learn RegExp.md",
     "learning/Learn Interview.md",
     "learning/Learn HTTP.md",
-    "learning/Learn HTML.md",
-    "learning/Learn React.md",
-    "learning/Learn Vue3.md"
+    "learning/Learn React.md"
   ]
 }
