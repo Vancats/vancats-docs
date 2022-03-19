@@ -23,4 +23,4 @@ date updated: 2022-03-19 20:01
 - class ReactiveEffect(fn)
 	- run
 - export track(target, key)
-- export trigger(target, key)
+- export w;trigger(target, key)
