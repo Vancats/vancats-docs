@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-19 20:01
+date updated: 2022-03-19 20:16
 ---
 
 ##### 配置 jest 环境
@@ -15,12 +15,17 @@ date updated: 2022-03-19 20:01
 
 **全局变量**
 
-- activeEffect
-- targetMap = new Map(target, depsMap = new Map(key, deps = new Set(activeEffect)))
+- `activeEffect`
+- `targetMap` = new Map(target, `depsMap` = new Map(key, `deps` = new Set(activeEffect)))
 
 **函数**
 
-- class ReactiveEffect(fn)
-	- run
-- export track(target, key)
-- export w;trigger(target, key)
+- class `ReactiveEffect` (fn)
+	- `run`
+- export `track` (target, key)
+- export `trigger` (target, key)
+- export `effect` (fn) { return `runner` }
+
+#### reactive
+
+- new `Proxy`(raw,  { `get`(target,  key) { `track` () }, `set`(target, key, value) { `trigger` () } })
