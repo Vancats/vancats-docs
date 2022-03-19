@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 00:20
+date updated: 2022-03-20 00:22
 ---
 
 ##### 配置 jest 环境
@@ -24,7 +24,7 @@ date updated: 2022-03-20 00:20
 	- 参数：fn, scheduler, deps(存放所有和该 effect 相关的 dep), active(stop 中性能优化使用), onStop(使用 stop 时的回调)
 	- `run`
 	- `stop`
-- export `track` (target, key) 依赖收集，分为三层；注意点：如果只是依赖收集，和 
+- export `track` (target, key) 依赖收集，分为三层；注意点：如果只是依赖收集，和 effect 相关的内容不执行
 - export `trigger` (target, key)
 - export `stop` 调用 ReactEffect 的 stop
 - export `effect`
