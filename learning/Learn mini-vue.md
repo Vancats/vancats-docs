@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-19 21:24
+date updated: 2022-03-19 21:35
 ---
 
 ##### 配置 jest 环境
@@ -23,9 +23,10 @@ date updated: 2022-03-19 21:24
 - class `ReactiveEffect` (fn, scheduler?)
 	- `run`
 - export `track` (target, key) 依赖收集，分为三层
-- export `trigger` (target, key) { scheduler? scheduler() : run()} 触发依赖，如果有 scheduler 就执行
-- export `effect` (fn, options = { scheduler}) { return `runner` }
-	- 返回值 runner：调用 fn，并且返回 fn 的返回值
+- export `trigger` (target, key)
+- export `effect`
+	- 返回值 `runner`：调用 fn，并且返回 fn 的返回值
+	- `scheduler`：初始化执行 fn，后续的 trigger 执行 scheduler
 
 #### reactive
 
