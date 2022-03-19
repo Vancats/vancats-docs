@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-19 21:22
+date updated: 2022-03-19 21:24
 ---
 
 ##### 配置 jest 环境
@@ -24,7 +24,7 @@ date updated: 2022-03-19 21:22
 	- `run`
 - export `track` (target, key) 依赖收集，分为三层
 - export `trigger` (target, key) { scheduler? scheduler() : run()} 触发依赖，如果有 scheduler 就执行
-- export `effect` (fn) { return `runner` }
+- export `effect` (fn, options = { scheduler}) { return `runner` }
 
 #### reactive
 
