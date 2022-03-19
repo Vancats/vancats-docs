@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-19 21:35
+date updated: 2022-03-19 23:59
 ---
 
 ##### 配置 jest 环境
@@ -21,6 +21,7 @@ date updated: 2022-03-19 21:35
 **函数**
 
 - class `ReactiveEffect` (fn, scheduler?)
+	- 参数：fn, scheduler, deps(存放所有和该 effect 相关的 dep), active(stop 中性能优化使用)
 	- `run`
 - export `track` (target, key) 依赖收集，分为三层
 - export `trigger` (target, key)
