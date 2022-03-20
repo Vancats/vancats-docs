@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 22:34
+date updated: 2022-03-20 22:55
 ---
 
 #### 配置 jest 环境
@@ -46,11 +46,12 @@ date updated: 2022-03-20 22:34
 
 ###### 函数
 
-- export `reactive` raw
-- export `readonly` raw
-- `createActiveObject` raw, baseHandlers
-- `isReactive`
-- `isReadonly`
+- export `reactive`
+- export `readonly`
+- export `shallowReadonly`
+- `createActiveObject`
+- export `isReactive`
+- export `isReadonly`
 
 #### baseHandles
 
@@ -58,3 +59,4 @@ date updated: 2022-03-20 22:34
 - createSetter
 - mutableHandlers：注意使用外部 get，而不是每次都重复生成
 - readonlyHandlers
+- shallowReadonlyHandlers
