@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 20:49
+date updated: 2022-03-20 20:50
 ---
 
 #### 配置 jest 环境
@@ -40,7 +40,7 @@ date updated: 2022-03-20 20:49
 
 - ReactiveFlags
 	- IS_REACTIVE: `__v_isReactive`
-	- IS_READONLY: `__v_isReactive`
+	- IS_READONLY: `__v_isReadonly`
 
 ###### 函数
 
