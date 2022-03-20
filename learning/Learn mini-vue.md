@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 22:55
+date updated: 2022-03-20 23:04
 ---
 
 #### 配置 jest 环境
@@ -52,6 +52,7 @@ date updated: 2022-03-20 22:55
 - `createActiveObject`
 - export `isReactive`
 - export `isReadonly`
+- export `isProxy`
 
 #### baseHandles
 
