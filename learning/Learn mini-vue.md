@@ -1,9 +1,9 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 19:10
+date updated: 2022-03-20 20:32
 ---
 
-##### 配置 jest 环境
+#### 配置 jest 环境
 
 - 安装依赖
 	- typescript、jest、@types/jest    **添加 tsconfig.json  npx tsc --init**
