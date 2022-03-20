@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 18:58
+date updated: 2022-03-20 19:08
 ---
 
 ##### 配置 jest 环境
@@ -45,3 +45,8 @@ date updated: 2022-03-20 18:58
 - `createActiveObject` raw, baseHandlers
 
 #### baseHandles
+
+- createGetter
+- createSetter
+- mutableHandlers：注意使用外部 get，而不是每次都重复生成
+- readonlyHandlers
