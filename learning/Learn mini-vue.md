@@ -27,12 +27,12 @@ date updated: 2022-03-20 00:28
 - export `track` (target, key) 依赖收集，分为三层；注意点：如果只是依赖收集，和 effect 相关的内容不执行
 - export `trigger` (target, key)
 - export `stop` 调用 ReactEffect 的 stop
-- export `effect`
-	- 通过 ReactEffect 生成 `_effect`
-	- 返回值 `runner`：调用 fn，并且返回 fn 的返回值
-	- `options`
-		- `scheduler`：初始化执行 fn，后续的 trigger 执行 scheduler
-		- `stop`：通过直接删除和该 effect 相关的所有 deps 来中止后续的响应式，可以实现回调
+	- export `effect`
+		- 通过 ReactEffect 生成 `_effect`
+		- 返回值 `runner`：调用 fn，并且返回 fn 的返回值
+		- `options`
+			- `scheduler`：初始化执行 fn，后续的 trigger 执行 scheduler
+			- `stop`：通过直接删除和该 effect 相关的所有 deps 来中止后续的响应式，可以实现回调
 
 #### reactive.ts
 
