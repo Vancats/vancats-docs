@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 20:50
+date updated: 2022-03-20 22:04
 ---
 
 #### 配置 jest 环境
@@ -16,6 +16,7 @@ date updated: 2022-03-20 20:50
 ###### 全局变量
 
 - `activeEffect`
+- `shouldTrack`
 - `targetMap` = new Map(target, `depsMap` = new Map(key, `deps` = new Set(activeEffect)))
 
 ###### 函数
