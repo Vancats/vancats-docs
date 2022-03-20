@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 22:04
+date updated: 2022-03-20 22:08
 ---
 
 #### 配置 jest 环境
@@ -27,6 +27,7 @@ date updated: 2022-03-20 22:04
 	- `stop`
 - export `track` (target, key) 依赖收集，分为三层；注意点：如果只是依赖收集，和 effect 相关的内容不执行
 - export `trigger` (target, key)
+- `isTracking`：解决 stop 后，get 时继续收集依赖问题
 - export `stop` 调用 ReactEffect 的 stop
 	- export `effect`
 		- 通过 ReactEffect 生成 `_effect`
