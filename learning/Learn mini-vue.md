@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 22:29
+date updated: 2022-03-20 22:34
 ---
 
 #### 配置 jest 环境
@@ -54,7 +54,7 @@ date updated: 2022-03-20 22:29
 
 #### baseHandles
 
-- createGetter
+- createGetter：实现对象嵌套 reactive
 - createSetter
 - mutableHandlers：注意使用外部 get，而不是每次都重复生成
 - readonlyHandlers
