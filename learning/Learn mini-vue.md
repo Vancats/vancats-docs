@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 00:28
+date updated: 2022-03-20 18:58
 ---
 
 ##### 配置 jest 环境
@@ -11,14 +11,14 @@ date updated: 2022-03-20 00:28
 
 ## Reactive
 
-#### effect.ts
+#### effect
 
-**全局变量**
+###### 全局变量
 
 - `activeEffect`
 - `targetMap` = new Map(target, `depsMap` = new Map(key, `deps` = new Set(activeEffect)))
 
-**函数**
+###### 函数
 
 - class `ReactiveEffect` (fn, scheduler?)
 	- 参数：fn, scheduler, deps(存放所有和该 effect 相关的 dep), active(stop 中性能优化使用), onStop(使用 stop 时的回调)
@@ -34,6 +34,14 @@ date updated: 2022-03-20 00:28
 			- `scheduler`：初始化执行 fn，后续的 trigger 执行 scheduler
 			- `stop`：通过直接删除和该 effect 相关的所有 deps 来中止后续的响应式，可以实现回调
 
-#### reactive.ts
+#### reactive
 
 - new `Proxy`(raw,  { `get`(target,  key) { `track` () }, `set`(target, key, value) { `trigger` () } })
+
+###### 函数
+
+- export `reactive` raw
+- export `readonly` raw
+- `createActiveObject` raw, baseHandlers
+
+#### baseHandles
