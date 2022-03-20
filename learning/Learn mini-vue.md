@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-20 20:32
+date updated: 2022-03-20 20:49
 ---
 
 #### 配置 jest 环境
@@ -36,13 +36,19 @@ date updated: 2022-03-20 20:32
 
 #### reactive
 
-- new `Proxy`(raw,  { `get`(target,  key) { `track` () }, `set`(target, key, value) { `trigger` () } })
+#### 全局变量
+
+- ReactiveFlags
+	- IS_REACTIVE: `__v_isReactive`
+	- IS_READONLY: `__v_isReactive`
 
 ###### 函数
 
 - export `reactive` raw
 - export `readonly` raw
 - `createActiveObject` raw, baseHandlers
+- `isReactive`
+- `isReadonly`
 
 #### baseHandles
 
