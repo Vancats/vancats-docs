@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "f536896d3b7d6327",
+        "id": "eb5e50068f70e2fc",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "learning/Learn mini-vue.md",
-            "mode": "preview",
+            "mode": "source",
             "source": false
           }
         }
@@ -99,7 +99,7 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "f536896d3b7d6327",
+  "active": "eb5e50068f70e2fc",
   "lastOpenFiles": [
     "learning/Learn mini-vue.md",
     "chore/Config.md",
