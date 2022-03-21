@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-22 01:18
+date updated: 2022-03-22 01:22
 ---
 
 #### 配置 jest 环境
@@ -64,5 +64,23 @@ date updated: 2022-03-22 01:18
 - shallowReadonlyHandlers
 
 ### computed
+
 - `computed`
-- ``
+- `ComputedRefImpl`
+	- `dirty`
+	- `getter`
+	- `_value`
+	- `_effect`
+
+### ref
+
+- class `RefImpl`
+	- `_value`
+	- `public dep`
+	- `_rawValue`
+	- `__v_isRef`
+- `convert`
+- `trackRefValue`
+- `isRef`
+- `unRef`
+- `proxyRefs`
