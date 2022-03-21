@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn HTML.md",
-            "mode": "source",
+            "file": "learning/Learn mini-vue.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn HTML.md",
+                "file": "learning/Learn mini-vue.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -91,24 +91,25 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 185,
+    "width": 174,
     "collapsed": true
   },
   "active": "f536896d3b7d6327",
   "lastOpenFiles": [
-    "learning/Learn HTML.md",
-    "learning/Learn 浏览器原理.md",
-    "learning/Learn Vite.md",
+    "learning/Learn mini-vue.md",
     "chore/Config.md",
+    "learning/未命名.md",
+    "learning/前端算法.md",
+    "learning/JS 题目.md",
+    "learning/Learn CSS.md",
+    "learning/设计模式.md",
+    "learning/Learn Vite.md",
     "chore/LeetCode.md",
-    "learning/Learn JS.md",
-    "learning/Learn RegExp.md",
-    "learning/Learn Interview.md",
-    "learning/Learn HTTP.md",
-    "learning/Learn React.md"
+    "learning/Learn JS.md"
   ]
 }
