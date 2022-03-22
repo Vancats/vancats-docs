@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-22 01:22
+date updated: 2022-03-22 21:01
 ---
 
 #### 配置环境
@@ -29,13 +29,13 @@ date updated: 2022-03-22 01:22
 - `cleanupEffect`
 - export `trigger` (target, key)
 - `isTracking`：解决 stop 后，get 时继续收集依赖问题
-- export `stop` 调用 ReactEffect 的 stop
-	- export `effect`
-		- 通过 ReactEffect 生成 `_effect`
-		- 返回值 `runner`：调用 fn，并且返回 fn 的返回值
-		- `options`
-			- `scheduler`：初始化执行 fn，后续的 trigger 执行 scheduler
-			- `stop`：通过直接删除和该 effect 相关的所有 deps 来中止后续的响应式，可以实现回调
+- export `stop` 调用 ReactiveEffect 的 stop
+- export `effect`
+	- 通过 ReactEffect 生成 `_effect`
+	- 返回值 `runner`：调用 fn，并且返回 fn 的返回值
+	- `options`
+		- `scheduler`：初始化执行 fn，后续的 trigger 执行 scheduler
+		- `stop`：通过直接删除和该 effect 相关的所有 deps 来中止后续的响应式，可以实现回调
 
 ### reactive
 
