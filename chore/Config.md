@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-23 22:02
+date updated: 2022-03-24 19:29
 ---
 
 ### .browserslistrc
@@ -186,7 +186,7 @@ npm pack 将 package 打包成 tgz 格式
 npm link
 ```
 
-### package.json
+### settings.json
 
 ```json
 {
