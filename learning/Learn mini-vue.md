@@ -102,3 +102,5 @@ date updated: 2022-03-25 20:58
 - setupState
 - finishComponentSetup
 - setupRenderEffect -> renderer
+- instance.render
+- patch(subTree)
