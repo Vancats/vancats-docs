@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-23 22:02
+date updated: 2022-03-25 20:58
 ---
 
 #### 配置环境
@@ -86,3 +86,19 @@ date updated: 2022-03-23 22:02
 - `proxyRefs`
 
 ## Runtime-core
+
+- createApp
+- mount <- createVNode.ts
+- render -> renderer.ts
+- patch
+- processComponent
+- mountComponent
+- createComponentInstance -> component.ts
+- setupComponent -> component.ts
+- TODO   initProps、initSlots
+- setupStatefulComponent
+- setupResult
+- handerSetupResult
+- setupState
+- finishComponentSetup
+- setupRenderEffect -> renderer
