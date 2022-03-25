@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-24 19:29
+date updated: 2022-03-25 15:02
 ---
 
 ### .browserslistrc
@@ -189,7 +189,7 @@ npm link
 ### settings.json
 
 ```json
-{
+[{
   // tab 大小为2个空格
   "editor.tabSize": 2,
   // 注释 I/H
@@ -394,5 +394,216 @@ npm link
   "javascript.validate.enable": false,
   "workbench.startupEditor": "none",
   "cSpell.allowCompoundWords": true,
-}
+}a](<{
+  // tab 大小为2个空格
+  "editor.tabSize": 2,
+  // 注释 I/H
+  "fileheader.customMade": {
+    "Date": "Do not edit",
+    "LastEditTime": "Do not edit",
+    "Description": "我添加了修改"
+  },
+  "fileheader.cursorMode": {
+    "description": "Annotation",
+    "return": ""
+  },
+  "fileheader.configObj": {
+    "autoAdd": true,
+    "prohibitAutoAdd": [
+      "json",
+      "md",
+      "js",
+      "ts",
+      "html",
+      "css",
+      "less",
+      "scss",
+      "jsx",
+      "vue"
+    ],
+  },
+  // 字体，颜色，字号，主题
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "workbench.colorTheme": "Dracula At Night",
+  "vsicons.dontShowNewVersionMessage": true,
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+  "workbench.iconTheme": "vscode-icons",
+  // 自动保存，滚轮缩放，自动换行，文件删除、移动确认
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "diffEditor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  // 自动更新路径，删除css，js行末分号，文件引入双引号
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "css.completion.completePropertyWithSemicolon": false,
+  "less.completion.completePropertyWithSemicolon": false,
+  "scss.completion.completePropertyWithSemicolon": false,
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "autoimport.doubleQuotes": true,
+  // 括号样式
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "bracket-pair-colorizer-2.highlightActiveScope": false,
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showBracketsInRuler": true,
+  "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+  "bracket-pair-colorizer-2.colors": [
+    "Gold",
+    "Orchid",
+    "LightSkyBlue"
+  ],
+  // 终端以及工作台样式
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono, Fira Code",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#212121",
+    "terminal.foreground": "#b9a7e4",
+    "terminalCursor.background": "#c4bfa5",
+    "terminalCursor.foreground": "#81B5AC"
+  },
+  // vim 配置
+  "vim.handleKeys": {
+    "%3CC-a%3E": false,
+    "<C-x>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-f>": false,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-j>": false,
+    "<C-d>": false,
+    "<C-y>": false
+  },
+  // code spell 配置
+  "cSpell.allowCompoundWords": true,
+  "cSpell.userWords": [
+    "mixins",
+    "vite",
+    "vitejs",
+    "mockjs",
+    "vuedx",
+    "leiqifan",
+    "execa",
+    "nums",
+    "NlogN",
+    "NlgN",
+    "todos",
+    "lvite"
+  ],
+  // github copilot 配置
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  // background 配置
+  "update.enableWindowsBackgroundUpdates": true,
+  "background.customImages": [
+    "file:///C:/Users/leiqifan/Desktop/files/file/dm/dm.png" // 图片地址
+  ],
+  "background.style": {
+    "content": "''",
+    "pointer-events": "none",
+    "position": "absolute", // 图片位置
+    "width": "100%",
+    "height": "100%",
+    "z-index": "99999",
+    "background.repeat": "no-repeat",
+    "background-size": "20%,20%", // 图片大小
+    "opacity": 0.2 // 透明度
+  },
+  "background.useFront": true,
+  "background.useDefault": false,
+  // leetcode 配置
+  "leetcode.defaultLanguage": "typescript",
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.workspaceFolder": "C:\\Users\\leiqifan\\.leetcode",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commentDescription": false,
+  // 杂项
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "diffEditor.maxComputationTime": 0,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "javascript.validate.enable": false,
+  "workbench.startupEditor": "none",
+  "editor.inlineSuggest.enabled": true,
+  // eslint 检测文件类型和工作目录
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": [
+    ".eslintrc.js",
+    {
+      "mode": "auto"
+    }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  // 配置错误警告
+  "vetur.ignoreProjectWarning": true,
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  // 保存时格式化并启用 eslint修复
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  // "javascript.format.insertSpaceBeforeFunctionParenthesis": true, // 函数名称前 加一个空格
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatterOptions": {
+    "prettyhtml": {
+      "printWidth": 120,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    },
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline",
+      "semi": false,
+    },
+    "prettier": {
+      "printWidth": 120, // 指定代码长度，超出换行
+      "tabWidth": 2, // tab 键的宽度
+      "useTabs": false, // 不使用tab
+      "semi": false,
+      "singleQuote": true,
+      "quoteProps": "as-needed",
+      "jsxSingleQuote": false, // 在jsx中使用单引号代替双引号
+      "trailingComma": "none", //禁止随时添加逗号,这个很重要
+      "bracketSpacing": true,
+      "jsxBracketSameLine": false, // 在jsx中把'>' 是否单独放一行
+      "arrowParens": "avoid", // 为单行箭头函数的参数添加圆括号
+      "requirePragma": false, // 是否严格按照文件顶部的特殊注释格式化代码
+      "insertPragma": false, // 是否在格式化的文件顶部插入Pragma标记，以表明该文件被prettier格式化过了
+      "proseWrap": "always", // 文本样式进行折行
+      "htmlWhitespaceSensitivity": "ignore", // html文件的空格敏感度，控制空格是否影响布局
+      "endOfLine": "auto" // 结尾是 \n \r \n\r auto
+    }
+  },
+}>)
 ```
