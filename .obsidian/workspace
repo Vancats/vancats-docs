@@ -102,14 +102,14 @@
   "active": "eb5e50068f70e2fc",
   "lastOpenFiles": [
     "chore/Config.md",
-    "learning/Learn Interview.md",
-    "learning/Learn HTTP.md",
-    "learning/JS 题目.md",
-    "learning/Learn 浏览器原理.md",
-    "learning/Learn CSS.md",
-    "learning/Learn HTML.md",
+    "chore/Plugins.md",
+    "learning/Learn Vite.md",
+    "learning/Learn Vue.md",
+    "chore/Webpack.md",
+    "chore/LeetCode.md",
+    "chore/Git.md",
+    "learning/Learn Vue3.md",
     "learning/Learn mini-vue.md",
-    "learning/未命名.md",
-    "learning/前端算法.md"
+    "js/模板引擎.md"
   ]
 }

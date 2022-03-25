@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-23 22:02
+date updated: 2022-03-25 15:10
 ---
 
 ### .browserslistrc
@@ -186,7 +186,7 @@ npm pack 将 package 打包成 tgz 格式
 npm link
 ```
 
-### package.json
+### settings.json
 
 ```json
 {
@@ -274,6 +274,7 @@ npm link
     "<C-y>": false
   },
   // code spell 配置
+  "cSpell.allowCompoundWords": true,
   "cSpell.userWords": [
     "mixins",
     "vite",
@@ -284,8 +285,20 @@ npm link
     "execa",
     "nums",
     "NlogN",
-    "NlgN"
+    "NlgN",
+    "todos",
+    "lvite",
+    "todolist",
+    "vueuse",
+    "vuex",
   ],
+  // github copilot 配置
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
   // background 配置
   "update.enableWindowsBackgroundUpdates": true,
   "background.customImages": [
@@ -305,7 +318,7 @@ npm link
   "background.useFront": true,
   "background.useDefault": false,
   // leetcode 配置
-  "leetcode.defaultLanguage": "javascript",
+  "leetcode.defaultLanguage": "typescript",
   "leetcode.endpoint": "leetcode-cn",
   "leetcode.workspaceFolder": "C:\\Users\\leiqifan\\.leetcode",
   "leetcode.hint.configWebviewMarkdown": false,
@@ -313,10 +326,12 @@ npm link
   // 杂项
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "minapp-vscode.disableAutoConfig": true,
   "diffEditor.maxComputationTime": 0,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
+  "javascript.validate.enable": false,
+  "workbench.startupEditor": "none",
+  "editor.inlineSuggest.enabled": true,
   // eslint 检测文件类型和工作目录
   "eslint.validate": [
     "vue",
@@ -346,20 +361,17 @@ npm link
   },
   // 配置错误警告
   "vetur.ignoreProjectWarning": true,
-  // 保存的时候格式化
-  // 保存时eslint修复
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  // 保存时格式化并启用 eslint修复
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  },
-  // vutur默认格式
   // "vetur.format.defaultFormatter.js": "prettier",
   "vetur.format.defaultFormatter.js": "vscode-typescript",
-  // 函数名称前 加一个空格
-  // "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // "javascript.format.insertSpaceBeforeFunctionParenthesis": true, // 函数名称前 加一个空格
   "vetur.format.defaultFormatter.html": "prettyhtml",
   "vetur.format.defaultFormatterOptions": {
     "prettyhtml": {
@@ -391,8 +403,5 @@ npm link
       "endOfLine": "auto" // 结尾是 \n \r \n\r auto
     }
   },
-  "javascript.validate.enable": false,
-  "workbench.startupEditor": "none",
-  "cSpell.allowCompoundWords": true,
 }
 ```
