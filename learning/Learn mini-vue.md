@@ -88,7 +88,7 @@ date updated: 2022-03-25 20:58
 ## Runtime-core
 
 - createApp
-- mount <- createVNode.ts
+- mount <- createVNode
 - render -> renderer.ts
 - patch
 - processComponent
