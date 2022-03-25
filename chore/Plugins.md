@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-03-11 20:34
+date updated: 2022-03-25 14:48
 ---
 
 ## VSCode Plugins
@@ -21,6 +21,7 @@ date updated: 2022-03-11 20:34
 12. One Mono kai Theme
 13. Pink-Cat-Boo Theme
 14. vscode-icons
+15. Neon Night
 
 ### Easy Work
 
@@ -79,3 +80,5 @@ date updated: 2022-03-11 20:34
 26. Markdown All in One
 27. Markdown Preview Enhanced
 28. Chinese
+29. github copilot
+30. jest
