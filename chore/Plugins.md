@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-03-25 14:48
+date updated: 2022-03-25 14:51
 ---
 
 ## VSCode Plugins
@@ -22,6 +22,7 @@ date updated: 2022-03-25 14:48
 13. Pink-Cat-Boo Theme
 14. vscode-icons
 15. Neon Night
+16. Vitesse Theme
 
 ### Easy Work
 
@@ -49,6 +50,7 @@ date updated: 2022-03-25 14:48
 22. Simple React Snippets
 23. ES7 React/Redux/GraphQL/React-Native snippets
 24. React/Redux/Typescript/Javascript/Omi snippets
+25. Typescript Vue Plugin (Volar)
 
 ### Tools
 
@@ -82,3 +84,4 @@ date updated: 2022-03-25 14:48
 28. Chinese
 29. github copilot
 30. jest
+31. project-tree
