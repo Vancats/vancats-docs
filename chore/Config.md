@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-25 15:10
+date updated: 2022-03-26 20:01
 ---
 
 ### .browserslistrc
@@ -261,6 +261,17 @@ npm link
     "terminalCursor.foreground": "#81B5AC"
   },
   // vim 配置
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-x>": false,
@@ -291,6 +302,7 @@ npm link
     "todolist",
     "vueuse",
     "vuex",
+    "vnode",
   ],
   // github copilot 配置
   "github.copilot.enable": {
