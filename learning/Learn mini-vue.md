@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-25 20:58
+date updated: 2022-03-27 23:49
 ---
 
 #### 配置环境
@@ -87,20 +87,64 @@ date updated: 2022-03-25 20:58
 
 ## Runtime-core
 
+### createApp
+
+- mount
+
+
+
+### componentPublicInstance
+
+- publicPropertiesMap
+- PublicInstanceProxyHandlers
+
+### componentProps
+
+- initProps
+
+### componentEmit
+
+- initEmit
+
 - createApp
+
 - mount <- createVNode
+
 - render -> renderer.ts
+
 - patch
+
 - processComponent
+
 - mountComponent
+
 - createComponentInstance -> component.ts
+
 - setupComponent -> component.ts
+
 - TODO   initProps、initSlots
+
 - setupStatefulComponent
+
 - setupResult
+
 - handerSetupResult
+
 - setupState
+
 - finishComponentSetup
+
 - setupRenderEffect -> renderer
+
 - instance.render
+
 - patch(subTree)
+
+### h
+
+### ShapeFlags
+
+### vnode
+
+- createVNode
+- getShapeFlag
