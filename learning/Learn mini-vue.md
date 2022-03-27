@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-27 23:49
+date updated: 2022-03-27 23:53
 ---
 
 #### 配置环境
@@ -91,7 +91,25 @@ date updated: 2022-03-27 23:49
 
 - mount
 
+### renderer
 
+- render
+- patch
+- processComponent
+- mountComponent
+- createComponentInstance
+- setupComponent
+- setupRenderEffect
+- processElement
+- mountElement
+- mountChildren
+
+### component
+
+- createComponentInstance
+- setupComponent
+- handerSetupResult
+- finishComponentSetup
 
 ### componentPublicInstance
 
@@ -105,40 +123,6 @@ date updated: 2022-03-27 23:49
 ### componentEmit
 
 - initEmit
-
-- createApp
-
-- mount <- createVNode
-
-- render -> renderer.ts
-
-- patch
-
-- processComponent
-
-- mountComponent
-
-- createComponentInstance -> component.ts
-
-- setupComponent -> component.ts
-
-- TODO   initProps、initSlots
-
-- setupStatefulComponent
-
-- setupResult
-
-- handerSetupResult
-
-- setupState
-
-- finishComponentSetup
-
-- setupRenderEffect -> renderer
-
-- instance.render
-
-- patch(subTree)
 
 ### h
 
