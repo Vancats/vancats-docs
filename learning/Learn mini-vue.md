@@ -140,3 +140,5 @@ date updated: 2022-03-28 19:35
 
 - createVNode
 - getShapeFlag
+- Text
+- Fragment
