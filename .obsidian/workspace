@@ -103,13 +103,13 @@
   "lastOpenFiles": [
     "learning/Learn mini-vue.md",
     "chore/Config.md",
-    "learning/Learn Interview.md",
-    "learning/Learn React.md",
-    "learning/Learn Vue3.md",
-    "learning/Learn Vue.md",
-    "learning/Learn RegExp.md",
     "chore/Plugins.md",
     "learning/Learn Vite.md",
-    "chore/Webpack.md"
+    "learning/Learn Vue.md",
+    "chore/Webpack.md",
+    "chore/LeetCode.md",
+    "chore/Git.md",
+    "learning/Learn Vue3.md",
+    "js/模板引擎.md"
   ]
 }
