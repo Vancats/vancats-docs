@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-27 23:53
+date updated: 2022-03-28 19:35
 ---
 
 #### 配置环境
@@ -123,6 +123,14 @@ date updated: 2022-03-27 23:53
 ### componentEmit
 
 - initEmit
+
+### componentSlot
+
+- initSlots
+- normalizeObjectSlots
+- normalizeSlotValue
+
+### renderSlots
 
 ### h
 
