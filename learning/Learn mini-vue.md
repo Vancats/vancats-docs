@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-28 22:49
+date updated: 2022-03-29 22:23
 ---
 
 #### 配置环境
@@ -108,6 +108,7 @@ date updated: 2022-03-28 22:49
 
 - createComponentInstance
 - setupComponent
+- setupStatefulComponent
 - handerSetupResult
 - finishComponentSetup
 - getCurrentInstance
