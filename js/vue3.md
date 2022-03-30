@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-30 19:31
+date updated: 2022-03-30 19:34
 ---
 
 vue.with compiler
@@ -44,6 +44,13 @@ template =>(粗糙) ast => transform(深加工) => ast => generate(代码生成)
 - renderer
 - errorHandling
 - createApp
+
+### runtime-dom
+
+- nodeOps
+- patchProps: class、style、attrs、event
+- directives
+- components
 
 ### compile-dom
 
