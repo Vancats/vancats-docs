@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "chore/Plugins.md",
+            "file": "js/vue3.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chore/Plugins.md",
+                "file": "js/vue3.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "eb5e50068f70e2fc",
   "lastOpenFiles": [
+    "js/vue3.md",
+    "js/Vue2.md",
+    "learning/Learn mini-vue.md",
     "chore/Plugins.md",
     "chore/LeetCode.md",
     "chore/Webpack.md",
     "chore/Config.md",
-    "learning/Learn mini-vue.md",
     "learning/Learn Vite.md",
     "learning/Learn Vue.md",
-    "chore/Git.md",
-    "learning/Learn Vue3.md",
-    "js/模板引擎.md"
+    "chore/Git.md"
   ]
 }
