@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "js/vue3.md",
+            "file": "learning/Learn HTML.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "js/vue3.md",
+                "file": "learning/Learn HTML.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "eb5e50068f70e2fc",
   "lastOpenFiles": [
+    "learning/Learn HTML.md",
+    "learning/Learn CSS.md",
+    "learning/Learn HTTP.md",
+    "learning/Learn 浏览器原理.md",
     "js/vue3.md",
     "js/Vue2.md",
     "learning/Learn mini-vue.md",
     "chore/Plugins.md",
     "chore/LeetCode.md",
-    "chore/Webpack.md",
-    "chore/Config.md",
-    "learning/Learn Vite.md",
-    "learning/Learn Vue.md",
-    "chore/Git.md"
+    "chore/Webpack.md"
   ]
 }
