@@ -27,3 +27,4 @@ date updated: 2022-03-31 11:27
 3. async 不能确保加载顺序，defer 可以
 
 #### meta 标签
+1. viewport：移动端适配 ``
