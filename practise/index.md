@@ -27,5 +27,14 @@ date updated: 2022-03-31 11:27
 3. async 不能确保加载顺序，defer 可以
 
 #### meta 标签
-1. viewport：移动端适配 
-2. http-eviv
+1. viewport：移动端适配
+   `<meta name="viewport" content="width=device-width;scalable=no;maximum-scale=1.0;minimum=1.0">`
+2. charset
+   `<meta charset="uft-8"`
+3. keyword：利于 SEO
+   `<meta name="keyword" content="hello">`
+4. describe：利于 SEO
+   
+5. refresh
+   
+6. robots
