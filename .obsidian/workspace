@@ -6,11 +6,11 @@
       {
         "id": "eb5e50068f70e2fc",
         "type": "leaf",
-        "dimension": 51.716068642745704,
+        "dimension": 47.34789391575663,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn HTML.md",
+            "file": "learning/Learn JS.md",
             "mode": "source",
             "source": false
           }
@@ -19,7 +19,7 @@
       {
         "id": "bc9616c36591434c",
         "type": "leaf",
-        "dimension": 48.28393135725429,
+        "dimension": 52.652106084243364,
         "state": {
           "type": "markdown",
           "state": {
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "practise/index.md",
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,17 +113,17 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "bc9616c36591434c",
+  "active": "eb5e50068f70e2fc",
   "lastOpenFiles": [
-    "practise/index.md",
+    "learning/Learn JS.md",
+    "learning/Learn CSS.md",
     "learning/Learn HTML.md",
+    "practise/index.md",
     "practise/未命名.md",
     "learning/未命名.md",
-    "learning/Learn CSS.md",
     "learning/Learn HTTP.md",
     "learning/Learn 浏览器原理.md",
     "js/vue3.md",
-    "js/Vue2.md",
-    "learning/Learn mini-vue.md"
+    "js/Vue2.md"
   ]
 }

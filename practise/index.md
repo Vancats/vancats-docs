@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-03-31 12:19
+date updated: 2022-03-31 12:32
 ---
 
 #### src 与 href
@@ -38,5 +38,6 @@ date updated: 2022-03-31 12:19
 		`<meta name="describe" content="你好">`
 5. refresh：页面一秒后**刷新**并**重定向**到百度
 		`<meta http-equiv="refresh" content="1;url=http://www.baidu.com"`
-6. robots
+6. robots：(no)index 文件（不可）检索 (no)follow 页面链接（不）可查询，all，none
 		`<meta name="robots" content="index,follow">`
+
