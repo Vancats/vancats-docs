@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-03-31 11:27
+date updated: 2022-03-31 12:13
 ---
 
 #### src 与 href
@@ -27,14 +27,16 @@ date updated: 2022-03-31 11:27
 3. async 不能确保加载顺序，defer 可以
 
 #### meta 标签
+
 1. viewport：移动端适配
-   `<meta name="viewport" content="width=device-width;scalable=no;maximum-scale=1.0;minimum=1.0">`
+		`<meta name="viewport" content="width=device-width;scalable=no;maximum-scale=1.0;minimum=1.0">`
 2. charset
-   `<meta charset="uft-8"`
+		`<meta charset="uft-8"`
 3. keyword：利于 SEO
-   `<meta name="keyword" content="hello">`
+		`<meta name="keyword" content="hello">`
 4. describe：利于 SEO
-   
-5. refresh
-   
+		`<meta name="describe" content="你好">`
+5. refresh：页面一秒后跳转到百度
+		`<meta http-equiv="refresh" content="1;rul='http://www.baidu.com'"`
 6. robots
+		`<meta name="robots" >`
