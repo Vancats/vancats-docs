@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-03-31 11:17
+date updated: 2022-03-31 11:27
 ---
 
 #### src 与 href
@@ -20,4 +20,10 @@ date updated: 2022-03-31 11:17
 2. CSS1Compat：标准模式；BackCompat：怪异模式，向后兼容
 3. `<!Doctype html>` 标准模式，使用 HTML5 解析，HTML5 没有严格混杂的区别
 
-#### 
+#### defer 和 asyc 的区别
+
+1. 两者都是异步下载文件的参数
+2. async 是下载完直接执行，defer 下载完之后是在文档解析之后，DOMContentLoader 触发前执行
+3. async 不能确保加载顺序，defer 可以
+
+#### meta 标签
