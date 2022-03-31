@@ -41,3 +41,7 @@ date updated: 2022-03-31 12:32
 6. robots：(no)index 文件（不可）检索 (no)follow 页面链接（不）可查询，all，none
 		`<meta name="robots" content="index,follow">`
 
+
+#### 行内、块、空元素
+1. 行内元素：**span、img、input、select、i、b**
+2. 块元素：****
