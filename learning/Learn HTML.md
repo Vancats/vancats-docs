@@ -55,7 +55,7 @@ date updated: 2022-03-31 13:41
 
 根据屏幕的密度设置不同的图片
 `<img src="image-128.png" srcset="image-128.png 128w, image-256.png 256w, image-512.png 512w" sizes="(max-width: 360px) 340px, 128px" />
-
+	 
 - w可以理解成图片质量
 - sizes设置图片临界尺寸，如上默认128px，大于360px则设置成340px
 
