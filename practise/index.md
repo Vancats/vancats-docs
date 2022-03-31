@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-03-31 11:12
+date updated: 2022-03-31 11:17
 ---
 
 #### src 与 href
@@ -15,4 +15,7 @@ date updated: 2022-03-31 11:12
 3. 利于开发，增加可读性
 
 #### DOCTYPE 的作用
-加载
+
+1. 帮助确认使用哪种规范进行解析，如果没指定就是使用浏览器自身规范
+2. CSS1Compat：标准模式；BackCompat：怪异模式，向后兼容
+3. `<!Doctype html>` 标准模式，使用 HTML5 解析，HTML5 没有严格混杂的区别
