@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-03-31 12:32
+date updated: 2022-03-31 13:41
 ---
 
 #### src 与 href
@@ -41,7 +41,8 @@ date updated: 2022-03-31 12:32
 6. robots：(no)index 文件（不可）检索 (no)follow 页面链接（不）可查询，all，none
 		`<meta name="robots" content="index,follow">`
 
-
 #### 行内、块、空元素
-1. 行内元素：**span、img、input、select、i、b**
-2. 块元素：****
+
+1. 行内元素：**span、img、input、select、a、i、b**
+2. 块元素：**div、p、h、ul、ol、li、dl、dt、dd**
+3. 空元素：**meta、input、img、link、br、hr**

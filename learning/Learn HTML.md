@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:34
-date updated: 2022-03-31 11:11
+date updated: 2022-03-31 13:41
 ---
 
 #### src 和 href
@@ -63,7 +63,7 @@ date updated: 2022-03-31 11:11
 
 - 行内：`a b span img input select strong`
 - 块：`div ul ol li dl dt dd p h1~6`
-- 空（无闭合标签）：`br hr img input link meta   area col colgroup base command embed keygen param source track wbr`
+- 空（无闭合标签）：`br hr img input link meta   area col col group base command embed keygen param source track wbr`
 
 #### iframe的优缺点
 
