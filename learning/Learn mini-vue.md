@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-04-01 23:11
+date updated: 2022-04-02 01:10
 ---
 
 #### 配置环境
@@ -88,10 +88,12 @@ date updated: 2022-04-01 23:11
 ## Runtime-core
 
 ### createApp
+
 - export createAppAPI
 - createApp
 
 ### renderer
+
 - export createRenderer
 	- return createApp: createAppAPI(render)
 - render
@@ -156,5 +158,6 @@ date updated: 2022-04-01 23:11
 - export createTextVNode
 
 ### apiInject
+
 - export inject
 - export provide
