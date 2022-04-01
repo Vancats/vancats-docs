@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-29 22:23
+date updated: 2022-04-01 23:11
 ---
 
 #### 配置环境
@@ -88,8 +88,8 @@ date updated: 2022-03-29 22:23
 ## Runtime-core
 
 ### createApp
-
-- mount
+- export createAppAPI
+- createApp
 
 ### renderer
 
@@ -140,7 +140,13 @@ date updated: 2022-03-29 22:23
 
 ### vnode
 
-- createVNode
+###### 全局变量
+
+- export Text
+- export Fragment
+
+###### 函数
+
+- export createVNode：设置 shapeFlag
 - getShapeFlag
-- Text
-- Fragment
+- export createTextVNode
