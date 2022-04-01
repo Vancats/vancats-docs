@@ -92,7 +92,8 @@ date updated: 2022-04-01 23:11
 - createApp
 
 ### renderer
-
+- export createRenderer
+	- return createApp: createAppAPI(render)
 - render
 - patch
 - processComponent
@@ -103,32 +104,35 @@ date updated: 2022-04-01 23:11
 - processElement
 - mountElement
 - mountChildren
+- processText
+- processFragment
 
 ### component
 
-- createComponentInstance
-- setupComponent
+- export createComponentInstance
+- export setupComponent
 - setupStatefulComponent
 - handerSetupResult
 - finishComponentSetup
-- getCurrentInstance
+- export getCurrentInstance
+- setCurrentInstance
 
 ### componentPublicInstance
 
 - publicPropertiesMap
-- PublicInstanceProxyHandlers
+- export PublicInstanceProxyHandlers
 
 ### componentProps
 
-- initProps
+- export initProps
 
 ### componentEmit
 
-- initEmit
+- export emit
 
 ### componentSlot
 
-- initSlots
+- export initSlots
 - normalizeObjectSlots
 - normalizeSlotValue
 
