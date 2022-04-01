@@ -154,3 +154,7 @@ date updated: 2022-04-01 23:11
 - export createVNode：设置 shapeFlag
 - getShapeFlag
 - export createTextVNode
+
+### apiInject
+- export inject
+- export provide
