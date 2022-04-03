@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-04-04 01:53
+date updated: 2022-04-04 01:59
 ---
 
 ## VSCode Plugins
@@ -17,11 +17,9 @@ date updated: 2022-04-04 01:53
 8. Fix VSCode Checksums 消除background错误提示
 9. Dracula At Night
 10. One Dark Pro
-11. One Mono kai Theme
-12. Pink-Cat-Boo Theme
-13. vscode-icons
-14. Neon Night
-15. Vitesse Theme
+11. vscode-icons
+12. Neon Night
+13. Vitesse Theme
 
 ### Easy Work
 
@@ -39,15 +37,15 @@ date updated: 2022-04-04 01:53
 12. Jest Snippets
 13. Visual Studio IntelLiCode
 14. JavaScript (ES6) code snippets
-16. JavaScript and TypeScript Nightly
-17. Sass/Less/Stylus/Pug/Jade/Typescript/Javascript Compile Hero Pro
-18. Vue 3 Snippets
-19. Vue VSCode Snippets
-20. React code snippets
-21. Simple React Snippets
-22. ES7 React/Redux/GraphQL/React-Native snippets
-23. React/Redux/Typescript/Javascript/Omi snippets
-24. Typescript Vue Plugin (Volar)
+15. JavaScript and TypeScript Nightly
+16. Sass/Less/Stylus/Pug/Jade/Typescript/Javascript Compile Hero Pro
+17. Vue 3 Snippets
+18. Vue VSCode Snippets
+19. React code snippets
+20. Simple React Snippets
+21. ES7 React/Redux/GraphQL/React-Native snippets
+22. React/Redux/Typescript/Javascript/Omi snippets
+23. Typescript Vue Plugin (Volar)
 
 ### Tools
 
@@ -66,19 +64,21 @@ date updated: 2022-04-04 01:53
 13. GitLens vscode git管理工具
 14. EditorConfig for VS Code
 15. open in browser
-16. Open In Default Browser
-17. View In Browser
-18. Code Runner
-19. styled-jsx
-20. X mind Viewer
-21. Image preview
-22. Markdown All in One
-23. Markdown Preview Enhanced
-24. Chinese
-25. github copilot
-26. jest
-27. project-tree
-28. GitHub Pull Requests and Issues
-29. Carbon Product Icons
-30. i18n Ally
-31. Iconify IntelliSense
+16. View In Browser
+17. Code Runner
+18. X mind Viewer
+19. Image preview
+20. Markdown All in One
+21. Markdown Preview Enhanced
+22. Chinese
+23. github copilot
+24. jest
+25. GitHub Pull Requests and Issues
+26. Carbon Product Icons
+27. i18n Ally
+28. Iconify IntelliSense
+29. Sort package.json
+30. unocss
+31. where am i
+32. slidev
+33. gitignore
