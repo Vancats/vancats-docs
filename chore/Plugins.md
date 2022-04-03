@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-03-25 14:51
+date updated: 2022-03-29 17:02
 ---
 
 ## VSCode Plugins
@@ -85,3 +85,4 @@ date updated: 2022-03-25 14:51
 29. github copilot
 30. jest
 31. project-tree
+32. GitHub Pull Requests and Issues
