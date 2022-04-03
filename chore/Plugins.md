@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-04-04 01:59
+date updated: 2022-04-04 02:04
 ---
 
 ## VSCode Plugins
@@ -18,8 +18,7 @@ date updated: 2022-04-04 01:59
 9. Dracula At Night
 10. One Dark Pro
 11. vscode-icons
-12. Neon Night
-13. Vitesse Theme
+12. Vitesse Theme
 
 ### Easy Work
 
@@ -31,21 +30,19 @@ date updated: 2022-04-04 01:59
 6. Trailing Spaces 行末空格追踪
 7. koRoFileHeader 代码注释
 8. javascript console utils 快速打印
-9. Vue.js AutoImport 自动引入
-10. Path Intellisense
-11. npm Intellisense
-12. Jest Snippets
-13. Visual Studio IntelLiCode
-14. JavaScript (ES6) code snippets
-15. JavaScript and TypeScript Nightly
-16. Sass/Less/Stylus/Pug/Jade/Typescript/Javascript Compile Hero Pro
-17. Vue 3 Snippets
-18. Vue VSCode Snippets
-19. React code snippets
-20. Simple React Snippets
-21. ES7 React/Redux/GraphQL/React-Native snippets
-22. React/Redux/Typescript/Javascript/Omi snippets
-23. Typescript Vue Plugin (Volar)
+9. Path Intellisense
+10. npm Intellisense
+11. Jest Snippets
+12. Visual Studio IntelLiCode
+13. JavaScript (ES6) code snippets
+14. JavaScript and TypeScript Nightly
+15. Sass/Less/Stylus/Pug/Jade/Typescript/Javascript Compile Hero Pro
+16. Vue 3 Snippets
+17. Vue VSCode Snippets
+18. React code snippets
+19. Simple React Snippets
+20. ES7 React/Redux/GraphQL/React-Native snippets
+21. Typescript Vue Plugin (Volar)
 
 ### Tools
 
