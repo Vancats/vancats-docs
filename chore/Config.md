@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-04-04 01:32
+date updated: 2022-04-04 02:19
 ---
 
 ### .browserslistrc
@@ -223,6 +223,7 @@ npm link
   // "editor.fontLigatures": true,
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.fontSize": 13.5,
+  "workbench.colorTheme": "Dracula At Night",
   "vsicons.dontShowNewVersionMessage": true,
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
   "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
@@ -511,7 +512,6 @@ npm link
   "workbench.editor.tabCloseButton": "left",
   "workbench.fontAliasing": "antialiased",
   "workbench.list.smoothScrolling": true,
-  "workbench.colorTheme": "Dracula At Night",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,

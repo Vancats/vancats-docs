@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-04-04 02:14
+date updated: 2022-04-04 02:18
 ---
 
 ## VSCode Plugins
@@ -85,6 +85,8 @@ date updated: 2022-04-04 02:14
 31. SVG
 32. Tab Cycle
 33. TypeScript + Webpack Problem Matchers
-34. wakatime
-35. Browse Lite
-36. Better TOML
+34. Browse Lite
+35. Better TOML
+36. GitKraken Boards
+37. Draw.io Integration
+38. GraphQL for VSCode
