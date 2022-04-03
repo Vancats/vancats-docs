@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-04-04 02:09
+date updated: 2022-04-04 02:14
 ---
 
 ## VSCode Plugins
@@ -81,3 +81,10 @@ date updated: 2022-04-04 02:09
 27. gitignore
 28. JSON5 syntax
 29. lit-html
+30. POSTCSS Language Support
+31. SVG
+32. Tab Cycle
+33. TypeScript + Webpack Problem Matchers
+34. wakatime
+35. Browse Lite
+36. Better TOML
