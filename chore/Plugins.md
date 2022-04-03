@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-04-04 02:04
+date updated: 2022-04-04 02:09
 ---
 
 ## VSCode Plugins
@@ -19,6 +19,11 @@ date updated: 2022-04-04 02:04
 10. One Dark Pro
 11. vscode-icons
 12. Vitesse Theme
+13. X mind Viewer
+14. Image preview
+15. Markdown All in One
+16. Markdown Preview Enhanced
+17. Carbon Product Icons
 
 ### Easy Work
 
@@ -43,6 +48,7 @@ date updated: 2022-04-04 02:04
 19. Simple React Snippets
 20. ES7 React/Redux/GraphQL/React-Native snippets
 21. Typescript Vue Plugin (Volar)
+22. github copilot
 
 ### Tools
 
@@ -63,19 +69,15 @@ date updated: 2022-04-04 02:04
 15. open in browser
 16. View In Browser
 17. Code Runner
-18. X mind Viewer
-19. Image preview
-20. Markdown All in One
-21. Markdown Preview Enhanced
-22. Chinese
-23. github copilot
-24. jest
-25. GitHub Pull Requests and Issues
-26. Carbon Product Icons
-27. i18n Ally
-28. Iconify IntelliSense
-29. Sort package.json
-30. unocss
-31. where am i
-32. slidev
-33. gitignore
+18. Chinese
+19. jest
+20. GitHub Pull Requests and Issues
+21. i18n Ally
+22. Iconify IntelliSense
+23. Sort package.json
+24. unocss
+25. where am i
+26. slidev
+27. gitignore
+28. JSON5 syntax
+29. lit-html
