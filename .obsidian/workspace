@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "chore/Config.md",
+            "file": "chore/Plugins.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chore/Config.md",
+                "file": "chore/Plugins.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,9 +101,9 @@
   },
   "active": "eb5e50068f70e2fc",
   "lastOpenFiles": [
-    "chore/Config.md",
-    "learning/Learn mini-vue.md",
     "chore/Plugins.md",
+    "learning/Learn mini-vue.md",
+    "chore/Config.md",
     "learning/Learn Vite.md",
     "learning/Learn Vue.md",
     "chore/Webpack.md",
