@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-04-06 01:56
+date updated: 2022-04-06 01:58
 ---
 
 ## VSCode Plugins
@@ -79,24 +79,29 @@ date updated: 2022-04-06 01:56
 16. GitLens vscode // git管理工具
 17. where am i // 文件位置
 18. Sort package.json // package 文件整理
-19. GitHub Pull Requests and Issues
-20. i18n Ally
-21. Iconify IntelliSense
-22. unocss
-23. gitignore
-24. JSON5 syntax
-25. lit-html
-26. POSTCSS Language Support
-27. SVG
-28. Tab Cycle
-29. TypeScript + Webpack Problem Matchers
-30. Browse Lite
-31. Better TOML
-32. GitKraken Boards
-33. Draw.io Integration
-34. GraphQL for VSCode
-35. Grammarly (unofficial)
-36. Debug Visualizer
-37. polacode
-38. codetour
+```
+
+### 未知
+
+```json
+1. GitHub Pull Requests and Issues
+2. i18n Ally
+3. Iconify IntelliSense
+4. unocss
+5. gitignore
+6. JSON5 syntax
+7. lit-html
+8. POSTCSS Language Support
+9. SVG
+10. Tab Cycle
+11. TypeScript + Webpack Problem Matchers
+12. Browse Lite
+13. Better TOML
+14. GitKraken Boards
+15. Draw.io Integration
+16. GraphQL for VSCode
+17. Grammarly (unofficial)
+18. Debug Visualizer
+19. polacode
+20. codetour
 ```
