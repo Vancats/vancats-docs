@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-04-04 02:23
+date updated: 2022-04-06 01:13
 ---
 
 ## VSCode Plugins
@@ -91,3 +91,6 @@ date updated: 2022-04-04 02:23
 37. Draw.io Integration
 38. GraphQL for VSCode
 39. Grammarly (unofficial)
+40. Debug Visualizer
+41. polacode
+42. codetour

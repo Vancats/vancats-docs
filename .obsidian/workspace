@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "chore/Config.md",
+            "file": "chore/Plugins.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chore/Config.md",
+                "file": "chore/Plugins.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,8 +101,8 @@
   },
   "active": "de6642cf78e59ea2",
   "lastOpenFiles": [
-    "chore/Config.md",
     "chore/Plugins.md",
+    "chore/Config.md",
     "chore/Git.md",
     "conflict-files-obsidian-git.md",
     "learning/Learn mini-vue.md",
