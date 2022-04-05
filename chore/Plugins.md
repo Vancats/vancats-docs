@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-04-06 01:13
+date updated: 2022-04-06 01:40
 ---
 
 ## VSCode Plugins
@@ -15,15 +15,15 @@ date updated: 2022-04-06 01:13
 6. Error Lens 报错提示
 7. Background 背景
 8. Fix VSCode Checksums 消除background错误提示
-9. Dracula At Night
-10. One Dark Pro
-11. vscode-icons
-12. Vitesse Theme
+9. Dracula At Night 比较喜欢的主题
+10. One Dark Pro 相对还可以的主题
+11. Vitesse Theme 相对还可以的主题
+12. vscode icons 喜欢的图标主题
 13. X mind Viewer
-14. Image preview
+14. Image preview 
 15. Markdown All in One
 16. Markdown Preview Enhanced
-17. Carbon Product Icons
+17. Carbon Product Icons 产品图标
 
 ### Easy Work
 
