@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-19 17:24
-date updated: 2022-03-27 23:53
+date updated: 2022-04-02 01:10
 ---
 
 #### 配置环境
@@ -89,10 +89,13 @@ date updated: 2022-03-27 23:53
 
 ### createApp
 
-- mount
+- export createAppAPI
+- createApp
 
 ### renderer
 
+- export createRenderer
+	- return createApp: createAppAPI(render)
 - render
 - patch
 - processComponent
@@ -103,26 +106,39 @@ date updated: 2022-03-27 23:53
 - processElement
 - mountElement
 - mountChildren
+- processText
+- processFragment
 
 ### component
 
-- createComponentInstance
-- setupComponent
+- export createComponentInstance
+- export setupComponent
+- setupStatefulComponent
 - handerSetupResult
 - finishComponentSetup
+- export getCurrentInstance
+- setCurrentInstance
 
 ### componentPublicInstance
 
 - publicPropertiesMap
-- PublicInstanceProxyHandlers
+- export PublicInstanceProxyHandlers
 
 ### componentProps
 
-- initProps
+- export initProps
 
 ### componentEmit
 
-- initEmit
+- export emit
+
+### componentSlot
+
+- export initSlots
+- normalizeObjectSlots
+- normalizeSlotValue
+
+### renderSlots
 
 ### h
 
@@ -130,5 +146,18 @@ date updated: 2022-03-27 23:53
 
 ### vnode
 
-- createVNode
+###### 全局变量
+
+- export Text
+- export Fragment
+
+###### 函数
+
+- export createVNode：设置 shapeFlag
 - getShapeFlag
+- export createTextVNode
+
+### apiInject
+
+- export inject
+- export provide

@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "eb5e50068f70e2fc",
+        "id": "de6642cf78e59ea2",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn Browser.md",
-            "mode": "preview",
+            "file": "chore/Plugins.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn Browser.md",
+                "file": "chore/Plugins.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -99,17 +99,17 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "eb5e50068f70e2fc",
+  "active": "de6642cf78e59ea2",
   "lastOpenFiles": [
-    "learning/Learn Browser.md",
-    "learning/JS 题目.md",
-    "js/Vue补.md",
-    "learning/设计模式.md",
-    "learning/前端算法.md",
+    "chore/Plugins.md",
+    "chore/Config.md",
+    "chore/Git.md",
+    "conflict-files-obsidian-git.md",
     "learning/Learn mini-vue.md",
-    "learning/Learn React.md",
-    "learning/Learn RegExp.md",
-    "learning/Learn Vue3.md",
-    "learning/Learn Vite.md"
+    "learning/Learn Vite.md",
+    "learning/Learn Vue.md",
+    "chore/Webpack.md",
+    "chore/LeetCode.md",
+    "learning/Learn Vue3.md"
   ]
 }
