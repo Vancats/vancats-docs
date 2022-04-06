@@ -88,7 +88,7 @@ date updated: 2022-04-06 02:00
 2. i18n Ally
 3. Iconify IntelliSense
 4. unocss
-5. gitignore
+5. gitignore‘
 6. JSON5 syntax
 7. lit-html
 8. POSTCSS Language Support
