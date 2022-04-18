@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "de6642cf78e59ea2",
+        "id": "c4d6c9a0c94d0096",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "learning/Learn Vite.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn Vite.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -99,7 +94,7 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "de6642cf78e59ea2",
+  "active": "c4d6c9a0c94d0096",
   "lastOpenFiles": [
     "learning/Learn Vite.md",
     "learning/Learn Vue3.md",
