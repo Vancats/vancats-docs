@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/设计模式.md",
+            "file": "learning/JS 题目.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/设计模式.md",
+                "file": "learning/JS 题目.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "de6642cf78e59ea2",
   "lastOpenFiles": [
-    "learning/设计模式.md",
-    "learning/Learn mini-vue.md",
-    "learning/Learn React.md",
+    "learning/JS 题目.md",
+    "learning/Learn Vue3.md",
+    "learning/Learn Vue.md",
     "learning/Learn Vite.md",
-    "chore/Config.md",
-    "chore/Git.md",
-    "chore/LeetCode.md",
-    "chore/Plugins.md",
-    "conflict-files-obsidian-git.md",
-    "learning/Learn Vue.md"
+    "learning/Learn RegExp.md",
+    "learning/Learn mini-vue.md",
+    "learning/Learn Interview.md",
+    "learning/Learn HTML.md",
+    "learning/Learn Browser.md",
+    "learning/Learn CSS.md"
   ]
 }
