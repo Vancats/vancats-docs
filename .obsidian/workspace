@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/JS 题目.md",
+            "file": "learning/Learn Vite.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/JS 题目.md",
+                "file": "learning/Learn Vite.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "de6642cf78e59ea2",
   "lastOpenFiles": [
-    "learning/JS 题目.md",
-    "learning/Learn Vue3.md",
-    "learning/Learn Vue.md",
     "learning/Learn Vite.md",
+    "learning/Learn Vue3.md",
+    "learning/Learn Browser.md",
+    "learning/JS 题目.md",
+    "learning/Learn Vue.md",
     "learning/Learn RegExp.md",
     "learning/Learn mini-vue.md",
     "learning/Learn Interview.md",
     "learning/Learn HTML.md",
-    "learning/Learn Browser.md",
     "learning/Learn CSS.md"
   ]
 }
