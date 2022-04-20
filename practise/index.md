@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-04-20 14:37
+date updated: 2022-04-20 16:39
 ---
 
 #### CSS 高度坍塌(loading)
@@ -14,3 +14,13 @@ date updated: 2022-04-20 14:37
 5.
 
 #### 水平居中
+
+1. text-align: center
+2. margin: 0 auto
+3. absolute + left50 + transform: translateX
+4. flex+justify-content
+
+#### 垂直居中
+
+1. line-height
+2. 
