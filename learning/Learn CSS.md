@@ -44,7 +44,8 @@ date updated: 2022-03-06 15:02
 5. 前置伪元素添加 `::before{ content: ''; display: table; }`
 6. 子元素：`display: inline-block`
 
-#### 水平居中（premise：父级块级并且宽度已设置）
+#### 居中
+##### 水平居中（premise：父级块级并且宽度已设置）
 
 1. 子元素是行内元素：父元素`text-align`
 2. 子元素块级未设宽：默认撑满父级宽度
@@ -56,7 +57,7 @@ date updated: 2022-03-06 15:02
 
 **水平垂直居中**：`display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
 
-#### 垂直居中（premise：父元素是盒子容器）
+##### 垂直居中（premise：父元素是盒子容器）
 
 1. 子元素是行内元素
 		1. 单行：`line-height`
