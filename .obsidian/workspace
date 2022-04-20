@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn Vite.md",
+            "file": "learning/Learn CSS.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "8e203be7a18fa13e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "practise/index.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn Vite.md",
+                "file": "practise/index.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -99,17 +111,17 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "c4d6c9a0c94d0096",
+  "active": "8e203be7a18fa13e",
   "lastOpenFiles": [
+    "practise/index.md",
+    "learning/Learn CSS.md",
+    "learning/Learn HTML.md",
     "learning/Learn Vite.md",
     "learning/Learn Vue3.md",
     "learning/Learn Browser.md",
     "learning/JS 题目.md",
     "learning/Learn Vue.md",
     "learning/Learn RegExp.md",
-    "learning/Learn mini-vue.md",
-    "learning/Learn Interview.md",
-    "learning/Learn HTML.md",
-    "learning/Learn CSS.md"
+    "learning/Learn mini-vue.md"
   ]
 }
