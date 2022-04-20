@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-04-06 13:47
+date updated: 2022-04-20 21:40
 ---
 
 ## VSCode Plugins
@@ -34,31 +34,32 @@ date updated: 2022-04-06 13:47
 ```json
 1. Auto Import // 自动引入
 2. Auto Rename Tag // 自动重命名标签
-3. Code Spell Checker // 拼写检查
-4. Trailing Spaces // 行末空格追踪
-5. koRoFileHeader // 代码注释
-6. javascript console utils // 快速打印
-7. Code Runner // 运行 js、ts
-8. View In Browser // 浏览器打开
-9. CodeLf // 命名检索
-10. EditorConfig for VS Code //（禁）
-11. gitignore //（禁）
-12. where am i // 文件位置
-13. Sort package.json // package 文件整理
-14. GitLens vscode // git管理工具
-15. Tab Cycle // 标签的双向循环
-16. Path Intellisense // 下面都是一些快捷方式等
-17. Jest Snippets
-18. Visual Studio IntelLiCode
-19. JavaScript (ES6) code snippets
-20. JavaScript and TypeScript Nightly
-21. Sass/Less/Stylus/Pug/Jade/Typescript/Javascript Compile Hero Pro
-22. Vue 3 Snippets
-23. Vue VSCode Snippets
-24. Vue.js AutoImport //（禁）
-25. Reactjs code snippets
-26. Simple React Snippets
-27. Typescript Vue Plugin - Volar//（禁）
+3. Auto Close Tag // 自动闭合标签
+4. Code Spell Checker // 拼写检查
+5. Trailing Spaces // 行末空格追踪
+6. koRoFileHeader // 代码注释
+7. javascript console utils // 快速打印
+8. Code Runner // 运行 js、ts
+9. View In Browser // 浏览器打开
+10. CodeLf // 命名检索
+11. EditorConfig for VS Code //（禁）
+12. gitignore //（禁）
+13. where am i // 文件位置
+14. Sort package.json // package 文件整理
+15. GitLens vscode // git管理工具
+16. Tab Cycle // 标签的双向循环
+17. Path Intellisense // 下面都是一些快捷方式等
+18. Jest Snippets
+19. Visual Studio IntelLiCode
+20. JavaScript (ES6) code snippets
+21. JavaScript and TypeScript Nightly
+22. Sass/Less/Stylus/Pug/Jade/Typescript/Javascript Compile Hero Pro
+23. Vue 3 Snippets
+24. Vue VSCode Snippets
+25. Vue.js AutoImport //（禁）
+26. Reactjs code snippets
+27. Simple React Snippets
+28. Typescript Vue Plugin - Volar//（禁）
 ```
 
 ### Tools
