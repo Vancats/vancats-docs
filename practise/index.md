@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-04-21 10:51
+date updated: 2022-04-21 10:56
 ---
 
 #### CSS 高度坍塌(loading)
@@ -66,7 +66,14 @@ date updated: 2022-04-21 10:51
 5. 光标属性 cursor
 
 #### 隐藏元素的方法
-1. visibility: hidden  占位，能响应事件
-2. opacity 占位，不响应事件
-3. display 不占位置 不xiang
-4. absolute 界外
+
+1. visibility hidden  占位，能响应
+2. opacity 占位，不响应
+3. display 不占位置 不响应
+4. transform scale(0,0) 占位置，能响应
+5. absolute 界外
+
+#### link @import 的区别
+1. 内部自带的标签，兼容性好       外部引入，兼容性差
+2. 优先级高于后者
+3. 可以操作 DOM 元素，后者只是 css
