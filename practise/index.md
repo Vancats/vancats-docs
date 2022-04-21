@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-04-21 10:19
+date updated: 2022-04-21 10:24
 ---
 
 #### CSS 高度坍塌(loading)
@@ -46,4 +46,12 @@ date updated: 2022-04-21 10:19
 1. @all @screen @print 打印机 @speech 发声设备
 2. <link rel="stylesheet" href="xx.css" media="screen"> 默认全局
 3. @import url(xx.css) print, screen 可以多设备
-4. @media not screen and (orientation: landscape #横) and (max-width: 600px) {...}
+4. @media not screen and (orientation: landscape 横) and (max-width: 600px) {...}
+
+#### Sass 常用功能
+
+1. 变量 $ less #
+2. 嵌套
+3. 计算
+4. 引入 import
+5.
