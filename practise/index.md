@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-04-21 10:46
+date updated: 2022-04-21 10:51
 ---
 
 #### CSS 高度坍塌(loading)
@@ -60,5 +60,13 @@ date updated: 2022-04-21 10:46
 #### CSS 继承
 
 1. 字体属性 font-family font-size font-weight font-style
-2. 文本属性 color text-align 
+2. 文本属性 color text-align text-indent line-height word-spacing letter-spacing
 3. 列表属性 list-style
+4. 元素可见性 visibility opacity
+5. 光标属性 cursor
+
+#### 隐藏元素的方法
+1. visibility: hidden  占位，能响应事件
+2. opacity 占位，不响应事件
+3. display 不占位置 不xiang
+4. absolute 界外
