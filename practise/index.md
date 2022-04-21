@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-04-20 16:49
+date updated: 2022-04-21 10:13
 ---
 
 #### CSS 高度坍塌(loading)
@@ -34,8 +34,13 @@ date updated: 2022-04-20 16:49
 > display: table-cell; vertical: middle; text-align: center;
 > display: inline-block;
 
-#### 响应式布局
+#### 响应式布局(loading)
+
 1. vh vw
 2. flex
 3. rem em
 4. grid
+
+#### 媒体查询
+1. @all @screen @print 打印机 @speech 发声设备
+	1. <link rel="stylesheet" href="xx.css" media="screen">
