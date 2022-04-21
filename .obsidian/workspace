@@ -6,7 +6,7 @@
       {
         "id": "c4d6c9a0c94d0096",
         "type": "leaf",
-        "dimension": 41.107644305772226,
+        "dimension": 53.902601734489664,
         "state": {
           "type": "markdown",
           "state": {
@@ -19,7 +19,7 @@
       {
         "id": "8e203be7a18fa13e",
         "type": "leaf",
-        "dimension": 58.892355694227774,
+        "dimension": 46.09739826551034,
         "state": {
           "type": "markdown",
           "state": {
@@ -68,7 +68,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5
+    "width": 216.5,
+    "collapsed": true
   },
   "right": {
     "id": "8e347e94747a4a72",
@@ -84,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "practise/index.md",
+                "file": "learning/Learn CSS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -114,10 +115,10 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "8e203be7a18fa13e",
+  "active": "c4d6c9a0c94d0096",
   "lastOpenFiles": [
-    "practise/index.md",
     "learning/Learn CSS.md",
+    "practise/index.md",
     "learning/Learn HTML.md",
     "learning/Learn Vite.md",
     "learning/Learn Vue3.md",
