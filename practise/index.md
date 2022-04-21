@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-04-21 10:24
+date updated: 2022-04-21 10:34
 ---
 
 #### CSS 高度坍塌(loading)
@@ -51,7 +51,8 @@ date updated: 2022-04-21 10:24
 #### Sass 常用功能
 
 1. 变量 $ less #
-2. 嵌套
-3. 计算
+2. 嵌套 父选择器 $ 属性可以嵌套
+3. 算术运算符 .artical[role="main"]
 4. 引入 import
-5.
+5. 混入 mixin
+6. 继承 %
