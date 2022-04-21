@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn CSS.md",
+                "file": "practise/index.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,10 +113,10 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "c4d6c9a0c94d0096",
+  "active": "8e203be7a18fa13e",
   "lastOpenFiles": [
-    "learning/Learn CSS.md",
     "practise/index.md",
+    "learning/Learn CSS.md",
     "learning/Learn HTML.md",
     "learning/Learn Vite.md",
     "learning/Learn Vue3.md",
