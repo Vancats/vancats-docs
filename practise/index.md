@@ -56,3 +56,5 @@ date updated: 2022-04-21 10:34
 4. 引入 import
 5. 混入 mixin
 6. 继承 %
+
+#### CSS 继承
