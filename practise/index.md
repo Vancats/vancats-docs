@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-04-21 10:34
+date updated: 2022-04-21 10:46
 ---
 
 #### CSS 高度坍塌(loading)
@@ -32,7 +32,7 @@ date updated: 2022-04-21 10:34
 > display: inline / inline-block / table-cell; vertical-align: middle;
 > 水平垂直居中：
 > display: table-cell; vertical: middle; text-align: center;
-> display: inline-block;
+> display: inline-block; (子元素)
 
 #### 响应式布局(loading)
 
@@ -51,11 +51,14 @@ date updated: 2022-04-21 10:34
 #### Sass 常用功能
 
 1. 变量 $ less #
-2. 嵌套 父选择器 $ 属性可以嵌套
+2. 嵌套 父选择器 $    属性可以嵌套
 3. 算术运算符 .artical[role="main"]
 4. 引入 import
 5. 混入 mixin
 6. 继承 %
 
 #### CSS 继承
-1. font-family opacity
+
+1. 字体属性 font-family font-size font-weight font-style
+2. 文本属性 color text-align 
+3. 列表属性 list-style
