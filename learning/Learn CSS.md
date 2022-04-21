@@ -152,7 +152,7 @@ date updated: 2022-04-21 11:01
 
 #### 伪类和伪元素的区别
 
-- 伪类是对于特定选择器添加类别，外部可见，不在文档中生成
+- 伪是对于特定选择器添加类别，外部可见，不在文档中生成
 
 `p::before {content: 'content'} p::first-line {background: red} p::first-letter {font-size: 30px}`
 
