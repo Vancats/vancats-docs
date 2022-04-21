@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:34
-date updated: 2022-03-06 15:02
+date updated: 2022-04-21 11:01
 ---
 
 #### CSS 高度坍塌
@@ -45,6 +45,7 @@ date updated: 2022-03-06 15:02
 6. 子元素：`display: inline-block`
 
 #### 居中
+
 ##### 水平居中（premise：父级块级并且宽度已设置）
 
 1. 子元素是行内元素：父元素`text-align`
