@@ -58,3 +58,4 @@ date updated: 2022-04-21 10:34
 6. 继承 %
 
 #### CSS 继承
+1. font-family opacity
