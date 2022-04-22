@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:34
-date updated: 2022-03-06 15:02
+date updated: 2022-04-21 11:01
 ---
 
 #### CSS 高度坍塌
@@ -44,7 +44,9 @@ date updated: 2022-03-06 15:02
 5. 前置伪元素添加 `::before{ content: ''; display: table; }`
 6. 子元素：`display: inline-block`
 
-#### 水平居中（premise：父级块级并且宽度已设置）
+#### 居中
+
+##### 水平居中（premise：父级块级并且宽度已设置）
 
 1. 子元素是行内元素：父元素`text-align`
 2. 子元素块级未设宽：默认撑满父级宽度
@@ -56,7 +58,7 @@ date updated: 2022-03-06 15:02
 
 **水平垂直居中**：`display:table-cell;vertical:middle;text-align:center`+`display:inline-block`
 
-#### 垂直居中（premise：父元素是盒子容器）
+##### 垂直居中（premise：父元素是盒子容器）
 
 1. 子元素是行内元素
 		1. 单行：`line-height`
@@ -150,7 +152,7 @@ date updated: 2022-03-06 15:02
 
 #### 伪类和伪元素的区别
 
-- 伪类是对于特定选择器添加类别，外部可见，不在文档中生成
+- 伪是对于特定选择器添加类别，外部可见，不在文档中生成
 
 `p::before {content: 'content'} p::first-line {background: red} p::first-letter {font-size: 30px}`
 
