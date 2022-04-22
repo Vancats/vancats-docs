@@ -4,29 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c4d6c9a0c94d0096",
+        "id": "fdd6d47484f4d90c",
         "type": "leaf",
-        "dimension": 54.13416536661466,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "learning/Learn CSS.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "8e203be7a18fa13e",
-        "type": "leaf",
-        "dimension": 45.86583463338533,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "practise/index.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -83,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn CSS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,34 +85,26 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "054e550478819a89",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 174,
     "collapsed": true
   },
-  "active": "c4d6c9a0c94d0096",
+  "active": "fdd6d47484f4d90c",
   "lastOpenFiles": [
-    "learning/Learn CSS.md",
     "practise/index.md",
-    "learning/Learn HTML.md",
+    "chore/Plugins.md",
+    "learning/Learn mini-vue.md",
+    "learning/Learn React.md",
     "learning/Learn Vite.md",
-    "learning/Learn Vue3.md",
-    "learning/Learn Browser.md",
-    "learning/JS 题目.md",
-    "learning/Learn Vue.md",
-    "learning/Learn RegExp.md",
-    "learning/Learn mini-vue.md"
+    "chore/Config.md",
+    "chore/Git.md",
+    "chore/LeetCode.md",
+    "conflict-files-obsidian-git.md",
+    "learning/Learn Vue.md"
   ]
 }
