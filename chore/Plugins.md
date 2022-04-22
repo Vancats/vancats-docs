@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-11 16:38
-date updated: 2022-04-22 19:33
+date updated: 2022-04-22 19:35
 ---
 
 ## VSCode Plugins
@@ -9,23 +9,22 @@ date updated: 2022-04-22 19:33
 
 ```json
 1. Better Comments  // 注释
-2. Bracket Pair Colorizer 2 // 括号
-3. Color Highlight // 高亮
-4. Color Info // css颜色选择
-5. Error Lens // 报错提示
-6. Background // 背景图片
-7. Fix VSCode Checksums // 消除background错误提示
-8. JSON5 syntax // JSON5 语法高亮
-9. Dracula At Night // 比较喜欢的主题
-10. One Dark Pro // 相对还可以的主题
-11. vscode icons // 喜欢的图标主题
-12. Carbon Product Icons // 产品图标
-13. X mind Viewer
-14. Image preview
-15. Markdown All In One
-16. Markdown Preview Enhanced
-17. PostCSS Language Support // .css .pcss .postcss 语法支持
-18. Better TOML // TOML 格式支持
+2. Color Highlight // 高亮
+3. Color Info // css颜色选择
+4. Error Lens // 报错提示
+5. Background // 背景图片
+6. Fix VSCode Checksums // 消除background错误提示
+7. JSON5 syntax // JSON5 语法高亮
+8. Dracula At Night // 比较喜欢的主题
+9. One Dark Pro // 相对还可以的主题
+10. vscode icons // 喜欢的图标主题
+11. Carbon Product Icons // 产品图标
+12. X mind Viewer
+13. Image preview
+14. Markdown All In One
+15. Markdown Preview Enhanced
+16. PostCSS Language Support // .css .pcss .postcss 语法支持
+17. Better TOML // TOML 格式支持
 ```
 
 ### Easy Work
@@ -92,4 +91,6 @@ date updated: 2022-04-22 19:33
 26. Debug Visualizer // 调试可视化工具
 27. codetour // 记录和回放代码库的引导演练
 28. GitKraken Boards // 暂时用不上的高级东西
+29. Remote SSh
+30. Remote SSH: Editing Configuration Files
 ```
