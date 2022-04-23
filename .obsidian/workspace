@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "chore/网络.md",
+            "file": "learning/Learn CSS.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chore/网络.md",
+                "file": "learning/Learn CSS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "fdd6d47484f4d90c",
   "lastOpenFiles": [
-    "chore/网络.md",
-    "practise/4.23 面试.md",
+    "learning/Learn CSS.md",
     "practise/index.md",
-    "practise/compile.md",
-    "learning/Learn JS.md",
-    "learning/Learn Interview.md",
+    "practise/4.23 面试.md",
+    "chore/Webpack.md",
     "chore/Plugins.md",
-    "learning/Learn mini-vue.md",
-    "learning/Learn React.md",
-    "learning/Learn Vite.md"
+    "chore/LeetCode.md",
+    "chore/Git.md",
+    "chore/Config.md",
+    "chore/网络.md",
+    "practise/compile.md"
   ]
 }
