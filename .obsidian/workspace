@@ -7,8 +7,12 @@
         "id": "fdd6d47484f4d90c",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "learning/Learn JS.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -96,15 +101,15 @@
   },
   "active": "fdd6d47484f4d90c",
   "lastOpenFiles": [
+    "learning/Learn JS.md",
     "practise/index.md",
+    "learning/Learn Interview.md",
     "chore/Plugins.md",
     "learning/Learn mini-vue.md",
     "learning/Learn React.md",
     "learning/Learn Vite.md",
     "chore/Config.md",
     "chore/Git.md",
-    "chore/LeetCode.md",
-    "conflict-files-obsidian-git.md",
-    "learning/Learn Vue.md"
+    "chore/LeetCode.md"
   ]
 }
