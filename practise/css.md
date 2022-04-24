@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-04-21 11:20
+date updated: 2022-04-21 15:43
 ---
 
 #### CSS 高度坍塌(loading)
@@ -89,3 +89,32 @@ date updated: 2022-04-21 11:20
 1. CPU 节能 切屏后停止渲染
 2. 函数节流 固定一帧一次
 3. 减少 DOM 操作 在下次重绘前进行统一的 DOM 操作
+
+#### li 之间的空白换行符
+
+1. 所有 li 写在一行 不美观
+2. ul font-size 0 需要重新设置字符属性
+3. ul letter-spacing -8px + li letter-spacing normal
+4. li float left 左右切换的焦点图不能浮动
+
+#### CSS3 特性(loading)
+
+1. border - radius shadow image
+2. background -
+3. word-wrap: normal 默认 break-all 单词内换行
+
+#### 图片格式
+
+1. BMP
+
+#### CSS Sprites
+
+1. 使用 background 的多个属性，对图形进行合并操作
+2. 如果有任何位置上的改动，需要重新绘制
+3. 可以有效减少发送请求的次数
+
+#### 单行、多行文本省略
+
+overflow: hidden; text-overflow: ellipsis; white-space: no-wrap;
+
+overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3

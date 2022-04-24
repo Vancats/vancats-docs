@@ -6,24 +6,24 @@
       {
         "id": "c4d6c9a0c94d0096",
         "type": "leaf",
-        "dimension": 54.13416536661466,
+        "dimension": 32.683307332293296,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn CSS.md",
+            "file": "learning/Learn JS.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "8e203be7a18fa13e",
+        "id": "bc7379d6e4dd0653",
         "type": "leaf",
-        "dimension": 45.86583463338533,
+        "dimension": 67.3166926677067,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "practise/index.md",
+            "file": "practise/js.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "practise/index.md",
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -121,17 +121,17 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "8e203be7a18fa13e",
+  "active": "c4d6c9a0c94d0096",
   "lastOpenFiles": [
-    "practise/index.md",
+    "learning/Learn JS.md",
+    "practise/js.md",
+    "practise/css.md",
     "learning/Learn CSS.md",
     "learning/Learn HTML.md",
     "learning/Learn Vite.md",
     "learning/Learn Vue3.md",
     "learning/Learn Browser.md",
     "learning/JS 题目.md",
-    "learning/Learn Vue.md",
-    "learning/Learn RegExp.md",
-    "learning/Learn mini-vue.md"
+    "learning/Learn Vue.md"
   ]
 }

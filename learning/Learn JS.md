@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-06 15:02
+date updated: 2022-04-21 16:49
 ---
 
 ### 数据类型
@@ -9,12 +9,12 @@ date updated: 2022-03-06 15:02
 
 1. typeof：可以判断函数
 2. 原型链
-		1. `[].__proto__ === Array.prototype`
-		2. `Object.getPrototype([]} === Array.prototype`
-		3. `Array.prototype.isPrototypeOf([])`
+   1. `[].__proto__ === Array.prototype`
+   2. `Object.getPrototype([]} === Array.prototype`
+   3. `Array.prototype.isPrototypeOf([])`
 3. 构造函数方式
-		1. `[].constructor === Array`
-		2. `[] instanceof Array`
+   1. `[].constructor === Array`
+   2. `[] instanceof Array`
 
 **原型链的更换会引起上面两点判断的出错** `[].__proto__ = Object.prototype`
 4. `Object.prototype.toString.call([]) === '[object Array]'`
@@ -167,9 +167,9 @@ function myNew () {
 4. DOM 事件处理函数  this -> DOM 对象  这里不可更改为箭头函数，否则 this 指向 window
 5. Vue 中的 this 指向当前实例对象
 6. 箭头函数中的 this 指向当前函数外最近作用域的 this
-		1. 所有匿名函数都可以使用箭头函数简化
-		2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
-		3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
+   1. 所有匿名函数都可以使用箭头函数简化
+   2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
+   3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
 7. bind 永久更改 this 指向，call，apply 临时更改 this 指向
 
 #### for...of & iterator
@@ -451,8 +451,8 @@ Person.prototype.constructor // Person
 
 - this 绑定
 - 创建词法环境组件
-	- 是一种有 标识符-变量 映射的数据结构
-	- 内部有两个组件：1. 环境记录器：储存变量/函数的具体位置 2. 外部环境的引用：访问父级作用域
+  - 是一种有 标识符-变量 映射的数据结构
+  - 内部有两个组件：1. 环境记录器：储存变量/函数的具体位置 2. 外部环境的引用：访问父级作用域
 - 创建变量环境组件：也是一个词法环境，环境记录器存储变量的绑定关系
 
 2. 执行阶段：完成对变量的分配，最后执行代码
