@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "practise/未命名 1.md",
+            "file": "transit/js.md",
             "mode": "source",
             "source": false
           }
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "practise/js.md",
+            "file": "transit/js.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "practise/未命名 1.md",
+                "file": "transit/js.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -123,13 +123,13 @@
   },
   "active": "c4d6c9a0c94d0096",
   "lastOpenFiles": [
-    "practise/未命名 1.md",
-    "practise/长任务.md",
+    "transit/js.md",
+    "transit/未命名 1.md",
+    "transit/长任务.md",
     "learning/Learn Browser.md",
     "learning/设计模式.md",
     "learning/Learn JS.md",
-    "practise/js.md",
-    "practise/css.md",
+    "transit/css.md",
     "learning/Learn CSS.md",
     "learning/Learn HTML.md",
     "learning/Learn Vite.md"
