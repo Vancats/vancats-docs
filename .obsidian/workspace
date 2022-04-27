@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn Browser.md",
+            "file": "practise/未命名 1.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn Browser.md",
+                "file": "practise/未命名 1.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -123,6 +123,7 @@
   },
   "active": "c4d6c9a0c94d0096",
   "lastOpenFiles": [
+    "practise/未命名 1.md",
     "learning/Learn Browser.md",
     "learning/设计模式.md",
     "practise/未命名.md",
@@ -131,7 +132,6 @@
     "practise/css.md",
     "learning/Learn CSS.md",
     "learning/Learn HTML.md",
-    "learning/Learn Vite.md",
-    "learning/Learn Vue3.md"
+    "learning/Learn Vite.md"
   ]
 }
