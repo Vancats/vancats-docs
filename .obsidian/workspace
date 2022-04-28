@@ -7,12 +7,8 @@
         "id": "fdd6d47484f4d90c",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "practise/vitepress.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "practise/vitepress.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
