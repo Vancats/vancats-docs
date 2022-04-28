@@ -7,8 +7,12 @@
         "id": "858b4fd5c6801585",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "HTTP.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "HTTP.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -96,6 +101,7 @@
   },
   "active": "858b4fd5c6801585",
   "lastOpenFiles": [
+    "HTTP.md",
     "practise/vitepress.md",
     "practise/Vue3.md",
     "practise/4.23 面试.md",
@@ -104,7 +110,6 @@
     "chore/Webpack.md",
     "chore/Plugins.md",
     "chore/LeetCode.md",
-    "chore/Git.md",
-    "chore/Config.md"
+    "chore/Git.md"
   ]
 }
