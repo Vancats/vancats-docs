@@ -1,6 +1,6 @@
 ---
 date created: 2022-04-27 15:08
-date updated: 2022-04-28 19:34
+date updated: 2022-04-28 19:35
 ---
 
 ### 数据类型
@@ -53,13 +53,15 @@ function myInstanceof(left, right) {
 function myNew() {
 	const args = Array.prototype.slice.call(arguments)
 	let instance
-	let fn = args.shift()
-	if (typeof fn !== 'function')
-		throw TypeError('TypeError!')
+	let constructor = args.shift()
+	if (typeof constructor !== 'function')
+		throw new TypeError('TypeError!')
 
-	const res = fn.apply(instance, args)
+	const instance = Object.create(fn)
+	const res = constructor.apply(instance, args)
 	if (typeof res === 'object' && res !== null)
-		
+		return res
+	return instance
 }
 
 ```
