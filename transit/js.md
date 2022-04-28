@@ -1,6 +1,6 @@
 ---
 date created: 2022-04-27 15:08
-date updated: 2022-04-28 18:47
+date updated: 2022-04-28 19:22
 ---
 
 ### 数据类型
@@ -36,5 +36,8 @@ function myInstanceof(left, right) {
 
 #### 其他情况
 
-```
-```
+### JS 基础
+
+#### new 一个构造函数
+1. 创建一个新对象
+2. 设置该对象的 __proto__ 
