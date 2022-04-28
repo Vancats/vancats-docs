@@ -1,6 +1,6 @@
 ---
 date created: 2022-04-27 15:08
-date updated: 2022-04-28 19:27
+date updated: 2022-04-28 19:29
 ---
 
 ### 数据类型
@@ -17,8 +17,8 @@ date updated: 2022-04-28 19:27
    2. [] instanceof Array
 4. Object.prototype.toString.call([])
 5. Array.isArray
-   
-   手写 instanceof
+
+**手写 instanceof**
 
 ```js
 function myInstanceof(left, right) {
@@ -46,4 +46,11 @@ function myInstanceof(left, right) {
 3. 构造函数的 this 指向新对象，为新对象添加属性和方法
 4. 如果构造函数的返回值是一个引用类型，返回该引用类型
 5. 返回新对象
-6. 
+**手写 new**
+```js
+function myNew() {
+	let instance
+	let fn 
+}
+
+```
