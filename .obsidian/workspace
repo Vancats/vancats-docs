@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "fdd6d47484f4d90c",
+        "id": "858b4fd5c6801585",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -94,7 +94,7 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "fdd6d47484f4d90c",
+  "active": "858b4fd5c6801585",
   "lastOpenFiles": [
     "practise/vitepress.md",
     "practise/Vue3.md",
