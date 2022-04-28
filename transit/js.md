@@ -22,10 +22,13 @@ date updated: 2022-04-28 18:43
 ```js
 function myInstanceof(left, right) {
 	const proto = right.prototype
-	const curProto = left.prototype
+	let curProto = Object.getPrototypeOf(left)
 	while (curProto !== null) {
-		if (curProto )
+		if (curProto === proto)
+			return true
+		curProto = Object.getPrototypeOf(curProto)
 	}
+	return false
 }
 ```
 
