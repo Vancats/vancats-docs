@@ -7,8 +7,8 @@ date updated: 2022-04-27 15:12
 
 #### 类型判断
 
-1. typeof 可判断 function
-2. 
+1. typeof 判断 function
+2. __proto__ 
 
 #### 类型转换
 
