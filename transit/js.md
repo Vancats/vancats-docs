@@ -1,6 +1,6 @@
 ---
 date created: 2022-04-27 15:08
-date updated: 2022-04-28 19:35
+date updated: 2022-04-28 19:40
 ---
 
 ### 数据类型
@@ -52,16 +52,22 @@ function myInstanceof(left, right) {
 ```js
 function myNew() {
 	const args = Array.prototype.slice.call(arguments)
-	let instance
+	const instance
 	let constructor = args.shift()
 	if (typeof constructor !== 'function')
 		throw new TypeError('TypeError!')
 
-	const instance = Object.create(fn)
+	// 二选一
+	instance = Object.create(constructor.prototype)
+	instance.__proto__ = constructor.prototype
+	
 	const res = constructor.apply(instance, args)
-	if (typeof res === 'object' && res !== null)
+	if (res && (typeof res === 'object' || typeof res === 'function'))
 		return res
 	return instance
 }
 
 ```
+
+#### 箭头函数
+1. 
