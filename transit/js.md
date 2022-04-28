@@ -1,6 +1,6 @@
 ---
 date created: 2022-04-27 15:08
-date updated: 2022-04-28 19:40
+date updated: 2022-04-28 19:41
 ---
 
 ### 数据类型
@@ -70,4 +70,7 @@ function myNew() {
 ```
 
 #### 箭头函数
-1. 
+
+1. 没有自身的 this，没有 prototype，所以不能 new 调用
+2. 没有 arguments
+3.

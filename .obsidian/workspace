@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "transit/js.md",
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -121,10 +121,10 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "c4d6c9a0c94d0096",
+  "active": "bc7379d6e4dd0653",
   "lastOpenFiles": [
-    "transit/js.md",
     "learning/Learn JS.md",
+    "transit/js.md",
     "learning/Learn HTML.md",
     "transit/未命名 1.md",
     "transit/长任务.md",
