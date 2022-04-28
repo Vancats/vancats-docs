@@ -40,4 +40,4 @@ function myInstanceof(left, right) {
 
 #### new 一个构造函数
 1. 创建一个新对象
-2. 设置该对象的 __proto__ 
+2. 设置该对象的 __proto__ 指向构造函数的 prototype
