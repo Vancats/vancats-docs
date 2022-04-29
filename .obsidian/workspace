@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn Vite.md",
+            "file": "transit/HTTP.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn Vite.md",
+                "file": "transit/HTTP.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,8 +101,8 @@
   },
   "active": "858b4fd5c6801585",
   "lastOpenFiles": [
+    "transit/HTTP.md",
     "learning/Learn Vite.md",
-    "HTTP.md",
     "practise/vitepress.md",
     "practise/Vue3.md",
     "practise/4.23 面试.md",
