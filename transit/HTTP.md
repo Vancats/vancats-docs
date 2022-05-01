@@ -1,6 +1,6 @@
 ---
 date created: 2022-04-28 22:26
-date updated: 2022-04-30 16:10
+date updated: 2022-05-01 14:54
 ---
 
 ### HTTP 发展
@@ -31,3 +31,5 @@ date updated: 2022-04-30 16:10
 4. 推送：如传回 html 时附带传对应的 css，js
 
 ### TCP 三次握手
+
+SYN  ACK seq
