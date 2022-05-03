@@ -1,9 +1,9 @@
 ---
 date created: 2022-04-28 22:26
-date updated: 2022-05-01 14:54
+date updated: 2022-05-03 22:02
 ---
 
-### HTTP 发展
+### HTTP 发展(扩展)
 
 #### HTTP / 0.9
 
@@ -32,4 +32,5 @@ date updated: 2022-05-01 14:54
 
 ### TCP 三次握手
 
+TCP connection
 SYN  ACK seq
