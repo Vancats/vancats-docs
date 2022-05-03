@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-03 22:46
+date updated: 2022-05-04 00:16
 ---
 
 #### HTTP 发展(扩展)
@@ -45,3 +45,9 @@ TCP connection
 ##### URL 统一资源定位器
 
 ##### URN 永久统一资源定位符
+
+#### 报文
+
+##### 请求报文
+
+Method URL Version
