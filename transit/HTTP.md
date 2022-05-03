@@ -1,7 +1,12 @@
 ---
-date created: 2022-04-28 22:26
-date updated: 2022-05-03 22:02
+date created: 2022-05-03 22:05
+date updated: 2022-05-03 22:05
 ---
+
+## 2---
+
+date created: 2022-04-28 22:26
+date updated: 2022-05-03 22:05
 
 ### HTTP 发展(扩展)
 
@@ -33,4 +38,7 @@ date updated: 2022-05-03 22:02
 ### TCP 三次握手
 
 TCP connection
-SYN  ACK seq
+
+1. SYN = 1 seq= X
+2. SYN = 1 seq = Y ACK = X + 1
+3. seq = Z ACK = Y + 1
