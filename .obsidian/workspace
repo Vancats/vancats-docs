@@ -102,6 +102,7 @@
   "active": "858b4fd5c6801585",
   "lastOpenFiles": [
     "transit/HTTP.md",
+    "learning/Learn JS.md",
     "learning/Learn Vite.md",
     "practise/vitepress.md",
     "practise/Vue3.md",
@@ -109,7 +110,6 @@
     "learning/Learn CSS.md",
     "practise/index.md",
     "chore/Webpack.md",
-    "chore/Plugins.md",
-    "chore/LeetCode.md"
+    "chore/Plugins.md"
   ]
 }
