@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-04 00:16
+date updated: 2022-05-04 12:32
 ---
 
 #### HTTP 发展(扩展)
@@ -51,3 +51,7 @@ TCP connection
 ##### 请求报文
 
 Method URL Version
+
+##### 响应报文
+
+Version Code Meaning
