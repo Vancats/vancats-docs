@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-05 21:24
+date updated: 2022-05-05 21:25
 ---
 
 #### HTTP 发展(扩展)
@@ -65,7 +65,7 @@ Version Code Meaning
 1. 只允许 GET POST HEADER 跨域
 2. 只允许 text/plain multipart/form-data application/x-www-form-urlencoded 跨域
 
-修改服务器
+修改服务器设置
 
 1. Access-Control-Allow-Origin
 2. Access-Control-Allow-Header
