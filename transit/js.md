@@ -1,6 +1,6 @@
 ---
 date created: 2022-04-27 15:08
-date updated: 2022-04-28 19:41
+date updated: 2022-04-28 20:34
 ---
 
 ### 数据类型
@@ -71,6 +71,44 @@ function myNew() {
 
 #### 箭头函数
 
-1. 没有自身的 this，没有 prototype，所以不能 new 调用
-2. 没有 arguments
-3.
+1. 没有自身的 this，this 继承上层作用域；没有 prototype；所以不能 new 调用
+2. 没有 arguments，如果使用，取的是上层作用域
+3. 不能使用 call bind apply 改变其 this 指向
+4. 不能用作 generator，不能使用 yield
+5. 对象、原型对象方法，DOM 事件函数不能使用
+
+#### 判断 this
+
+1. 箭头函数 上级作用域
+2. new 新创建的对象
+3. bind apply call
+4. 调用关系，指向上层
+5. 普通函数，指向 window | undefined
+6. DOM 事件函数，指向 DOM 对象；箭头函数 => window
+
+#### iterator
+
+```js
+// obj1
+const obj = { a: 1, b: 2, c: 3}
+function myIterator (obj) {
+	let keys = Object.keys(obj)
+	let count = 0
+	return {
+		next() {
+			if (count < keys.length) {
+				return { done: true, value: undefined }
+			} else {
+				return { done: false, value: obj[keys[count++]] }
+			}
+		}
+	}
+}
+
+// obj2
+obj[Symbol.iterator] = function*() {
+	let keys = Object.keys(this)
+	for (let k of keys)
+		yield obj[k]
+}
+```
