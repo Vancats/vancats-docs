@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-05 22:30
+date updated: 2022-05-05 22:33
 ---
 
 #### HTTP 发展(扩展)
@@ -74,7 +74,7 @@ Version Code Meaning
 
 #### Cache- Control
 
-1. Public HTTP 请求返回的内容所经过的任何路径，包括代理服务器和浏览器，都可以进行缓存的操作
+1. Public 请求返回的内容所经过的任何路径，包括代理服务器和浏览器，都可以进行缓存的操作
 2. Private 只有发起请求的浏览器可以缓存
 3. no-cache 允许缓存，但是每次发起请求都需要服务器端验证过才可以使用
 4. no-store 不允许缓存
