@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-05-05 20:49
+date updated: 2022-05-05 20:57
 ---
 
 #### 语义化
@@ -40,9 +40,9 @@ date updated: 2022-05-05 20:49
 #### Link 标签
 
 1. preload：指明后续可能有该文件，可以提醒浏览器处理其优先级
-2. prefetch：预加载文件，比如 html 中肯定包含的文件先行加载
+2. prefetch：浏览器空闲时预加载文件，比如 html 中肯定包含的文件先行加载
 3. dns-prefetch：进行提前的 dns 解析
-4. preconnect：进行预连接，包括 TCP 三次握手
+4. preconnect：进行预连接，除了 dns 解析还有 TCP 连接和 TLS 握手（HTTPS）
 
 #### src 与 href
 
