@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-05 21:46
+date updated: 2022-05-05 21:51
 ---
 
 #### HTTP 发展(扩展)
@@ -79,5 +79,9 @@ Version Code Meaning
 3. no-cache 不允许缓存
 
 ##### 到期时间
+
 1. s-maxage 代理服务器使用，优先级最高
-2. max-age 
+2. max-age
+3. max-stale 发起端设置，在时间内可以使用过期缓存，浏览器不使用
+
+##### 重新验证
