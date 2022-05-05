@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-05 21:25
+date updated: 2022-05-05 21:44
 ---
 
 #### HTTP 发展(扩展)
@@ -71,3 +71,9 @@ Version Code Meaning
 2. Access-Control-Allow-Header
 3. Access-Control-Allow-Methods
 4. Access-Control-Max-Age 这个时间内不用重新
+
+#### Cache- Control
+
+##### Public
+
+HTTP 请求返回的内容所经过的任何路径，包括代理服务器和浏览器，都可以进行缓存的操作
