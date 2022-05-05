@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-05 21:51
+date updated: 2022-05-05 22:04
 ---
 
 #### HTTP 发展(扩展)
@@ -85,3 +85,6 @@ Version Code Meaning
 3. max-stale 发起端设置，在时间内可以使用过期缓存，浏览器不使用
 
 ##### 重新验证
+
+1. must-revalidate 如果数据过期，必须去原服务端验证
+2. proxy-revalidate 含义同上，不过shi
