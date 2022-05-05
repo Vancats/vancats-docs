@@ -55,3 +55,5 @@ Method URL Version
 ##### 响应报文
 
 Version Code Meaning
+
+#### 跨域
