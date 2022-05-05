@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-05 22:07
+date updated: 2022-05-05 22:30
 ---
 
 #### HTTP 发展(扩展)
@@ -90,3 +90,5 @@ Version Code Meaning
 
 1. must-revalidate 如果数据过期，必须去原服务端验证
 2. proxy-revalidate 含义同上，不过是缓存服务器过期时
+
+在打包完成的 js 文件上加上相应的 hash，那么更改后请求的就不是原文件了，可以避免长缓存引起的问题
