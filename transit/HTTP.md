@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-04 12:32
+date updated: 2022-05-05 21:24
 ---
 
 #### HTTP 发展(扩展)
@@ -57,3 +57,17 @@ Method URL Version
 Version Code Meaning
 
 #### 跨域
+
+请求与当前协议，域名，端口任一不同的接口
+
+#### 服务器设置
+
+1. 只允许 GET POST HEADER 跨域
+2. 只允许 text/plain multipart/form-data application/x-www-form-urlencoded 跨域
+
+修改服务器
+
+1. Access-Control-Allow-Origin
+2. Access-Control-Allow-Header
+3. Access-Control-Allow-Methods
+4. Access-Control-Max-Age 这个时间内不用重新
