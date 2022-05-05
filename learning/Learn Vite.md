@@ -10,7 +10,7 @@ date updated: 2022-03-17 18:34
 - ESM，只加载首页需要用到的文件
 - 基于 ESBuild，速度非常快
 - 兼容 rollup 插件，生态完整
- aa
+
 #### 初始化
 
 - Vue3: `npm init vite`

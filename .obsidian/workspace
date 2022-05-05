@@ -4,26 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "c4d6c9a0c94d0096",
+        "id": "858b4fd5c6801585",
         "type": "leaf",
-        "dimension": 54.53125,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "transit/js.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "bc7379d6e4dd0653",
-        "type": "leaf",
-        "dimension": 45.46875,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "learning/Learn JS.md",
+            "file": "transit/HTTP.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "transit/js.md",
+                "file": "transit/HTTP.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,34 +90,26 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "054e550478819a89",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 174,
     "collapsed": true
   },
-  "active": "c4d6c9a0c94d0096",
+  "active": "858b4fd5c6801585",
   "lastOpenFiles": [
-    "transit/js.md",
+    "transit/HTTP.md",
     "learning/Learn JS.md",
-    "learning/Learn HTML.md",
-    "transit/未命名 1.md",
-    "transit/长任务.md",
-    "learning/Learn Browser.md",
-    "learning/设计模式.md",
-    "transit/css.md",
+    "learning/Learn Vite.md",
+    "practise/vitepress.md",
+    "practise/Vue3.md",
+    "practise/4.23 面试.md",
     "learning/Learn CSS.md",
-    "learning/Learn Vite.md"
+    "practise/index.md",
+    "chore/Webpack.md",
+    "chore/Plugins.md"
   ]
 }
