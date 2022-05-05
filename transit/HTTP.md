@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-05 22:04
+date updated: 2022-05-05 22:07
 ---
 
 #### HTTP 发展(扩展)
@@ -76,7 +76,9 @@ Version Code Meaning
 
 1. Public HTTP 请求返回的内容所经过的任何路径，包括代理服务器和浏览器，都可以进行缓存的操作
 2. Private 只有发起请求的浏览器可以缓存
-3. no-cache 不允许缓存
+3. no-cache 允许缓存，但是每次发起请求都需要服务器端验证过才可以使用
+4. no-store 不允许缓存
+5. no-transform 不允许代理服务器改动返回的内容
 
 ##### 到期时间
 
@@ -87,4 +89,4 @@ Version Code Meaning
 ##### 重新验证
 
 1. must-revalidate 如果数据过期，必须去原服务端验证
-2. proxy-revalidate 含义同上，不过shi
+2. proxy-revalidate 含义同上，不过是缓存服务器过期时
