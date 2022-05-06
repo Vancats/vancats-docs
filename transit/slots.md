@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 14:10
-date updated: 2022-05-06 14:57
+date updated: 2022-05-06 15:38
 ---
 
 #### 编译环节
@@ -48,7 +48,7 @@ function genSlot (el: ASTElement, state: CodegenState): string {
 }
 ```
 
-6. 如果是其他形式的 slot，会走 `getData` 逻辑中，关键代码如下，主要是生成了一个 `_u` 开头的字符串，并传入了相关内容，其他逻辑可以自行查看
+6. 如果是其他形式的 slot，会走 `getData` 逻辑中，关键代码如下
 
 ```js
 if (el.slotTarget && !el.slotScope) {
@@ -60,11 +60,37 @@ if (el.scopedSlots) {
 
 function genScopedSlots(
   ...
+  const generatedSlots = Object.keys(slots)
+    .map(key => genScopedSlot(slots[key], state))
+    .join(',')
+    
   return `scopedSlots:_u([${generatedSlots}]${needsForceUpdate ? `,null,true` : ``
     }${!needsForceUpdate && needsKey ? `,null,false,${hash(generatedSlots)}` : ``
     })`
 }
+
+function genScopedSlot(
+  el: ASTElement,
+  state: CodegenState
+): string {
+  ... 
+  const slotScope = el.slotScope === emptySlotScopeToken
+    ? ``
+    : String(el.slotScope)
+  const fn = `function(${slotScope}){` +
+    `return ${el.tag === 'template'
+      ? el.if && isLegacySyntax
+        ? `(${el.if})?${genChildren(el, state) || 'undefined'}:undefined`
+        : genChildren(el, state) || 'undefined'
+      : genElement(el, state)
+    }}`
+  const reverseProxy = slotScope ? `` : `,proxy:true`
+  return `{key:${el.slotTarget || `"default"`},fn:${fn}${reverseProxy}}`
+}
+
 ```
+
+观察以上代码，首先会把所有节点进行 `genScopedSlot`，其中的 fn 中传入了一个 `$slotScope`，这个就是我们作用域插槽值传递的关键，然后我们会生成一个 `_u` 开头的字符串，并传入了相关内容，其他逻辑可以自行查看
 
 #### 运行时
 
