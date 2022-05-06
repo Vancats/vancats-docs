@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 14:10
-date updated: 2022-05-06 15:43
+date updated: 2022-05-06 15:48
 ---
 
 很多代码的截取没有太大的必要，具体还是实现的路线，我会贴路径，可以自行顺着逻辑查看
@@ -99,8 +99,10 @@ function genScopedSlot(
 `target._t = renderSlot`
 `target._u = resolveScopedSlots`
 
-`src\core\instance\render-helpers\render-slot.js`
-renderSlot 主要做了两件事
+renderSlot `src\core\instance\render-helpers\render-slot.js`
 
 1. 取出相应的节点    赋值涉及值的判断，可以自行查看其优先级
 2. 创建节点 `this.$createElement('template', { slot: target }, nodes)`
+
+resolveScopedSlots `src\core\instance\render-helpers\resolve-scoped-slots.js`
+主要是执行了其中的所有 fn 函数，其返回的值可以通过上方的 genScopedSlot 得知会是一个节点，我们将所有的值放入一个对象并返回即可
