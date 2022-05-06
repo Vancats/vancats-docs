@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 14:10
-date updated: 2022-05-06 15:48
+date updated: 2022-05-06 15:49
 ---
 
 很多代码的截取没有太大的必要，具体还是实现的路线，我会贴路径，可以自行顺着逻辑查看
@@ -14,7 +14,7 @@ date updated: 2022-05-06 15:48
 3. 调用 closeElement 后，实现 processElement
 4. 可以看到实现了 processSlotContent 和 processSlotOutlet，前者主要是设置 slotScope 和 slotTarget，后者是设置 slotName，这些属性都是后面需要使用的内容
 
-parse 大概就这样，细节可以自己看
+##### 然后是 codegen
 
 1. 进入到 codegen 中 `src\compiler\codegen\index.js`
 2. genarate
