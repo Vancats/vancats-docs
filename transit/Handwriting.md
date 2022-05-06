@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-06 18:12
+date updated: 2022-05-06 18:17
 ---
 
 # 手写题
@@ -50,10 +50,34 @@ function new() {
 
 ```js
 function debounce(fn, interval = 300) {
-	let timer
+	let timer = null
 	return function() {
-		timer = setTimeout(() => {
-			fn()
+		let context = this
+		if (timer) {
+			clearTimeout(timer)
+			timer = null
+		}
+		timer = setTimeout(function() {
+			fn.apply(this, arguments)
+		}, interval)
+	}
+}
+```
+
+#### 5. 节流
+
+```js
+function throttle(fn, interval = 300) {
+	let timer = null
+	return function () {
+		if (timer) {
+			clearTimeout(timer)
+
+		} else {
+		fn
+		}
+		timer = setTimeout(function() {
+			
 		}, interval)
 	}
 }
