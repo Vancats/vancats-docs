@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "learning/Learn JS.md",
+            "file": "transit/hander written.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn JS.md",
+                "file": "transit/hander written.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "97f59526411e7fbf",
   "lastOpenFiles": [
-    "learning/Learn JS.md",
+    "transit/hander written.md",
+    "transit/css.md",
+    "transit/Vue3.md",
+    "transit/vitepress.md",
+    "transit/slots.md",
     "transit/js.md",
     "transit/HTTP.md",
-    "transit/slots.md",
-    "transit/src/compiler/parser/index.js.md",
-    "learning/Learn Vite.md",
-    "practise/vitepress.md",
-    "practise/Vue3.md",
-    "practise/4.23 面试.md",
-    "learning/Learn CSS.md"
+    "transit/compile.md",
+    "transit/长任务.md",
+    "transit/4.23 面试.md"
   ]
 }
