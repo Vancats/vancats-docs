@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-06 18:50
+date updated: 2022-05-06 18:58
 ---
 
 # 手写题
@@ -90,5 +90,18 @@ function getType(val) {
 		return Object.prototype.toString.call(val).slice(8, -1)
 	}
 	return typeof val
+}
+```
+
+#### 7. call
+
+```js
+Function.prototype.call = function() {
+	const args = Array.prototype.slice.call(arguments)
+	const context = args.shift() || window
+	context.fn = this
+	const res = context.fn(...args)
+	delete context.fn
+	return res
 }
 ```
