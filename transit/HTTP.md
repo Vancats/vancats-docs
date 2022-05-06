@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-06 21:46
+date updated: 2022-05-06 22:15
 ---
 
 #### HTTP 发展(扩展)
@@ -111,4 +111,7 @@ Version Code Meaning
 2. 第一次请求后，会发生 sessionId 并存储到 cookie 中，根据 sessionId 来判断用户状态
 3. 也可以使用 token 机制
 
-#### Con
+#### keep-alive
+
+1. Connection 请求头
+2. 默认打开，最多可同时建立 6 个 tcp 连接，可看 connection Id
