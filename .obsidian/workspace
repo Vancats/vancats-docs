@@ -102,14 +102,14 @@
   "active": "858b4fd5c6801585",
   "lastOpenFiles": [
     "transit/slots.md",
-    "learning/Learn JS.md",
     "transit/js.md",
+    "transit/src/compiler/parser/index.js.md",
+    "learning/Learn JS.md",
     "transit/HTTP.md",
     "learning/Learn Vite.md",
     "practise/vitepress.md",
     "practise/Vue3.md",
     "practise/4.23 面试.md",
-    "learning/Learn CSS.md",
-    "practise/index.md"
+    "learning/Learn CSS.md"
   ]
 }
