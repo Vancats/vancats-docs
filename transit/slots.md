@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 14:10
-date updated: 2022-05-06 14:49
+date updated: 2022-05-06 14:54
 ---
 
 #### 编译环节
@@ -45,5 +45,23 @@ function genSlot (el: ASTElement, state: CodegenState): string {
     res += `${attrs ? '' : ',null'},${bind}`
   }
   return res + ')'
+}
+```
+
+6. 如果是其他形式的 slot，会走 `getData` 逻辑中，关键代码如下，主要是生成了一个 `_u` 开头的字符串，并传入了相关内容，其他逻辑可以自行查看
+
+```js
+if (el.slotTarget && !el.slotScope) {
+  data += `slot:${el.slotTarget},`
+}
+if (el.scopedSlots) {
+  data += `${genScopedSlots(el, el.scopedSlots, state)},`
+}
+
+function genScopedSlots(
+  ...
+  return `scopedSlots:_u([${generatedSlots}]${needsForceUpdate ? `,null,true` : ``
+    }${!needsForceUpdate && needsKey ? `,null,false,${hash(generatedSlots)}` : ``
+    })`
 }
 ```
