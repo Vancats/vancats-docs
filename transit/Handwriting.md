@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-06 19:02
+date updated: 2022-05-06 19:08
 ---
 
 # 手写题
@@ -37,7 +37,7 @@ function new() {
 	const args = Array.prototype.slice.call(arguments)
 	const constructor = args.shift()
 	if (typeof constructor !== 'function')
-		throw new Error('TypeError')
+		throw new TypeError('TypeError')
 	const instance = Object.create(constructor.prototype)
 	const res = constructor.apply(instance, args)
 	if (typeof res === 'function' || (typeof res === 'object' && res !== null))
@@ -98,7 +98,7 @@ function getType(val) {
 ```js
 Function.prototype.call = function() {
 	if (typeof this !== 'function')
-		throw new Error('TypeError')
+		throw new TypeError('TypeError')
 	const args = [...arguments]
 	const context = args.shift() || window
 	context.fn = this
@@ -113,7 +113,7 @@ Function.prototype.call = function() {
 ```js
 Funtion.prototype.apply = function() {
 	if (typeof this !== 'function')
-		throw new Error('TypeError')
+		throw new TypeError('TypeError')
 	const args = [...arguments]
 	const context = args.shift() || window
 	context.fn = this
@@ -122,9 +122,18 @@ Funtion.prototype.apply = function() {
 	return res
 }
 ```
+
 #### 9. bind
+
 ```js
 Function.prototype.bind = function() {
-
+	if (typeof this !== 'function')
+		throw new TypeError('TypeError')
+	const args = [...arguments]
+	const context = args.shift() || window
+	const fn = this
+	return function Fn() {
+		fn.apply(this instanceof Fn ? this : context, ...args, ...arguments)
+	}
 }
 ```
