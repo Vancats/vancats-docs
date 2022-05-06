@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-05 22:33
+date updated: 2022-05-06 20:30
 ---
 
 #### HTTP 发展(扩展)
@@ -85,6 +85,11 @@ Version Code Meaning
 1. s-maxage 代理服务器使用，优先级最高
 2. max-age
 3. max-stale 发起端设置，在时间内可以使用过期缓存，浏览器不使用
+
+##### 缓存验证
+
+1. Last-Modified --- If-Modified-since 对比资源修改时间验证 1. 编译但未改变内容 2. 修改文件速度过快
+2. Etag 数据签名 --- If-(non-)Match
 
 ##### 重新验证
 
