@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-06 18:17
+date updated: 2022-05-06 18:21
 ---
 
 # 手写题
@@ -58,7 +58,7 @@ function debounce(fn, interval = 300) {
 			timer = null
 		}
 		timer = setTimeout(function() {
-			fn.apply(this, arguments)
+			fn.apply(context, arguments)
 		}, interval)
 	}
 }
@@ -68,17 +68,16 @@ function debounce(fn, interval = 300) {
 
 ```js
 function throttle(fn, interval = 300) {
-	let timer = null
+	let lastTime = Date.now()
 	return function () {
-		if (timer) {
-			clearTimeout(timer)
-
-		} else {
-		fn
+		let context = this
+		let curTime = Date.now()
+		if (curTime - lastTime >= interval) {
+			lastTime = curTime
+			fn.apply(context, arguments)
 		}
-		timer = setTimeout(function() {
-			
-		}, interval)
 	}
 }
 ```
+
+#### 6. getType
