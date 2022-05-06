@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-06 17:03
+date updated: 2022-05-06 17:07
 ---
 
 # 手写题
@@ -30,7 +30,7 @@ function instanceOf(left, right) {
 }
 ```
 
-#### new
+#### 3. new
 
 ```js
 function new() {
@@ -39,6 +39,11 @@ function new() {
 	if (typeof constructor !== 'function')
 		throw new Error('TypeError')
 	const instance = Object.create(constructor.prototype)
-	const res = 
+	const res = constructor.apply(instance, args)
+	if (typeof res === 'function' || (typeof res === 'object' && res !== null))
+		return res
+	return instance
 }
 ```
+
+#### 4. 防抖
