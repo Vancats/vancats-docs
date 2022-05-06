@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-04 12:32
+date updated: 2022-05-05 22:33
 ---
 
 #### HTTP 发展(扩展)
@@ -55,3 +55,40 @@ Method URL Version
 ##### 响应报文
 
 Version Code Meaning
+
+#### 跨域
+
+请求与当前协议，域名，端口任一不同的接口
+
+#### 服务器设置
+
+1. 只允许 GET POST HEADER 跨域
+2. 只允许 text/plain multipart/form-data application/x-www-form-urlencoded 跨域
+
+修改服务器设置
+
+1. Access-Control-Allow-Origin
+2. Access-Control-Allow-Header
+3. Access-Control-Allow-Methods
+4. Access-Control-Max-Age 这个时间内不用重新
+
+#### Cache- Control
+
+1. Public 请求返回的内容所经过的任何路径，包括代理服务器和浏览器，都可以进行缓存的操作
+2. Private 只有发起请求的浏览器可以缓存
+3. no-cache 允许缓存，但是每次发起请求都需要服务器端验证过才可以使用
+4. no-store 不允许缓存
+5. no-transform 不允许代理服务器改动返回的内容
+
+##### 到期时间
+
+1. s-maxage 代理服务器使用，优先级最高
+2. max-age
+3. max-stale 发起端设置，在时间内可以使用过期缓存，浏览器不使用
+
+##### 重新验证
+
+1. must-revalidate 如果数据过期，必须去原服务端验证
+2. proxy-revalidate 含义同上，不过是缓存服务器过期时
+
+在打包完成的 js 文件上加上相应的 hash，那么更改后请求的就不是原文件了，可以避免长缓存引起的问题

@@ -103,13 +103,14 @@
   "lastOpenFiles": [
     "transit/js.md",
     "transit/HTTP.md",
+    "transit/css.md",
+    "learning/Learn HTML.md",
     "learning/Learn JS.md",
     "learning/Learn Vite.md",
     "practise/vitepress.md",
     "practise/Vue3.md",
     "practise/4.23 面试.md",
     "learning/Learn CSS.md",
-    "practise/index.md",
-    "chore/Webpack.md"
+    "practise/index.md"
   ]
 }
