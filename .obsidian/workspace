@@ -6,10 +6,24 @@
       {
         "id": "858b4fd5c6801585",
         "type": "leaf",
+        "dimension": 62.870514820592824,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "transit/slots.md",
+            "file": "transit/js.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "97f59526411e7fbf",
+        "type": "leaf",
+        "dimension": 37.129485179407176,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "learning/Learn JS.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "transit/slots.md",
+                "file": "transit/js.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,11 +115,11 @@
   },
   "active": "858b4fd5c6801585",
   "lastOpenFiles": [
-    "transit/slots.md",
     "transit/js.md",
-    "transit/src/compiler/parser/index.js.md",
     "learning/Learn JS.md",
     "transit/HTTP.md",
+    "transit/slots.md",
+    "transit/src/compiler/parser/index.js.md",
     "learning/Learn Vite.md",
     "practise/vitepress.md",
     "practise/Vue3.md",
