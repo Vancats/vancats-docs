@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-06 19:08
+date updated: 2022-05-06 19:11
 ---
 
 # 手写题
@@ -133,6 +133,7 @@ Function.prototype.bind = function() {
 	const context = args.shift() || window
 	const fn = this
 	return function Fn() {
+		// 如果该函数是构造函数，this 指向不变
 		fn.apply(this instanceof Fn ? this : context, ...args, ...arguments)
 	}
 }
