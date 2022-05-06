@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-06 20:37
+date updated: 2022-05-06 21:43
 ---
 
 #### HTTP 发展(扩展)
@@ -97,3 +97,13 @@ Version Code Meaning
 2. proxy-revalidate 含义同上，不过是缓存服务器过期时
 
 在打包完成的 js 文件上加上相应的 hash，那么更改后请求的就不是原文件了，可以避免长缓存引起的问题
+
+#### Cookie
+
+1. 服务端设置 Set-Cookie 请求头
+2. 当本地有 cookie 键值对时，发送请求会自动带上
+3. 可以设置 max-age 和 httpOnly(禁用 document.cookie
+4.bu n
+
+##### session
+session 是服务端的内容，可以储存任何数据
