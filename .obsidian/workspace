@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "858b4fd5c6801585",
+        "id": "aa37e3fc3fbb0a75",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "transit/HTTP.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "transit/HTTP.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -99,7 +94,7 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "858b4fd5c6801585",
+  "active": "aa37e3fc3fbb0a75",
   "lastOpenFiles": [
     "transit/HTTP.md",
     "transit/css.md",
