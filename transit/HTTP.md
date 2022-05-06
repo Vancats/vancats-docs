@@ -110,3 +110,5 @@ Version Code Meaning
 1. session 是服务端的内容，可以储存任何数据
 2. 第一次请求后，会发生 sessionId 并存储到 cookie 中，根据 sessionId 来判断用户状态
 3. 也可以使用 token 机制
+
+#### Con
