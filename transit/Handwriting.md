@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-06 17:07
+date updated: 2022-05-06 18:12
 ---
 
 # 手写题
@@ -47,3 +47,14 @@ function new() {
 ```
 
 #### 4. 防抖
+
+```js
+function debounce(fn, interval = 300) {
+	let timer
+	return function() {
+		timer = setTimeout(() => {
+			fn()
+		}, interval)
+	}
+}
+```
