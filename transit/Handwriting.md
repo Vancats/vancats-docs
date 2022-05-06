@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-06 18:58
+date updated: 2022-05-06 19:02
 ---
 
 # 手写题
@@ -97,11 +97,34 @@ function getType(val) {
 
 ```js
 Function.prototype.call = function() {
-	const args = Array.prototype.slice.call(arguments)
+	if (typeof this !== 'function')
+		throw new Error('TypeError')
+	const args = [...arguments]
 	const context = args.shift() || window
 	context.fn = this
 	const res = context.fn(...args)
 	delete context.fn
 	return res
+}
+```
+
+#### 8. apply
+
+```js
+Funtion.prototype.apply = function() {
+	if (typeof this !== 'function')
+		throw new Error('TypeError')
+	const args = [...arguments]
+	const context = args.shift() || window
+	context.fn = this
+	const res = context.fn(args)
+	delete context.fn
+	return res
+}
+```
+#### 9. bind
+```js
+Function.prototype.bind = function() {
+
 }
 ```
