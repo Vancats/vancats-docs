@@ -81,3 +81,11 @@ function throttle(fn, interval = 300) {
 ```
 
 #### 6. getType
+```js
+function getType(val) {
+	if (val === null)
+		return "null"
+	if
+}
+
+```
