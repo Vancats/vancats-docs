@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 14:10
-date updated: 2022-05-06 14:45
+date updated: 2022-05-06 14:49
 ---
 
 #### 编译环节
@@ -17,4 +17,33 @@ parse 大概就这样，细节可以自己看
 
 1. 进入到 codegen 中 `src\compiler\codegen\index.js`
 2. genarate
-3. new 一个 CodegenState 类
+3. new 一个 `CodegenState` 类，获得 state
+4. 调用 `genElement` 方法
+5. 如果 tag 就是 slot，调用 `genSlot`，可以看到会生成一个 `_t` 开头的字符串，传入 `slotName` 和 `children`
+
+```js
+function genSlot (el: ASTElement, state: CodegenState): string {
+  const slotName = el.slotName || '"default"'
+  const children = genChildren(el, state)
+  let res = `_t(${slotName}${children ? `,function(){return ${children}}` : ''}`
+  const attrs = el.attrs || el.dynamicAttrs
+    ? genProps((el.attrs || []).concat(el.dynamicAttrs || []).map(attr => ({
+        // slot props are camelized
+        name: camelize(attr.name),
+        value: attr.value,
+        dynamic: attr.dynamic
+      })))
+    : null
+  const bind = el.attrsMap['v-bind']
+  if ((attrs || bind) && !children) {
+    res += `,null`
+  }
+  if (attrs) {
+    res += `,${attrs}`
+  }
+  if (bind) {
+    res += `${attrs ? '' : ',null'},${bind}`
+  }
+  return res + ')'
+}
+```
