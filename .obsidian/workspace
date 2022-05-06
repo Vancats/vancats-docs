@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "aa37e3fc3fbb0a75",
+        "id": "97f59526411e7fbf",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "transit/Handwriting.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "transit/Handwriting.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -94,17 +99,17 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "aa37e3fc3fbb0a75",
+  "active": "97f59526411e7fbf",
   "lastOpenFiles": [
+    "transit/Handwriting.md",
+    "transit/js.md",
     "transit/HTTP.md",
     "transit/css.md",
-    "learning/Learn HTML.md",
-    "learning/Learn JS.md",
-    "learning/Learn Vite.md",
-    "practise/vitepress.md",
-    "practise/Vue3.md",
-    "practise/4.23 面试.md",
-    "learning/Learn CSS.md",
-    "practise/index.md"
+    "transit/compile.md",
+    "transit/Vue3.md",
+    "transit/vitepress.md",
+    "transit/slots.md",
+    "transit/长任务.md",
+    "transit/4.23 面试.md"
   ]
 }
