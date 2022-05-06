@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-06 18:21
+date updated: 2022-05-06 18:50
 ---
 
 # 手写题
@@ -81,11 +81,14 @@ function throttle(fn, interval = 300) {
 ```
 
 #### 6. getType
+
 ```js
 function getType(val) {
 	if (val === null)
 		return "null"
-	if
+	if (typeof val === 'object') {
+		return Object.prototype.toString.call(val).slice(8, -1)
+	}
+	return typeof val
 }
-
 ```
