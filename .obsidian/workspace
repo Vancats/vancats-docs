@@ -4,26 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "858b4fd5c6801585",
+        "id": "97f59526411e7fbf",
         "type": "leaf",
-        "dimension": 62.870514820592824,
         "state": {
           "type": "markdown",
           "state": {
             "file": "transit/js.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "97f59526411e7fbf",
-        "type": "leaf",
-        "dimension": 37.129485179407176,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "learning/Learn JS.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/Learn JS.md",
+                "file": "transit/js.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,8 +101,8 @@
   },
   "active": "97f59526411e7fbf",
   "lastOpenFiles": [
-    "learning/Learn JS.md",
     "transit/js.md",
+    "learning/Learn JS.md",
     "transit/HTTP.md",
     "transit/slots.md",
     "transit/src/compiler/parser/index.js.md",
