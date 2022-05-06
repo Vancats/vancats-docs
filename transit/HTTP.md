@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-06 21:43
+date updated: 2022-05-06 21:46
 ---
 
 #### HTTP 发展(扩展)
@@ -103,7 +103,10 @@ Version Code Meaning
 1. 服务端设置 Set-Cookie 请求头
 2. 当本地有 cookie 键值对时，发送请求会自动带上
 3. 可以设置 max-age 和 httpOnly(禁用 document.cookie
-4.bu n
+4. 不能超过 4k
 
 ##### session
-session 是服务端的内容，可以储存任何数据
+
+1. session 是服务端的内容，可以储存任何数据
+2. 第一次请求后，会发生 sessionId 并存储到 cookie 中，根据 sessionId 来判断用户状态
+3. 也可以使用 token 机制
