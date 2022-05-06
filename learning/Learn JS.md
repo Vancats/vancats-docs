@@ -363,7 +363,7 @@ p1.__proto__.constructor // Person
 Person.prototype.constructor // Person
 ```
 
-![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
+![left](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
 
 #### 执行上下文
 
