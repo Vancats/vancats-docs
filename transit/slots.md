@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 14:10
-date updated: 2022-05-06 14:54
+date updated: 2022-05-06 14:57
 ---
 
 #### 编译环节
@@ -65,3 +65,9 @@ function genScopedSlots(
     })`
 }
 ```
+
+#### 运行时
+
+前面的 `_t`, `_u`，甚至熟悉的 `_c` 都是代表的哪些内容，可以在这里查看 `src\core\instance\render-helpers\index.js`， 其中
+`target._t = renderSlot`
+`target._u = resolveScopedSlots`
