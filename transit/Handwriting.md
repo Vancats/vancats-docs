@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-07 11:51
+date updated: 2022-05-07 11:54
 ---
 
 # 手写题
@@ -49,16 +49,15 @@ function new() {
 #### 4. 防抖
 
 ```js
-function debounce(fn, interval = 300) {
+function debounce(fn, interval) {
 	let timer = null
 	return function() {
-		let context = this
 		if (timer) {
 			clearTimeout(timer)
 			timer = null
 		}
 		timer = setTimeout(function() {
-			fn.apply(context, arguments)
+			f
 		}, interval)
 	}
 }
@@ -67,17 +66,7 @@ function debounce(fn, interval = 300) {
 #### 5. 节流
 
 ```js
-function throttle(fn, interval = 300) {
-	let lastTime = Date.now()
-	return function () {
-		let context = this
-		let curTime = Date.now()
-		if (curTime - lastTime >= interval) {
-			lastTime = curTime
-			fn.apply(context, arguments)
-		}
-	}
-}
+s
 ```
 
 #### 6. getType
@@ -130,11 +119,10 @@ Function.prototype.bind = function() {
 	if (typeof this !== 'function')
 		throw new TypeError('TypeError')
 	const args = [...arguments]
-	const context = args.shift() || window
+	const context = args.shift()
 	const fn = this
 	return function Fn() {
-		// 如果该函数是构造函数，this 指向不变
-		fn.bind(this instanceof Fn ? this : context, ...args, ...arguments)
+		fn.bind(this instance Fn ? this : context, ...args, ...arguments)
 	}
 }
 ```
