@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-07 18:08
+date updated: 2022-05-07 18:12
 ---
 
 # 手写题
@@ -165,8 +165,11 @@ function deepClone(obj) {
 	if (!obj || typeof obj !== 'object')
 		return obj
 	const res = Array.isArray(obj) ? [] : {}
-	for (let item in obj) {
-		res[item] = obj
+	for (let key in obj) {
+		if (obj.hasOwnProperty(key)) {
+			res[key] = deepClone(obj[key])
+		}
 	}
+	return res
 }
 ```
