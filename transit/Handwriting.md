@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-07 18:12
+date updated: 2022-05-07 18:25
 ---
 
 # 手写题
@@ -160,6 +160,8 @@ function curry(fn, ...args) {
 
 #### 11. 深拷贝
 
+原始值，数组，对象，循环引用
+
 ```js
 function deepClone(obj, map = new Map()) {
 	if (!obj || typeof obj !== 'object')
@@ -171,7 +173,7 @@ function deepClone(obj, map = new Map()) {
 	map.set(obj, res)
 	for (let key in obj) {
 		if (obj.hasOwnProperty(key)) {
-			res[key] = deepClone(obj[key])
+			res[key] = deepClone(obj[key], map)
 		}
 	}
 	return res
