@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-07 12:01
+date updated: 2022-05-07 12:19
 ---
 
 # 手写题
@@ -146,9 +146,9 @@ function curry(fn, ...args1) {
 	return function(...args2) {
 		let curArgs = [...args1, ...args2]
 		if (curArgs.length >= len) {
-			return fn.apply(this, curArgs)
+			return fn(...curArgs)
 		} else {
-			return curry.call(this, fn, ...curArgs)
+			return curry.call(null, fn, ...curArgs)
 		}
 	}
 }
