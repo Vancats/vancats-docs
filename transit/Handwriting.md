@@ -146,10 +146,14 @@ function curry(fn, ...args1) {
 	return function(...args2) {
 		let curArgs = [...args1, ...args2]
 		if (curArgs.length >= len) {
-			fn.apply(this, curArgs)
+			return fn.apply(this, curArgs)
 		} else {
-			return curry(fn, ...curArgs)
+			return curry.call(this, fn, ...curArgs)
 		}
 	}
+}
+
+function curry(fn, ...args) {
+	return args.length < fn.length ? curry.bind(null, fn, ...args) : fn(...args)
 }
 ```
