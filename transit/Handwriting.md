@@ -141,7 +141,15 @@ Function.prototype.bind = function() {
 #### 10. 柯里化
 
 ```js
-function curry(fn) {
-
+function curry(fn, ...args1) {
+	let len = fn.length
+	return function(...args2) {
+		let curArgs = [...args1, ...args2]
+		if (curArgs.length >= len) {
+			fn.apply(this, curArgs)
+		} else {
+			return curry(fn, ...curArgs)
+		}
+	}
 }
 ```
