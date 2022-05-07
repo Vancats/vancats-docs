@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-06 19:11
+date updated: 2022-05-07 11:51
 ---
 
 # 手写题
@@ -134,7 +134,7 @@ Function.prototype.bind = function() {
 	const fn = this
 	return function Fn() {
 		// 如果该函数是构造函数，this 指向不变
-		fn.apply(this instanceof Fn ? this : context, ...args, ...arguments)
+		fn.bind(this instanceof Fn ? this : context, ...args, ...arguments)
 	}
 }
 ```
