@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-07 11:54
+date updated: 2022-05-07 12:01
 ---
 
 # 手写题
@@ -52,12 +52,13 @@ function new() {
 function debounce(fn, interval) {
 	let timer = null
 	return function() {
+		let context = this
 		if (timer) {
 			clearTimeout(timer)
 			timer = null
 		}
-		timer = setTimeout(function() {
-			f
+		timer = setTimeout(() => {
+			fn.apply(context, arguments)
 		}, interval)
 	}
 }
@@ -66,7 +67,17 @@ function debounce(fn, interval) {
 #### 5. 节流
 
 ```js
-s
+function throttle(fn, interval) {
+	let lastTime = Date.now()
+	return function() {
+		let context = this
+		let curTime = Date.now()
+		if (curTime - lastTime >= interval) {
+			lastTime = Date.now()
+			fn.apply(context, arguments)
+		}
+	}
+}
 ```
 
 #### 6. getType
@@ -124,5 +135,13 @@ Function.prototype.bind = function() {
 	return function Fn() {
 		fn.bind(this instance Fn ? this : context, ...args, ...arguments)
 	}
+}
+```
+
+#### 10. 柯里化
+
+```js
+function curry(fn) {
+
 }
 ```
