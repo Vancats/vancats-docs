@@ -161,10 +161,14 @@ function curry(fn, ...args) {
 #### 11. 深拷贝
 
 ```js
-function deepClone(obj) {
+function deepClone(obj, map = new Map()) {
 	if (!obj || typeof obj !== 'object')
 		return obj
+
 	const res = Array.isArray(obj) ? [] : {}
+	if (map.has(obj))
+		return map.get(obj)
+	map.set(obj, res)
 	for (let key in obj) {
 		if (obj.hasOwnProperty(key)) {
 			res[key] = deepClone(obj[key])
