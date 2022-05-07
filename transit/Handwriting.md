@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-07 12:19
+date updated: 2022-05-07 18:08
 ---
 
 # 手写题
@@ -155,5 +155,18 @@ function curry(fn, ...args1) {
 
 function curry(fn, ...args) {
 	return args.length < fn.length ? curry.bind(null, fn, ...args) : fn(...args)
+}
+```
+
+#### 11. 深拷贝
+
+```js
+function deepClone(obj) {
+	if (!obj || typeof obj !== 'object')
+		return obj
+	const res = Array.isArray(obj) ? [] : {}
+	for (let item in obj) {
+		res[item] = obj
+	}
 }
 ```
