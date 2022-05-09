@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-09 10:29
+date updated: 2022-05-09 10:33
 ---
 
 # 手写题
@@ -205,7 +205,7 @@ function deepClone(target, map = new Map()) {
 	const type = getType(target)
 	let res
 	if (deepTag.includes(type)) {
-		res = target.contructor()
+		res = new target.constructor()
 	} else {
 		return cloneOtherType(target, type)
 	}
@@ -213,11 +213,11 @@ function deepClone(target, map = new Map()) {
 		return map.get(target)
 	map.set(target, res)
 	if (type === setTag) {
-		target.forEach(value => res.add(clone(value)))
+		target.forEach(value => res.add(deepClone(value)))
 		return res
 	}
 	if (type === mapTag) {
-		target.forEach((value, key) => res.set(key, clone(value)))
+		target.forEach((value, key) => res.set(key, deepClone(value)))
 		return res
 	}
 	for (let key in target) {
