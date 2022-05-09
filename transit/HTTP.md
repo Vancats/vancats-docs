@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-05 22:33
+date updated: 2022-05-06 22:15
 ---
 
 #### HTTP 发展(扩展)
@@ -86,9 +86,32 @@ Version Code Meaning
 2. max-age
 3. max-stale 发起端设置，在时间内可以使用过期缓存，浏览器不使用
 
+##### 缓存验证
+
+1. Last-Modified --- If-Modified-since 对比资源修改时间验证 1. 编译但未改变内容 2. 修改文件速度过快
+2. Etag 数据签名 --- If-(none-)Match
+
 ##### 重新验证
 
 1. must-revalidate 如果数据过期，必须去原服务端验证
 2. proxy-revalidate 含义同上，不过是缓存服务器过期时
 
 在打包完成的 js 文件上加上相应的 hash，那么更改后请求的就不是原文件了，可以避免长缓存引起的问题
+
+#### Cookie
+
+1. 服务端设置 Set-Cookie 请求头
+2. 当本地有 cookie 键值对时，发送请求会自动带上
+3. 可以设置 max-age 和 httpOnly(禁用 document.cookie
+4. 不能超过 4k
+
+##### session
+
+1. session 是服务端的内容，可以储存任何数据
+2. 第一次请求后，会发生 sessionId 并存储到 cookie 中，根据 sessionId 来判断用户状态
+3. 也可以使用 token 机制
+
+#### keep-alive
+
+1. Connection 请求头
+2. 默认打开，最多可同时建立 6 个 tcp 连接，可看 connection Id
