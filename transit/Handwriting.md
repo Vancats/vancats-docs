@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-09 12:20
+date updated: 2022-05-09 12:32
 ---
 
 # 手写题
@@ -240,9 +240,7 @@ function deepClone(target, map = new Map()) {
     return res
   }
   Reflect.ownKeys(target).forEach(key => {
-    if (target.hasOwnProperty(key)) {
-      res[key] = deepClone(target[key], map)
-    }
+    res[key] = deepClone(target[key], map)
   })
   return res
 }
