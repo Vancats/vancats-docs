@@ -163,6 +163,7 @@ function curry(fn, ...args) {
 原始值，数组，对象，循环引用
 
 ```js
+const mapTag = '[object Map]'
 function deepClone(obj, map = new Map()) {
 	if (!obj || typeof obj !== 'object')
 		return obj
