@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-07 18:27
+date updated: 2022-05-09 10:19
 ---
 
 # 手写题
@@ -164,11 +164,31 @@ function curry(fn, ...args) {
 
 ```js
 const mapTag = '[object Map]'
-function deepClone(obj, map = new Map()) {
-	if (!obj || typeof obj !== 'object')
-		return obj
+const setTag = '[object Set]'
+const arrayTag = '[object Array]'
+const objectTag = '[object Object]'
 
-	const res = Array.isArray(obj) ? [] : {}
+const boolTag = '[object Boolean]'
+const numberTag = '[object Number]'
+const stringTag = '[object String]'
+const symbolTag = '[object Symbol]'
+const dateTag = '[object Date]'
+const errorTag = '[object Error]'
+const regexpTag = '[object RegExp]'
+
+const deepTag = [mapTag, setTag, arrayTag, objectTag]
+
+const getType = function(target) {
+	return Object.prototype.toString.call(target)
+}
+
+function deepClone(target, map = new Map()) {
+	if (!target || typeof target !== 'object')
+		return target
+
+	let res
+	if (deepTag.includes(getType(target)))
+	const res = Array.isArray(target) ? [] : {}
 	if (map.has(obj))
 		return map.get(obj)
 	map.set(obj, res)
