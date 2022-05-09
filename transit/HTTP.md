@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-06 22:15
+date updated: 2022-05-09 20:54
 ---
 
 #### HTTP 发展(扩展)
@@ -115,3 +115,13 @@ Version Code Meaning
 
 1. Connection 请求头
 2. 默认打开，最多可同时建立 6 个 tcp 连接，可看 connection Id
+
+#### 数据协商
+
+1. Accept：限制数据类型
+2. Accept-Encoding：数据编码压缩方式
+3. Accept-Language
+4. User-Agent
+5. Content-Type
+6. Content-Encoding
+7. Content-Language
