@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-09 21:36
+date updated: 2022-05-09 21:58
 ---
 
 #### HTTP 发展(扩展)
@@ -141,3 +141,5 @@ Version Code Meaning
 4. connet-src 发送位置
 5. img-src 图片来源
 6. script-src js 来源
+
+#### Nginx：单纯的 http 服务器
