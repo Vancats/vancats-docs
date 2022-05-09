@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-09 10:26
+date updated: 2022-05-09 10:29
 ---
 
 # 手写题
@@ -209,10 +209,17 @@ function deepClone(target, map = new Map()) {
 	} else {
 		return cloneOtherType(target, type)
 	}
-	const res = Array.isArray(target) ? [] : {}
 	if (map.has(target))
 		return map.get(target)
 	map.set(target, res)
+	if (type === setTag) {
+		target.forEach(value => res.add(clone(value)))
+		return res
+	}
+	if (type === mapTag) {
+		target.forEach((value, key) => res.set(key, clone(value)))
+		return res
+	}
 	for (let key in target) {
 		if (target.hasOwnProperty(key)) {
 			res[key] = deepClone(target[key], map)
