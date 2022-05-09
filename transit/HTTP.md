@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-09 21:00
+date updated: 2022-05-09 21:36
 ---
 
 #### HTTP 发展(扩展)
@@ -126,3 +126,18 @@ Version Code Meaning
 6. Content-Encoding
 7. Content-Language
 8. X-Content-Type-Options：nosniff 不允许浏览器预测可能发送的类型
+
+#### Redirect
+
+1. Location
+2. 302
+3. 301
+
+#### Content-Security-Policy
+
+1. 限制资源获取
+2. 报告资源获取越权
+3. default-src 限制全局
+4. connet-src 发送位置
+5. img-src 图片来源
+6. script-src js 来源
