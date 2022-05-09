@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-09 10:39
+date updated: 2022-05-09 12:20
 ---
 
 # 手写题
@@ -160,14 +160,35 @@ function curry(fn, ...args) {
 
 #### 11. 深拷贝
 
-原始值，数组，对象，循环引用
+原始值，数组，对象，循环引用，Set，Map，Symbol，Date，RegExp
 
 ```js
+const target = {
+  field1: 1,
+  field2: undefined,
+  field3: {
+    child: 'child'
+  },
+  field4: [2, 4, 8],
+  empty: null,
+  map: new Map().set(1, 'map'),
+  set: new Set().add('set'),
+  bool: Boolean(true),
+  num: new Number(1),
+  str: new String(1),
+  date: new Date(),
+  objSymbol: Object(Symbol('2')),
+  [Symbol('key')]: 'symbol',
+  reg: /\d+de$/gm,
+  error: new Error('error'), symbol: Symbol('1'),
+}
+target.target = target
+  
 const mapTag = '[object Map]'
 const setTag = '[object Set]'
 const arrayTag = '[object Array]'
 const objectTag = '[object Object]'
-
+  
 const boolTag = '[object Boolean]'
 const numberTag = '[object Number]'
 const stringTag = '[object String]'
@@ -175,56 +196,54 @@ const symbolTag = '[object Symbol]'
 const dateTag = '[object Date]'
 const errorTag = '[object Error]'
 const regexpTag = '[object RegExp]'
-
+  
 const deepTag = [mapTag, setTag, arrayTag, objectTag]
-
-const getType = function(target) {
-	return Object.prototype.toString.call(target)
+  
+const cloneOtherType = function (target, type) {
+  const Ctor = target.constructor
+  switch (type) {
+    case boolTag:
+    case numberTag:
+    case stringTag:
+    case dateTag:
+    case errorTag:
+      return new Ctor(target)
+    case regexpTag:
+      return new Ctor(target.source, target.flags)
+    case symbolTag:
+      return Object(Symbol(target.description))
+  }
 }
-
-const cloneOtherType = function(target, type) {
-	const Ctor = target.constructor
-	switch(type) {
-		case boolTag:
-		case numberTag:
-		case stringTag:
-		case dateTag:
-		case errorTag: 
-			return new Ctor(target)
-		case symbolTag:
-			return cloneSymbol(target)
-		case regexpTag:
-			return cloneRegExp(target)
-	}
-}
-
+  
 function deepClone(target, map = new Map()) {
-	if (!target || typeof target !== 'object')
-		return target
-
-	const type = getType(target)
-	let res
-	if (deepTag.includes(type)) {
-		res = new target.constructor()
-	} else {
-		return cloneOtherType(target, type)
-	}
-	if (map.has(target))
-		return map.get(target)
-	map.set(target, res)
-	if (type === setTag) {
-		target.forEach(value => res.add(deepClone(value)))
-		return res
-	}
-	if (type === mapTag) {
-		target.forEach((value, key) => res.set(key, deepClone(value)))
-		return res
-	}
-	for (let key in target) {
-		if (target.hasOwnProperty(key)) {
-			res[key] = deepClone(target[key], map)
-		}
-	}
-	return res
+  if (typeof target === 'symbol')
+    return Symbol(target.description)
+  if (!target || typeof target !== 'object')
+    return target
+  if (map.has(target))
+    return map.get(target)
+  
+  const type = Object.prototype.toString.call(target)
+  let res
+  if (deepTag.includes(type)) {
+    res = new target.constructor()
+  } else {
+    return cloneOtherType(target, type)
+  }
+  map.set(target, res)
+  if (type === setTag) {
+    target.forEach(value => res.add(deepClone(value)))
+    return res
+  }
+  if (type === mapTag) {
+    target.forEach((value, key) => res.set(key, deepClone(value)))
+    return res
+  }
+  Reflect.ownKeys(target).forEach(key => {
+    if (target.hasOwnProperty(key)) {
+      res[key] = deepClone(target[key], map)
+    }
+  })
+  return res
 }
 ```
