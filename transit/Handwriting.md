@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-09 10:33
+date updated: 2022-05-09 10:39
 ---
 
 # 手写题
@@ -183,14 +183,14 @@ const getType = function(target) {
 }
 
 const cloneOtherType = function(target, type) {
-	const Ctol = target.constructor
+	const Ctor = target.constructor
 	switch(type) {
 		case boolTag:
 		case numberTag:
 		case stringTag:
 		case dateTag:
 		case errorTag: 
-			return new Ctol(target)
+			return new Ctor(target)
 		case symbolTag:
 			return cloneSymbol(target)
 		case regexpTag:
