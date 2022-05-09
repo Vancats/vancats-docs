@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-09 20:54
+date updated: 2022-05-09 21:00
 ---
 
 #### HTTP 发展(扩展)
@@ -120,8 +120,9 @@ Version Code Meaning
 
 1. Accept：限制数据类型
 2. Accept-Encoding：数据编码压缩方式
-3. Accept-Language
+3. Accept-Language：希望的语言
 4. User-Agent
 5. Content-Type
 6. Content-Encoding
 7. Content-Language
+8. X-Content-Type-Options：nosniff 不允许浏览器预测可能发送的类型
