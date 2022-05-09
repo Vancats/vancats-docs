@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-09 10:19
+date updated: 2022-05-09 10:26
 ---
 
 # 手写题
@@ -182,19 +182,40 @@ const getType = function(target) {
 	return Object.prototype.toString.call(target)
 }
 
+const cloneOtherType = function(target, type) {
+	const Ctol = target.constructor
+	switch(type) {
+		case boolTag:
+		case numberTag:
+		case stringTag:
+		case dateTag:
+		case errorTag: 
+			return new Ctol(target)
+		case symbolTag:
+			return cloneSymbol(target)
+		case regexpTag:
+			return cloneRegExp(target)
+	}
+}
+
 function deepClone(target, map = new Map()) {
 	if (!target || typeof target !== 'object')
 		return target
 
+	const type = getType(target)
 	let res
-	if (deepTag.includes(getType(target)))
+	if (deepTag.includes(type)) {
+		res = target.contructor()
+	} else {
+		return cloneOtherType(target, type)
+	}
 	const res = Array.isArray(target) ? [] : {}
-	if (map.has(obj))
-		return map.get(obj)
-	map.set(obj, res)
-	for (let key in obj) {
-		if (obj.hasOwnProperty(key)) {
-			res[key] = deepClone(obj[key], map)
+	if (map.has(target))
+		return map.get(target)
+	map.set(target, res)
+	for (let key in target) {
+		if (target.hasOwnProperty(key)) {
+			res[key] = deepClone(target[key], map)
 		}
 	}
 	return res
