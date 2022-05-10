@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-10 09:55
+date updated: 2022-05-10 11:18
 ---
 
 # 手写题
@@ -247,12 +247,29 @@ function deepClone(target, map = new Map()) {
 ```
 
 #### AJAX
+
 ```js
 function ajax(url, method) {
 	let xhr = new XMLHttpRequest()
 	xhr.open(method, url, true)
-	xhr.onreadystate
-	xhr.set
-	xhr.send()
+	xhr.onreadystatechange = function() {
+		if (this.readystate !== 4)
+			return
+		if (this.status === 200)
+			handle(this.response)
+		else
+			console.warn(this.statusText)
+	}
+	xhr.onerror = function() {
+		console.warn(this.statusText)
+	}
+	xhr.responseType = 'application/json'
+	xhr.send(null)
+}
+
+function getAjax(url, method) {
+	return new Promise((res, rej) => {
+	
+	})
 }
 ```
