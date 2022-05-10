@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-09 12:35
+date updated: 2022-05-09 13:37
 ---
 
 # 手写题
@@ -214,7 +214,7 @@ const cloneOtherType = function (target, type) {
       return Object(Symbol(target.description))
   }
 }
-  
+
 function deepClone(target, map = new Map()) {
   if (typeof target === 'symbol')
     return Symbol(target.description)
