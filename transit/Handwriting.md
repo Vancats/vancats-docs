@@ -250,6 +250,9 @@ function deepClone(target, map = new Map()) {
 ```js
 function ajax(url, method) {
 	let xhr = new XMLHttpRequest()
-	
+	xhr.open(method, url, true)
+	xhr.onreadystate
+	xhr.set
+	xhr.send()
 }
 ```

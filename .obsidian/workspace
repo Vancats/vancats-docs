@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "transit/Handwriting.md",
+            "file": "learning/Learn CSS.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "transit/Handwriting.md",
+                "file": "learning/Learn CSS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,7 @@
   },
   "active": "aa37e3fc3fbb0a75",
   "lastOpenFiles": [
+    "learning/Learn CSS.md",
     "transit/Handwriting.md",
     "learning/Learn RegExp.md",
     "transit/Vue3.md",
@@ -109,7 +110,6 @@
     "transit/HTTP.md",
     "learning/Learn HTML.md",
     "learning/Learn HTTP.md",
-    "transit/css.md",
-    "transit/compile.md"
+    "transit/css.md"
   ]
 }
