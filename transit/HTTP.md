@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-10 23:00
+date updated: 2022-05-10 23:05
 ---
 
 ### HTTP 发展(扩展)
@@ -167,6 +167,13 @@ if (host === 'test.com') {
 3. Accept-Language：希望的语言
 4. User-Agent
 5. Content-Type
+   1. application/json
+   2. application/javascript
+   3. text/plain
+   4. multipart/form-data
+   5. application/x-www-form-urlencoded
+   6. text/html
+   7. image/jpg
 6. Content-Encoding
 7. Content-Language
 8. X-Content-Type-Options：nosniff 不允许浏览器预测可能发送的类型
