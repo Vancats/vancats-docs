@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-10 22:54
+date updated: 2022-05-10 23:00
 ---
 
 ### HTTP 发展(扩展)
@@ -28,9 +28,9 @@ date updated: 2022-05-10 22:54
 1. 所有数据以二进制传输
 2. 同一连接的不同请求不必按顺序
 3. 头信息压缩：1.1 中头信息都使用字符串传输，开销很大（扩展）
-4. 推送：如传回 html 时附带传对应的 css，js
+4. 服务端推送：如传回 html 时附带传对应的 css，js
 
-#### TCP 三次握手(扩展)
+### TCP 三次握手(扩展)
 
 TCP connection
 
@@ -38,7 +38,7 @@ TCP connection
 2. SYN = 1 seq = Y ACK = X + 1
 3. seq = Z ACK = Y + 1
 
-#### URI
+### URI
 
 ##### URI 统一资源标志符
 
@@ -56,7 +56,7 @@ Method URL Version
 
 Version Code Meaning
 
-#### 跨域(扩展)
+### 跨域(扩展)
 
 请求与当前协议，域名，端口任一不同的接口
 
@@ -82,7 +82,7 @@ res.writeHead(200, {
 })
 ```
 
-#### Cache- Control
+### Cache- Control
 
 1. public 请求返回的内容所经过的任何路径，包括代理服务器和浏览器，都可以进行缓存的操作
 2. private 只有发起请求的浏览器可以缓存
@@ -129,18 +129,31 @@ if (etag === '777') {
 }
 ```
 
-### Cookie
+### Cookie(扩展)
 
 1. 服务端设置 Set-Cookie 请求头
 2. 当本地有 cookie 键值对时，发送请求会自动带上
 3. 可以设置 max-age 和 httpOnly(禁用 document.cookie
-4. 不能超过 4k
+4. domain 跨子域
+5. 不能超过 4k
 
 ##### session
 
 1. session 是服务端的内容，可以储存任何数据
 2. 第一次请求后，会发生 sessionId 并存储到 cookie 中，根据 sessionId 来判断用户状态
 3. 也可以使用 token 机制
+
+```js
+const host = req.headers.host
+if (host === 'test.com') {
+  res.writeHead(200, {
+    'Content-Type': 'text/html',
+    // test.com 域名要一致，无法跨域名设置 cookie
+    // 设置后，a.test.com b.test.com 可以使用 cookie
+    'Set-Cookie': ['id=1223;max-age=2000;domain=test.com', 'name=vancats; httpOnly']
+  })
+}
+```
 
 ### keep-alive
 
