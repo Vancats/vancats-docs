@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-09 21:58
+date updated: 2022-05-10 22:51
 ---
 
 #### HTTP 发展(扩展)
@@ -30,7 +30,7 @@ date updated: 2022-05-09 21:58
 3. 头信息压缩：1.1 中头信息都使用字符串传输，开销很大（扩展）
 4. 推送：如传回 html 时附带传对应的 css，js
 
-#### TCP 三次握手
+#### TCP 三次握手(扩展)
 
 TCP connection
 
@@ -46,7 +46,7 @@ TCP connection
 
 ##### URN 永久统一资源定位符
 
-#### 报文
+#### 报文(扩展)
 
 ##### 请求报文
 
@@ -56,11 +56,11 @@ Method URL Version
 
 Version Code Meaning
 
-#### 跨域
+#### 跨域(扩展)
 
 请求与当前协议，域名，端口任一不同的接口
 
-#### 服务器设置
+##### 服务器设置
 
 1. 只允许 GET POST HEADER 跨域
 2. 只允许 text/plain multipart/form-data application/x-www-form-urlencoded 跨域
@@ -71,6 +71,15 @@ Version Code Meaning
 2. Access-Control-Allow-Header
 3. Access-Control-Allow-Methods
 4. Access-Control-Max-Age 这个时间内不用重新
+
+```js
+res.writeHead(200, {
+  'Access-Control-Allow-Origin': 'http://localhost:8888',
+  'Access-Control-Allow-Headers': 'X-Test-Cors',
+  'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE',
+  'Access-Control-Max-Age': 4
+})
+```
 
 #### Cache- Control
 
@@ -141,5 +150,3 @@ Version Code Meaning
 4. connet-src 发送位置
 5. img-src 图片来源
 6. script-src js 来源
-
-#### Nginx：单纯的 http 服务器
