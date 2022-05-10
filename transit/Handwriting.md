@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-09 13:37
+date updated: 2022-05-10 09:55
 ---
 
 # 手写题
@@ -243,5 +243,12 @@ function deepClone(target, map = new Map()) {
     res[key] = deepClone(target[key], map)
   })
   return res
+}
+```
+
+#### AJAX
+```js
+function ajax(url, method) {
+	let xhr = new XMLHttpRequest()
 }
 ```
