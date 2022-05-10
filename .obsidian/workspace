@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "transit/HTTP.md",
+            "file": "transit/nginx.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "transit/HTTP.md",
+                "file": "transit/nginx.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,10 +101,10 @@
   },
   "active": "aa37e3fc3fbb0a75",
   "lastOpenFiles": [
-    "transit/HTTP.md",
-    "transit/未命名.md",
-    "transit/Handwriting.md",
+    "transit/nginx.md",
     "transit/4.23 面试.md",
+    "transit/Handwriting.md",
+    "transit/HTTP.md",
     "learning/Learn HTML.md",
     "learning/Learn HTTP.md",
     "transit/css.md",
