@@ -19,3 +19,7 @@ brew info nginx
 sudo chown root:wheel /usr/homebrew/Cellar/nginx/1.12.6/bin/nginx
 sudo chmod u+s /usr/homebrew/Cellar/nginx/1.12.6/bin/nginx
 ```
+
+```js
+
+```
