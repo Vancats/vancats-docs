@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-10 01:44
-date updated: 2022-05-10 22:46
+date updated: 2022-05-11 22:49
 ---
 
 ```js
@@ -18,8 +18,4 @@ brew info nginx
 // 给予管理员权限（没用上
 sudo chown root:wheel /usr/homebrew/Cellar/nginx/1.12.6/bin/nginx
 sudo chmod u+s /usr/homebrew/Cellar/nginx/1.12.6/bin/nginx
-```
-
-```js
-
 ```
