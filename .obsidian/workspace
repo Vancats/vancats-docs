@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "chore/Plugins.md",
+            "file": "learning/Learn JS.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chore/Plugins.md",
+                "file": "learning/Learn JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "2073e31307f1cf33",
   "lastOpenFiles": [
-    "chore/Plugins.md",
-    "chore/Config.md",
-    "chore/Git.md",
-    "transit/nginx.md",
-    "transit/HTTP.md",
+    "learning/Learn JS.md",
+    "learning/Learn mini-vue.md",
+    "learning/JS 题目.md",
+    "learning/设计模式.md",
+    "transit/Handwriting.md",
+    "learning/Learn CSS.md",
+    "learning/Learn RegExp.md",
+    "transit/Vue3.md",
     "transit/vitepress.md",
-    "transit/4.23 面试.md",
-    "transit/长任务.md",
-    "transit/Css.md",
-    "transit/compile.md"
+    "transit/js.md"
   ]
 }
