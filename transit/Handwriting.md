@@ -636,7 +636,7 @@ imgAsync('https://img0.baidu.com/it/u=2862534777,914942650&fm=253&fmt=auto&app=1
 })
 ```
 
-#### 发布 - 订阅模式
+#### 16. 发布 - 订阅模式
 
 ```ts
 class EventCenter {
@@ -675,7 +675,7 @@ class EventCenter {
 }
 ```
 
-#### 双向绑定
+#### 17. 双向绑定
 
 ```ts
 let obj = {}
@@ -698,7 +698,7 @@ input.addEventListener('keyup', function (e) {
 })
 ```
 
-#### 简单路由
+#### 18. 简单路由
 
 ```ts
 class Route {
@@ -721,7 +721,7 @@ class Route {
 }
 ```
 
-#### 使用 setTimeout 实现 setInterval
+#### 19. 使用 setTimeout 实现 setInterval
 
 ```ts
 function mySetInterval(fn, timeout) {
@@ -741,7 +741,7 @@ function mySetInterval(fn, timeout) {
 }
 ```
 
-#### 封装 fetch
+#### 20. 封装 fetch
 
 ```
 (async () => {
