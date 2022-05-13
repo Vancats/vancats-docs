@@ -7,8 +7,12 @@
         "id": "2073e31307f1cf33",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "chore/Plugins.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "chore/Plugins.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -96,15 +101,15 @@
   },
   "active": "2073e31307f1cf33",
   "lastOpenFiles": [
+    "chore/Plugins.md",
+    "chore/Config.md",
+    "chore/Git.md",
     "transit/nginx.md",
     "transit/HTTP.md",
     "transit/vitepress.md",
     "transit/4.23 面试.md",
     "transit/长任务.md",
     "transit/Css.md",
-    "transit/compile.md",
-    "transit/slots.md",
-    "transit/Vue3.md",
-    "transit/js.md"
+    "transit/compile.md"
   ]
 }
