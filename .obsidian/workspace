@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2073e31307f1cf33",
+        "id": "22442848c2404965",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "chore/Config.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chore/Config.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -99,7 +94,7 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "2073e31307f1cf33",
+  "active": "22442848c2404965",
   "lastOpenFiles": [
     "chore/Config.md",
     "chore/Git.md",
