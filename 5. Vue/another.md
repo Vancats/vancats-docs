@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-05 01:20
+date updated: 2022-05-16 16:19
 ---
 
 ### 多次阅读
@@ -52,3 +52,14 @@ const ErrorComponent = {
 4. 添加 Vue 的实例方法
 
 牛客网第七题 Object.prototype.setPrototype
+
+图片宽度一样，高度不同，4列摆放，100张图片，怎么使得4列高度差最小
+
+微前端
+
+1. spa版本的iframe
+2. html-entry 入口加载：怎么loader入口，解析入口文件加载的css和js地址
+3. css隔离：多个应用切片，css不冲突、动态样式表、shadow-dom
+4. js隔离：全局变量的隔离（window diff，proxy）
+5. 生命周期
+6. 路由切换

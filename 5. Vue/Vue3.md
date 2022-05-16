@@ -1,7 +1,34 @@
 ---
-date created: 2022-03-03 00:35
-date updated: 2022-03-30 19:34
+date created: 2022-04-23 20:48
+date updated: 2022-05-16 16:21
 ---
+
+Vue3 定义 Props
+
+```ts
+// 1. ts 专用声明，无默认值
+defineProps<{
+	msg: string
+}>
+
+// 2. ts 专用声明，可以有默认值
+interface Props {
+	msg: string
+}
+
+const props = withDefaults(defineProps<Props>(), {
+	msg: string
+})
+
+// 3. 非 ts 专用声明
+defineProps({
+	msg: String // 大写
+})
+```
+
+Vue3 源码
+
+```js
 
 vue.with compiler
 
@@ -71,3 +98,14 @@ template =>(粗糙) ast => transform(深加工) => ast => generate(代码生成)
 - codegen
 - ast
 - errors
+```
+
+###### Vue3 新特性
+
+1. RFC 机制：保证社区活力
+2. 响应式系统
+3. 自定义渲染器：拆包扩展，使用了 monorepe 管理方式
+4. 使用 TS 重构
+5. Composition API
+6. 新的组件：Fragment、Teleport、Suspense
+7. Vite

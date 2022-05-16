@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-03-03 00:52
+date updated: 2022-05-16 16:21
 ---
 
 ### 初始化过程
@@ -145,49 +145,49 @@ $mount -> mountComponent -> watcher -> updateComponent
 
 - 步骤
 
-	- 注册组件
+  - 注册组件
 
-		- Vue.component(id, comp)
-		- Components
+    - Vue.component(id, comp)
+    - Components
 
-	- 声明组件
+  - 声明组件
 
-		```html
-		<template>
-			<comp></comp>
-		</template>
-		```
+    ```html
+    <template>
+    	<comp></comp>
+    </template>
+    ```
 
-		template => render()
+    template => render()
 
-		```javascript
-		// console.log(app.$options.render)
-		ƒ anonymous(
-		) {
-		with(this){return  // this 是当前组件
-		    _c('div',{attrs:{"id":"demo"}},[
-		      _c('h1',[_v("Vue组件化机制")]),
-		      _v(" "),
-		      _c('comp')],
-		       1)}
-		}
-		_v,l,s,t:render-helpers
-		_c:render   
-		initRender(): 1. 注册slots,scopedSlots 2. 注册_c
-		vdom/create-element: createElement(a, b, c, d, false/true) false/true 为标准化处理标识符
-		_createElement: 实际调用 h,返回 vnode
-		Ctor = resolveAsset(context.$options, 'components', tag)) 
-		Ctol 是之前挂载到Vue.$options的components下的组件构造函数
-		createElement 转换自定义组件 Ctol 为 vnode
-		vnode = createComponent(Ctol,...args)
+    ```javascript
+    // console.log(app.$options.render)
+    ƒ anonymous(
+    ) {
+    with(this){return  // this 是当前组件
+        _c('div',{attrs:{"id":"demo"}},[
+          _c('h1',[_v("Vue组件化机制")]),
+          _v(" "),
+          _c('comp')],
+           1)}
+    }
+    _v,l,s,t:render-helpers
+    _c:render   
+    initRender(): 1. 注册slots,scopedSlots 2. 注册_c
+    vdom/create-element: createElement(a, b, c, d, false/true) false/true 为标准化处理标识符
+    _createElement: 实际调用 h,返回 vnode
+    Ctor = resolveAsset(context.$options, 'components', tag)) 
+    Ctol 是之前挂载到Vue.$options的components下的组件构造函数
+    createElement 转换自定义组件 Ctol 为 vnode
+    vnode = createComponent(Ctol,...args)
 
-		installComponentHooks(data)
-		hooksToMerge
-		```
+    installComponentHooks(data)
+    hooksToMerge
+    ```
 
-	- 某个时刻:挂载 $mount => mountComponent =>  render() => vdom
+  - 某个时刻:挂载 $mount => mountComponent =>  render() => vdom
 
-	- patch()
+  - patch()
 
 initGlobalAPI
 

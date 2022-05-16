@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-05-05 20:57
+date updated: 2022-05-16 10:42
 ---
 
 #### 语义化
@@ -15,12 +15,6 @@ date updated: 2022-05-05 20:57
 2. CSS1Compat：标准模式；BackCompat：怪异模式，向后兼容
 3. `<!Doctype html>` 标准模式，使用 HTML5 解析，HTML5 没有严格混杂的区别
 4. 使用 `document.compatMode` 可以获取
-
-#### header 标签的作用
-
-1. 定义文档头部
-2. 引入资源、样式表
-3. 描述文档信息：文档标题，元信息，在 web 中的位置以及和其他文档相对位置
 
 #### meta 标签
 

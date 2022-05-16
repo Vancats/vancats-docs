@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-13 14:27
+date updated: 2022-05-16 11:21
 ---
 
 # 手写题
@@ -658,6 +658,8 @@ class EventCenter {
     })
   }
 
+  once()
+
   remove(type, handle) {
     if (!this.handles[type])
       return new Error('不存在该方法')
@@ -743,7 +745,7 @@ function mySetInterval(fn, timeout) {
 
 #### 20. 封装 fetch
 
-```
+```js
 (async () => {
   class HttpRequestUtil {
     async get(url) {
@@ -793,4 +795,14 @@ function mySetInterval(fn, timeout) {
   const res = await httpRequestUtil.get('http://golderbrother.cn/')
   console.log(res)
 })()
+```
+
+#### 21. compose
+
+```js
+function compose(fns) {
+	if (!fns.length) return v => v
+	if (fns.length === 1) return fns[0]
+	return fns.reduce((prev, cur) => (...args) => pre(cur(...agrs)))
+}
 ```
