@@ -688,12 +688,6 @@ function getJSON() {
 5. 自动转换 json，fetch 需要 res.json()
 6. 客户端支持抵御 XSRF 攻击
 
-#### 实现方式
-
-- 回调函数：回调地狱，代码耦合度过高
-- generator：函数控制权转移问题
-- Promise：嵌套转链式调用，
-- Async/Await：generator 和 Promise 的语法糖
 
 #### Promise
 
