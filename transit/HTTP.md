@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-03 22:05
-date updated: 2022-05-11 22:27
+date updated: 2022-05-16 11:58
 ---
 
 ### HTTP 发展(扩展)
@@ -197,7 +197,7 @@ if (host === 'test.com') {
 ```js
 'Content-Type': 'text/html',
 'Content-Security-Policy': 'default-src http: https:' // 全局限制 只允许 http(s)
-'Content-Security-Policy': 'default-src \'self\' http://code.jquery.com/' // 仅允许一下域名
+'Content-Security-Policy': 'default-src \'self\' http://code.jquery.com/' // 仅允许以下域名
 'Content-Security-Policy': 'default-src \'self\'; form-action \'self\'' // 限制 form-data
 'Content-Security-Policy': 'script-src \'self\'; form-action \'self\'; report-uri /report' // report
 'Content-Security-Policy-Report-Only': 
