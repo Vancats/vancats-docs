@@ -799,8 +799,8 @@ function mySetInterval(fn, timeout) {
 
 ```js
 function compose(fns) {
-	return fns.reduce((prev, cur) => {
-		
-	})
+	if (!fns.length) return v => v
+	if (fns.length === 1) return fns[0]
+	return fns.reduce((prev, cur) => (...args) => pre(cur(...agrs)))
 }
 ```
