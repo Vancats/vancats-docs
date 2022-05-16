@@ -658,6 +658,8 @@ class EventCenter {
     })
   }
 
+  once()
+
   remove(type, handle) {
     if (!this.handles[type])
       return new Error('不存在该方法')
