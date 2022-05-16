@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "transit/js.md",
+            "file": "transit/Handwriting.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "transit/js.md",
+                "file": "transit/Handwriting.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,7 @@
   },
   "active": "22442848c2404965",
   "lastOpenFiles": [
+    "transit/Handwriting.md",
     "transit/js.md",
     "learning/Learn JS.md",
     "learning/Learn Interview.md",
@@ -109,7 +110,6 @@
     "learning/Learn CSS.md",
     "learning/Learn Browser.md",
     "learning/JS 题目.md",
-    "learning/设计模式.md",
-    "learning/前端算法.md"
+    "learning/设计模式.md"
   ]
 }
