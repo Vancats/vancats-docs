@@ -1,0 +1,87 @@
+{
+  "rootTopicKey": "92b117f1-22ae-47fa-bd10-26376d1af95b",
+  "editorRootTopicKey": "92b117f1-22ae-47fa-bd10-26376d1af95b",
+  "focusKey": null,
+  "extData": {
+    "TOPIC_REFERENCE": {
+      "reference": {}
+    }
+  },
+  "topics": [
+    {
+      "key": "92b117f1-22ae-47fa-bd10-26376d1af95b",
+      "parentKey": null,
+      "subKeys": [],
+      "collapse": false,
+      "style": "{\"contentStyle\":{\"lineHeight\":\"1\",\"fontSize\":24,\"borderRadius\":\"20px\",\"padding\":\"16px 18px 16px 18px\",\"background\":\"#A167A5\",\"borderColor\":\"#A167A5\",\"subLinkStyle\":{\"lineColor\":\"#A167A5\"}},\"linkStyle\":{\"lineRadius\":5,\"lineType\":\"curve\",\"lineWidth\":\"3px\"},\"subLinkStyle\":{\"lineRadius\":5,\"lineType\":\"curve\",\"lineWidth\":\"3px\",\"lineColor\":\"#A167A5\"}}",
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "我的知识网络"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "readOnly": false,
+    "allowUndo": true,
+    "layoutDir": 0,
+    "theme": {
+      "name": "default",
+      "randomColor": true,
+      "background": "#000000",
+      "highlightColor": "#50C9CE",
+      "marginH": 60,
+      "marginV": 20,
+      "contentStyle": {
+        "lineHeight": "1.5"
+      },
+      "linkStyle": {
+        "lineRadius": 5,
+        "lineType": "curve",
+        "lineWidth": "3px"
+      },
+      "rootTopic": {
+        "contentStyle": {
+          "fontSize": "34px",
+          "borderRadius": "35px",
+          "padding": "16px 18px 16px 18px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "rgb(113, 203, 45)"
+        }
+      },
+      "primaryTopic": {
+        "contentStyle": {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderRadius": "20px",
+          "fontSize": "17px",
+          "padding": "10px 15px 10px 15px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "rgb(113, 203, 45)"
+        }
+      },
+      "normalTopic": {
+        "contentStyle": {
+          "border": "1px solid #e8eaec",
+          "borderRadius": "20px",
+          "fontSize": "17px",
+          "padding": "4px 10px",
+          "borderWidth": "1px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "white"
+        }
+      }
+    }
+  },
+  "formatVersion": "0.0"
+}
