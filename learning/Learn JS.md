@@ -172,7 +172,7 @@ function myNew () {
    3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
 7. bind 永久更改 this 指向，call，apply 临时更改 this 指向
 
-#### for...of & iterator
+#### for...of & iterator(扩展)
 
 ```js
 let obj = { a: 1, b: 2 }
@@ -248,7 +248,7 @@ String: fromCharCode fromCodePoint raw
 2. 键值：map 的键可以是任意内容，object 的键必须是 string 或者 symbol
 3. 键的顺序：map 的键的顺序严格按照插入顺序，object 无序
 4. Size：map 默认有 size 属性，object 只能遍历得到数量
-5. 迭代：map 是 iterator 的，可以直接迭代，object 使用 Object.keys
+5. 迭代：map 是 iterator 的，可以直接迭代，object 使用 Object.keys·
 6. 性能：map 在频繁增删键值对是性能好，object 无优化
 
 WeakMap 的键必须是引用类型，引用的对象都是弱引用，不计入垃圾回收机制，一旦不需要会自动消失
