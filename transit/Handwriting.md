@@ -743,7 +743,7 @@ function mySetInterval(fn, timeout) {
 
 #### 20. 封装 fetch
 
-```
+```js
 (async () => {
   class HttpRequestUtil {
     async get(url) {
