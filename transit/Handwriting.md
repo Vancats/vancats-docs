@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-16 10:40
+date updated: 2022-05-16 11:21
 ---
 
 # 手写题
@@ -793,4 +793,14 @@ function mySetInterval(fn, timeout) {
   const res = await httpRequestUtil.get('http://golderbrother.cn/')
   console.log(res)
 })()
+```
+
+#### 21. compose
+
+```js
+function compose(fns) {
+	return fns.reduce((prev, cur) => {
+		
+	})
+}
 ```
