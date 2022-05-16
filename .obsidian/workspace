@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "04f07661972a0b87",
+        "id": "22442848c2404965",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -94,17 +94,17 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "04f07661972a0b87",
+  "active": "22442848c2404965",
   "lastOpenFiles": [
-    "1. Base/HTML.md",
-    "1. Base/Handwriting.md",
-    "1. Base/CSS.md",
-    "1. Base/手撕.md",
-    "1. Base/代码输出.md",
-    "0. Prepare/4.23 面试.md",
-    "1. Base/OM.md",
-    "0. Prepare/js.md",
-    "0. Prepare/Interview.md",
-    "0. Prepare/css.md"
+    "chore/Config.md",
+    "chore/Git.md",
+    "learning/Learn JS.md",
+    "learning/Learn mini-vue.md",
+    "learning/JS 题目.md",
+    "learning/设计模式.md",
+    "transit/Handwriting.md",
+    "learning/Learn CSS.md",
+    "learning/Learn RegExp.md",
+    "transit/Vue3.md"
   ]
 }

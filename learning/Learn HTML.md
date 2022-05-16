@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-03-31 16:23
+date updated: 2022-05-05 20:57
 ---
 
 #### 语义化
@@ -25,17 +25,24 @@ date updated: 2022-03-31 16:23
 #### meta 标签
 
 1. viewport：移动端适配
-		`<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1;minimum-scale=1,user-scalable=no">`
+   `<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1;minimum-scale=1,user-scalable=no">`
 2. charset：编码类型
-		`<meta charset="uft-8"`
+   `<meta charset="uft-8"`
 3. keyword：利于 SEO
-		`<meta name="keyword" content="hello">`
+   `<meta name="keyword" content="hello">`
 4. describe：利于 SEO
-		`<meta name="describe" content="你好">`
+   `<meta name="describe" content="你好">`
 5. refresh：页面一秒后**刷新**并**重定向**到百度
-		`<meta http-equiv="refresh" content="1;url=http://www.baidu.com"`
+   `<meta http-equiv="refresh" content="1;url=http://www.baidu.com"`
 6. robots：(no)index 文件（不可）检索 (no)follow 页面链接（不）可查询，all，none
-		`<meta name="robots" content="index,follow">`
+   `<meta name="robots" content="index,follow">`
+
+#### Link 标签
+
+1. preload：指明后续可能有该文件，可以提醒浏览器处理其优先级
+2. prefetch：浏览器空闲时预加载文件，比如 html 中肯定包含的文件先行加载
+3. dns-prefetch：进行提前的 dns 解析
+4. preconnect：进行预连接，除了 dns 解析还有 TCP 连接和 TLS 握手（HTTPS）
 
 #### src 与 href
 
@@ -67,36 +74,36 @@ date updated: 2022-03-31 16:23
 #### iframe 内联框架
 
 - 优点
-	1. 加载速度较慢的内容，如广告
-	2. 使用脚本并行下载
-	3. 实现跨子域通信
+  1. 加载速度较慢的内容，如广告
+  2. 使用脚本并行下载
+  3. 实现跨子域通信
 - 缺点
-	1. 会阻塞主页面的 onload 事件
-	2. 无法被搜索引擎识别
-	3. 产生过多页面不易管理
+  1. 会阻塞主页面的 onload 事件
+  2. 无法被搜索引擎识别
+  3. 产生过多页面不易管理
 
 #### Canvas SVG
 
 - Canvas：画布，通过 js 绘制，位置改变将重新绘制
-	1. 依赖分辨率
-	2. 不支持事件处理
-	3. 弱的文本渲染能力
-	4. 可以 jpg png 格式保存图片
-	5. 适合图像密集型的游戏，可以频繁重绘
+  1. 依赖分辨率
+  2. 不支持事件处理
+  3. 弱的文本渲染能力
+  4. 可以 jpg png 格式保存图片
+  5. 适合图像密集型的游戏，可以频繁重绘
 - SVG：矢量图，基于 XML 的图形语言，因此 DOM 可用
-	1. 不依赖分辨率
-	2. 支持事件处理
-	3. 适合大型渲染区域的应用程序，如谷歌地图
-	4. 复杂度高会减慢渲染速度，任何过度使用 DOM 的应用都不快
-	5. 不适合游戏应用
+  1. 不依赖分辨率
+  2. 支持事件处理
+  3. 适合大型渲染区域的应用程序，如谷歌地图
+  4. 复杂度高会减慢渲染速度，任何过度使用 DOM 的应用都不快
+  5. 不适合游戏应用
 
 #### HTML5 更新
 
 1. 语义化标签
 2. 媒体标签
-		1. audio
-		1. video：poster 封面，默认第一帧
-		2. source：使用 type 属性为不同浏览器指定视频源
+   1. audio
+   2. video：poster 封面，默认第一帧
+   3. source：使用 type 属性为不同浏览器指定视频源
 3. 表单类型、属性、事件
 4. 进度条 progress，度量器 meter
 5. Web 存储：localStorage、sessionStorage

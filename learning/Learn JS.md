@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-03-06 15:02
+date updated: 2022-05-06 11:21
 ---
 
 ### 数据类型
@@ -9,12 +9,12 @@ date updated: 2022-03-06 15:02
 
 1. typeof：可以判断函数
 2. 原型链
-		1. `[].__proto__ === Array.prototype`
-		2. `Object.getPrototype([]} === Array.prototype`
-		3. `Array.prototype.isPrototypeOf([])`
+   1. `[].__proto__ === Array.prototype`
+   2. `Object.getPrototype([]} === Array.prototype`
+   3. `Array.prototype.isPrototypeOf([])`
 3. 构造函数方式
-		1. `[].constructor === Array`
-		2. `[] instanceof Array`
+   1. `[].constructor === Array`
+   2. `[] instanceof Array`
 
 **原型链的更换会引起上面两点判断的出错** `[].__proto__ = Object.prototype`
 4. `Object.prototype.toString.call([]) === '[object Array]'`
@@ -167,9 +167,9 @@ function myNew () {
 4. DOM 事件处理函数  this -> DOM 对象  这里不可更改为箭头函数，否则 this 指向 window
 5. Vue 中的 this 指向当前实例对象
 6. 箭头函数中的 this 指向当前函数外最近作用域的 this
-		1. 所有匿名函数都可以使用箭头函数简化
-		2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
-		3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
+   1. 所有匿名函数都可以使用箭头函数简化
+   2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
+   3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
 7. bind 永久更改 this 指向，call，apply 临时更改 this 指向
 
 #### for...of & iterator
@@ -241,81 +241,6 @@ String: fromCharCode fromCodePoint raw
 4. 前者遇到循环模块时，因为其变量值不缓存，可以取到最终的值，后者只会输出已经执行的部分，后续的变化不影响前面的值
 5. 前者 this 指向 undefined，后者 this 指向本模块
 6. 前者支持引入后者（必须整体引入，不能引入单独一个变量）；后者引入前者，要求后者使用 .mjs 后缀，或者在 package.json 中加入 { "type": "module" }，而且 mjs 文件必须和 import 对应，不能使用 require
-
-#### AJAX
-
-```js
-const url = '/api/user'
-let xhr = new XMLHttpRequest()
-xhr.open('get', url, true) // 默认 true 异步
-
-// 设置状态监听函数
-xhr.onreadystatechange = function() {
-	// 0: 已代理，未发 open; 1: open 2: send 3: 下载中 4: 完成
-	if (this.readystate !== '4') return
-	if (this.status === 200) {
-		handle(this.response)
-	} else {
-		console.error(this.statusText)
-	}
-}
-
-xhr.onerror = function() {
-	console.error(this.statusText)
-}
-
-xhr.responseType = 'json'
-xhr.setRequestHeader('Accept', 'application/json')
-
-// 也可以带 data
-xhr.send(null)
-
-// 使用 Promise 封装 AJAX
-function getJSON() {
-	let promise = new Promise(function (resolve, reject) {
-		let xhr = new XMLHttpRequest()
-		xhr.open('get', url)
-		xhr.onreadystatechange = function() {
-			if (this.readystate !== '4') return
-			if (this.status === 200) {
-				resolve(this.response)
-			} else {
-				reject(new Error(this.statusText))
-			}
-		}
-
-		xhr.onerror = function() {
-			reject(new Error(this.statusText))
-		}
-
-		xhr.responseType = 'json'
-		xhr.setRequestHeader('Accept', 'application/json')
-
-		xhr.send(null)
-	})
-	return promise
-}
-```
-
-**Fetch**
-基于 Promise 设计，使用原生 js，而不是 ajax 的进一步的封装，没有使用 XMLHttpRequest
-优点：语法简洁，基于 Promise，支持 async/await
-缺点：
-
-1. 只对网络请求报错，对 400，500 都当作成功请求
-2. fetch 默认不发 cookie，需要配置项 fetch( url, { credentials: 'include' })
-3. fetch 不支持 abort，不支持超时控制，使用 setTimeout 与 Promise.reject 实现的超时控制不能阻止请求过程继续在后台运行
-4. fetch 没有办法原生监测的请求的进度
-
-**Axios**
-基于 Promise 封装
-
-1. 浏览器端发起 XMLHttpRequest 请求，node 端发起 http 请求
-2. 支持 Promise API
-3. 监听请求和返回，对请求和返回进行转化
-4. 可以取消请求
-5. 自动转换 json，fetch 需要 res.json()
-6. 客户端支持抵御 XSRF 攻击
 
 #### Map
 
@@ -438,7 +363,7 @@ p1.__proto__.constructor // Person
 Person.prototype.constructor // Person
 ```
 
-![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
+![left](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615475711487-c474af95-b5e0-4778-a90b-9484208d724d.png)
 
 #### 执行上下文
 
@@ -451,8 +376,8 @@ Person.prototype.constructor // Person
 
 - this 绑定
 - 创建词法环境组件
-	- 是一种有 标识符-变量 映射的数据结构
-	- 内部有两个组件：1. 环境记录器：储存变量/函数的具体位置 2. 外部环境的引用：访问父级作用域
+  - 是一种有 标识符-变量 映射的数据结构
+  - 内部有两个组件：1. 环境记录器：储存变量/函数的具体位置 2. 外部环境的引用：访问父级作用域
 - 创建变量环境组件：也是一个词法环境，环境记录器存储变量的绑定关系
 
 2. 执行阶段：完成对变量的分配，最后执行代码
@@ -687,6 +612,81 @@ class Student extends Person() {
 ```
 
 ### 异步编程
+
+#### AJAX
+
+```js
+const url = '/api/user'
+let xhr = new XMLHttpRequest()
+xhr.open('get', url, true) // 默认 true 异步
+
+// 设置状态监听函数
+xhr.onreadystatechange = function() {
+	// 0: 已代理，未发 open; 1: open 2: send 3: 下载中 4: 完成
+	if (this.readystate !== '4') return
+	if (this.status === 200) {
+		handle(this.response)
+	} else {
+		console.error(this.statusText)
+	}
+}
+
+xhr.onerror = function() {
+	console.error(this.statusText)
+}
+
+xhr.responseType = 'json'
+xhr.setRequestHeader('Accept', 'application/json')
+
+// 也可以带 data
+xhr.send(null)
+
+// 使用 Promise 封装 AJAX
+function getJSON() {
+	let promise = new Promise(function (resolve, reject) {
+		let xhr = new XMLHttpRequest()
+		xhr.open('get', url)
+		xhr.onreadystatechange = function() {
+			if (this.readystate !== '4') return
+			if (this.status === 200) {
+				resolve(this.response)
+			} else {
+				reject(new Error(this.statusText))
+			}
+		}
+
+		xhr.onerror = function() {
+			reject(new Error(this.statusText))
+		}
+
+		xhr.responseType = 'json'
+		xhr.setRequestHeader('Accept', 'application/json')
+
+		xhr.send(null)
+	})
+	return promise
+}
+```
+
+**Fetch**
+基于 Promise 设计，使用原生 js，而不是 ajax 的进一步的封装，没有使用 XMLHttpRequest
+优点：语法简洁，基于 Promise，支持 async/await
+缺点：
+
+1. 只对网络请求报错，对 400，500 都当作成功请求
+2. fetch 默认不发 cookie，需要配置项 fetch( url, { credentials: 'include' })
+3. fetch 不支持 abort，不支持超时控制，使用 setTimeout 与 Promise.reject 实现的超时控制不能阻止请求过程继续在后台运行
+4. fetch 没有办法原生监测的请求的进度
+
+**Axios**
+基于 Promise 封装
+
+1. 浏览器端发起 XMLHttpRequest 请求，node 端发起 http 请求
+2. 支持 Promise API
+3. 监听请求和返回，对请求和返回进行转化
+4. 可以取消请求
+5. 自动转换 json，fetch 需要 res.json()
+6. 客户端支持抵御 XSRF 攻击
 
 #### 实现方式
 
