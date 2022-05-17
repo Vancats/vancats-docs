@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Browser/nginx.md",
+            "file": "2. Browser/未命名.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Browser/nginx.md",
+                "file": "2. Browser/未命名.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,7 @@
   },
   "active": "04f07661972a0b87",
   "lastOpenFiles": [
+    "2. Browser/未命名.md",
     "2. Browser/nginx.md",
     "0. Prepare/css.md",
     "0. Prepare/4.23 面试.md",
@@ -109,7 +110,6 @@
     "1. Base/CSS.md",
     "1. Base/手撕.md",
     "1. Base/代码输出.md",
-    "1. Base/OM.md",
-    "0. Prepare/js.md"
+    "1. Base/OM.md"
   ]
 }
