@@ -7,8 +7,12 @@
         "id": "04f07661972a0b87",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "1. Base/HTML.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1. Base/HTML.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -96,15 +101,15 @@
   },
   "active": "04f07661972a0b87",
   "lastOpenFiles": [
+    "1. Base/HTML.md",
+    "2. Browser/Learn Browser.md",
+    "2. Browser/Learn HTTP.md",
+    "2. Browser/HTTP.md",
+    "2. Browser/长任务.md",
+    "2. Browser/网络.md",
     "2. Browser/未命名.md",
     "2. Browser/nginx.md",
     "0. Prepare/css.md",
-    "0. Prepare/4.23 面试.md",
-    "1. Base/HTML.md",
-    "1. Base/Handwriting.md",
-    "1. Base/CSS.md",
-    "1. Base/手撕.md",
-    "1. Base/代码输出.md",
-    "1. Base/OM.md"
+    "0. Prepare/4.23 面试.md"
   ]
 }
