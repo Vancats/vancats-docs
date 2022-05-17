@@ -5,47 +5,6 @@ date updated: 2022-05-16 11:21
 
 # 手写题
 
-#### 1. Object.create
-
-```js
-function create(obj) {
-	function F() {}
-	F.prototype = obj
-	return new F()
-}
-```
-
-#### 2. instanceof
-
-```js
-function instanceOf(left, right) {
-	const prototype = right.prototype
-	const proto = Object.getPrototypeOf(left)
-	while (proto !== null) {
-		if (proto === prototype)
-			return true
-		proto = Object.getPrototypeOf(proto)
-	}
-	return false
-}
-```
-
-#### 3. new
-
-```js
-function new() {
-	const args = Array.prototype.slice.call(arguments)
-	const constructor = args.shift()
-	if (typeof constructor !== 'function')
-		throw new TypeError('TypeError')
-	const instance = Object.create(constructor.prototype)
-	const res = constructor.apply(instance, args)
-	if (typeof res === 'function' || (typeof res === 'object' && res !== null))
-		return res
-	return instance
-}
-```
-
 #### 4. 防抖
 
 ```js
@@ -79,20 +38,6 @@ function throttle(fn, interval) {
 	}
 }
 ```
-
-#### 6. getType
-
-```js
-function getType(val) {
-	if (val === null)
-		return "null"
-	if (typeof val === 'object') {
-		return Object.prototype.toString.call(val).slice(8, -1)
-	}
-	return typeof val
-}
-```
-
 #### 7. call
 
 ```js
