@@ -393,29 +393,6 @@ imgAsync('https://img0.baidu.com/it/u=2862534777,914942650&fm=253&fmt=auto&app=1
 })
 ```
 
-#### 18. 简单路由
-
-```ts
-class Route {
-  constructor() {
-    this.routes = {}
-    this.currentHash = ''
-    this.freshRoute = this.freshRoute.bind(this)
-    window.addEventListener('load', this.freshRoute, false)
-    window.addEventListener('hashchange', this.freshRoute, false)
-  }
-
-  storeRoute(path, cb) {
-    this.routes[path] = cb || function () { }
-  }
-
-  freshRoute() {
-    this.currentHash = location.hash.slice(1) || '/'
-    this.routes[this.currentHash]()
-  }
-}
-```
-
 #### 20. 封装 fetch
 
 ```js
