@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-18 18:01
+date updated: 2022-05-18 18:31
 ---
 
 #### 12. AJAX
@@ -391,47 +391,6 @@ imgAsync('https://img0.baidu.com/it/u=2862534777,914942650&fm=253&fmt=auto&app=1
   console.log('err: ', err)
   console.log('加载失败')
 })
-```
-
-#### 16. 发布 - 订阅模式
-
-```ts
-class EventCenter {
-  constructor() {
-    this.handles = []
-  }
-
-  on(type, handle) {
-    if (!this.handles[type])
-      this.handles[type] = []
-    this.handles[type].push(handle)
-  }
-
-  trigger(type, params) {
-    if (!this.handles[type])
-      return new Error('不存在该方法')
-    this.handles[type].forEach(handle => {
-      handle(...params)
-    })
-  }
-
-  once()
-
-  remove(type, handle) {
-    if (!this.handles[type])
-      return new Error('不存在该方法')
-    if (!handle) {
-      delete this.handles[type]
-    } else {
-      const ind = this.handle[type].findIndex(item => item === handle)
-      if (ind < 0)
-        return new Error('不存在该方法')
-      this.handles[type].splice(index, 1)
-      if (this.handles[type].length === 0)
-        delete this.handles[type]
-    }
-  }
-}
 ```
 
 #### 17. 双向绑定
