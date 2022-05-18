@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-18 18:31
+date updated: 2022-05-18 18:45
 ---
 
 #### 12. AJAX
@@ -390,29 +390,6 @@ imgAsync('https://img0.baidu.com/it/u=2862534777,914942650&fm=253&fmt=auto&app=1
 }).catch(err => {
   console.log('err: ', err)
   console.log('加载失败')
-})
-```
-
-#### 17. 双向绑定
-
-```ts
-let obj = {}
-let input = document.querySelector('#input')
-let span = document.querySelector('#span')
-
-Object.defineProperty(obj, 'text', {
-  get() {
-    console.log('获取数据')
-  },
-  set(newVal) {
-    console.log('更新数据')
-    input.value = newVal
-    span.innerHTML = newVal
-  }
-})
-
-input.addEventListener('keyup', function (e) {
-  obj.text = e.target.value
 })
 ```
 
