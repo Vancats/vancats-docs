@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-17 19:02
+date updated: 2022-05-18 18:01
 ---
 
 #### 11. 深拷贝
@@ -33,8 +33,9 @@ const mapTag = '[object Map]'
 const setTag = '[object Set]'
 const arrayTag = '[object Array]'
 const objectTag = '[object Object]'
-  
+
 const boolTag = '[object Boolean]'
+
 const numberTag = '[object Number]'
 const stringTag = '[object String]'
 const symbolTag = '[object Symbol]'
@@ -568,25 +569,6 @@ class Route {
 }
 ```
 
-#### 19. 使用 setTimeout 实现 setInterval
-
-```ts
-function mySetInterval(fn, timeout) {
-  let timer = {
-    flag: true
-  }
-
-  function interval() {
-    if (timer.flag) {
-      fn()
-      setTimeout(interval, timeout)
-    }
-  }
-
-  setTimeout(interval, timeout)
-  return timer
-}
-```
 
 #### 20. 封装 fetch
 
