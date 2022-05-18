@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-06 16:54
-date updated: 2022-05-18 18:45
+date updated: 2022-05-18 20:20
 ---
 
 #### 12. AJAX
@@ -445,4 +445,24 @@ imgAsync('https://img0.baidu.com/it/u=2862534777,914942650&fm=253&fmt=auto&app=1
   const res = await httpRequestUtil.get('http://golderbrother.cn/')
   console.log(res)
 })()
+```
+
+### 21. 懒加载
+
+```javascript
+let img = document.querySelectorAll('img')
+// 可视区高度
+let clientHeight = window.innerHeight || document.documentElement.clientHeight ||document.body.clientHeight
+function lazyLoad(){
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+    for(let i = 0; i < imgs.length; i++){
+		// 图片在可视区冒出的高度
+        let x = clientHeight + scrollTop - imgs[i].offsetTop
+        // 图片在可视区内
+        if(x > 0 && x < clientHeight + imgs[i].height) {
+            imgs[i].src = imgs[i].getAttribute('data')
+        }
+    }
+}
+addEventListener('scroll', lazyLoad) // setInterval(lazyLoad, 1000)
 ```
