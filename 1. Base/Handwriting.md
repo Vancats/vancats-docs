@@ -569,7 +569,6 @@ class Route {
 }
 ```
 
-
 #### 20. 封装 fetch
 
 ```js
