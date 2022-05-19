@@ -50,10 +50,7 @@ var student = new Student('Lqf', 18)
 ```js
 function Student(name, age) {
 	var person = new Person(name)
-	for(var p in person) {
-		Student.prototype[p] = person[p]
-	}
-	this.age = age
+t
 }
 var student = new Student()
 ```
