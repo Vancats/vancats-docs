@@ -447,7 +447,7 @@ imgAsync('https://img0.baidu.com/it/u=2862534777,914942650&fm=253&fmt=auto&app=1
 })()
 ```
 
-### 21. 懒加载
+#### 21. 懒加载
 
 ```javascript
 let img = document.querySelectorAll('img')
