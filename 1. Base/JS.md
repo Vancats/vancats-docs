@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-05-19 16:47
+date updated: 2022-05-19 17:00
 ---
 
 ### 数据类型
@@ -140,36 +140,6 @@ undefined: (-2)30 超出整数范围的数字
    2. 对象中的方法不可改为箭头函数，可使用 `fun() {}` 或 `fun: function(){}`
    3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
 7. bind 永久更改 this 指向，call，apply 临时更改 this 指向
-
-#### for...of & iterator(扩展)
-
-```js
-let obj = { a: 1, b: 2 }
-
-// 实现 iterator 的方法
-// eg1
-obj[Symbol.iterator] = function() {
-	let keys = Object.keys(this)
-	let count = 0
-	return {
-		next() {
-			if (count < keys.length) {
-				return { value: obj[keys[count++]], done: false }
-			} else {
-				return { value: undefined, done: true }
-			}
-		}
-	}
-}
-
-// eg2
-obj[Symbol.iterator] = function*() {
-	let keys = Object.keys(this)
-	for(let k of keys) {
-		yield obj[k]
-	}
-}
-```
 
 #### ES6 和 CommonJS
 
