@@ -323,32 +323,6 @@ const step2 = async () => {
 step2()
 ```
 
-#### 15. 图片异步加载
-
-```ts
-let imgAsync = (url) => {
-  return new Promise((resolve, reject) => {
-    const img = new Image()
-    img.src = url
-    img.onload = () => {
-      console.log('123')
-      resolve(img)
-    }
-    img.onerror = (err) => {
-      console.log('456')
-      reject(err)
-    }
-  })
-}
-
-imgAsync('https://img0.baidu.com/it/u=2862534777,914942650&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500').then(() => {
-  console.log('加载成功')
-}).catch(err => {
-  console.log('err: ', err)
-  console.log('加载失败')
-})
-```
-
 #### 创建对象的方法
 
 1. 字面量
