@@ -3,50 +3,6 @@ date created: 2022-05-06 16:54
 date updated: 2022-05-19 16:46
 ---
 
-#### 12. AJAX
-
-```js
-function ajax(url, method) {
-	let xhr = new XMLHttpRequest()
-	xhr.open(method, url, true)
-	xhr.onreadystatechange = function() {
-		if (this.readystate !== 4)
-			return
-		if (this.status === 200)
-			handle(this.response)
-		else
-			throw new Error(this.statusText)
-	}
-	xhr.onerror = function() {
-		console.warn(this.statusText)
-	}
-	xhr.responseType = 'json'
-	xhr.setRequestHeader('Accept', 'application/json')
-	xhr.send(null)
-}
-
-function getAjax(url, method) {
-	return new Promise((res, rej) => {
-	let xhr = new XMLHttpRequest()
-		xhr.open(method, url, true)
-		xhr.onreadystatechange = function() {
-			if (this.readystate !== 4)
-				return
-			if (this.status === 200)
-				res(this.response)
-			else
-				rej(new Error(this.statusText))
-		}
-		xhr.onerror = function() {
-			rej(new Error(this.statusText))
-		}
-		xhr.responseType = 'json'
-		xhr.setRequestHeader('Accept', 'application/json')
-		xhr.send(null)
-	})
-}
-```
-
 #### 13. Promise
 
 ```ts
