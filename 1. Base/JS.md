@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:28
-date updated: 2022-05-06 11:21
+date updated: 2022-05-19 16:47
 ---
 
 ### 数据类型
@@ -19,19 +19,6 @@ date updated: 2022-05-06 11:21
 **原型链的更换会引起上面两点判断的出错** `[].__proto__ = Object.prototype`
 4. `Object.prototype.toString.call([]) === '[object Array]'`
 5. `Array.isArray([])`
-6. 手写 ==instanceof==
-
-```js
-function myInstanceOf (left, right) {
-	let proto = Object.getPrototypeOf(left)
-	let prototype = right.prototype
-	while (true) {
-		if (!proto) return false
-		if (proto === prototype) return true
-		proto = Object.getPrototypeOf(proto)
-	}
-}
-```
 
 #### 类型转换
 
@@ -129,24 +116,6 @@ undefined: (-2)30 超出整数范围的数字
 3. 构造函数中的 this 指向该新对象，通过强制赋值，为新对象添加属性和方法
 4. 返回该新对象的地址
 5. 如果构造函数 return 了一个引用类型对象，直接返回该对象，前面的操作无效
-6. 手写 ==new==
-
-```js
-function myNew () {
-	let newObj = null
-	let constructor = Array.prototype.slice.call(arguments)
-	if (arguments !== 'function') {
-		new TypeError('type error')
-		return
-	}
-	newObj = Object.create(constructor.prototype)
-	let result = constructor.apply(newObj, arguments)
-	if (result && (typeof result === 'object' || typeof result === 'function')) {
-		return result
-	}
-	return newObj
-}
-```
 
 #### 箭头函数
 
@@ -200,37 +169,6 @@ obj[Symbol.iterator] = function*() {
 		yield obj[k]
 	}
 }
-```
-
-#### 数组的原生方法
-
-```js
-at concat copyWithin entries every fill filter find findIndex findLastIndex flat flatMap forEach
-includes indexOf join keys lastIndexOf map pop push reduce reduceRight reverse shift slice some sort splice
-toLocaleString toString unshift values
-
-Array: from isArray of
-```
-
-#### 对象的原生方法
-
-```js
-hasOwnProperty isPrototypeOf propertyEnumerable toLocaleString toString valueOf
-
-String: assign create defineProperties defineProperty entries freeze fromEntries getOwnPropertyDescriptor
-getOwnPropertyDescriptors getOwnPropertyName getOwnPropertySymbols getOwnPropertyOf hasOwn is isExtensible
-isFrozen isSealed keys preventExtensions seal setPropertyOf values
-```
-
-#### 字符串的原生方法
-
-```js
-anchor at big blink bold charAt charCodeAt codePointAt concat endsWith fixed fontcolor fontsize includes indexOf
-italics lastIndexOf link localeCompare match matchAll normalize padEnd padStart repeat replace replaceAll search
-slice small split startsWith strike sub substr substring sup toLocaleLowerCase toLocaleUpperCase toLowerCase
-toString toUpperCase trim trimEnd trimLeft trimRight trimStart valueOf
-
-String: fromCharCode fromCodePoint raw
 ```
 
 #### ES6 和 CommonJS
@@ -409,264 +347,7 @@ JS 具有自动回收机制，找到不再使用的变量释放内存
 - 脱离DOM的引用：引用一个DOM，但是DOM被删除，引用不消失
 - 闭包
 
-### 面向对象
-
-#### 创建对象的方法
-
-1. 字面量
-2. new Object
-3. 工厂函数：不能根据原型对象判断对象类型
-
-```js
-function createPerson(name) {
-  var o = new Person()
-  o.name = name
-  return o
-}
-var person = createPerson('Lqf')
-```
-
-4. 构造函数：如果内含方法，每次调用都会产生，浪费内存
-
-```js
-function Person(name) {
-	this.name = name
-	this.intr = function(){}
-}
-var person = new Person('Lqf')
-```
-
-5. 原型对象方式：步骤繁琐
-
-```js
-function Person(){}
-Person.prototype.name = 'hello'
-Person.prototype.intr = function(){}
-var person = new Person()
-person.name = 'Lqf' // 覆盖父对象
-```
-
-6. 混合模式：不符合面向对象封装思想
-
-```js
-function Person(name) {
-	this.name = name
-}
-Person.prototype.intr = function(){}
-var person = new Person('Lqf')
-```
-
-7. 动态混合：语义不符
-
-```js
-function Person(name) {
-	this.name = name
-	// 初次调用才会生成，不会产生浪费
-	if (Person.prototype.intr === undefined) {
-		Person.prototype.intr = function(){}
-	}
-}
-var person = new Person('Lqf')
-```
-
-8. 寄生构造函数：可读性差
-
-```js
-function Person(name) {
-	this.name = name
-	// 初次调用才会生成，不会产生浪费
-	if (Person.prototype.intr === undefined) {
-		Person.prototype.intr = function(){}
-	}
-}
-
-function Student(name, age) {
-	var person = new Person(name)
-	person.age = age
-	return person
-}
-
-var student = new Student('Lqf', 18)
-```
-
-9. ES6 Class：本质上和混合模式类似
-
-```js
-class Person {
-	constructor(name) {
-		this.name = name
-	}
-	intr() {}
-}
-```
-
-10. 稳妥构造函数：容易内存泄漏
-
-```js
-function Person(name) {
-	var person = {}
-	person.getName = function() { return name }
-	person.setName = function(val) { name = val }
-	return person
-
-	// 这种方式不用加 new 调用
-	this.getName = function() { return name }
-	this.setName = function(val) { name = val }
-}
-var person = new Person('Lqf')
-```
-
-#### 继承的方法
-
-0. 父类方法
-
-```js
-function Person(name) {
-	this.name = name
-	this.intr = function(){}
-}
-Person.prototype.eat = function(){}
-```
-
-1. 原型链继承：父类实例变成子类的原型（无法向父类传参）
-
-```js
-function Student(){}
-Student.prototype = new Person()
-Student.prototype.name = 'Lqf'
-var student = new Student()
-```
-
-2. 构造函数继承
-
-```js
-function Student(name, age) {
-	Person.call(this, name)
-	this.age = age
-}
-var student = new Student('Lqf', 18)
-```
-
-3. 实例继承
-
-```js
-function Student(name, age) {
-	var person = new Person(name)
-	person.age = age
-	return person
-}
-var student = new Student('Lqf', 18)
-```
-
-4. 拷贝继承：无法获取父类不可 for in 的方法
-
-```js
-function Student(name, age) {
-	var person = new Person(name)
-	for(var p in person) {
-		Student.prototype[p] = person[p]
-	}
-	this.age = age
-}
-var student = new Student()
-```
-
-5. 组合继承
-
-```js
-function Student(name, age) {
-	Person.call(this, name)
-	this.age = age
-}
-Student.prototype = new Animal()
-Student.prototype.constructor = Student
-var student = new Student()
-```
-
-6. 寄生组合继承
-
-```js
-function Student(name, age) {
-	Person.call(this, name)
-	this.age = age
-}
-(function () { // 创建一个没有实例方法的类
-	var Super = function(){}
-	Super.prototype = Person.prototype  // 将实例作为子类的原型 Cat.prototype = new Super();
-	Student.prototype = new Super
-})()
-var student = new Student()
-```
-
-7. ES6 Class extends
-
-```js
-class Person() {
-	constructor(){}
-}
-class Student extends Person() {
-	constructor() {
-		super()
-	}
-}
-```
-
 ### 异步编程
-
-#### AJAX
-
-```js
-const url = '/api/user'
-let xhr = new XMLHttpRequest()
-xhr.open('get', url, true) // 默认 true 异步
-
-// 设置状态监听函数
-xhr.onreadystatechange = function() {
-	// 0: 已代理，未发 open; 1: open 2: send 3: 下载中 4: 完成
-	if (this.readystate !== '4') return
-	if (this.status === 200) {
-		handle(this.response)
-	} else {
-		console.error(this.statusText)
-	}
-}
-
-xhr.onerror = function() {
-	console.error(this.statusText)
-}
-
-xhr.responseType = 'json'
-xhr.setRequestHeader('Accept', 'application/json')
-
-// 也可以带 data
-xhr.send(null)
-
-// 使用 Promise 封装 AJAX
-function getJSON() {
-	let promise = new Promise(function (resolve, reject) {
-		let xhr = new XMLHttpRequest()
-		xhr.open('get', url)
-		xhr.onreadystatechange = function() {
-			if (this.readystate !== '4') return
-			if (this.status === 200) {
-				resolve(this.response)
-			} else {
-				reject(new Error(this.statusText))
-			}
-		}
-
-		xhr.onerror = function() {
-			reject(new Error(this.statusText))
-		}
-
-		xhr.responseType = 'json'
-		xhr.setRequestHeader('Accept', 'application/json')
-
-		xhr.send(null)
-	})
-	return promise
-}
-```
 
 **Fetch**
 基于 Promise 设计，使用原生 js，而不是 ajax 的进一步的封装，没有使用 XMLHttpRequest
@@ -688,7 +369,6 @@ function getJSON() {
 5. 自动转换 json，fetch 需要 res.json()
 6. 客户端支持抵御 XSRF 攻击
 
-
 #### Promise
 
 **状态**：pending、fulfilled、rejected；状态一旦改变就绝对不会再变
@@ -708,30 +388,3 @@ Promise.race 可以设置超时不做
 4. 调试友好，调试器只能跟踪同步代码的每一步，在一个 then 方法中设置断点，并不能跟进到后续的 then 方法中，
 
 **requestAnimationFrame**：自带函数节流功能，可以保证在 16.6ms 内只执行一次，并且延时准确
-
-```js
-// 实现 setInterval
-function setInterval(callback, interval) {
-	let timer
-	let now = Date.now
-	let startTime = endTime = now()
-	const loop = () => {
-		time = requestAnimationFrame(loop)
-		endTime = now()
-		if (endTime - startTime >= interval) {
-			startTime = endTime = now()
-			callback()
-		}
-	}
-	timer = requestAnimationFrame(loop)
-	return timer
-}
-
-// test
-let a = 0
-setInterval(timer => {
-  console.log(1)
-  a++
-  if (a === 10) cancelAnimationFrame(timer)
-}, 1000)
-```
