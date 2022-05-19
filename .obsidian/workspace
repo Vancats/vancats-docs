@@ -10,14 +10,6 @@
           "type": "empty",
           "state": {}
         }
-      },
-      {
-        "id": "dfcc689ab64b7f22",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
-        }
       }
     ],
     "direction": "vertical"
@@ -104,15 +96,15 @@
   },
   "active": "dfcc689ab64b7f22",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "1. Base/HTML.md",
-    "2. Browser/网络.md",
-    "2. Browser/Learn Browser.md",
-    "2. Browser/Learn HTTP.md",
-    "2. Browser/HTTP.md",
-    "2. Browser/长任务.md",
-    "2. Browser/未命名.md",
-    "2. Browser/nginx.md",
-    "0. Prepare/css.md"
+    "1. Base/OM.md",
+    "1. Base/JS.md",
+    "1. Base/代码输出.md",
+    "1. Base/Handwriting.md",
+    "1. Base/CSS.md",
+    "0. Prepare/js.md",
+    "0. Prepare/css.md",
+    "0. Prepare/杂项.md",
+    "0. Prepare/4.23 面试.md",
+    "6. Chore/Interview.md"
   ]
 }
