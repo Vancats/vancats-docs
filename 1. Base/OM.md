@@ -3,9 +3,9 @@ date created: 2022-03-03 00:35
 date updated: 2022-03-03 00:52
 ---
 
-## Event
+### Event
 
-### 事件监听器
+#### 事件监听器
 
 ```javascript
 addEventListener(type， listener[, options|useCapture)
@@ -14,7 +14,7 @@ addEventListener(type， listener[, options|useCapture)
 removeEventListener('click', fn)
 ```
 
-### 事件对象
+#### 事件对象
 
 - Event 事件
 	- e.target 事件触发的目标源元素，会变
@@ -64,9 +64,9 @@ removeEventListener('click', fn)
 	- blur、focus、change、input、submit、reset
 	- 表单其他方法：blur()、focus()、select()
 
-## DOM
+### DOM
 
-### 节点类型
+#### 节点类型
 
 - 元素节点（标签名称）1   **nodeName、nodeType**
 - 文本节点（#text）3
