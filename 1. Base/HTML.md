@@ -43,7 +43,7 @@ date updated: 2022-05-16 10:42
 1. src 是资源引用，会下载该资源并直接嵌入到该标签位置，解析时会暂停其他资源的下载和处理，例如 js
 2. href 是超文本引用，建立一个链接关系，并行下载，例如 a，link
 
-#### defer 和 asyc 的区别
+#### defer 和 async 的区别
 
 1. async 是下载完直接执行，defer 下载完之后是在文档解析之后，DOMContentLoader 触发前执行
 2. async 不能确保加载顺序，defer 可以

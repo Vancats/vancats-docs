@@ -7,8 +7,12 @@
         "id": "2317943a8baeac0a",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "1. Base/HTML.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1. Base/HTML.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -96,12 +101,12 @@
   },
   "active": "2317943a8baeac0a",
   "lastOpenFiles": [
+    "1. Base/HTML.md",
+    "2. Browser/HTTP.md",
     "2. Browser/Browser.md",
     "2. Browser/网络.md",
     "2. Browser/Learn HTTP.md",
-    "2. Browser/HTTP.md",
     "6. Chore/模板引擎.md",
-    "1. Base/HTML.md",
     "1. Base/CSS.md",
     "1. Base/JS.md",
     "0. Prepare/js.md",
