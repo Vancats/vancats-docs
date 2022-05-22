@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Browser/HTTP.md",
+            "file": "1. Base/CSS.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Browser/HTTP.md",
+                "file": "1. Base/CSS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,8 @@
   },
   "active": "79fa514418dd87b9",
   "lastOpenFiles": [
+    "1. Base/CSS.md",
+    "1. Base/HTML.md",
     "2. Browser/HTTP.md",
     "2. Browser/网络.md",
     "2. Browser/Browser.md",
@@ -108,8 +110,6 @@
     "0. Prepare/杂项.md",
     "0. Prepare/css.md",
     "5. Vue/Slot.md",
-    "0. Prepare/5.22面试.md",
-    "0. Prepare/4.23 面试.md",
-    "1. Base/JS.md"
+    "0. Prepare/5.22面试.md"
   ]
 }
