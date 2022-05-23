@@ -18,5 +18,6 @@ date created: 2022-05-23 18:48
 
 #### meta
 1. charset utf-8
-2. e-qui
-3. keyword description
+2. equiv
+3. refresh
+4. keyword description
