@@ -37,7 +37,7 @@ date updated: 2022-05-23 20:24
 
 #### defer async
 
-1. 元dang解析完成后，DOMContentLoaded 触发前加载，顺序
+1. 元档解析后，DOMContentLoaded 触发前执行，顺序
 2. 立即加载，无序
 
 #### img srcset
@@ -61,21 +61,22 @@ date updated: 2022-05-23 20:24
 
 **canvas**
 
-1. 像素级别
+1. 依赖分辨率
 2. 无事件处理
 3. 弱文本渲染
-4. 适用于大型游戏
+4. 可以用 jpg png 保存
+5. 适用于图像密集型游戏，可以频繁重绘
 
 **svg**
 
 1. 矢量图
-2. DOM嵌入 事件处理
-3. 适合地图类型
-4.
+2. DOM可用  事件处理
+3. 适合大型渲染区域类型，谷歌地图
+4. 渲染速度不快（DOM）
 
-#### HTML5
+#### HTML5dd
 
-1. drag
+1. dragdd
 
 #### HTML 离线缓存
 

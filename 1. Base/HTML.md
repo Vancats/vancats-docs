@@ -79,20 +79,6 @@ date updated: 2022-05-16 10:42
   4. 复杂度高会减慢渲染速度，任何过度使用 DOM 的应用都不快
   5. 不适合游戏应用
 
-#### HTML5 更新
-
-1. 语义化标签
-2. 媒体标签
-   1. audio
-   2. video：poster 封面，默认第一帧
-   3. source：使用 type 属性为不同浏览器指定视频源
-3. 表单类型、属性、事件
-4. 进度条 progress，度量器 meter
-5. Web 存储：localStorage、sessionStorage
-6. Drag
-7. Geolocation
-8. SVG/Canvas
-
 #### HTML 离线缓存（需扩展）
 
 **原理**
