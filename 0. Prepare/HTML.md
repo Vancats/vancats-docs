@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-23 18:48
-date updated: 2022-05-23 20:07
+date updated: 2022-05-23 20:17
 ---
 
 # HTML
@@ -8,12 +8,13 @@ date updated: 2022-05-23 20:07
 #### 标签语义化
 
 1. 设备解析，盲人阅读
-2. 利于 SEO 搜索
+2. 利于爬虫，SEO搜索
 
 #### DOCTYPE
 
-1. CSS1Compat 标准模式 HTML5 默认
+1. CSS1Compat 标准模式 HTML5m
 2. BackCompat 怪异模式
+3. document.compatMode 获取
 
 #### meta
 
@@ -57,16 +58,27 @@ date updated: 2022-05-23 20:07
 3. 难以管理
 
 #### canvas SVG
+
 **canvas**
+
 1. 像素级别
 2. 无事件处理
 3. 弱文本渲染
 4. 适用于大型游戏
+
 **svg**
+
 1. 矢量图
 2. DOM嵌入 事件处理
-3. 适合类似地图这种
-4. 
+3. 适合地图类型
+4.
+
 #### HTML5
 
+1. drag
+
 #### HTML 离线缓存
+
+#### web worker
+
+postMessage
