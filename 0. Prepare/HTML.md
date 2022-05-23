@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-23 18:48
-date updated: 2022-05-23 20:24
+date updated: 2022-05-23 20:27
 ---
 
 # HTML
@@ -74,12 +74,8 @@ date updated: 2022-05-23 20:24
 3. 适合大型渲染区域类型，谷歌地图
 4. 渲染速度不快（DOM）
 
-#### HTML5dd
-
-1. dragdd
-
 #### HTML 离线缓存
 
-#### web worker
+#### web worker(扩展)
 
 postMessage
