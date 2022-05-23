@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-23 18:48
-date updated: 2022-05-23 20:17
+date updated: 2022-05-23 20:21
 ---
 
 # HTML
@@ -12,7 +12,7 @@ date updated: 2022-05-23 20:17
 
 #### DOCTYPE
 
-1. CSS1Compat 标准模式 HTML5m
+1. CSS1Compat 标准模式 HTML5 只有标准
 2. BackCompat 怪异模式
 3. document.compatMode 获取
 
@@ -20,20 +20,20 @@ date updated: 2022-05-23 20:17
 
 1. charset utf-8
 2. viewport
-3. robot index 可检索 follow
+3. robot index 文件可检索 / follow 链接可查询
 4. http-equiv refresh SCP
 
 #### link
 
 1. preload 优先级
 2. prefetch 空闲下载
-3. dns-prefetch 提前建立 dns
-4. preconnect dns + tcp + ssl
+3. dns-prefetch 提前 dns 解析
+4. preconnect 预连接 dns + tcp + ssl
 
 #### src href
 
-1. 阻塞加载
-2. 并行下载
+1. 资源引用，阻塞加载
+2. 超文本引用，并行下载
 
 #### defer async
 
