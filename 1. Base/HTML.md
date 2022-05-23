@@ -45,20 +45,8 @@ date updated: 2022-05-16 10:42
 
 #### defer 和 async 的区别
 
-1. async 是下载完直接执行，defer 下载完之后是在文档解析之后，DOMContentLoader 触发前执行
+1. async 是下载完直接执行，defer 下载完之后是在文档解析之后，DOMContentLoaded 触发前执行
 2. async 不能确保加载顺序，defer 可以
-
-#### 行内、块、空元素
-
-1. 行内元素：**span、img、input、select、a、i、b**
-2. 块元素：**div、p、h、ul、ol、li、dl、dt、dd**
-3. 空元素：**meta、input、img、link、br、hr**
-
-#### label 的作用
-
-定义表单和控件的关系，在选择标签时转移焦点到对应控件
-`<label for="mobile">Number: </label> <input id="mobile" />`
-
 #### img 的 srcset 属性
 
 > 根据不同屏幕的密度设置不同图片，w 是图片质量，sizes 是临界尺寸，
