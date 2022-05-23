@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-23 18:48
-date updated: 2022-05-23 20:21
+date updated: 2022-05-23 20:24
 ---
 
 # HTML
@@ -32,12 +32,12 @@ date updated: 2022-05-23 20:21
 
 #### src href
 
-1. 资源引用，阻塞加载
-2. 超文本引用，并行下载
+1. 资源引用，资源嵌入标签，阻塞加载
+2. 超文本引用，链接关系，并行下载
 
 #### defer async
 
-1. DOMContentLoaded 后加载，顺序
+1. 元dang解析完成后，DOMContentLoaded 触发前加载，顺序
 2. 立即加载，无序
 
 #### img srcset
