@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-23 18:48
-date updated: 2022-05-23 20:27
+date updated: 2022-05-23 20:32
 ---
 
 # HTML
@@ -78,4 +78,4 @@ date updated: 2022-05-23 20:27
 
 #### web worker(扩展)
 
-postMessage
+新建一个在后台的 js 线程，通过 postMessage 传输结果
