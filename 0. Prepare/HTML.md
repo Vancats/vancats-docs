@@ -45,3 +45,10 @@ date updated: 2022-05-23 19:01
 
 #### iframe
 
+
+#### canvas SVG
+
+#### HTML5
+1. drag
+
+#### HTML 离线缓存
