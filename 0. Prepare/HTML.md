@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-23 18:48
-date updated: 2022-05-23 20:03
+date updated: 2022-05-23 20:04
 ---
 
 # HTML
@@ -35,11 +35,19 @@ date updated: 2022-05-23 20:03
 2. 并行下载
 
 #### defer async
-1. 
+
+1. DOMContentLoaded 后加载，顺序
+2. 立即加载，无序
+
 #### img srcset
-
+根据界面密度来实现加载不同的图片
 #### iframe
-
+**优点**
+1. 并行加载 -- 广告
+2. 跨域通信
+**缺点**
+1. 阻塞主页面 onload
+2. 
 #### canvas SVG
 
 #### HTML5
