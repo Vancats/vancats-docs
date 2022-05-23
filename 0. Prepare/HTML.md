@@ -1,5 +1,6 @@
 ---
 date created: 2022-05-23 18:48
+date updated: 2022-05-23 19:01
 ---
 
 # HTML
@@ -17,7 +18,30 @@ date created: 2022-05-23 18:48
 3. HTML5 只有标准模式
 
 #### meta
+
 1. charset utf-8
 2. equiv
-3. refresh
-4. keyword description
+3. robot follow index
+4. refresh
+5. keyword description
+
+#### link
+
+1. preload
+2. preconnect
+3. dns-prefetch
+4. prefetch
+
+#### src href
+1. 外部加载
+2. 跳转链接
+
+#### defer async
+1. DOMContentLoaded 后执行
+2. 加载完立即执行
+
+#### img srcset
+根据不同的宽度加载不同的图片
+
+#### iframe
+
