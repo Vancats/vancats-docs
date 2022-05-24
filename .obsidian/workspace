@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Prepare/JS.md",
+                "file": "1. Base/JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,10 +113,10 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "f430348bd5a2e578",
+  "active": "79fa514418dd87b9",
   "lastOpenFiles": [
-    "0. Prepare/JS.md",
     "1. Base/JS.md",
+    "0. Prepare/JS.md",
     "0. Prepare/CSS.md",
     "1. Base/HTML.md",
     "1. Base/CSS.md",
