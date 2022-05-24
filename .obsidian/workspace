@@ -6,10 +6,11 @@
       {
         "id": "79fa514418dd87b9",
         "type": "leaf",
+        "dimension": 24.68723936613845,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Base/CSS.md",
+            "file": "1. Base/JS.md",
             "mode": "source",
             "source": false
           }
@@ -18,10 +19,11 @@
       {
         "id": "f430348bd5a2e578",
         "type": "leaf",
+        "dimension": 75.31276063386156,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "0. Prepare/CSS.md",
+            "file": "0. Prepare/JS.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Prepare/CSS.md",
+                "file": "1. Base/JS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -111,17 +113,17 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "f430348bd5a2e578",
+  "active": "79fa514418dd87b9",
   "lastOpenFiles": [
+    "1. Base/JS.md",
+    "0. Prepare/JS.md",
     "0. Prepare/CSS.md",
     "1. Base/HTML.md",
     "1. Base/CSS.md",
+    "0. Prepare/5.22.md",
     "0. Prepare/杂项.md",
-    "1. Base/JS.md",
-    "0. Prepare/5.22面试.md",
     "5. Vue/Slot.md",
     "4. Optimize/设计模式.md",
-    "2. Browser/网络.md",
-    "2. Browser/Browser.md"
+    "2. Browser/网络.md"
   ]
 }

@@ -153,22 +153,12 @@ date updated: 2022-05-22 23:21
 6. 后者使GUI渲染线程停止渲染，去请求资源，直到资源返回继续渲染
 
 #### 伪类和伪元素的区别
-
 - 伪是对于特定选择器添加类别，外部可见，不在文档中生成
 
 `p::before {content: 'content'} p::first-line {background: red} p::first-letter {font-size: 30px}`
 
 - 伪元素是在元素内容前后添加元素 `p:hover {color: red}`
 
-#### requestAnimationFrame
-
-- 使用：window.requestAnimationFrame(callback) callback在下次重绘前更新动画帧调用
-- 取消：window.cancelAnimationFrame(id)
-- 优势
-  - CPU 节能：在浏览器切屏后停止执行渲染，setInterval 即便在后台也会执行
-  - 函数节流：固定 16.7ms 执行一次
-  - 减少DOM操作：会在下次重绘前进行统一的DOM操作
-- setTimeout缺点：1. 固定间隔不一定等于帧数刷新时间（16.7）2. 进入宏任务队列，不一定按固定间隔执行
 
 #### li 之间的空白换行符
 
@@ -195,16 +185,6 @@ date updated: 2022-05-22 23:21
 7. animation
 8. 渐变：linear-gradient、radial-gradient，新增RGBA、HSLA模式
 9. flex，grid
-
-#### 图片格式
-
-1. BMP：无损，不压缩 很大
-2. JPEG：有损，直接色的点阵图，适合存储照片，不储存 logo，线框图。图片模糊，文件比 GIF 大
-3. GIF：无损，索引色，文件小，支持透明和动画，仅支持 8bit 的索引色，适合色彩要求不高，文件小场景
-4. GIF-8：无损，索引色，GIF 的优秀替代者，支持透明度，只是不支持动画，文件比 GIF 小
-5. GIF-24：无损，索引色，压缩过，比 BMP 小
-6. SVG：无损矢量图，放大不失真，适合绘制 Logo，Icon
-7. WebP：同时支持有损和无损，直接色；无损压缩下，比 GIF 小 26%了；有损压缩，比 JPEG  小 25%-34%；要支持图片透明度，只需 22% 额外空间
 
 #### CSS Sprites
 
