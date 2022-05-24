@@ -15,7 +15,7 @@ date updated: 2022-05-23 20:34
 1. CSS1Compat 标准模式 HTML5 只有标准
 2. BackCompat 怪异模式
 3. document.compatMode 获取
-
+  
 #### meta
 
 1. charset utf-8
