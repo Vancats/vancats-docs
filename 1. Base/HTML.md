@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-30 20:25
-date updated: 2022-05-16 10:42
+date updated: 2022-05-24 13:40
 ---
 
 #### 语义化
@@ -47,6 +47,7 @@ date updated: 2022-05-16 10:42
 
 1. async 是下载完直接执行，defer 下载完之后是在文档解析之后，DOMContentLoaded 触发前执行
 2. async 不能确保加载顺序，defer 可以
+
 #### img 的 srcset 属性
 
 > 根据不同屏幕的密度设置不同图片，w 是图片质量，sizes 是临界尺寸，
