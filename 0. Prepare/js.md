@@ -10,4 +10,6 @@ date updated: 2022-05-17 14:31
 	1. Array.prototype.isPrototypeOf([])
 	2. Object.getPrototypeOf([]) === Array.prototype
 3. 构造函数
-	1. 
+	1. [].constructor = Array
+	2. [] instanceof Array
+4. Object.prototype.toString.call([])
