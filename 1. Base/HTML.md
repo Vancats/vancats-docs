@@ -1,86 +1,82 @@
 ---
-date created: 2022-03-30 20:25
+date created: 2022-05-23 18:48
 date updated: 2022-05-24 13:40
 ---
 
-#### 语义化
+# HTML
 
-1. 利于设备解析，自动生成目录，例如盲人解析
-2. 对机器友好，适合爬虫，利于SEO搜索引擎
-3. 利于开发，增加可读性
+#### 标签语义化
 
-#### DOCTYPE 的作用
+1. 设备解析，盲人阅读
+2. 利于爬虫，SEO搜索
 
-1. 帮助确认使用哪种规范进行解析，如果没指定就是使用浏览器自身规范
-2. CSS1Compat：标准模式；BackCompat：怪异模式，向后兼容
-3. `<!Doctype html>` 标准模式，使用 HTML5 解析，HTML5 没有严格混杂的区别
-4. 使用 `document.compatMode` 可以获取
+#### DOCTYPE
 
-#### meta 标签
+1. CSS1Compat 标准模式 HTML5 只有标准
+2. BackCompat 怪异模式
+3. document.compatMode 获取
 
-1. viewport：移动端适配
-   `<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1;minimum-scale=1,user-scalable=no">`
-2. charset：编码类型
-   `<meta charset="uft-8"`
-3. keyword：利于 SEO
-   `<meta name="keyword" content="hello">`
-4. describe：利于 SEO
-   `<meta name="describe" content="你好">`
-5. refresh：页面一秒后**刷新**并**重定向**到百度
-   `<meta http-equiv="refresh" content="1;url=http://www.baidu.com"`
-6. robots：(no)index 文件（不可）检索 (no)follow 页面链接（不）可查询，all，none
-   `<meta name="robots" content="index,follow">`
+#### meta
 
-#### Link 标签
+1. charset utf-8
+2. viewport
+3. robot index 文件可检索 / follow 链接可查询
+4. http-equiv refresh SCP
 
-1. preload：指明后续可能有该文件，可以提醒浏览器处理其优先级
-2. prefetch：浏览器空闲时预加载文件，比如 html 中肯定包含的文件先行加载
-3. dns-prefetch：进行提前的 dns 解析
-4. preconnect：进行预连接，除了 dns 解析还有 TCP 连接和 TLS 握手（HTTPS）
+#### link
 
-#### src 与 href
+1. preload 优先级
+2. prefetch 空闲下载
+3. dns-prefetch 提前 dns 解析
+4. preconnect 预连接 dns + tcp + ssl
 
-1. src 是资源引用，会下载该资源并直接嵌入到该标签位置，解析时会暂停其他资源的下载和处理，例如 js
-2. href 是超文本引用，建立一个链接关系，并行下载，例如 a，link
+#### src href
 
-#### defer 和 async 的区别
+1. 资源引用，资源嵌入标签，阻塞加载
+2. 超文本引用，链接关系，并行下载
 
-1. async 是下载完直接执行，defer 下载完之后是在文档解析之后，DOMContentLoaded 触发前执行
-2. async 不能确保加载顺序，defer 可以
+#### defer async
 
-#### img 的 srcset 属性
+1. 元档解析后，DOMContentLoaded 触发前执行，顺序
+2. 立即加载，无序
 
-> 根据不同屏幕的密度设置不同图片，w 是图片质量，sizes 是临界尺寸，
+#### img srcset
+
+根据界面密度来实现加载不同的图片
 
 > img src="image-128.png" srcset="image-128.png 128w, image-256.png 256w, image-512.png 512w" sizes="(max-width: 360px) 340px, 128px"  **默认 128，大于360 则设置成 340**
 
-#### iframe 内联框架
+#### iframe
 
-- 优点
-  1. 加载速度较慢的内容，如广告
-  2. 使用脚本并行下载
-  3. 实现跨子域通信
-- 缺点
-  1. 会阻塞主页面的 onload 事件
-  2. 无法被搜索引擎识别
-  3. 产生过多页面不易管理
+**优点**
 
-#### Canvas SVG
+1. 并行加载 -- 广告
+2. 跨域通信
 
-- Canvas：画布，通过 js 绘制，位置改变将重新绘制
-  1. 依赖分辨率
-  2. 不支持事件处理
-  3. 弱的文本渲染能力
-  4. 可以 jpg png 格式保存图片
-  5. 适合图像密集型的游戏，可以频繁重绘
-- SVG：矢量图，基于 XML 的图形语言，因此 DOM 可用
-  1. 不依赖分辨率
-  2. 支持事件处理
-  3. 适合大型渲染区域的应用程序，如谷歌地图
-  4. 复杂度高会减慢渲染速度，任何过度使用 DOM 的应用都不快
-  5. 不适合游戏应用
+**缺点**
 
-#### HTML 离线缓存（需扩展）
+1. 阻塞主页面 onload
+2. 隔绝搜索引擎
+3. 难以管理
+
+#### canvas SVG
+
+**canvas**
+
+1. 依赖分辨率
+2. 无事件处理
+3. 弱文本渲染
+4. 可以用 jpg png 保存
+5. 适用于图像密集型游戏，可以频繁重绘
+
+**svg**
+
+1. 矢量图
+2. DOM可用  事件处理
+3. 适合大型渲染区域类型，谷歌地图
+4. 渲染速度不快（DOM）
+
+#### HTML 离线缓存
 
 **原理**
 
@@ -123,12 +119,6 @@ FALLBACK:  // 访问第一个资源的任何文件失败，就去访问这个文
 5. 浏览器可以请求缓存的绝对路径
 6. 站点的其他页面请求的资源在缓存中会从缓资中访问
 
-#### Web Worker（需扩展）
+#### web worker(扩展)
 
-- 运行在后台的 js，不影响页面性能，通过 postMessage 传回结果。
-- 在正常的 HTML 页面执行 js 不响应，
-
-#### 渐进增强和优雅降级
-
-- 渐进增强：关注内容本身，成为一种更为合理的设计范例，**分级式浏览器支持**
-- 优雅降级：针对最完善最高级的浏览器去设计页面，最后再去测试过时浏览器，只提供简陋且无妨的功能，修复较大的错误
+新建一个在后台的 js 线程，通过 postMessage 传输结果

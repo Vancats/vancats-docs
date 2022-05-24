@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Base/HTML.md",
+            "file": "1. Base/CSS.md",
             "mode": "source",
             "source": false
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "0. Prepare/HTML.md",
+            "file": "0. Prepare/CSS.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Prepare/HTML.md",
+                "file": "0. Prepare/CSS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,15 +113,15 @@
   },
   "active": "f430348bd5a2e578",
   "lastOpenFiles": [
-    "0. Prepare/HTML.md",
-    "1. Base/HTML.md",
-    "0. Prepare/5.22面试.md",
     "0. Prepare/CSS.md",
+    "1. Base/HTML.md",
+    "1. Base/CSS.md",
     "0. Prepare/杂项.md",
+    "1. Base/JS.md",
+    "0. Prepare/5.22面试.md",
     "5. Vue/Slot.md",
     "4. Optimize/设计模式.md",
     "2. Browser/网络.md",
-    "2. Browser/Browser.md",
-    "2. Browser/HTTP.md"
+    "2. Browser/Browser.md"
   ]
 }
