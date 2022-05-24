@@ -141,7 +141,7 @@ undefined: (-2)30 超出整数范围的数字
    3. 箭头函数的底层原理即为 bind，所以 call 无法更新箭头函数的指向
 7. bind 永久更改 this 指向，call，apply 临时更改 this 指向
 
-#### ES6 和 CommonJS
+#### ESM 和 CJS
 
 1. 前者的 import 异步加载，后者的 require 同步加载，只适用于本地读取文件的服务端
 2. 前者输出的值的引用，而后者输出的是值的浅拷贝内容
