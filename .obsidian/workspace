@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "0. Prepare/5.22.md",
+            "file": "2. Browser/HTTP.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Prepare/5.22.md",
+                "file": "2. Browser/HTTP.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "79fa514418dd87b9",
   "lastOpenFiles": [
+    "2. Browser/HTTP.md",
+    "2. Browser/网络.md",
+    "1. Base/CSS.md",
     "0. Prepare/5.22.md",
     "2. Browser/问题.md",
-    "2. Browser/网络.md",
-    "2. Browser/HTTP.md",
     "6. Chore/vitepress.md",
     "6. Chore/RegExp.md",
     "6. Chore/React.md",
     "6. Chore/Interview.md",
-    "6. Chore/杂项.md",
-    "6. Chore/模板引擎.md"
+    "6. Chore/杂项.md"
   ]
 }

@@ -39,50 +39,6 @@ TCP connection
 2. SYN = 1 seq = Y ACK = X + 1
 3. seq = Z ACK = Y + 1
 
-### URI
-
-##### URI 统一资源标志符
-
-##### URL 统一资源定位器
-
-##### URN 永久统一资源定位符
-
-#### 报文(扩展)
-
-##### 请求报文
-
-Method URL Version
-
-##### 响应报文
-
-Version Code Meaning
-
-### 跨域(扩展)
-
-请求与当前协议，域名，端口任一不同的接口
-
-##### 服务器设置
-
-1. 只允许 GET POST HEADER 跨域
-2. 只允许 text/plain multipart/form-data application/x-www-form-urlencoded 跨域
-
-修改服务器设置
-
-1. Access-Control-Allow-Origin
-2. Access-Control-Allow-Header
-3. Access-Control-Allow-Methods
-4. Access-Control-Max-Age 这个时间内不用重新
-
-```js
-res.writeHead(200, {
-  'Access-Control-Allow-Origin': 'http://localhost:8888',
-  'Access-Control-Allow-Headers': 'X-Test-Cors',
-  'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE',
-  // 请求建立时间内不用再次判断
-  'Access-Control-Max-Age': 4
-})
-```
-
 ### Cache- Control
 
 1. public 请求返回的内容所经过的任何路径，包括代理服务器和浏览器，都可以进行缓存的操作
