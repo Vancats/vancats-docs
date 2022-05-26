@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "0. Prepare/5.22.md",
+            "file": "0. Prepare/JS.md",
             "mode": "source",
             "source": false
           }
@@ -114,14 +114,14 @@
   "active": "ea62de5f427a5614",
   "lastOpenFiles": [
     "2. Browser/问题.md",
+    "0. Prepare/JS.md",
+    "0. Prepare/CSS.md",
+    "0. Prepare/杂项.md",
     "0. Prepare/5.22.md",
     "2. Browser/HTTP.md",
     "2. Browser/网络.md",
     "1. Base/CSS.md",
     "6. Chore/vitepress.md",
-    "6. Chore/RegExp.md",
-    "6. Chore/React.md",
-    "6. Chore/Interview.md",
-    "6. Chore/杂项.md"
+    "6. Chore/RegExp.md"
   ]
 }
