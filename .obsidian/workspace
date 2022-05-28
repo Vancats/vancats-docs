@@ -102,14 +102,14 @@
   "active": "79fa514418dd87b9",
   "lastOpenFiles": [
     "5. Vue/Vue.md",
+    "5. Vue/another.md",
+    "5. Vue/Slot.md",
+    "5. Vue/Vue面试题.md",
+    "5. Vue/Vue2源码概述.md",
     "5. Vue/Vue补.md",
     "5. Vue/Vue3.md",
-    "5. Vue/Vue2源码概述.md",
-    "5. Vue/Slot.md",
     "5. Vue/Mini-vue.md",
     "5. Vue/compile.md",
-    "5. Vue/another.md",
-    "3. Package/Webpack.md",
-    "3. Package/Vite.md"
+    "3. Package/Webpack.md"
   ]
 }
