@@ -9,3 +9,4 @@ date updated: 2022-05-29 22:21
 2. MVVM：用户不用手动操作DOM，而是绑定到 ViewModel 层，视图变化则更新数据
 
 ### 响应式数据的原理
+1. 主要是使用了 Object.set
