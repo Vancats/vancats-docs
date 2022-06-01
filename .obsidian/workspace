@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Base/JS.md",
+            "file": "5. Vue/Vue.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Base/JS.md",
+                "file": "5. Vue/Vue.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,8 +101,8 @@
   },
   "active": "79fa514418dd87b9",
   "lastOpenFiles": [
-    "1. Base/JS.md",
     "5. Vue/Vue.md",
+    "1. Base/JS.md",
     "2. Browser/问题.md",
     "2. Browser/HTTP.md",
     "0. Prepare/JS.md",
