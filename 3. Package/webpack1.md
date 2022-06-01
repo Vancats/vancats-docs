@@ -12,4 +12,4 @@ date updated: 2022-06-02 00:23
    4. Webpack.DefinePlugin 里面的内容提供给模块使用，只是单纯的常量，与 process.env 无关
    5. cross-env 完美的解决方案
 4. raw-loader style-loader css-loader less-loader file-loader url-loader
-5. 资源模块
+5. 资源模块 asset / source - resource - inline
