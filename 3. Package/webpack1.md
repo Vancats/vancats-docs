@@ -13,3 +13,4 @@ date updated: 2022-06-02 02:30
    5. cross-env 完美的解决方案
 4. raw-loader style-loader css-loader less-loader file-loader url-loader
 5. 资源模块 asset / source - resource - inline
+6. babel-loader @babel/core 转换代码的引擎 有 transform 方法 @babel/preset-env 具体转换规则
