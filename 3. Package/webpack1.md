@@ -15,3 +15,7 @@ date updated: 2022-06-03 18:37
 5. 资源模块 asset / source - resource - inline
 6. babel-loader @babel/core 转换代码的引擎 有 transform 方法 @babel/preset-env 具体转换规则
 7. source-map
+	1. source-map
+	2. inline base64行内嵌套
+	3. hidden 没有关联关系，可调试
+	4. eval
