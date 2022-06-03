@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-03 19:56
+date updated: 2022-06-03 22:04
 ---
 
 1. chunk assets file
@@ -23,3 +23,4 @@ date updated: 2022-06-03 19:56
    6. cheap-module- 只有行映射
    7. 开发最佳实践 速度 eval-cheap-  调试 cheap-module 折中 eval-
    8. 生产环境 hidden-sourcemap
+   9. 生产环境和测试环境的sourcemap
