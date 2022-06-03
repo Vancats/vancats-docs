@@ -19,4 +19,4 @@ date updated: 2022-06-03 18:37
 	2. inline base64行内嵌套
 	3. hidden 没有关联关系，可调试
 	4. eval
-	5. nosources
+	5. nosources 有source-map，也能找到位置，但是是空的
