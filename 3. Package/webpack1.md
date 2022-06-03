@@ -15,9 +15,10 @@ date updated: 2022-06-03 19:56
 5. 资源模块 asset / source - resource - inline
 6. babel-loader @babel/core 转换代码的引擎 有 transform 方法 @babel/preset-env 具体转换规则
 7. source-map
-   1. inline base64行内嵌套
-   2. hidden 没有关联关系，可调试
-   3. eval 每个模块都用 eval 包括实现，利于缓存
-   4. nosources 有source-map，也能找到位置，但是是空的
-   5. cheap 只有行映射，不包含 loader
-   6. cheap-module 只有行映射
+   1. inline- base64行内嵌套
+   2. hidden- 没有关联关系，可调试
+   3. eval- 每个模块都用 eval 包括实现，利于缓存
+   4. nosources- 有source-map，也能找到位置，但是是空的
+   5. cheap- 只有行映射，不包含 loader
+   6. cheap-module- 只有行映射
+   7. 开发最佳实践 速度 eval-cheap-  调试 cheap-module
