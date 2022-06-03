@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-02 02:30
+date updated: 2022-06-03 18:37
 ---
 
 1. chunk assets file
@@ -14,3 +14,4 @@ date updated: 2022-06-02 02:30
 4. raw-loader style-loader css-loader less-loader file-loader url-loader
 5. 资源模块 asset / source - resource - inline
 6. babel-loader @babel/core 转换代码的引擎 有 transform 方法 @babel/preset-env 具体转换规则
+7. source-map
