@@ -21,4 +21,5 @@ date updated: 2022-06-03 19:56
    4. nosources- 有source-map，也能找到位置，但是是空的
    5. cheap- 只有行映射，不包含 loader
    6. cheap-module- 只有行映射
-   7. 开发最佳实践 速度 eval-cheap-  调试 cheap-module
+   7. 开发最佳实践 速度 eval-cheap-  调试 cheap-module 折中 eval-
+   8. 生产环境 hidden-sourcemap
