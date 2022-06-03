@@ -17,7 +17,7 @@ date updated: 2022-06-03 19:56
 7. source-map
    1. inline base64行内嵌套
    2. hidden 没有关联关系，可调试
-   3. eval
+   3. eval 每个模块都用 eval 包括实现，利于缓存
    4. nosources 有source-map，也能找到位置，但是是空的
    5. cheap 只有行映射，不包含 loader
    6. cheap-module 只有行映射
