@@ -25,5 +25,8 @@ date updated: 2022-06-03 22:04
    8. 生产环境 hidden-sourcemap
    9. 生产环境和测试环境的sourcemap
 8. 引入第三方库
-	1. 直接引入，模块内需要引入
-	2. 插件
+	1. 直接引入 模块内需要引入
+	2. ProvidePlugin 模块内不需要引入
+	3. expose-loader 模块内至少引用一次 会把变量挂载到 window
+	4. externals 不需要模块引入，直接引用CDN
+	5. HTMLWebpackExternalsPlugin
