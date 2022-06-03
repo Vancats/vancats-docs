@@ -24,4 +24,6 @@ date updated: 2022-06-03 22:04
    7. 开发最佳实践 速度 eval-cheap-  调试 cheap-module 折中 eval-
    8. 生产环境 hidden-sourcemap
    9. 生产环境和测试环境的sourcemap
-   10. 
+8. 引入第三方库
+	1. 直接引入，模块内需要引入
+	2. 插件
