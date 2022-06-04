@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-03 22:04
+date updated: 2022-06-04 17:40
 ---
 
 1. chunk assets file
@@ -25,13 +25,12 @@ date updated: 2022-06-03 22:04
    8. 生产环境 hidden-sourcemap
    9. 生产环境和测试环境的sourcemap SourceMapDevToolPlugin FileManagerWebpackPlugin
 8. 引入第三方库
-	1. 直接引入 模块内需要引入
-	2. ProvidePlugin 模块内不需要引入
-	3. expose-loader 模块内至少引用一次 会把变量挂载到 window
-	4. externals 不需要模块引入，直接引用CDN
-	5. HTMLWebpackExternalsPlugin
+   1. 直接引入 模块内需要引入
+   2. ProvidePlugin 模块内不需要引入
+   3. expose-loader 模块内至少引用一次 会把变量挂载到 window
+   4. externals 不需要模块引入，直接引用CDN
+   5. HTMLWebpackExternalsPlugin
 9. watch watchOptions
-10. Webpack.BannerPlugin
-11. CopyWebpackPlugin
-12. CleanWebpackPlugin
-13. proxy 
+10. Webpack.BannerPlugin CopyWebpackPlugin CleanWebpackPlugin
+11. proxy before after webpackdevmiddleware
+12.
