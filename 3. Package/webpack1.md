@@ -34,3 +34,4 @@ date updated: 2022-06-03 22:04
 10. Webpack.BannerPlugin
 11. CopyWebpackPlugin
 12. CleanWebpackPlugin
+13. proxy 
