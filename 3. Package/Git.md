@@ -34,7 +34,7 @@ date updated: 2022-04-23 11:41
 
 - git status：追踪文件状态
 
-  - --short（-s）
+  - `--short（-s）`
     - ？？未追踪文件
     - A 添加到暂存区
     - ​    M被修改但是未放入暂存区
@@ -105,13 +105,6 @@ date updated: 2022-04-23 11:41
 
   - --no-ff <commit msg> 禁止快速前移
   - --abort 取消合并
-
-  ```javascript
-  <<<<<<< HEAD 当前分支的代码
-  <script src="index2.js"></script>
-  =======
-  <script src="index3.js"></script>
-  ```
 
 - git pull相当于git fetch + git merge
 

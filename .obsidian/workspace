@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3. Package/Webpack.md",
+            "file": "3. Package/Git.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Package/Webpack.md",
+                "file": "3. Package/Git.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "79fa514418dd87b9",
   "lastOpenFiles": [
-    "3. Package/Webpack.md",
+    "3. Package/Git.md",
+    "3. Package/Config.md",
     "3. Package/Vite.md",
+    "3. Package/Webpack.md",
     "3. Package/webpack1.md",
     "5. Vue/Vue.md",
     "5. Vue/Slot.md",
     "5. Vue/Vue2源码概述.md",
     "5. Vue/Vue3.md",
-    "6. Chore/RegExp.md",
-    "6. Chore/React.md",
-    "5. Vue/another.md"
+    "6. Chore/RegExp.md"
   ]
 }
