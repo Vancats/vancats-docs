@@ -35,4 +35,5 @@ date updated: 2022-06-04 17:40
 11. proxy before after webpackdevmiddleware
 12. Mini-Css-Extract-Plugin
 13. optimize-css-assets-webpack-plugin 优化 压缩 css
-14. terser-webpack-plugin
+14. terser-webpack-plugin 优化 压缩 js
+15. image-webpack-plugin 优化 压缩图片
