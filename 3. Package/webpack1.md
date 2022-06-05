@@ -33,4 +33,6 @@ date updated: 2022-06-04 17:40
 9. watch watchOptions
 10. Webpack.BannerPlugin CopyWebpackPlugin CleanWebpackPlugin
 11. proxy before after webpackdevmiddleware
-12.
+12. Mini-Css-Extract-Plugin
+13. optimize-css-assets-webpack-plugin 优化 压缩 css
+14. terser-webpack-plugin
