@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-04 17:40
+date updated: 2022-06-05 13:15
 ---
 
 1. chunk assets file
@@ -37,3 +37,4 @@ date updated: 2022-06-04 17:40
 13. optimize-css-assets-webpack-plugin 优化 压缩 css
 14. terser-webpack-plugin 优化 压缩 js
 15. image-webpack-plugin 优化 压缩图片
+16. css 图片路径配置
