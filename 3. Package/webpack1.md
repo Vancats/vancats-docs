@@ -38,3 +38,4 @@ date updated: 2022-06-05 13:15
 14. terser-webpack-plugin 优化 压缩 js
 15. image-webpack-plugin 优化 压缩图片
 16. css 图片路径配置
+17. hash chunkhash contenthash 
