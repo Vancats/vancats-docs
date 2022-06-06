@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-05 13:15
+date updated: 2022-06-06 22:28
 ---
 
 1. chunk assets file
@@ -38,4 +38,5 @@ date updated: 2022-06-05 13:15
 14. terser-webpack-plugin 优化 压缩 js
 15. image-webpack-plugin 优化 压缩图片
 16. css 图片路径配置
-17. hash chunkhash contenthash 
+17. hash chunkhash contenthash
+18. postcss-loader postcss-preset-env
