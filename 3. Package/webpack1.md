@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-06 22:28
+date updated: 2022-06-06 23:06
 ---
 
 1. chunk assets file
@@ -40,3 +40,4 @@ date updated: 2022-06-06 22:28
 16. css 图片路径配置
 17. hash chunkhash contenthash
 18. postcss-loader postcss-preset-env
+19. importLoaders
