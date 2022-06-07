@@ -41,3 +41,4 @@ date updated: 2022-06-06 23:06
 17. hash chunkhash contenthash
 18. postcss-loader postcss-preset-env
 19. importLoaders
+20. OptimizeCssAssetWebpackPlugin
