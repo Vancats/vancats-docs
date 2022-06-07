@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-07 21:59
+date updated: 2022-06-07 22:13
 ---
 
 1. chunk assets file
@@ -41,6 +41,7 @@ date updated: 2022-06-07 21:59
 17. hash chunkhash contenthash
 18. postcss-loader postcss-preset-env
 19. importLoaders
-20. OptimizeCssAssetWebpackPlugin
-21. image-webpack-loader
-22. TerserPlugin
+20. css 压缩 OptimizeCssAssetWebpackPlugin
+21. 图片 压缩 image-webpack-loader
+22. js 压缩 TerserPlugin-webpack-plugin
+23. html 压缩 html-webpack-plugin
