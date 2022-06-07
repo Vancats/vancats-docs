@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-06 23:06
+date updated: 2022-06-07 21:59
 ---
 
 1. chunk assets file
@@ -42,3 +42,5 @@ date updated: 2022-06-06 23:06
 18. postcss-loader postcss-preset-env
 19. importLoaders
 20. OptimizeCssAssetWebpackPlugin
+21. image-webpack-loader
+22. TerserPlugin
