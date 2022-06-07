@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-07 22:13
+date updated: 2022-06-07 22:50
 ---
 
 1. chunk assets file
@@ -45,3 +45,4 @@ date updated: 2022-06-07 22:13
 21. 图片 压缩 image-webpack-loader
 22. js 压缩 TerserPlugin-webpack-plugin
 23. html 压缩 html-webpack-plugin
+24. px2rem + lib-flexible 移动端自适应，在index.html配置font-size
