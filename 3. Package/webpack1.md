@@ -45,4 +45,4 @@ date updated: 2022-06-07 22:50
 21. 图片 压缩 image-webpack-loader
 22. js 压缩 TerserPlugin-webpack-plugin
 23. html 压缩 html-webpack-plugin
-24. px2rem + lib-flexible 移动端自适应，在index.html配置font-size
+24. px2rem 750px -> 10 rem /  lib-flexible 自动计算 1rem=xxxp x  移动端自适应，在index.html配置font-size
