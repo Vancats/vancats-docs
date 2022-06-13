@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-07 22:54
+date updated: 2022-06-13 23:06
 ---
 
 1. chunk assets file
@@ -46,3 +46,4 @@ date updated: 2022-06-07 22:54
 22. js 压缩 TerserPlugin-webpack-plugin
 23. html 压缩 html-webpack-plugin
 24. px2rem 750px -> 10 rem /  lib-flexible 自动计算 1rem = 多少 px  移动端自适应，在index.html配置font-size
+25. polyfill false /  entry / usage core-js 2 / 3
