@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-13 23:32
+date updated: 2022-06-14 00:58
 ---
 
 1. chunk assets file
@@ -51,3 +51,8 @@ date updated: 2022-06-13 23:32
 27. babel-runtime
 28. @babel/plugin-transform-runtime
 29. @babel/runtime-corejs3 corejs3 helpers regenerator
+30. 最佳配置
+	1. babel-runtime 适合组件和库，局部引入
+	2. babel-polyfill 业务使用，不怕污染全局
+	3. 局部引入 不污染全局，增加文件体积
+	4. 全局引入 污染全局，减少文件体积
