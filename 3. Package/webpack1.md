@@ -49,3 +49,5 @@ date updated: 2022-06-13 23:32
 25. preset-env 只转换语法，不转换方法和API
 26. polyfill false /  entry 全局 / usage 局部  core-js 2 / 3
 27. babel-runtime
+28. @babel/plugin-transform-runtime
+29. @babel/runtime-corejs3 corejs3 helpers regenerator
