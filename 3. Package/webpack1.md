@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-14 00:58
+date updated: 2022-06-14 01:03
 ---
 
 1. chunk assets file
@@ -52,7 +52,8 @@ date updated: 2022-06-14 00:58
 28. @babel/plugin-transform-runtime
 29. @babel/runtime-corejs3 corejs3 helpers regenerator
 30. 最佳配置
-	1. babel-runtime 适合组件和库，局部引入
-	2. babel-polyfill 业务使用，不怕污染全局
-	3. 局部引入 不污染全局，增加文件体积
-	4. 全局引入 污染全局，减少文件体积
+    1. babel-runtime 适合组件和库，局部引入
+    2. babel-polyfill 业务使用，不怕污染全局
+    3. 局部引入 不污染全局，增加文件体积
+    4. 全局引入 污染全局，减少文件体积
+31. polyfill.io 接受对一组浏览器功能的请求并仅返回请求浏览器所需的 polyfill 的服务，可以在Chrome和IE直接打开查看 <https://polyfill.io/v3/polyfill.min.js>
