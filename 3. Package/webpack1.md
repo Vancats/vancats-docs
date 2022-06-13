@@ -47,7 +47,7 @@ date updated: 2022-06-14 01:04
 23. html 压缩 html-webpack-plugin
 24. px2rem 750px -> 10 rem /  lib-flexible 自动计算 1rem = 多少 px  移动端自适应，在index.html配置font-size
 25. preset-env 只转换语法，不转换方法和API
-26. polyfill false /  entry 全局 / usage 局部  core-js 2 / 3
+26. polyfill useBuiltIns false /  entry 全局 / usage 局部  core-js 2 / 3
 27. babel-runtime
 28. @babel/plugin-transform-runtime
 29. @babel/runtime-corejs3 corejs3 helpers regenerator
