@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-05-30 02:26
+date updated: 2022-06-14 15:53
 ---
 
 ### MVVM 的理解
@@ -10,11 +10,9 @@ date updated: 2022-05-30 02:26
 
 ### 响应式数据的原理
 
-主要原理是使用 Object.defineProperty 来实现对 get set 属性的拦截，在 get 操作时，会为该 key 创建一个 dep，用于收集与该值相关的所有 watcher，而在修改该值的时候，会执行 dep.notify 函数，它会遍历存储的所有 watcher
+主要原理是使用 Object.defineProperty 来实现对 get set 属性的拦截，在 get 操作时，会为该 key 创建一个 dep，用于收集与该值相关的所有 watcher，而在修改该值的时候，会执行 dep.notify 函数，它会遍历存储的所有 watcher，执行它的 get 来更新所有相关数据
 
 ### 如何检测数组变化
-
-当我们数组发生增加或删除的时候，我们也应该触发 watcher，但是实际上仅靠 defineProperty 是难以做到，或者说没有必要做到的（比如拦截其 length 属性），Vue2 源码中采取了一种较为简便的方法，它直接对可能影响长度的方法，通过修改其原型链指向进行了拦截的操作，使其可以完成对新添加的内容增加响应式以及触发依赖更新的操作。
 
 ### 异步渲染 nextTick
 
