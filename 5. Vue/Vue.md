@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-14 15:53
+date updated: 2022-06-14 20:00
 ---
 
 ### MVVM 的理解
@@ -18,6 +18,6 @@ date updated: 2022-06-14 15:53
 
 ### nextTick
 
-这是 vue 的异步机制，我们在操作时，往往一次性会有许多的更新操作，每一步的操作都执行更新函数显然不必要，所以用异步的方式来进行数据的更新会节省很多性能。当我们需要进行异步更新的时候，我们会打开一个 waiting 的打开，进而开启 nextTick，传入 flushSchedulerQueue，这是一个执行所有 watcher 的函数（会排序），我们会把这个函数存入一个 callbacks 数组中，然后打开 pending 开关，开启 timeFunc 的异步事件，其中有异步的降级策略，Promise - MutationObserver
+这是 vue 的异步机制，我们在操作时，往往一次性会有许多的更新操作，每一步的操作都执行更新函数显然不必要，所以用异步的方式来进行数据的更新会节省很多性能。当我们需要进行异步更新的时候，我们会打开一个 waiting 的打开，进而开启 nextTick，传入 flushSchedulerQueue，这是一个执行所有 watcher 的函数（会排序），我们会把这个函数存入一个 callbacks 数组中，然后打开 pending 开关，开启 timeFunc 的异步事件，其中有异步的降级策略，Promise - MutationObserver - setImmediate - setTimeout，然后循环执行 callbacks 中的每一项，也就是每一个 flushSchedulerQueue
 
 ### 更新流程
