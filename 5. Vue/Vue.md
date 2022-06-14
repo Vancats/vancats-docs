@@ -10,7 +10,7 @@ date updated: 2022-05-30 02:26
 
 ### 响应式数据的原理
 
-主要原理是使用 Object.defineProperty 来实现对 get set 属性的拦截，
+主要原理是使用 Object.defineProperty 来实现对 get set 属性的拦截，在 get 操作时，会为该 key 创建一个 dep，用于手机
 
 ### 如何检测数组变化
 
