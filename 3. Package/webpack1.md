@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-14 01:04
+date updated: 2022-06-14 21:55
 ---
 
 1. chunk assets file
@@ -47,9 +47,9 @@ date updated: 2022-06-14 01:04
 23. html 压缩 html-webpack-plugin
 24. px2rem 750px -> 10 rem /  lib-flexible 自动计算 1rem = 多少 px  移动端自适应，在index.html配置font-size
 25. preset-env 只转换语法，不转换方法和API
-26. polyfill useBuiltIns false /  entry 全局 / usage 局部  core-js 2 / 3
-27. babel-runtime
-28. @babel/plugin-transform-runtime
+26. babel-polyfill useBuiltIns false /  entry 全局 core-js 2 / 3   /     usage 局部
+27. babel-runtime 需要手动引入
+28. @babel/plugin-transform-runtime 自动分析并局部引入
 29. @babel/runtime-corejs3 corejs3 helpers regenerator
 30. 最佳配置
     1. babel-runtime 适合组件和库，局部引入
