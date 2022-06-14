@@ -10,7 +10,7 @@ date updated: 2022-05-30 02:26
 
 ### 响应式数据的原理
 
-使用 Object.defineProperty 把对象中每一个 key 值进行了属性拦截操作，在 get 时会收集依赖，每个属性值内部都会有一个 dep，存储的是与其相关的所有 watcher，当 set 时会触发依赖，执行 dep.notify 操作，最终执行的是 watcher.get()，也就是传入的更新函数
+主要原理是使用 Object.defineProperty 来实现对 get set 属性的拦截，
 
 ### 如何检测数组变化
 
