@@ -22,4 +22,4 @@ date updated: 2022-06-14 20:06
 
 ### 更新流程
 
-dep.notify -
+dep.notify - watcher.run / get - 
