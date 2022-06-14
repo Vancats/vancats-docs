@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "5. Vue/Vue2源码概述.md",
+            "file": "5. Vue/Vue.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. Vue/Vue2源码概述.md",
+                "file": "5. Vue/Vue.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "79fa514418dd87b9",
   "lastOpenFiles": [
-    "5. Vue/Vue2源码概述.md",
     "5. Vue/Vue.md",
+    "5. Vue/Vue2源码概述.md",
+    "5. Vue/Vue3.md",
+    "5. Vue/another.md",
     "1. Base/JS.md",
+    "1. Base/HTML.md",
+    "1. Base/CSS.md",
     "2. Browser/问题.md",
     "2. Browser/HTTP.md",
-    "0. Prepare/JS.md",
-    "0. Prepare/CSS.md",
-    "0. Prepare/杂项.md",
-    "0. Prepare/5.22.md",
-    "2. Browser/网络.md"
+    "0. Prepare/JS.md"
   ]
 }
