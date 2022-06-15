@@ -26,5 +26,4 @@ dep.notify - watcher.update - queueWatcher - nextTick(flushSchedulerQueue) - tim
 
 ### computed
 
-首先我们要知道的是，Computed 也是依靠于 Watcher 来实现的，只不过在 new Watcher 的时候会额外传一个 lazy 属性，里面会维护一个 dirty 属性，该属性决定是否需要重新加载，从而获得懒执行的效果。当我们更新的时候，会走 watcher.update，如果是 computed，它只会更新 dirty 属性为 true
-而且，它覆盖了原有的 get set 属性，使其走另外的
+首先我们要知道的是，Computed 也是依靠于 Watcher 来实现的，只不过在 new Watcher 的时候会额外传一个 lazy 属性，里面会维护一个 dirty 属性，该属性决定是否需要重新加载，从而获得懒执行的效果。当我们更新的时候，会走 watcher.update，如果是 computed，它只会更新 dirty 属性为 true，为后续操作做服务。computed 覆盖了原有的 get set 属性，使其走的是 evaluate
