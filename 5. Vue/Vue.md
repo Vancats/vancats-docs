@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-14 20:14
+date updated: 2022-06-15 16:06
 ---
 
 ### MVVM 的理解
@@ -24,5 +24,6 @@ date updated: 2022-06-14 20:14
 
 dep.notify - watcher.update - queueWatcher - nextTick(flushSchedulerQueue) - timeFunc - flushScheduler - watcher.run
 
-
 ### computed
+
+初始化 computed 的时候，
