@@ -26,4 +26,4 @@ dep.notify - watcher.update - queueWatcher - nextTick(flushSchedulerQueue) - tim
 
 ### computed
 
-初始化 computed 的时候，
+首先我们要知道的是，Computed 也是依靠于 Watcher 来实现的，只不过在 new Watcher 的时候会额外传一个 lazy 属性，从而获得懒执行的效果。而
