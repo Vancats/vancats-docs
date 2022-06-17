@@ -35,7 +35,7 @@ dep.notify - watcher.update - queueWatcher - nextTick(flushSchedulerQueue) - tim
 
 ### v-if/show
 
-if 与 show 都是控制显隐的 API，但是他们本质上还是有一定区别的，在编译过后，if
+if 与 show 都是控制显隐的 API，但是他们本质上还是有一定区别的，在编译过后，if 会直接变成三元表达式，show 会编译出一个 directives，其中的 value 是 false，最终在 runtime 时，会进行 bind 操作，
 
 ```js
 <div id="test">
@@ -64,4 +64,23 @@ with (this) {
     }, [_v("测试")])]
   )
 }
+
+bind (el: any, { value }: VNodeDirective, vnode: VNodeWithData) {
+  vnode = locateNode(vnode)
+  const transition = vnode.data && vnode.data.transition
+  const originalDisplay = el.__vOriginalDisplay =
+    el.style.display === 'none' ? '' : el.style.display
+  if (value && transition) {
+    vnode.data.show = true
+    enter(vnode, () => {
+      el.style.display = originalDisplay
+    })
+
+  } else {
+
+    el.style.display = value ? originalDisplay : 'none'
+
+  }
+
+},
 ```
