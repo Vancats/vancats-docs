@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-15 16:39
+date updated: 2022-06-17 16:43
 ---
 
 ### MVVM 的理解
@@ -33,3 +33,23 @@ dep.notify - watcher.update - queueWatcher - nextTick(flushSchedulerQueue) - tim
 如果开启了 deep 属性，那么会在 watcher.get 的 finally 中执行一个 traverse 函数，它会递归遍历所有值，此时还处在收集状态，因此会对所有值进行依赖收集
 **为什么 computed 不需要 deep**：底层采用 JSON.stringify，总是会对所有属性值取值
 
+### v-if/show
+
+```js
+<div id="test">
+  <p v-if="false">测试</p>
+</div>
+
+with (this) {
+  return
+  _c('div',
+  { attrs: { "id": "test" } },
+  [(false) ? _c('p', [_v("测试")]) : _e()])
+}
+
+<div id="test">
+  <p v-show="false">测试</p>
+</div>
+
+
+```
