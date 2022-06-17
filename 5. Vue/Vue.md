@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-17 16:43
+date updated: 2022-06-17 16:46
 ---
 
 ### MVVM 的理解
@@ -51,5 +51,15 @@ with (this) {
   <p v-show="false">测试</p>
 </div>
 
-
+with (this) {
+  return
+  _c('div',
+    { attrs: { "id": "test" } },
+    [_c('p', {
+      directives: [
+        { name: "show", rawName: "v-show", value: (false), expression: "false" }
+      ]
+    }, [_v("测试")])]
+  )
+}
 ```
