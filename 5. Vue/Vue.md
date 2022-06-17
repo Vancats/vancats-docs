@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-17 16:46
+date updated: 2022-06-17 16:56
 ---
 
 ### MVVM 的理解
@@ -34,6 +34,8 @@ dep.notify - watcher.update - queueWatcher - nextTick(flushSchedulerQueue) - tim
 **为什么 computed 不需要 deep**：底层采用 JSON.stringify，总是会对所有属性值取值
 
 ### v-if/show
+
+if 与 show 都是控制显隐的 API，但是他们本质上还是有一定区别的，在编译过后，if
 
 ```js
 <div id="test">
