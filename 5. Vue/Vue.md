@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-17 16:56
+date updated: 2022-06-17 17:43
 ---
 
 ### MVVM 的理解
@@ -35,7 +35,7 @@ dep.notify - watcher.update - queueWatcher - nextTick(flushSchedulerQueue) - tim
 
 ### v-if/show
 
-if 与 show 都是控制显隐的 API，但是他们本质上还是有一定区别的，在编译过后，if 会直接变成三元表达式，show 会编译出一个 directives，其中的 value 是 false，最终在 runtime 时，会进行 bind 操作，
+if 与 show 都是控制显隐的 API，但是他们本质上还是有一定区别的，在编译过后，if 会直接变成三元表达式，show 会编译出一个 directives，其中的 value 是 false，最终在 runtime 时，会进行 bind 绑定操作，其中会把当前的 el display none
 
 ```js
 <div id="test">
@@ -75,12 +75,10 @@ bind (el: any, { value }: VNodeDirective, vnode: VNodeWithData) {
     enter(vnode, () => {
       el.style.display = originalDisplay
     })
-
   } else {
-
     el.style.display = value ? originalDisplay : 'none'
-
   }
-
 },
 ```
+
+### v-for/if
