@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-18 23:43
+date updated: 2022-06-18 23:44
 ---
 
 ### MVVM 的理解
@@ -93,6 +93,12 @@ bind (el: any, { value }: VNodeDirective, vnode: VNodeWithData) {
   </ul>
 </div>`
 
-with (this){return _c('div',{attrs:{"id":"test"}},[_c('ul',_l((5),function(ind){return _c('li',[_v("\n      "+_s(ind)+"\n    ")])}),0)])}
+with (this) {
+  return _c('div', { attrs: { "id": "test" } }, [
+    _c('ul',
+      _l((5), function (ind) {
+        return _c('li', [_v("\n      " + _s(ind) + "\n    ")])
+      }), 0)])
+}
 with(this){return _c('div',{attrs:{"id":"test"}},[_c('ul',_l((5),function(ind){return (ind === 5)?_c('li',[_v("\n      "+_s(ind)+"\n    ")]):_e()}),0)])}1
 ```
