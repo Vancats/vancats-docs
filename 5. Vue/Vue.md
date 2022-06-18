@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-19 00:09
+date updated: 2022-06-19 00:26
 ---
 
 ### MVVM 的理解
@@ -94,6 +94,22 @@ with (this) {
 		return               _c('li', [_v("\n      " + _s(ind) + "\n    ")]) // 1
         return (ind === 5) ? _c('li', [_v("\n      " + _s(ind) + "\n    ")]) : _e() // 2
       }), 0)
+  ])
+}
+```
+
+### v-html
+
+```js
+<div id="test">
+  <p v-html="'<div>23231213{{title}}<div>'">123</p>
+</div>
+
+with (this) {
+  return _c('div', { attrs: { "id": "test" } }, [
+    _c('p', {
+      domProps: { "innerHTML": _s('<div>23231213{{title}}<div>') }
+    }, [_v("123")])
   ])
 }
 ```
