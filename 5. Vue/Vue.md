@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-18 23:44
+date updated: 2022-06-19 00:08
 ---
 
 ### MVVM 的理解
@@ -43,10 +43,9 @@ if 与 show 都是控制显隐的 API，但是他们本质上还是有一定区�
 </div>
 
 with (this) {
-  return
-  _c('div',
-  { attrs: { "id": "test" } },
-  [(false) ? _c('p', [_v("测试")]) : _e()])
+  return _c('div', { attrs: { "id": "test" } }, [
+    (false) ? _c('p', [_v("测试")]) : _e()
+  ])
 }
 
 <div id="test">
@@ -86,8 +85,8 @@ bind (el: any, { value }: VNodeDirective, vnode: VNodeWithData) {
 ```js
 <div id="test">
   <ul>
-    <li v-for="ind in 5">
-    <li v-for="ind in 5" v-if="ind === 5">
+    <li v-for="ind in 5"> // 1
+    <li v-for="ind in 5" v-if="ind === 5"> // 2
       {{ ind }}
     </li>
   </ul>
@@ -97,8 +96,9 @@ with (this) {
   return _c('div', { attrs: { "id": "test" } }, [
     _c('ul',
       _l((5), function (ind) {
-        return _c('li', [_v("\n      " + _s(ind) + "\n    ")])
-      }), 0)])
+		return               _c('li', [_v("\n      " + _s(ind) + "\n    ")]) // 1
+        return (ind === 5) ? _c('li', [_v("\n      " + _s(ind) + "\n    ")]) : _e() // 2
+      }), 0)
+  ])
 }
-with(this){return _c('div',{attrs:{"id":"test"}},[_c('ul',_l((5),function(ind){return (ind === 5)?_c('li',[_v("\n      "+_s(ind)+"\n    ")]):_e()}),0)])}1
 ```
