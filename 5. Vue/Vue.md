@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-19 00:26
+date updated: 2022-06-19 00:29
 ---
 
 ### MVVM 的理解
@@ -98,7 +98,7 @@ with (this) {
 }
 ```
 
-### v-html
+### v-html/text
 
 ```js
 <div id="test">
@@ -109,6 +109,18 @@ with (this) {
   return _c('div', { attrs: { "id": "test" } }, [
     _c('p', {
       domProps: { "innerHTML": _s('<div>23231213{{title}}<div>') }
+    }, [_v("123")])
+  ])
+}
+
+<div id="test">
+  <p v-text="'<div>23231213{{title}}<div>'">123</p>
+</div>
+
+with (this) {
+  return _c('div', { attrs: { "id": "test" } }, [
+    _c('p', {
+      domProps: { "textContent": _s('<div>23231213{{title}}<div>') }
     }, [_v("123")])
   ])
 }
