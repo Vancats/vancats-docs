@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-19 00:08
+date updated: 2022-06-19 00:09
 ---
 
 ### MVVM 的理解
@@ -53,15 +53,10 @@ with (this) {
 </div>
 
 with (this) {
-  return
-  _c('div',
-    { attrs: { "id": "test" } },
-    [_c('p', {
-      directives: [
-        { name: "show", rawName: "v-show", value: (false), expression: "false" }
-      ]
-    }, [_v("测试")])]
-  )
+  return _c('div', { attrs: { "id": "test" } }, [
+    _c('p', {
+      directives: [{ name: "show", rawName: "v-show", value: (false), expression: "false" }]
+    }, [_v("测试")])])
 }
 
 bind (el: any, { value }: VNodeDirective, vnode: VNodeWithData) {
