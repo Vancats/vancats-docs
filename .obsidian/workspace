@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "79fa514418dd87b9",
+        "id": "8e470d0fd85564db",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "5. Vue/Vue.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. Vue/Vue.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -99,17 +94,17 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "79fa514418dd87b9",
+  "active": "8e470d0fd85564db",
   "lastOpenFiles": [
+    "3. Package/webpack1.md",
+    "3. Package/Git.md",
+    "3. Package/Config.md",
+    "3. Package/Vite.md",
+    "3. Package/Webpack.md",
     "5. Vue/Vue.md",
-    "5. Vue/Vue3.md",
+    "5. Vue/Slot.md",
     "5. Vue/Vue2源码概述.md",
-    "5. Vue/another.md",
-    "1. Base/JS.md",
-    "1. Base/HTML.md",
-    "1. Base/CSS.md",
-    "2. Browser/问题.md",
-    "2. Browser/HTTP.md",
-    "0. Prepare/JS.md"
+    "5. Vue/Vue3.md",
+    "6. Chore/RegExp.md"
   ]
 }
