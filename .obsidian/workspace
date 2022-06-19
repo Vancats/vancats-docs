@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3. Package/Webpack.md",
+            "file": "3. Package/Webpack-before.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Package/Webpack.md",
+                "file": "3. Package/Webpack-before.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "8e470d0fd85564db",
   "lastOpenFiles": [
-    "3. Package/Webpack.md",
+    "3. Package/Webpack-before.md",
+    "2. Browser/问题.md",
+    "3. Package/Config.md",
+    "3. Package/webpack.md",
     "3. Package/Vite.md",
-    "3. Package/webpack1.md",
     "0. Prepare/6.19.md",
     "0. Prepare/5.22.md",
     "5. Vue/Vue.md",
     "3. Package/Git.md",
-    "3. Package/Config.md",
-    "5. Vue/Slot.md",
-    "5. Vue/Vue2源码概述.md"
+    "5. Vue/Slot.md"
   ]
 }
