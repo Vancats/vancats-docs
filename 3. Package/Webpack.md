@@ -598,14 +598,6 @@ module.exports = {
   > - preload chunk 会在父 chunk 中立即请求，用于当下时刻。prefetch chunk 会用于未来的某个时刻。
   > - 浏览器支持程度不同。
 
-- 外部扩展
-
-  ```javascript
-  externals: {
-      lodash: '_'
-  }
-  ```
-
 - tree shaking
 
   ```javascript
