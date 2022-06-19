@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-14 21:55
+date updated: 2022-06-19 18:46
 ---
 
 1. chunk assets file
@@ -34,26 +34,23 @@ date updated: 2022-06-14 21:55
 10. Webpack.BannerPlugin CopyWebpackPlugin CleanWebpackPlugin
 11. proxy before after webpackdevmiddleware
 12. Mini-Css-Extract-Plugin
-13. optimize-css-assets-webpack-plugin 优化 压缩 css
-14. terser-webpack-plugin 优化 压缩 js
-15. image-webpack-plugin 优化 压缩图片
-16. css 图片路径配置
-17. hash chunkhash contenthash
-18. postcss-loader postcss-preset-env
-19. importLoaders
-20. css 压缩 OptimizeCssAssetWebpackPlugin
-21. 图片 压缩 image-webpack-loader
-22. js 压缩 TerserPlugin-webpack-plugin
-23. html 压缩 html-webpack-plugin
-24. px2rem 750px -> 10 rem /  lib-flexible 自动计算 1rem = 多少 px  移动端自适应，在index.html配置font-size
-25. preset-env 只转换语法，不转换方法和API
-26. babel-polyfill useBuiltIns false /  entry 全局 core-js 2 / 3   /     usage 局部
-27. babel-runtime 需要手动引入
-28. @babel/plugin-transform-runtime 自动分析并局部引入
-29. @babel/runtime-corejs3 corejs3 helpers regenerator
-30. 最佳配置
+13. css 图片路径配置
+14. hash chunkhash contenthash
+15. postcss-loader postcss-preset-env
+16. importLoaders
+17. css 压缩 OptimizeCssAssetWebpackPlugin
+18. 图片 压缩 image-webpack-loader
+19. js 压缩 TerserPlugin-webpack-plugin
+20. html 压缩 html-webpack-plugin
+21. px2rem 750px -> 10 rem /  lib-flexible 自动计算 1rem = 多少 px  移动端自适应，在index.html配置font-size
+22. preset-env 只转换语法，不转换方法和API
+23. babel-polyfill useBuiltIns false /  entry 全局 core-js 2 / 3   /     usage 局部
+24. babel-runtime 需要手动引入
+25. @babel/plugin-transform-runtime 自动分析并局部引入
+26. @babel/runtime-corejs3 corejs3 helpers regenerator
+27. 最佳配置
     1. babel-runtime 适合组件和库，局部引入
     2. babel-polyfill 业务使用，不怕污染全局
     3. 局部引入 不污染全局，增加文件体积
     4. 全局引入 污染全局，减少文件体积
-31. 万能配置：polyfill.io 接受对一组浏览器功能的请求并仅返回请求浏览器所需的 polyfill 的服务，可以在Chrome和IE直接打开查看 <https://polyfill.io/v3/polyfill.min.js>
+28. 万能配置：polyfill.io 接受对一组浏览器功能的请求并仅返回请求浏览器所需的 polyfill 的服务，可以在Chrome和IE直接打开查看 <https://polyfill.io/v3/polyfill.min.js>
