@@ -40,7 +40,7 @@ date updated: 2022-06-19 18:46
 16. importLoaders
 17. css 压缩 OptimizeCssAssetWebpackPlugin
 18. 图片 压缩 image-webpack-loader
-19. js 压缩 TerserPlugin-webpack-plugin
+19. js 压缩 Webpack.TerserPlugin
 20. html 压缩 html-webpack-plugin
 21. px2rem 750px -> 10 rem /  lib-flexible 自动计算 1rem = 多少 px  移动端自适应，在index.html配置font-size
 22. preset-env 只转换语法，不转换方法和API
