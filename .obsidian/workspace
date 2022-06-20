@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8e470d0fd85564db",
+        "id": "e6dac98f6a28dc90",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "3. Package/Webpack-before.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Package/Webpack-before.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -99,7 +94,7 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "8e470d0fd85564db",
+  "active": "e6dac98f6a28dc90",
   "lastOpenFiles": [
     "3. Package/Webpack-before.md",
     "2. Browser/问题.md",
