@@ -1,7 +1,12 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-19 20:59
+date updated: 2022-06-21 00:18
 ---
+
+@babel/core 核心代码，包括 transform parse
+babylon babel 解析器
+babel-types 用于 AST 节点的 Lodash 式工具库，包括构造，验证以及变换 AST 节点方法
+babel-traverse 遍历 AST，负责替换，移除和添加节点
 
 1. webpack的环境变量都需要怎么设置，最优方案
 2. 解析 css 都有哪些loader
