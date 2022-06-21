@@ -127,4 +127,4 @@ with (this) {
 ```
 
 ### v-model
-对于普通节点，采用的是 input 触发事件，如果
+这是和 input 类型节点进行双向绑定的语法糖，其对于普通节点，采用的是 input 触发事件，如果有 lazy 则改为 change，对于 radio checkbox select textarea 采用 change 事件，如果有 number trim 则会在开始就
