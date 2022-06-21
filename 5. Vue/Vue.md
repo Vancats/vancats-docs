@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-21 15:02
+date updated: 2022-06-21 15:17
 ---
 
 ### MVVM 的理解
@@ -128,4 +128,4 @@ with (this) {
 
 ### v-model
 
-这是和 input 类型节点进行双向绑定的语法糖，其对于普通节点，采用的是 input 触发事件，如果有 lazy 则改为 change，对于 radio checkbox select textarea 采用 change 事件，如果有 number trim 则会在开始会 forceUpdate
+这是和 input 类型节点进行双向绑定的语法糖，其对于普通节点，采用的是 input 触发事件，如果有 lazy 则改为 change，对于 radio checkbox select textarea 采用 change 事件，如果有 number trim 则会在开始会 forceUpdate，如果是组件的话，会对其设值以及添加回调函数
