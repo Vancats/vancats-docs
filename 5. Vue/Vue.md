@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-21 16:57
+date updated: 2022-06-21 19:58
 ---
 
 ### MVVM 的理解
@@ -150,3 +150,6 @@ with (this) {
   ])
 }
 ```
+
+### diff 流程
+首先判断两个节点的 text children
