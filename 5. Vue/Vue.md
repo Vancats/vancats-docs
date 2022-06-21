@@ -152,4 +152,4 @@ with (this) {
 ```
 
 ### diff 流程
-首先判断两个节点的 text children
+首先判断两个节点的 text children，主要对比两个 children，依次按照头头，尾尾，头尾，尾头的顺序对比，有相同的直接patch，然后首先我们会获取一份旧DOM的 key 的映射数组，然后在新DOM中查找，有key直接找，没key遍历查找，
