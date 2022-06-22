@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e6dac98f6a28dc90",
+        "id": "7fbe64ed6ca40c58",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "3. Package/webpack.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Package/webpack.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -99,7 +94,7 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "e6dac98f6a28dc90",
+  "active": "7fbe64ed6ca40c58",
   "lastOpenFiles": [
     "3. Package/webpack.md",
     "3. Package/Webpack-before.md",
