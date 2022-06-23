@@ -91,8 +91,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -102,6 +101,7 @@
   "active": "e6dac98f6a28dc90",
   "lastOpenFiles": [
     "5. Vue/Vue.md",
+    "5. Vue/Vue2源码概述.md",
     "3. Package/webpack.md",
     "3. Package/Webpack-before.md",
     "2. Browser/问题.md",
@@ -109,7 +109,6 @@
     "3. Package/Vite.md",
     "0. Prepare/6.19.md",
     "0. Prepare/5.22.md",
-    "3. Package/Git.md",
-    "5. Vue/Slot.md"
+    "3. Package/Git.md"
   ]
 }
