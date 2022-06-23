@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-19 00:29
+date updated: 2022-06-23 20:20
 ---
 
 ### MVVM 的理解
@@ -125,3 +125,40 @@ with (this) {
   ])
 }
 ```
+
+### v-model
+
+这是和 input 类型节点进行双向绑定，是赋值加触发事件的的语法糖，其对于普通节点，采用的是 input 触发事件，如果有 lazy 则改为 change，对于 radio checkbox select textarea 采用 change 事件，如果有 number trim 则会进行一次 forceUpdate，如果是组件的话，在创建组件的时候，会有transformModel 方法进行设值以及添加回调函数，此时可以修改值和函数名称，而此外，对于非 lazy 的普通 input，还会绑定键盘事件。
+
+```js
+<div id="test">
+  <input v-model="msg" />
+</div>
+
+with (this) {
+  return _c('div', { attrs: { "id": "test" } }, [
+    _c('input', {
+      directives: [{ name: "model", rawName: "v-model", value: (msg), expression: "msg" }],
+      domProps: { "value": (msg) },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return
+          msg = $event.target.value
+        }
+      }
+    })
+  ])
+}
+```
+
+### diff 流程
+
+首先判断两个节点的 text children，主要对比两个 children，依次按照头头，尾尾，头尾，尾头的顺序对比，有相同的直接patch，然后首先我们会获取一份旧DOM的 key 的映射数组，如果没有设置key，那么会直接根据索引映射。之后在新DOM中查找，有key直接数据找，没key遍历查找，如果找不到或者是同key不同元素就创建新节点，找到了就patch。如果v-for不设置key，那么两个节点基本只要标签相同就会进入diff，会进行很多无谓的操作。
+
+### keep-alive
+
+使用的是 LRU 缓存策略，在控制上限的同时，会随之清除最不常用的组件，Vue2 中使用了一个 CacheEntry 存储需要持久化的组件，其中 keys 数组来存储每个组件的 key，并在添加或更新时对其更新
+
+### 组件data用函数
+
+主要使用的是 mergeOptions 函数，它将合并所有的父子级选项，使用对象的话，大家共用地址显然是有问题的，因此使用函数，new Vue 的话，他不需要和父级合并，因此可以是对象
