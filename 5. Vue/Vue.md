@@ -158,3 +158,6 @@ with (this) {
 ### keep-alive
 
 使用的是 LRU 缓存策略，在控制上限的同时，会随之清除最不常用的组件，Vue2 中使用了一个 CacheEntry 存储需要持久化的组件，其中 keys 数组来存储每个组件的 key，并在添加或更新时对其更新
+
+### 组件data用函数
+主要使用的是 mergeOptions 函数，它将合并所有的父子级选项
