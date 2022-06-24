@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-25 00:37
+date updated: 2022-06-25 00:40
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -28,8 +28,9 @@ babel-traverse 遍历 AST，负责替换，移除和添加节点
 12. 递归编译依赖模块
 13. 把每个入口模块和依赖的模块编译成一个 chunk
 14. 根据 chunk 生成 assets
-	1. key 文件名 value 文件内容
-15. 根据 a s
+    1. key 文件名 value 文件内容
+15. 根据 assets 写入文件系统
+
 ---
 
 1. webpack的环境变量都需要怎么设置，最优方案
