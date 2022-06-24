@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-25 00:30
+date updated: 2022-06-25 00:36
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -19,7 +19,10 @@ babel-traverse 遍历 AST，负责替换，移除和添加节点
 6. 读取模块内容，找到与模块对应的所有 loaders
 7. 调用所有 loader 转换文件内容
 8. 创建入口模块对象
-	1. 模块 ID：相对于根路径的相对路径
+   1. 模块 ID：相对于根路径的相对路径
+   2. 模块名称：entry1
+   3. 依赖模块的绝对路径数组
+9. loader 转换后的源码转换为
 
 ---
 
