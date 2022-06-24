@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-25 00:36
+date updated: 2022-06-25 00:37
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -22,8 +22,14 @@ babel-traverse 遍历 AST，负责替换，移除和添加节点
    1. 模块 ID：相对于根路径的相对路径
    2. 模块名称：entry1
    3. 依赖模块的绝对路径数组
-9. loader 转换后的源码转换为
-
+9. loader 转换后的源码转换为 AST 语法树
+10. 遍历语法树，找源码中的 import require
+11. 找依赖的模块，找到放到当前模块的依赖数组中
+12. 递归编译依赖模块
+13. 把每个入口模块和依赖的模块编译成一个 chunk
+14. 根据 chunk 生成 assets
+	1. key 文件名 value 文件内容
+15. 根据 a s
 ---
 
 1. webpack的环境变量都需要怎么设置，最优方案
