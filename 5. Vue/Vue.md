@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-24 11:20
+date updated: 2022-06-24 11:32
 ---
 
 ### MVVM 的理解
@@ -167,6 +167,19 @@ with (this) {
 
 Vue中所有元素绑定的事件，会存放在 data.on 中，在 runtime 时会调用 updateDOMListeners 来进行事件监听，采用的是原生的 addEventListener 方法
 组件也是依照相同的规则，唯一有不一样的是，在设置的时候，组件有两种事件设置方式，一种是正常设置，一种是设置 native 事件，事件分别会储存在 data.on 与 data.nativeOn 中，这和上方所说不一致，因此在创建组件的时候做了一层处理，我们把 data.on 的事件存放在组件的 listeners 中，而 listeners 在事件初始化的时候会走发布订阅的流程，再用 nativeOn 的事件覆盖 data.on，此时组件的原生事件就和其他DOM一致了
+
+```js
+with (this) {
+  return _c('div', [
+    _c('div', {
+      on: { "click": add }
+    }), _v(" "),
+    _c('comp', {
+      on: { "click": add },
+      nativeOn: { "click": function ($event) { return remove.apply(null, arguments) } }
+    })], 1)
+}
+```
 
 ### set delete
 
