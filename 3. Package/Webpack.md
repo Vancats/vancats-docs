@@ -8,6 +8,11 @@ babylon babel 解析器
 babel-types 用于 AST 节点的 Lodash 式工具库，包括构造，验证以及变换 AST 节点方法
 babel-traverse 遍历 AST，负责替换，移除和添加节点
 
+@babel/core 生成语法树和遍历语法树
+babel-core 调用 @babel/core
+preset-env 负责转换语法树，转换时经常用到 ba b
+
+----
 1. 读取配置对象，读取 shell 配置对象并合并参数
 2. 创建 Compiler
    1. 保存 options
