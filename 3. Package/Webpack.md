@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-26 13:59
+date updated: 2022-06-26 14:04
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -10,12 +10,12 @@ babel-traverse 遍历 AST，负责替换，移除和添加节点
 
 @babel/core 生成语法树和遍历语法树
 babel-core 调用 @babel/core
-preset-env 负责转换语法树，转换时经常用到 babel-types
+preset-env 负责转换语法树，转换时经常用到 babel-types（生产零件）
 
 ---
 
 1. 读取配置对象，读取 shell 配置对象并合并参数
-2. s创建 Compiler
+2. ss创建 Compiler
    1. 保存 options
    2. 创建 this.hooks
    3. 初始化内部对象
