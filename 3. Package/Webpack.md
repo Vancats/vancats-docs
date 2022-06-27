@@ -1,12 +1,43 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-21 00:18
+date updated: 2022-06-26 14:04
 ---
 
 @babel/core 核心代码，包括 transform parse
 babylon babel 解析器
 babel-types 用于 AST 节点的 Lodash 式工具库，包括构造，验证以及变换 AST 节点方法
 babel-traverse 遍历 AST，负责替换，移除和添加节点
+
+@babel/core 生成语法树和遍历语法树
+babel-core 调用 @babel/core
+preset-env 负责转换语法树，转换时经常用到 babel-types（生产零件）
+
+---
+
+1. 读取配置对象，读取 shell 配置对象并合并参数
+2. ss创建 Compiler
+   1. 保存 options
+   2. 创建 this.hooks
+   3. 初始化内部对象
+3. 挂载所有插件
+4. 执行 Compiler run 方法
+5. 编译入口模块
+6. 读取模块内容，找到与模块对应的所有 loaders
+7. 调用所有 loader 转换文件内容
+8. 创建入口模块对象
+   1. 模块 ID：相对于根路径的相对路径
+   2. 模块名称：entry1
+   3. 依赖模块的绝对路径数组
+9. loader 转换后的源码转换为 AST 语法树
+10. 遍历语法树，找源码中的 import require
+11. 找依赖的模块，找到放到当前模块的依赖数组中
+12. 递归编译依赖模块
+13. 把每个入口模块和依赖的模块编译成一个 chunk
+14. 根据 chunk 生成 assets
+    1. key 文件名 value 文件内容
+15. 根据 assets 写入文件系统
+
+---
 
 1. webpack的环境变量都需要怎么设置，最优方案
 2. 解析 css 都有哪些loader
