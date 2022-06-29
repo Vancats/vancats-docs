@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b09165b89182a297",
+        "id": "dca985c4bdb2709c",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "0. Prepare/杂项.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Prepare/杂项.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -98,7 +93,7 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "b09165b89182a297",
+  "active": "dca985c4bdb2709c",
   "lastOpenFiles": [
     "0. Prepare/杂项.md",
     "3. Package/webpack.md",
