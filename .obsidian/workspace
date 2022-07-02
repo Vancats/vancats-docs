@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "dca985c4bdb2709c",
+        "id": "44e657053d94f084",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -93,7 +93,7 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "dca985c4bdb2709c",
+  "active": "44e657053d94f084",
   "lastOpenFiles": [
     "0. Prepare/杂项.md",
     "3. Package/webpack.md",
