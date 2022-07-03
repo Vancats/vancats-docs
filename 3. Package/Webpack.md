@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-03 21:30
+date updated: 2022-07-03 21:31
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -62,9 +62,12 @@ loader plugin 区分
 babel-runtime babel-polyfill 区别
 splitChunk
 
-- 性能优化
+- 性能优化-构建速度
   - 优化babel-loader
   - IgnorePlugin
   - noParse
   - happyPack
   - parallelUglifyPlugin
+  - 自动刷新
+  - 热更新
+  - DllPlugin
