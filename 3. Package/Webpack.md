@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-03 19:08
+date updated: 2022-07-03 21:30
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -59,5 +59,12 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 module chunk bundle 分别什么意思
 loader plugin 区分
 如何实现懒加载
-性能优化
 babel-runtime babel-polyfill 区别
+splitChunk
+
+- 性能优化
+  - 优化babel-loader
+  - IgnorePlugin
+  - noParse
+  - happyPack
+  - parallelUglifyPlugin
