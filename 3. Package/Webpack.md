@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-03 21:31
+date updated: 2022-07-03 21:42
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -64,6 +64,8 @@ splitChunk
 
 - 性能优化-构建速度
   - 优化babel-loader
+    - 开启缓存：loader: ['babel-loader?cacheDirectory']
+    - 使用 include src 或者 exclude node_modules （绝对路径
   - IgnorePlugin
   - noParse
   - happyPack
