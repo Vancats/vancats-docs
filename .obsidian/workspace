@@ -7,8 +7,12 @@
         "id": "44e657053d94f084",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "3. Package/webpack.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "3. Package/webpack.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -95,9 +100,9 @@
   },
   "active": "44e657053d94f084",
   "lastOpenFiles": [
-    "0. Prepare/杂项.md",
     "3. Package/webpack.md",
     "3. Package/Webpack-before.md",
+    "0. Prepare/杂项.md",
     "3. Package/Vite.md",
     "5. Vue/Vue.md",
     "5. Vue/Vue2源码概述.md",

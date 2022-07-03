@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-26 14:04
+date updated: 2022-07-03 19:08
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -52,3 +52,12 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 11. 如何实现css移动端适配
 12. 资源模块是什么
 13. 有哪些常用插件
+
+---
+
+代码为什么要进行构建打包
+module chunk bundle 分别什么意思
+loader plugin 区分
+如何实现懒加载
+性能优化
+babel-runtime babel-polyfill 区别
