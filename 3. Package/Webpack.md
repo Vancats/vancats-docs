@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-06 01:17
+date updated: 2022-07-06 01:21
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -78,4 +78,5 @@ splitChunk
    1. stats 设置 verbose 全部输出
    2. echo $? 如果返回 0 成功，其他失败
 8. 费时分析 speed-measure-webpack-plugin new一个实例并包裹整个 module.exports 即可
-9. 打包分析 webpack-bundle-analyzer
+9. 拆包分析 webpack-bundle-analyzer
+10. libraryTarget library
