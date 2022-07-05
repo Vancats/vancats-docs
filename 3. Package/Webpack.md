@@ -66,3 +66,6 @@ splitChunk
 2. noParse
 3. DefinePlugin
 4. IgnorePlugin
+5. 区分环境变量
+	1. 生产环境：分离CSS，压缩 HTML CSS JS 图片
+	2. 开发环境：source-map，打印信息 live loader或 hot reload
