@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-06 00:25
+date updated: 2022-07-06 00:44
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -67,5 +67,7 @@ splitChunk
 3. DefinePlugin
 4. IgnorePlugin
 5. 区分环境变量
-	1. 生产环境：分离CSS，压缩 HTML CSS JS 图片
-	2. 开发环境：source-map，打印信息 live loader或 hot reload
+   1. 生产环境：分离CSS，压缩 HTML CSS JS 图片
+   2. 开发环境：source-map，打印信息 live loader或 hot reload
+6. 图片压缩和优化
+7. 日志优化
