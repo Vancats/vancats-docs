@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-06 00:50
+date updated: 2022-07-06 00:57
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -71,6 +71,6 @@ splitChunk
    2. 开发环境：source-map，打印信息 live loader或 hot reload
 6. 图片压缩和优化
 7. 日志优化：friendly-errors-webpack-plugin
-   1. verbose 全部输出
+   1. stats 设置 verbose 全部输出
    2. echo $? 如果返回 0 成功，其他失败
-8. 
+8. 费时分析 speed-measure-webpack-plugin new一个实例并包裹整个 module.exports 即可
