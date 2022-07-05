@@ -72,3 +72,4 @@ splitChunk
 6. 图片压缩和优化
 7. 日志优化：friendly-errors-webpack-plugin
    1. verbose 全部输出
+   2. echo $? 如果返回 0 成功，其他失败
