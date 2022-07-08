@@ -97,3 +97,9 @@ splitChunk
        1. 抽取第三方模块 verdor
        2. 抽取公共模块 common
        3. HtmlWebpackPlugin 中的 excludeChunks
+17. scope hoisting
+	1. 将所有的
+	2. import 转 require
+	3. 创建的函数作用域减少，内存开销减小
+	4. 大量作用域包裹代码导致体积增大
+	5. CJS 不支持
