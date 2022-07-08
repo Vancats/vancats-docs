@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-08 20:28
+date updated: 2022-07-08 20:41
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -86,3 +86,7 @@ splitChunk
 14. DLLPlugin
 15. TreeShaking：production 并且因为只有 esm 可以 TreeShaking，所以 babel-loader 配置  modules: false
 16. splitChunk
+    1. entry
+       1. 如果入口 chunk 包含了重复模块，会被重复打包
+       2. 不能将核心应用进行动态拆分
+    2. 动态导入和懒加载
