@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-08 21:11
+date updated: 2022-07-08 23:42
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -98,8 +98,12 @@ splitChunk
        2. 抽取公共模块 common
        3. HtmlWebpackPlugin 中的 excludeChunks
 17. scope hoisting
-	1. 将所有的
-	2. import 转 require
-	3. 创建的函数作用域减少，内存开销减小
-	4. 大量作用域包裹代码导致体积增大
-	5. CJS 不支持
+    1. 将所有的模块按引用顺序放到一个函数作用域
+    2. import 转 require
+    3. 创建的函数作用域减少，内存开销减小
+    4. 大量作用域包裹代码导致体积增大
+    5. CJS 不支持
+    6. webpack.optimize.ModuleConcatenationPlugin 开发使用，生产默认打开
+18. 缓存机制
+    1. babel-loader 缓存 cacheDirectory
+    2. cache-loader，直接放置到某个 loader 前就
