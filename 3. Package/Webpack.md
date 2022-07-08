@@ -96,3 +96,4 @@ splitChunk
     3. 提取公共代码
        1. 抽取第三方模块 verdor
        2. 抽取公共模块 common
+       3. HtmlWebpackPlugin 中的 excludeChunks
