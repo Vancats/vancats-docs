@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-08 20:10
+date updated: 2022-07-08 20:19
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -84,4 +84,3 @@ splitChunk
 12. purgecss-webpack-plugin
 13. thread-loader
 14. DLLPlugin
-15. CDN
