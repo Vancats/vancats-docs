@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-08 23:42
+date updated: 2022-07-08 23:46
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -106,4 +106,6 @@ splitChunk
     6. webpack.optimize.ModuleConcatenationPlugin 开发使用，生产默认打开
 18. 缓存机制
     1. babel-loader 缓存 cacheDirectory
-    2. cache-loader，直接放置到某个 loader 前就
+    2. cache-loader，直接放置到某个 loader 前就可以缓存
+    3. hard-source-webpack-plugin 直接使用就可以，会把缓存放到 node_modules 中，大大加速第二次构建的速度
+    4. oneOf
