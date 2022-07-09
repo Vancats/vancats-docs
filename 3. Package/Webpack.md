@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-09 17:32
+date updated: 2022-07-09 17:40
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -116,7 +116,7 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 10. libraryTarget library
 11. polyfill
 12. purgecss-webpack-plugin
-13. thread-loader happyPack parallelUglifyPlugin
+13. thread-loader happyPack 多进程打包 parallelUglifyPlugin 多进程压缩
 14. DLLPlugin（开发
 15. TreeShaking：production 并且因为只有 esm 可以 TreeShaking，所以 babel-loader 配置  modules: false
 16. splitChunk
