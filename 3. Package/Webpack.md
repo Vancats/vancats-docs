@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-09 16:52
+date updated: 2022-07-09 17:03
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -83,7 +83,7 @@ splitChunk
 11. polyfill
 12. purgecss-webpack-plugin
 13. thread-loader
-14. DLLPlugin
+14. DLLPlugin（开发
 15. TreeShaking：production 并且因为只有 esm 可以 TreeShaking，所以 babel-loader 配置  modules: false
 16. splitChunk
     1. entry
@@ -94,7 +94,7 @@ splitChunk
        2. prefetch
        3. preload
     3. 提取公共代码
-       1. 抽取第三方模块 verdor
+       1. 抽取第三方模块 vendor
        2. 抽取公共模块 common
        3. HtmlWebpackPlugin 中的 excludeChunks
 17. scope hoisting
@@ -109,3 +109,4 @@ splitChunk
     2. cache-loader，直接放置到某个 loader 前就可以缓存
     3. hard-source-webpack-plugin 直接使用就可以，会把缓存放到 node_modules 中，大大加速第二次构建的速度
     4. oneOf
+19. 热更新/自动刷新（开发
