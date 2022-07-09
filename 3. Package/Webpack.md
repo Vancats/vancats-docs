@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-09 18:10
+date updated: 2022-07-09 18:49
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -117,7 +117,7 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 11. polyfill
 12. purgecss-webpack-plugin 去除多余 css 代码
 13. thread-loader happyPack 多进程打包 parallelUglifyPlugin 多进程压缩
-14. DLLPlugin（开发
+14. DLLPlugin 动态lian ji（开发
     1. DllPlugin 打包出 dll 文件，如 React ReactDOM
     2. DllReferencePlugin 引入并使用 dll 文件
 15. TreeShaking：production 并且因为只有 esm 可以 TreeShaking，所以 babel-loader 配置  modules: false
@@ -143,6 +143,7 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 18. 缓存机制
     1. babel-loader 缓存 cacheDirectory
     2. cache-loader，直接放置到某个 loader 前就可以缓存
-    3. hard-source-webpack-plugin 直接使用就可以，会把缓存放到 node_modules 中，大大加速第二次构建的速度
-    4. oneOf
+    3. hard-source-webpack-plugin 直接使用就可以，会把缓存放到 node_modules 的 .cache 中，大大加速第二次构建的速度
+    4. oneOf 多个匹配到一个就退出
 19. 热更新/自动刷新（开发
+20. alias resolve resolveLoader mainFields mainFile
