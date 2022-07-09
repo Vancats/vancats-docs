@@ -59,7 +59,13 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
    1. 体积更小：Tree-Shaking 压缩 合并
    2. 编译高级语法：TS ES6 模块化 Less
    3. 兼容性检查，语法错误：Polyfill Postcss ESlint
+   4. 统一开发环境
+   5. 统一构建流程和产出标准
+   6. 集成构建规范
 2. module chunk bundle 分别什么意思
+	1. module 各个源码文件
+	2. chunk 多模块合成的产物
+	3. bundle 最终的输出文件
 loader plugin 区分
 如何实现懒加载
 babel-runtime babel-polyfill 区别
