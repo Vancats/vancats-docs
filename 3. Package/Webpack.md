@@ -117,7 +117,7 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 11. polyfill
 12. purgecss-webpack-plugin 去除多余 css 代码
 13. thread-loader happyPack 多进程打包 parallelUglifyPlugin 多进程压缩
-14. DLLPlugin 动态lian ji（开发
+14. DLLPlugin 动态链接库（开发
     1. DllPlugin 打包出 dll 文件，如 React ReactDOM
     2. DllReferencePlugin 引入并使用 dll 文件
 15. TreeShaking：production 并且因为只有 esm 可以 TreeShaking，所以 babel-loader 配置  modules: false
