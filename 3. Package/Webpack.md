@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-09 17:18
+date updated: 2022-07-09 17:20
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -81,11 +81,20 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
    3. Vue-Router React-Router
 7. Proxy 不能被 polyfill：没有内容可以完全模拟这个功能
 8. 性能优化构建手段
-	1. 优化 babel-loader
-	2. IgnorePlugin
-	3. noParse
-	4. happyPack
-	5. ParallelUglifyPlugin
+   1. 优化 babel-loader
+   2. IgnorePlugin
+   3. noParse
+   4. happyPack
+   5. ParallelUglifyPlugin
+   6. （开发）自动刷新 热更新 DllPlugin
+9. 性能优化产出代码
+   1. base64
+   2. bundle + hash
+   3. 懒加载
+   4. 提取公共代码
+   5. CDN 加速
+   6. IgnorePlugin
+   7. production（TreeShaking，Scope Hosting
 
 ---
 
