@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-09 17:20
+date updated: 2022-07-09 17:32
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -15,7 +15,7 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 ---
 
 1. 读取配置对象，读取 shell 配置对象并合并参数
-2. ss创建 Compiler
+2. 创建 Compiler
    1. 保存 options
    2. 创建 this.hooks
    3. 初始化内部对象
