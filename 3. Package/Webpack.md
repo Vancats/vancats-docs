@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-09 17:57
+date updated: 2022-07-09 18:10
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -115,7 +115,7 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 9. 拆包分析 webpack-bundle-analyzer
 10. libraryTarget library
 11. polyfill
-12. purgecss-webpack-plugin
+12. purgecss-webpack-plugin 去除多余 css 代码
 13. thread-loader happyPack 多进程打包 parallelUglifyPlugin 多进程压缩
 14. DLLPlugin（开发
     1. DllPlugin 打包出 dll 文件，如 React ReactDOM
