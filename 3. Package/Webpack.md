@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-09 17:03
+date updated: 2022-07-09 17:06
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -55,8 +55,11 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 
 ---
 
-代码为什么要进行构建打包
-module chunk bundle 分别什么意思
+1. 代码为什么要进行构建打包
+   1. 体积更小：Tree-Shaking 压缩 合并
+   2. 编译高级语法：TS ES6 模块化 Less
+   3. 兼容性检查，语法错误：Polyfill Postcss ESlint
+2. module chunk bundle 分别什么意思
 loader plugin 区分
 如何实现懒加载
 babel-runtime babel-polyfill 区别
