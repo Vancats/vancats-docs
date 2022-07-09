@@ -116,7 +116,7 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 10. libraryTarget library
 11. polyfill
 12. purgecss-webpack-plugin
-13. thread-loader
+13. thread-loader happyPack parallelUglifyPlugin
 14. DLLPlugin（开发
 15. TreeShaking：production 并且因为只有 esm 可以 TreeShaking，所以 babel-loader 配置  modules: false
 16. splitChunk
