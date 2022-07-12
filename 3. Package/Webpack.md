@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-06-26 14:04
+date updated: 2022-07-09 18:49
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -15,7 +15,7 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 ---
 
 1. 读取配置对象，读取 shell 配置对象并合并参数
-2. ss创建 Compiler
+2. 创建 Compiler
    1. 保存 options
    2. 创建 this.hooks
    3. 初始化内部对象
@@ -52,3 +52,98 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 11. 如何实现css移动端适配
 12. 资源模块是什么
 13. 有哪些常用插件
+
+---
+
+1. 代码为什么要进行构建打包
+   1. 体积更小：Tree-Shaking 压缩 合并
+   2. 编译高级语法：TS ES6 模块化 Less
+   3. 兼容性检查，语法错误：Polyfill Postcss ESlint
+   4. 统一开发环境
+   5. 统一构建流程和产出标准
+   6. 集成构建规范
+2. module chunk bundle 分别什么意思
+   1. module 各个源码文件
+   2. chunk 多模块合成的产物
+   3. bundle 最终的输出文件
+3. babel-webpack 区别
+   1. babel 只关心语法编译，不关心模块化
+   2. webpack 打包构建工具
+4. 如何产出 lib
+   1. webpack.dll.js
+   2. output.library
+5. babel-polyfill babel-runtime 区别
+   1. 是否污染全局
+   2. 第三方 lib 要使用 babel-runtime
+6. 如何实现懒加载
+   1. import()
+   2. Vue React 异步组件
+   3. Vue-Router React-Router
+7. Proxy 不能被 polyfill：没有内容可以完全模拟这个功能
+8. 性能优化构建手段
+   1. 优化 babel-loader
+   2. IgnorePlugin
+   3. noParse
+   4. happyPack
+   5. ParallelUglifyPlugin
+   6. （开发）自动刷新 热更新 DllPlugin
+9. 性能优化产出代码
+   1. base64
+   2. bundle + hash
+   3. 懒加载
+   4. 提取公共代码
+   5. CDN 加速
+   6. IgnorePlugin
+   7. production（TreeShaking，Scope Hosting
+
+---
+
+### 性能优化
+
+1. 缩小查找范围
+2. noParse
+3. DefinePlugin
+4. IgnorePlugin
+5. 区分环境变量
+   1. 生产环境：分离CSS，压缩 HTML CSS JS 图片
+   2. 开发环境：source-map，打印信息 live loader或 hot reload
+6. 图片压缩和优化
+7. 日志优化：friendly-errors-webpack-plugin
+   1. stats 设置 verbose 全部输出
+   2. echo $? 如果返回 0 成功，其他失败
+8. 费时分析 speed-measure-webpack-plugin new一个实例并包裹整个 module.exports 即可
+9. 拆包分析 webpack-bundle-analyzer
+10. libraryTarget library
+11. polyfill
+12. purgecss-webpack-plugin 去除多余 css 代码
+13. thread-loader happyPack 多进程打包 parallelUglifyPlugin 多进程压缩
+14. DLLPlugin 动态链接库（开发
+    1. DllPlugin 打包出 dll 文件，如 React ReactDOM
+    2. DllReferencePlugin 引入并使用 dll 文件
+15. TreeShaking：production 并且因为只有 esm 可以 TreeShaking，所以 babel-loader 配置  modules: false
+16. splitChunk
+    1. entry
+       1. 如果入口 chunk 包含了重复模块，会被重复打包
+       2. 不能将核心应用进行动态拆分
+    2. 动态导入和懒加载
+       1. 懒加载
+       2. prefetch
+       3. preload
+    3. 提取公共代码
+       1. 抽取第三方模块 vendor
+       2. 抽取公共模块 common
+       3. HtmlWebpackPlugin 中的 excludeChunks
+17. scope hoisting
+    1. 将所有的模块按引用顺序放到一个函数作用域
+    2. import 转 require
+    3. 创建的函数作用域减少，内存开销减小
+    4. 大量作用域包裹代码导致体积增大
+    5. CJS 不支持
+    6. webpack.optimize.ModuleConcatenationPlugin 开发使用，生产默认打开
+18. 缓存机制
+    1. babel-loader 缓存 cacheDirectory
+    2. cache-loader，直接放置到某个 loader 前就可以缓存
+    3. hard-source-webpack-plugin 直接使用就可以，会把缓存放到 node_modules 的 .cache 中，大大加速第二次构建的速度
+    4. oneOf 多个匹配到一个就退出
+19. 热更新/自动刷新（开发
+20. alias resolve resolveLoader mainFields mainFile

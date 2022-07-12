@@ -1,6 +1,6 @@
 ---
 date created: 2022-03-03 00:35
-date updated: 2022-04-23 11:41
+date updated: 2022-07-09 22:23
 ---
 
 ### .browserslistrc
@@ -190,979 +190,658 @@ npm link
 
 ```json
 {
-
- // tab 大小为2个空格
-
- "editor.tabSize": 2,
-
- // 注释 I/H
-
- "fileheader.customMade": {
-
- "Date": "Do not edit",
-
- "LastEditTime": "Do not edit",
-
- "Description": "我添加了修改"
-
- },
-
- "fileheader.cursorMode": {
-
- "description": "Annotation",
-
- "return": ""
-
- },
-
- "fileheader.configObj": {
-
- "autoAdd": true,
-
- "prohibitAutoAdd": [
-
- "json",
-
- "md",
-
- "js",
-
- "ts",
-
- "html",
-
- "css",
-
- "less",
-
- "scss",
-
- "jsx",
-
- "vue"
-
- ],
-
- },
-
- "editor.fontFamily": "Input Mono, Fira Code, monospace",
-
- "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
-
- "editor.fontSize": 13,
-
- "markdown-preview-enhanced.previewTheme": "github-dark.css",
-
- "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
-
- "files.autoSave": "onFocusChange", // 自动保存
-
- "editor.wordWrap": "on", // 自动换行
-
- "diffEditor.wordWrap": "on", // 自动换行
-
- "explorer.confirmDelete": false, // 文件删除确认
-
- "explorer.confirmDragAndDrop": false, // 文件移动确认
-
- // 自动更新路径，删除css，js行末分号，文件引入双引号
-
- "javascript.updateImportsOnFileMove.enabled": "always",
-
- "css.completion.completePropertyWithSemicolon": false,
-
- "less.completion.completePropertyWithSemicolon": false,
-
- "scss.completion.completePropertyWithSemicolon": false,
-
- "javascript.format.semicolons": "remove",
-
- "typescript.format.semicolons": "remove",
-
- "autoimport.doubleQuotes": true,
-
- // 括号样式
-
- "bracket-pair-colorizer-2.depreciation-notice": false,
-
- "bracket-pair-colorizer-2.highlightActiveScope": false,
-
- "bracket-pair-colorizer-2.showBracketsInGutter": true,
-
- "bracket-pair-colorizer-2.showBracketsInRuler": true,
-
- "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
-
- "bracket-pair-colorizer-2.colors": [
-
- "Gold",
-
- "Orchid",
-
- "LightSkyBlue"
-
- ],
-
- // 终端以及工作台
-
- "terminal.integrated.fontSize": 13,
-
- "terminal.integrated.fontFamily": "Hack Nerd Font Mono, Fira Code",
-
- "terminal.integrated.cursorBlinking": true,
-
- "terminal.integrated.cursorStyle": "line",
-
- "terminal.integrated.fontWeight": "300",
-
- "terminal.integrated.persistentSessionReviveProcess": "never",
-
- "terminal.integrated.tabs.enabled": true,
-
- "workbench.productIconTheme": "icons-carbon",
-
- "workbench.iconTheme": "vscode-icons",
-
- "workbench.colorTheme": "Dracula At Night",
-
- "workbench.colorCustomizations": {
-
- "terminal.background": "#212121",
-
- "terminal.foreground": "#b9a7e4",
-
- "terminalCursor.background": "#c4bfa5",
-
- "terminalCursor.foreground": "#81B5AC"
-
- },
-
- "workbench.activityBar.visible": true,
-
- "workbench.editor.closeOnFileDelete": true,
-
- "workbench.editor.highlightModifiedTabs": true,
-
- "workbench.editor.tabCloseButton": "left",
-
- "workbench.fontAliasing": "antialiased",
-
- "workbench.list.smoothScrolling": true,
-
- "workbench.startupEditor": "newUntitledFile",
-
- "workbench.tree.expandMode": "singleClick",
-
- "workbench.tree.indent": 10,
-
- // vim 配置
-
- "vim.easymotion": true,
-
- "vim.leader": "<Space>",
-
- "vim.normalModeKeyBindingsNonRecursive": [
-
- {
-
- "before": [
-
- "L"
-
- ],
-
- "after": [
-
- "$"
-
- ]
-
- },
-
- {
-
- "before": [
-
- "H"
-
- ],
-
- "after": [
-
- "^"
-
- ]
-
- },
-
- {
-
- "before": [
-
- "j"
-
- ],
-
- "after": [
-
- "g",
-
- "j"
-
- ]
-
- },
-
- {
-
- "before": [
-
- "J"
-
- ],
-
- "after": [
-
- "6",
-
- "j"
-
- ]
-
- },
-
- {
-
- "before": [
-
- "k"
-
- ],
-
- "after": [
-
- "g",
-
- "k"
-
- ]
-
- },
-
- {
-
- "before": [
-
- "K"
-
- ],
-
- "after": [
-
- "5",
-
- "k"
-
- ]
-
- },
-
- {
-
- "before": [
-
- "<Leader>",
-
- "e"
-
- ],
-
- "commands": [
-
- "workbench.view.explorer"
-
- ]
-
- }
-
- ],
-
- "vim.insertModeKeyBindings": [
-
- {
-
- "before": [
-
- "j",
-
- "j"
-
- ],
-
- "after": [
-
- "<Esc>"
-
- ]
-
- }
-
- ],
-
- "vim.handleKeys": {
-
- "<C-a>": false,
-
- "<C-x>": false,
-
- "<C-c>": false,
-
- "<C-v>": false,
-
- "<C-f>": false,
-
- "<C-s>": false,
-
- "<C-z>": false,
-
- "<C-j>": false,
-
- "<C-d>": false,
-
- "<C-w>": false,
-
- "<C-y>": false
-
- },
-
- // code spell 配置
-
- "cSpell.allowCompoundWords": true,
-
- "cSpell.userWords": [
-
- "mixins",
-
- "vite",
-
- "vitejs",
-
- "mockjs",
-
- "vuedx",
-
- "leiqifan",
-
- "execa",
-
- "nums",
-
- "NlogN",
-
- "NlgN",
-
- "todos",
-
- "lvite",
-
- "todolist",
-
- "vueuse",
-
- "vuex",
-
- "vnode",
-
- "camelize",
-
- "pnpm",
-
- ],
-
- // github copilot 配置
-
- "github.copilot.enable": {
-
- "*": true,
-
- "yaml": false,
-
- "plaintext": false,
-
- "markdown": true,
-
- "js": false,
-
- "ts": false
-
- },
-
- // background 配置
-
- "update.enableWindowsBackgroundUpdates": true,
-
- "background.customImages": [
-
- "file:///C:/Users/leiqifan/Desktop/files/file/dm/dm.png" // 图片地址
-
- ],
-
- "background.useFront": true,
-
- "background.useDefault": false,
-
- "background.style": {
-
- "content": "''",
-
- "pointer-events": "none",
-
- "position": "absolute", // 图片位置
-
- "width": "100%",
-
- "height": "100%",
-
- "z-index": "99999",
-
- "background.repeat": "no-repeat",
-
- "background-size": "20%,20%", // 图片大小
-
- "opacity": 0.2 // 透明度
-
- },
-
- // leetcode 配置
-
- "leetcode.defaultLanguage": "typescript",
-
- "leetcode.endpoint": "leetcode-cn",
-
- "leetcode.workspaceFolder": "C:\\Users\\leiqifan\\.leetcode",
-
- "leetcode.hint.configWebviewMarkdown": false,
-
- "leetcode.hint.commentDescription": false,
-
- // 杂项
-
- "editor.suggestSelection": "first",
-
- "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
- "diffEditor.maxComputationTime": 0,
-
- "diffEditor.ignoreTrimWhitespace": false,
-
- "editor.unicodeHighlight.ambiguousCharacters": false,
-
- "javascript.validate.enable": false,
-
- "vsicons.dontShowNewVersionMessage": true,
-
- "editor.inlineSuggest.enabled": true,
-
- // eslint 检测文件类型和工作目录
-
- "eslint.validate": [
-
- "vue",
-
- "html",
-
- "javascript",
-
- "typescript",
-
- "javascriptreact",
-
- "typescriptreact",
-
- "markdown",
-
- "json",
-
- "jsonc",
-
- "json5"
-
- ],
-
- "eslint.workingDirectories": [
-
- ".eslintrc.js",
-
- {
-
- "mode": "auto"
-
- }
-
- ],
-
- "[jsonc]": {
-
- "editor.defaultFormatter": "vscode.json-language-features"
-
- },
-
- "[html]": {
-
- "editor.defaultFormatter": "vscode.html-language-features"
-
- },
-
- "[javascript]": {
-
- "editor.defaultFormatter": "vscode.typescript-language-features"
-
- },
-
- "[typescript]": {
-
- "editor.defaultFormatter": "vscode.typescript-language-features"
-
- },
-
- // 配置错误警告
-
- "vetur.ignoreProjectWarning": true,
-
- "[vue]": {
-
- "editor.defaultFormatter": "octref.vetur"
-
- },
-
- // 保存时格式化并启用 eslint修复
-
- "editor.formatOnSave": true,
-
- "editor.codeActionsOnSave": {
-
- "source.fixAll": false,
-
- "source.fixAll.eslint": true,
-
- "source.organizeImports": false
-
- },
-
- // "vetur.format.defaultFormatter.js": "prettier",
-
- "vetur.format.defaultFormatter.js": "vscode-typescript",
-
- // "javascript.format.insertSpaceBeforeFunctionParenthesis": true, // 函数名称前 加一个空格
-
- "vetur.format.defaultFormatter.html": "prettyhtml",
-
- "vetur.format.defaultFormatterOptions": {
-
- "prettyhtml": {
-
- "printWidth": 120,
-
- "singleQuote": false,
-
- "wrapAttributes": false,
-
- "sortAttributes": false
-
- },
-
- "js-beautify-html": {
-
- "wrap_attributes": "force-expand-multiline",
-
- "semi": false,
-
- },
-
- "prettier": {
-
- "printWidth": 120, // 指定代码长度，超出换行
-
- "tabWidth": 2, // tab 键的宽度
-
- "useTabs": false, // 不使用tab
-
- "semi": false,
-
- "singleQuote": true,
-
- "quoteProps": "as-needed",
-
- "jsxSingleQuote": false, // 在jsx中使用单引号代替双引号
-
- "trailingComma": "none", //禁止随时添加逗号,这个很重要
-
- "bracketSpacing": true,
-
- "jsxBracketSameLine": false, // 在jsx中把'>' 是否单独放一行
-
- "arrowParens": "avoid", // 为单行箭头函数的参数添加圆括号
-
- "requirePragma": false, // 是否严格按照文件顶部的特殊注释格式化代码
-
- "insertPragma": false, // 是否在格式化的文件顶部插入Pragma标记，以表明该文件被prettier格式化过了
-
- "proseWrap": "always", // 文本样式进行折行
-
- "htmlWhitespaceSensitivity": "ignore", // html文件的空格敏感度，控制空格是否影响布局
-
- "endOfLine": "auto" // 结尾是 \n \r \n\r auto
-
- }
-
- },
-
- "security.workspace.trust.untrustedFiles": "open",
-
- "editor.cursorSmoothCaretAnimation": true, // 平滑动画
-
- "editor.renderWhitespace": "boundary", // 空白符的显示方式
-
- "editor.guides.bracketPairs": "active", // 括号对参考线
-
- "editor.accessibilitySupport": "off", // 关闭屏幕阅读器优化
-
- "editor.find.addExtraSpaceOnTop": false, // 关闭查找栏上方的空白
-
- "editor.glyphMargin": true, // 显示垂直字形边距
-
- "editor.lineNumbers": "interval", // 行号显示方式
-
- "editor.multiCursorModifier": "ctrlCmd", // 多光标模式键的映射
-
- "editor.unicodeHighlight.invisibleCharacters": false, // 显示隐藏字符
-
- "window.autoDetectColorScheme": true, // 自动检测颜色方案
-
- "window.dialogStyle": "custom", // 自定义对话框样式
-
- "window.titleBarStyle": "custom", // 自定义标题栏样式
-
- "extensions.autoUpdate": "onlyEnabledExtensions", // 自动更新扩展
-
- "extensions.ignoreRecommendations": true, // 忽略推荐的扩展
-
- "files.eol": "\n", // 文件结束符
-
- "files.insertFinalNewline": true, // 文件末尾添加换行符
-
- "files.simpleDialog.enable": true, // 开启简单对话框
-
- "git.autofetch": true, // 自动拉取
-
- "git.confirmSync": false, // 同步前确认
-
- "git.enableSmartCommit": true, // 开启智能提交
-
- "git.untrackedChanges": "separate", // 开启分离的未提交文件
-
- "scm.diffDecorationsGutterWidth": 2, // diff窗口左侧的缩进
-
- "debug.onTaskErrors": "debugAnyway", // 开启任务错误调试
-
- "search.exclude": { // 搜索过滤
-
- "**/.git": true,
-
- "**/.github": true,
-
- "**/.nuxt": true,
-
- "**/.output": true,
-
- "**/.pnpm": true,
-
- "**/.vscode": true,
-
- "**/.yarn": true,
-
- "**/bower_components": true,
-
- "**/dist/**": true,
-
- "**/logs": true,
-
- "**/node_modules": true,
-
- "**/out/**": true,
-
- "**/package-lock.json": true,
-
- "**/pnpm-lock.yaml": true,
-
- "**/tmp": true,
-
- "**/yarn.lock": true
-
- },
-
- // Extension configs
-
- "emmet.showSuggestionsAsSnippets": true, // 显示提示为代码片段
-
- "emmet.triggerExpansionOnTab": false, // 按下tab键时触发代码展开
-
- "errorLens.enabledDiagnosticLevels": [ // 开启错误提示
-
- "warning",
-
- "error"
-
- ],
-
- "errorLens.excludeBySource": [ // 忽略错误提示
-
- "cSpell",
-
- "Grammarly",
-
- "eslint"
-
- ],
-
- "eslint.codeAction.showDocumentation": { // 开启eslint的代码操作
-
- "enable": true
-
- },
-
- "eslint.quiet": true, // 关闭eslint的警告
-
- "cSpell.language": "en,en-US",
-
- "css.lint.hexColorLength": "ignore", // 忽略十六进制颜色长度
-
- "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}", // 工作问题格式
-
- "githubPullRequests.fileListLayout": "tree", // 文件列表布局
-
- "gitlens.codeLens.authors.enabled": false, // 关闭作者
-
- "gitlens.codeLens.enabled": false, // 关闭代码提示
-
- "gitlens.codeLens.recentChange.enabled": false, // 关闭最近更改
-
- "gitlens.menus": { // 关闭菜单
-
- "editor": {
-
- "blame": false,
-
- "clipboard": true,
-
- "compare": true,
-
- "history": false,
-
- "remote": false
-
- },
-
- "editorGroup": {
-
- "blame": true,
-
- "compare": false
-
- },
-
- "editorTab": {
-
- "clipboard": true,
-
- "compare": true,
-
- "history": true,
-
- "remote": true
-
- },
-
- "explorer": {
-
- "clipboard": true,
-
- "compare": true,
-
- "history": true,
-
- "remote": true
-
- },
-
- "scm": {
-
- "authors": true
-
- },
-
- "scmGroup": {
-
- "compare": true,
-
- "openClose": true,
-
- "stash": true
-
- },
-
- "scmGroupInline": {
-
- "stash": true
-
- },
-
- "scmItem": {
-
- "clipboard": true,
-
- "compare": true,
-
- "history": true,
-
- "remote": false,
-
- "stash": true
-
- }
-
- },
-
- "i18n-ally.autoDetection": false, // 关闭语言自动检测
-
- "i18n-ally.displayLanguage": "en", // 设置显示语言
-
- "i18n-ally.ignoredLocales": [], // 忽略语言
-
- "i18n-ally.keystyle": "nested", // 设置语言样式
-
- "i18n-ally.namespace": true, // 开启命名空间
-
- "i18n-ally.enabledParsers": [ // 开启解析器
-
- "json",
-
- "js"
-
- ],
-
- "i18n-ally.sortKeys": true, // 开启排序
-
- "iconify.annotations": true, // 开启图标注释
-
- "iconify.inplace": true, // 开启图标注释
-
- "svg.preview.mode": "svg", // 开启svg预览
-
- "volar.autoCompleteRefs": false,
-
- "volar.codeLens.pugTools": false,
-
- "volar.codeLens.scriptSetupTools": true,
-
- "volar.completion.preferredTagNameCase": "pascal",
-
- "volar.showWelcomePage": false,
-
- "volar.takeOverMode.enabled": true,
-
- "windicss.enableCodeFolding": false,
-
- "prettier.enable": false, // I only use Prettier for manually formatting
-
- "prettier.printWidth": 200,
-
- "prettier.semi": false,
-
- "prettier.singleQuote": true,
-
- // File Nesting
-
- // this might not be up to date with the repo, please check yourself
-
- // updated 2022-03-10 06:10
-
- // https://github.com/antfu/vscode-file-nesting-config
-
- "explorer.experimental.fileNesting.enabled": true,
-
- "explorer.experimental.fileNesting.expand": false,
-
- "explorer.experimental.fileNesting.patterns": {
-
- ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
-
- "*.js": "$(capture).js.map, $(capture).min.js, $(capture).d.ts",
-
- "*.jsx": "$(capture).js",
-
- "*.ts": "$(capture).js, $(capture).*.ts",
-
- "*.tsx": "$(capture).ts",
-
- "*.vue": "$(capture).*.ts, $(capture).*.js",
-
- "index.d.ts": "*.d.ts",
-
- "shims.d.ts": "*.d.ts",
-
- "*.cpp": "$(capture).hpp, $(capture).h, $(capture).hxx",
-
- "*.cxx": "$(capture).hpp, $(capture).h, $(capture).hxx",
-
- "*.cc": "$(capture).hpp, $(capture).h, $(capture).hxx",
-
- "*.c": "$(capture).h",
-
- "go.mod": ".air*, go.sum",
-
- "default.nix": "shell.nix",
-
- "flake.nix": "flake.lock",
-
- "BUILD.bazel": "*.bzl, *.bazel, *.bazelrc, bazel.rc, .bazelignore, .bazelproject, WORKSPACE",
-
- "CMakeLists.txt": "*.cmake, *.cmake.in, .cmake-format.yaml, CMakePresets.json",
-
- ".clang-tidy": ".clang-format",
-
- ".env": "*.env, .env.*, env.d.ts",
-
- "dockerfile": ".dockerignore, dockerfile*",
-
- "package.json": ".browserslist*, .circleci*, .codecov, .commitlint*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitpod*, .huskyrc*, .jslint*, .lintstagedrc*, .markdownlint*, .mocha*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .releaserc*, .sentry*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, api-extractor.json, appveyor*, ava.config.*, azure-pipelines*, bower.json, build.config.*, commitlint*, crowdin*, cypress.json, dangerfile*, dprint.json, firebase.json, grunt*, gulp*, jasmine.*, jenkins*, jest.config.*, jsconfig.*, karma*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, nx.*, package-lock.json, playwright.config.*, pm2.*, pnpm*, prettier*, pullapprove*, puppeteer.config.*, renovate*, rollup.config.*, stylelint*, tsconfig.*, tsdoc.*, tslint*, tsup.config.*, turbo*, typedoc*, vercel*, vetur.config.*, vitest.config.*, webpack.config.*, workspace.json, xo.config.*, yarn*",
-
- "rush.json": ".browserslist*, .circleci*, .codecov, .commitlint*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitpod*, .huskyrc*, .jslint*, .lintstagedrc*, .markdownlint*, .mocha*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .releaserc*, .sentry*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, api-extractor.json, appveyor*, ava.config.*, azure-pipelines*, bower.json, build.config.*, commitlint*, crowdin*, cypress.json, dangerfile*, dprint.json, firebase.json, grunt*, gulp*, jasmine.*, jenkins*, jest.config.*, jsconfig.*, karma*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, nx.*, package-lock.json, playwright.config.*, pm2.*, pnpm*, prettier*, pullapprove*, puppeteer.config.*, renovate*, rollup.config.*, stylelint*, tsconfig.*, tsdoc.*, tslint*, tsup.config.*, turbo*, typedoc*, vercel*, vetur.config.*, vitest.config.*, webpack.config.*, workspace.json, xo.config.*, yarn*",
-
- "readme.*": "authors, backers.md, changelog*, citation*, code_of_conduct.md, codeowners, contributing.md, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors.md",
-
- "cargo.toml": ".clippy.toml, .rustfmt.toml, cargo.lock, clippy.toml, cross.toml, rust-toolchain.toml, rustfmt.toml",
-
- "gemfile": ".ruby-version, gemfile.lock",
-
- "composer.json": "composer.lock, phpunit.xml*, psalm*.xml",
-
- "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, index.html, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
-
- "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
-
- "nuxt.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
-
- "next.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, next-env.d.ts, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
-
- "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, mdsvex.config.js, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
-
- "remix.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, remix.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
-
- },
-
- "eslint.alwaysShowStatus": true,
-
+  // tab 大小为2个空格
+  "editor.tabSize": 2,
+  // 注释 I/H
+  "fileheader.customMade": {
+    "Date": "Do not edit",
+    "LastEditTime": "Do not edit",
+    "Description": "我添加了修改"
+  },
+  "fileheader.cursorMode": {
+    "description": "Annotation",
+    "return": ""
+  },
+  "fileheader.configObj": {
+    "autoAdd": true,
+    "prohibitAutoAdd": [
+      "json",
+      "md",
+      "js",
+      "ts",
+      "html",
+      "css",
+      "less",
+      "scss",
+      "jsx",
+      "vue"
+    ],
+  },
+  "editor.fontFamily": "Input Mono, Fira Code, monospace",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
+  "editor.fontSize": 13,
+  "workbench.colorTheme": "Dracula At Night",
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
+  "files.autoSave": "onFocusChange", // 自动保存
+  "editor.wordWrap": "on", // 自动换行
+  "diffEditor.wordWrap": "on", // 自动换行
+  "explorer.confirmDelete": false, // 文件删除确认
+  "explorer.confirmDragAndDrop": false, // 文件移动确认
+  // 自动更新路径，删除css，js行末分号，文件引入双引号
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "css.completion.completePropertyWithSemicolon": false,
+  "less.completion.completePropertyWithSemicolon": false,
+  "scss.completion.completePropertyWithSemicolon": false,
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "autoimport.doubleQuotes": true,
+  // 括号样式
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "bracket-pair-colorizer-2.highlightActiveScope": false,
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showBracketsInRuler": true,
+  "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+  "bracket-pair-colorizer-2.colors": [
+    "Gold",
+    "Orchid",
+    "LightSkyBlue"
+  ],
+  // 终端以及工作台
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono, Fira Code",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.tabs.enabled": true,
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#212121",
+    "terminal.foreground": "#b9a7e4",
+    "terminalCursor.background": "#c4bfa5",
+    "terminalCursor.foreground": "#81B5AC"
+  },
+  "workbench.activityBar.visible": true,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.fontAliasing": "antialiased",
+  "workbench.list.smoothScrolling": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+  // vim 配置
+  "vim.easymotion": true,
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "6",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "5",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "e"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "z",
+        "z"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-x>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-f>": false,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-j>": false,
+    "<C-d>": false,
+    "<C-w>": false,
+    "<C-y>": false
+  },
+  // code spell 配置
+  "cSpell.allowCompoundWords": true,
+  "cSpell.userWords": [
+    "mixins",
+    "vite",
+    "vitejs",
+    "mockjs",
+    "vuedx",
+    "leiqifan",
+    "execa",
+    "nums",
+    "NlogN",
+    "NlgN",
+    "todos",
+    "lvite",
+    "todolist",
+    "vueuse",
+    "vuex",
+    "vnode",
+    "camelize",
+    "pnpm",
+    "antfu",
+    "paren",
+    "Avenir",
+    "bumpp",
+    "cond",
+    "iconify",
+    "unocss",
+    "unplugin",
+    "vitest",
+    "vitesse",
+    "keyof",
+    "rgba",
+    "amap",
+    "unshift",
+    "corejs",
+  ],
+  // github copilot 配置
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true,
+    "js": true,
+    "ts": false
+  },
+  "better-comments.tags": [
+    {
+      "tag": "/",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "0",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "1",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "2",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "3",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "4",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "5",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "6",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "7",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "8",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "9",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  // background 配置
+  "update.enableWindowsBackgroundUpdates": true,
+  "background.customImages": [
+    "file:///C:/Users/leiqifan/Desktop/files/file/dm/dm.png",
+  ],
+  "background.useFront": true,
+  "background.useDefault": false,
+  "background.style": {
+    "content": "''",
+    "pointer-events": "none",
+    "position": "absolute", // 图片位置
+    "width": "100%",
+    "height": "100%",
+    "z-index": "99999",
+    "background.repeat": "no-repeat",
+    "background-size": "20%,20%", // 图片大小
+    "opacity": 0.2 // 透明度
+  },
+  // leetcode 配置
+  "leetcode.defaultLanguage": "typescript",
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.workspaceFolder": "C:\\Users\\leiqifan\\.leetcode",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commentDescription": false,
+  // 杂项
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "diffEditor.maxComputationTime": 0,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "javascript.validate.enable": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.inlineSuggest.enabled": true,
+  // eslint 检测文件类型和工作目录
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5"
+  ],
+  "eslint.workingDirectories": [
+    ".eslintrc.js",
+    {
+      "mode": "auto"
+    }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  // 配置错误警告
+  "vetur.ignoreProjectWarning": true,
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  // 保存时格式化并启用 eslint修复
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
+  // "vetur.format.defaultFormatter.js": "prettier",
+  // "javascript.format.insertSpaceBeforeFunctionParenthesis": true, // 函数名称前 加一个空格
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatterOptions": {
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    },
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline",
+      "semi": false,
+    },
+    "prettier": {
+      "printWidth": 80, // 指定代码长度，超出换行
+      "tabWidth": 2, // tab 键的宽度
+      "useTabs": false, // 不使用tab
+      "semi": false,
+      "singleQuote": true,
+      "quoteProps": "as-needed",
+      "jsxSingleQuote": false, // 在jsx中使用单引号代替双引号
+      // "trailingComma": "none", //禁止随时添加逗号,这个很重要
+      "bracketSpacing": true,
+      "jsxBracketSameLine": false, // 在jsx中把'>' 是否单独放一行
+      "arrowParens": "avoid", // 为单行箭头函数的参数添加圆括号
+      "requirePragma": false, // 是否严格按照文件顶部的特殊注释格式化代码
+      "insertPragma": false, // 是否在格式化的文件顶部插入Pragma标记，以表明该文件被prettier格式化过了
+      "proseWrap": "always", // 文本样式进行折行
+      "htmlWhitespaceSensitivity": "ignore", // html文件的空格敏感度，控制空格是否影响布局
+      "endOfLine": "auto" // 结尾是 \n \r \n\r auto
+    }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.cursorSmoothCaretAnimation": true, // 平滑动画
+  "editor.renderWhitespace": "boundary", // 空白符的显示方式
+  "editor.guides.bracketPairs": "active", // 括号对参考线
+  "editor.accessibilitySupport": "off", // 关闭屏幕阅读器优化
+  "editor.find.addExtraSpaceOnTop": false, // 关闭查找栏上方的空白
+  "editor.glyphMargin": true, // 显示垂直字形边距
+  "editor.lineNumbers": "interval", // 行号显示方式
+  "editor.multiCursorModifier": "ctrlCmd", // 多光标模式键的映射
+  "editor.unicodeHighlight.invisibleCharacters": false, // 显示隐藏字符
+  "window.autoDetectColorScheme": true, // 自动检测颜色方案
+  "window.dialogStyle": "custom", // 自定义对话框样式
+  "window.titleBarStyle": "custom", // 自定义标题栏样式
+  "extensions.autoUpdate": "onlyEnabledExtensions", // 自动更新扩展
+  "extensions.ignoreRecommendations": true, // 忽略推荐的扩展
+  "files.eol": "\n", // 文件结束符
+  "files.insertFinalNewline": true, // 文件末尾添加换行符
+  "files.simpleDialog.enable": true, // 开启简单对话框
+  "git.autofetch": true, // 自动拉取
+  "git.confirmSync": false, // 同步前确认
+  "git.enableSmartCommit": true, // 开启智能提交
+  "git.untrackedChanges": "separate", // 开启分离的未提交文件
+  "scm.diffDecorationsGutterWidth": 2, // diff窗口左侧的缩进
+  "debug.onTaskErrors": "debugAnyway", // 开启任务错误调试
+  "search.exclude": { // 搜索过滤
+    "**/.git": true,
+    "**/.github": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "**/yarn.lock": true
+  },
+  // Extension configs
+  "emmet.showSuggestionsAsSnippets": true, // 显示提示为代码片段
+  "emmet.triggerExpansionOnTab": false, // 按下tab键时触发代码展开
+  "errorLens.enabledDiagnosticLevels": [ // 开启错误提示
+    "warning",
+    "error"
+  ],
+  "errorLens.excludeBySource": [ // 忽略错误提示
+    "cSpell",
+    "Grammarly",
+    "eslint"
+  ],
+  "eslint.codeAction.showDocumentation": { // 开启eslint的代码操作
+    "enable": true
+  },
+  "eslint.quiet": true, // 关闭eslint的警告
+  "cSpell.language": "en,en-US",
+  "css.lint.hexColorLength": "ignore", // 忽略十六进制颜色长度
+  "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}", // 工作问题格式
+  "githubPullRequests.fileListLayout": "tree", // 文件列表布局
+  "gitlens.codeLens.authors.enabled": false, // 关闭作者
+  "gitlens.codeLens.enabled": false, // 关闭代码提示
+  "gitlens.codeLens.recentChange.enabled": false, // 关闭最近更改
+  "gitlens.menus": { // 关闭菜单
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "history": false,
+      "remote": false
+    },
+    "editorGroup": {
+      "blame": true,
+      "compare": false
+    },
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "scm": {
+      "authors": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true
+    },
+    "scmGroupInline": {
+      "stash": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false,
+      "stash": true
+    }
+  },
+  "i18n-ally.autoDetection": false, // 关闭语言自动检测
+  "i18n-ally.displayLanguage": "en", // 设置显示语言
+  "i18n-ally.ignoredLocales": [], // 忽略语言
+  "i18n-ally.keystyle": "nested", // 设置语言样式
+  "i18n-ally.namespace": true, // 开启命名空间
+  "i18n-ally.enabledParsers": [ // 开启解析器
+    "json",
+    "js"
+  ],
+  "i18n-ally.sortKeys": true, // 开启排序
+  "iconify.annotations": true, // 开启图标注释
+  "iconify.inplace": true, // 开启图标注释
+  "svg.preview.mode": "svg", // 开启svg预览
+  "volar.autoCompleteRefs": false,
+  "volar.codeLens.pugTools": false,
+  "volar.codeLens.scriptSetupTools": true,
+  "volar.completion.preferredTagNameCase": "pascal",
+  "volar.showWelcomePage": false,
+  "volar.takeOverMode.enabled": true,
+  "windicss.enableCodeFolding": false,
+  "prettier.enable": false, // I only use Prettier for manually formatting
+  "prettier.printWidth": 200,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  // File Nesting
+  // this might not be up to date with the repo, please check yourself
+  // updated 2022-03-10 06:10
+  // https://github.com/antfu/vscode-file-nesting-config
+  "explorer.experimental.fileNesting.enabled": true,
+  "explorer.experimental.fileNesting.expand": false,
+  "explorer.experimental.fileNesting.patterns": {
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+    "*.js": "$(capture).js.map, $(capture).min.js, $(capture).d.ts",
+    "*.jsx": "$(capture).js",
+    "*.ts": "$(capture).js, $(capture).*.ts",
+    "*.tsx": "$(capture).ts",
+    "*.vue": "$(capture).*.ts, $(capture).*.js",
+    "index.d.ts": "*.d.ts",
+    "shims.d.ts": "*.d.ts",
+    "*.cpp": "$(capture).hpp, $(capture).h, $(capture).hxx",
+    "*.cxx": "$(capture).hpp, $(capture).h, $(capture).hxx",
+    "*.cc": "$(capture).hpp, $(capture).h, $(capture).hxx",
+    "*.c": "$(capture).h",
+    "go.mod": ".air*, go.sum",
+    "default.nix": "shell.nix",
+    "flake.nix": "flake.lock",
+    "BUILD.bazel": "*.bzl, *.bazel, *.bazelrc, bazel.rc, .bazelignore, .bazelproject, WORKSPACE",
+    "CMakeLists.txt": "*.cmake, *.cmake.in, .cmake-format.yaml, CMakePresets.json",
+    ".clang-tidy": ".clang-format",
+    ".env": "*.env, .env.*, env.d.ts",
+    "dockerfile": ".dockerignore, dockerfile*",
+    "package.json": ".browserslist*, .circleci*, .codecov, .commitlint*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitpod*, .huskyrc*, .jslint*, .lintstagedrc*, .markdownlint*, .mocha*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .releaserc*, .sentry*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, api-extractor.json, appveyor*, ava.config.*, azure-pipelines*, bower.json, build.config.*, commitlint*, crowdin*, cypress.json, dangerfile*, dprint.json, firebase.json, grunt*, gulp*, jasmine.*, jenkins*, jest.config.*, jsconfig.*, karma*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, nx.*, package-lock.json, playwright.config.*, pm2.*, pnpm*, prettier*, pullapprove*, puppeteer.config.*, renovate*, rollup.config.*, stylelint*, tsconfig.*, tsdoc.*, tslint*, tsup.config.*, turbo*, typedoc*, vercel*, vetur.config.*, vitest.config.*, webpack.config.*, workspace.json, xo.config.*, yarn*",
+    "rush.json": ".browserslist*, .circleci*, .codecov, .commitlint*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitpod*, .huskyrc*, .jslint*, .lintstagedrc*, .markdownlint*, .mocha*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .releaserc*, .sentry*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, api-extractor.json, appveyor*, ava.config.*, azure-pipelines*, bower.json, build.config.*, commitlint*, crowdin*, cypress.json, dangerfile*, dprint.json, firebase.json, grunt*, gulp*, jasmine.*, jenkins*, jest.config.*, jsconfig.*, karma*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, nx.*, package-lock.json, playwright.config.*, pm2.*, pnpm*, prettier*, pullapprove*, puppeteer.config.*, renovate*, rollup.config.*, stylelint*, tsconfig.*, tsdoc.*, tslint*, tsup.config.*, turbo*, typedoc*, vercel*, vetur.config.*, vitest.config.*, webpack.config.*, workspace.json, xo.config.*, yarn*",
+    "readme.*": "authors, backers.md, changelog*, citation*, code_of_conduct.md, codeowners, contributing.md, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors.md",
+    "cargo.toml": ".clippy.toml, .rustfmt.toml, cargo.lock, clippy.toml, cross.toml, rust-toolchain.toml, rustfmt.toml",
+    "gemfile": ".ruby-version, gemfile.lock",
+    "composer.json": "composer.lock, phpunit.xml*, psalm*.xml",
+    "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, index.html, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "nuxt.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "next.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, next-env.d.ts, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, mdsvex.config.js, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "remix.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, remix.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
+  },
+  "eslint.alwaysShowStatus": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.linkedEditing": true,
+  "flow.useNPMPackagedFlow": true,
+  "redhat.telemetry.enabled": true,
 }
+
 
 ```
