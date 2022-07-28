@@ -136,8 +136,8 @@ date updated: 2022-05-22 23:21
 #### 隐藏元素的方法
 
 1. display: none；渲染树中不存在，不占位置，不响应绑定的监听事件
-2. opacity: 0；占位置，不响应
-3. visibility: hidden；占位置，能响应
+2. opacity: 0；占位置，响应
+3. visibility: hidden；占位置，不响应
 4. transform: scale(0, 0)；占位置，能响应
 5. position: absolute 移出屏幕
 6. z-index 负值，隐藏在其他元素下
