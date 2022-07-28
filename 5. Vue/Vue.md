@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-28 23:50
-date updated: 2022-06-23 20:20
+date updated: 2022-06-24 17:00
 ---
 
 ### MVVM 的理解
@@ -162,3 +162,29 @@ with (this) {
 ### 组件data用函数
 
 主要使用的是 mergeOptions 函数，它将合并所有的父子级选项，使用对象的话，大家共用地址显然是有问题的，因此使用函数，new Vue 的话，他不需要和父级合并，因此可以是对象
+
+### Mixin
+
+使用了 mergeOptions 合并数据与钩子
+
+### 事件绑定原理
+
+Vue中所有元素绑定的事件，会存放在 data.on 中，在 runtime 时会调用 updateDOMListeners 来进行事件监听，采用的是原生的 addEventListener 方法
+组件也是依照相同的规则，唯一有不一样的是，在设置的时候，组件有两种事件设置方式，一种是正常设置，一种是设置 native 事件，事件分别会储存在 data.on 与 data.nativeOn 中，这和上方所说不一致，因此在创建组件的时候做了一层处理，我们把 data.on 的事件存放在组件的 listeners 中，而 listeners 在事件初始化的时候会走发布订阅的流程，再用 nativeOn 的事件覆盖 data.on，此时组件的原生事件就和其他DOM一致了
+
+```js
+with (this) {
+  return _c('div', [
+    _c('div', {
+      on: { "click": add }
+    }), _v(" "),
+    _c('comp', {
+      on: { "click": add },
+      nativeOn: { "click": function ($event) { return remove.apply(null, arguments) } }
+    })], 1)
+}
+```
+
+### set delete
+
+如果是数组，直接 splice，如果是存在的值，直接赋值更新/删除，其他情况获取 target 的响应式并手动调用 defineReactive 与 notify 更新
