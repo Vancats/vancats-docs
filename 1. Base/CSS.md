@@ -208,9 +208,8 @@ display: -webkit-box;  // 设置为弹性伸缩盒子
 
 #### z-index 失效
 
-1. 该元素 position -> relative absolute fixed
-2. 元素设置了 float，删除并用 display: inline-block
-3. 父元素 position -> static absolute (relative 失效)
+1. 该元素 position 不为 static，父元素不为 relative
+2. 元素不能 float，可用 display: inline-block
 
 #### 判断元素在显示区域
 
