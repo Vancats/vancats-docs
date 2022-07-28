@@ -153,11 +153,11 @@ date updated: 2022-05-22 23:21
 6. 后者使GUI渲染线程停止渲染，去请求资源，直到资源返回继续渲染
 
 #### 伪类和伪元素的区别
-- 伪是对于特定选择器添加类别，外部可见，不在文档中生成
+- 伪类是在已有元素上添加类别，
 
 `p::before {content: 'content'} p::first-line {background: red} p::first-letter {font-size: 30px}`
 
-- 伪元素是在元素内容前后添加元素 `p:hover {color: red}`
+- 伪元素是在元素内容前后添加元素，外部可见，不在文档中生成 `p:hover {color: red}`
 
 
 #### li 之间的空白换行符
