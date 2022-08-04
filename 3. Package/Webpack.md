@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-09 18:49
+date updated: 2022-08-04 16:04
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -102,25 +102,25 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 
 1. 缩小查找范围
 2. noParse
-4. IgnorePlugin
-5. 区分环境变量
+3. IgnorePlugin
+4. 区分环境变量
    1. 生产环境：分离CSS，压缩 HTML CSS JS 图片
    2. 开发环境：source-map，打印信息 live loader或 hot reload
-6. 图片压缩和优化
-7. 日志优化：friendly-errors-webpack-plugin
+5. 图片压缩和优化
+6. 日志优化：friendly-errors-webpack-plugin
    1. stats 设置 verbose 全部输出
    2. echo $? 如果返回 0 成功，其他失败
-8. 费时分析 speed-measure-webpack-plugin new一个实例并包裹整个 module.exports 即可
-9. 拆包分析 webpack-bundle-analyzer
-10. libraryTarget library
-11. polyfill
-12. purgecss-webpack-plugin 去除多余 css 代码
-13. thread-loader happyPack 多进程打包 parallelUglifyPlugin 多进程压缩
-14. DLLPlugin 动态链接库（开发
+7. 费时分析 speed-measure-webpack-plugin new一个实例并包裹整个 module.exports 即可
+8. 拆包分析 webpack-bundle-analyzer
+9. libraryTarget library
+10. polyfill
+11. purgecss-webpack-plugin 去除多余 css 代码
+12. thread-loader happyPack 多进程打包 parallelUglifyPlugin 多进程压缩
+13. DLLPlugin 动态链接库（开发
     1. DllPlugin 打包出 dll 文件，如 React ReactDOM
     2. DllReferencePlugin 引入并使用 dll 文件
-15. TreeShaking：production 并且因为只有 esm 可以 TreeShaking，所以 babel-loader 配置  modules: false
-16. splitChunk
+14. TreeShaking：production 并且因为只有 esm 可以 TreeShaking，所以 babel-loader 配置  modules: false
+15. splitChunk
     1. entry
        1. 如果入口 chunk 包含了重复模块，会被重复打包
        2. 不能将核心应用进行动态拆分
@@ -132,17 +132,17 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
        1. 抽取第三方模块 vendor
        2. 抽取公共模块 common
        3. HtmlWebpackPlugin 中的 excludeChunks
-17. scope hoisting
+16. scope hoisting
     1. 将所有的模块按引用顺序放到一个函数作用域
     2. import 转 require
     3. 创建的函数作用域减少，内存开销减小
     4. 大量作用域包裹代码导致体积增大
     5. CJS 不支持
     6. webpack.optimize.ModuleConcatenationPlugin 开发使用，生产默认打开
-18. 缓存机制
+17. 缓存机制
     1. babel-loader 缓存 cacheDirectory
     2. cache-loader，直接放置到某个 loader 前就可以缓存
     3. hard-source-webpack-plugin 直接使用就可以，会把缓存放到 node_modules 的 .cache 中，大大加速第二次构建的速度
     4. oneOf 多个匹配到一个就退出
-19. 热更新/自动刷新（开发
-20. alias resolve resolveLoader mainFields mainFile
+18. 热更新/自动刷新（开发
+19. alias resolve resolveLoader mainFields mainFile
