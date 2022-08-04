@@ -102,7 +102,6 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 
 1. 缩小查找范围
 2. noParse
-3. DefinePlugin
 4. IgnorePlugin
 5. 区分环境变量
    1. 生产环境：分离CSS，压缩 HTML CSS JS 图片
