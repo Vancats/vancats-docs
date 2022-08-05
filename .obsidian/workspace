@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Browser/问题.md",
+            "file": "3. Package/webpack.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Browser/问题.md",
+                "file": "3. Package/webpack.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -100,6 +100,7 @@
   },
   "active": "57f442ca8b3a3513",
   "lastOpenFiles": [
+    "2. Browser/问题.md",
     "1. Base/CSS.md",
     "0. Prepare/6.19.md",
     "0. Prepare/5.22.md",
@@ -108,7 +109,6 @@
     "3. Package/webpack.md",
     "3. Package/Config.md",
     "3. Package/Webpack-before.md",
-    "3. Package/Vite.md",
-    "5. Vue/Vue.md"
+    "3. Package/Vite.md"
   ]
 }
