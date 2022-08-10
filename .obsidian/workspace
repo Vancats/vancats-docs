@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "5. Vue/Vue面试题.md",
+            "file": "5. Vue/Vue.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. Vue/Vue面试题.md",
+                "file": "5. Vue/Vue.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -100,15 +100,15 @@
   },
   "active": "27e67627111ca120",
   "lastOpenFiles": [
-    "5. Vue/Vue补.md",
     "5. Vue/Vue3.md",
+    "5. Vue/Vue面试题.md",
+    "5. Vue/Vue补.md",
     "5. Vue/Vue2源码概述.md",
     "5. Vue/Vue.md",
     "5. Vue/Slot.md",
     "5. Vue/Mini-vue.md",
     "5. Vue/compile.md",
     "5. Vue/another.md",
-    "3. Package/Webpack-before.md",
-    "3. Package/webpack.md"
+    "3. Package/Webpack-before.md"
   ]
 }
