@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "57f442ca8b3a3513",
+        "id": "27e67627111ca120",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "1. Base/CSS.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Base/CSS.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -98,17 +93,17 @@
     "width": 174,
     "collapsed": true
   },
-  "active": "57f442ca8b3a3513",
+  "active": "27e67627111ca120",
   "lastOpenFiles": [
-    "1. Base/HTML.md",
+    "1. Base/未命名.md",
     "1. Base/JS.md",
     "1. Base/CSS.md",
+    "1. Base/HTML.md",
     "3. Package/webpack.md",
     "2. Browser/问题.md",
     "0. Prepare/6.19.md",
     "0. Prepare/5.22.md",
     "0. Prepare/7.31.md",
-    "0. Prepare/杂项.md",
-    "3. Package/Config.md"
+    "0. Prepare/杂项.md"
   ]
 }
