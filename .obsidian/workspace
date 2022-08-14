@@ -7,8 +7,12 @@
         "id": "59cfad84c94a7d57",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "5. Vue/Vue.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "5. Vue/Vue.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -95,10 +100,10 @@
   },
   "active": "59cfad84c94a7d57",
   "lastOpenFiles": [
+    "5. Vue/Vue补.md",
     "5. Vue/Vue.md",
     "5. Vue/Vue3.md",
     "5. Vue/Vue面试题.md",
-    "5. Vue/Vue补.md",
     "5. Vue/Vue2源码概述.md",
     "5. Vue/Slot.md",
     "5. Vue/Mini-vue.md",
