@@ -122,8 +122,8 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
 14. TreeShaking：production 并且因为只有 esm 可以 TreeShaking，所以 babel-loader 配置  modules: false
 15. splitChunk
     1. entry
-       1. 如果入口 chunk 包含了重复模块，会被重复打包
-       2. 不能将核心应用进行动态拆分
+       1. 如果入口 chunk 包含了重复模块，会重复打包
+       2. 不能将核心应用进行动态拆分d
     2. 动态导入和懒加载
        1. 懒加载
        2. prefetch
