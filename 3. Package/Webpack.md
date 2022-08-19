@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-07-09 18:49
+date updated: 2022-08-20 00:00
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -146,4 +146,3 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
     3. hard-source-webpack-plugin 直接使用就可以，会把缓存放到 node_modules 的 .cache 中，大大加速第二次构建的速度
     4. oneOf 多个匹配到一个就退出
 19. 热更新/自动刷新（开发
-20. alias resolve resolveLoader mainFields mainFile
