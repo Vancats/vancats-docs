@@ -1,6 +1,6 @@
 ---
 date created: 2022-05-31 23:46
-date updated: 2022-08-20 00:08
+date updated: 2022-08-20 01:00
 ---
 
 @babel/core 核心代码，包括 transform parse
@@ -66,7 +66,7 @@ preset-env 负责转换语法树，转换时经常用到 babel-types（生产零
    1. module 各个源码文件
    2. chunk 多模块合成的产物
    3. bundle 最终的输出文件
-3. babel-webpack 区别
+3. babel webpack 区别
    1. babel 只关心语法编译，不关心模块化
    2. webpack 打包构建工具
 4. 如何产出 lib
