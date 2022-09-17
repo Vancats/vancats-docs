@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3. Package/webpack.md",
+            "file": "6. Chore/RegExp.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Package/webpack.md",
+                "file": "6. Chore/RegExp.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -100,9 +100,9 @@
   },
   "active": "59cfad84c94a7d57",
   "lastOpenFiles": [
-    "3. Package/Webpack-before.md",
-    "3. Package/webpack.md",
     "0. Prepare/杂项.md",
+    "3. Package/webpack.md",
+    "3. Package/Webpack-before.md",
     "3. Package/Config.md",
     "5. Vue/Vue.md",
     "5. Vue/Vue补.md",
